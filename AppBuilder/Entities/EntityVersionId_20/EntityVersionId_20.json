@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
+  "RecordNamePropertyId": 118,
+  "Id": 20,
+  "VersionId": 20,
+  "Name": "ortomo_PreparaatClaim",
+  "PluralName": "ortomo_PreparaatClaims",
+  "Icon": "exclamation-circle",
+  "Type": "UserCreated"
+}
