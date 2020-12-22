@@ -1,0 +1,128 @@
+{
+  "Name": "ortomo_ShoppingCart",
+  "Description": "Creates a new record of type ortomo_ShoppingCart",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 97,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "User",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "OrderId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"OrderId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Quantity",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "TotalAmount",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.ortomo_ShoppingCart",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "User": "[User]",
+        "OrderId": "[OrderId]",
+        "Quantity": "[Quantity]",
+        "TotalAmount": "[TotalAmount]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "ortomo_ShoppingCart"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_ShoppingCart",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ortomo_ShoppingCart"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "User",
+            "value": "[CreatedRecord:User]"
+          },
+          {
+            "name": "OrderId",
+            "value": "[CreatedRecord:OrderId]"
+          },
+          {
+            "name": "Quantity",
+            "value": "[CreatedRecord:Quantity]"
+          },
+          {
+            "name": "TotalAmount",
+            "value": "[CreatedRecord:TotalAmount]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://kict015.dnncserver.nl/api/ortomo_ShoppingCart?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
