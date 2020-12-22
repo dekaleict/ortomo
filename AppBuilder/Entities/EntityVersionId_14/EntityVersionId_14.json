@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
+  "RecordNamePropertyId": 54,
+  "Id": 14,
+  "VersionId": 14,
+  "Name": "ortomo_Preparaat",
+  "PluralName": "ortomo_Preparaten",
+  "Icon": "seedling",
+  "Type": "UserCreated"
+}
