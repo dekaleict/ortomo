@@ -1,0 +1,11 @@
+{
+  "Name": "ReturnFromMollie",
+  "Description": "Handles the Mollie Return as webhookurl",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Inputs": [],
+  "Actions": [],
+  "OnErrorActions": []
+}
