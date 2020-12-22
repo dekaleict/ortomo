@@ -1,0 +1,77 @@
+<module type="DNNGoContentBuilder" version="02.04.04.00">
+    <contentKey />
+    <moduleID>455</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>DNNGo.ContentBuilder</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>8443c6a6-bccd-4a18-bb84-da8cc1fc9f27</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>ContentJSON</settingname>
+            <settingvalue>{"CodeCSS":{"button-01":" body .button-01, body .button-01:link, body .button-01:active, body .button-01:visited, body .button-01[type=\"button\"], body .button-01[type=\"submit\"] {display: inline-block;font-size: 16px;color: #fff;padding: 0 30px;background-color: var(--button-color);transition: all .3s cubic-bezier(0.22, 0.61, 0.36, 1);}body .button-01 * {color: #fff;}body .button-01:hover{background-color: var(--button-hover-color);}"},"settings":{}}</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>ContentBuilder</settingname>
+            <settingvalue>&lt;div class="is-section is-section-md-50 is-box is-align-center layout-no-mb is-section-100"&gt;
+    &lt;div class="is-overlay"&gt;
+        &lt;div class="is-overlay-bg" style="background-image: url(&amp;quot;/Portals/0/ThemePluginPro/uploads/2020/9/22/Vive-Static-v5.jpg&amp;quot;); background-size: cover; background-position: 50% 100%;"&gt;
+            &lt;div class="is-overlay-color" style="opacity: 0.125; background-color: rgb(0, 0, 0); display: block;"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="is-overlay-content"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="is-boxes"&gt;
+        &lt;div class="is-box-centered"&gt;
+            &lt;div class="is-container container-fluid"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-12"&gt;&lt;h1 class="size-60" style="color: rgb(239, 239, 239);"&gt;Gezond zijn was nog nooit zo makkelijk&lt;/h1&gt;
+&lt;div class="spacer height-40"&gt;&lt;/div&gt;
+&lt;p style="color: rgb(255, 255, 255); font-size: 1.5em;"&gt;Er zijn honderden vitamines, mineralen en andere voedingsstoffen. 
+    &lt;br&gt;
+Ortomo stemt ze af op jou en bezorgt ze ook nog.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div&gt;
+    &lt;a href="#" title="Learn more" class="button-01 border-radius-3 mt-10 mb-5 mb-lg-10"&gt;Doe de test&lt;/a&gt;
+&lt;/div&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Hash</settingname>
+            <settingvalue>C1B1331C9E2141A416292966E60F9BA3</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>DNNGo.ContentBuilder</definition>
+    <moduledefinition>DNNGo.ContentBuilder</moduledefinition>
+</module>
