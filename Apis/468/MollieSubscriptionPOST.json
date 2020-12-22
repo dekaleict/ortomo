@@ -1,0 +1,170 @@
+{
+  "Name": "MollieSubscription",
+  "Description": "Creates a new record of type MollieSubscription",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 89,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "UserId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "StartDate",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "EndDate",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Amount",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "RecurringDays",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "MollieCustomerId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"MollieCustomerId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "NextRecurringDate",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.MollieSubscription",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "UserId": "[UserId]",
+        "StartDate": "[StartDate]",
+        "EndDate": "[EndDate]",
+        "Amount": "[Amount]",
+        "RecurringDays": "[RecurringDays]",
+        "MollieCustomerId": "[MollieCustomerId]",
+        "NextRecurringDate": "[NextRecurringDate]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "MollieSubscription"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.MollieSubscription",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "MollieSubscription"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "UserId",
+            "value": "[CreatedRecord:UserId]"
+          },
+          {
+            "name": "StartDate",
+            "value": "[CreatedRecord:StartDate]"
+          },
+          {
+            "name": "EndDate",
+            "value": "[CreatedRecord:EndDate]"
+          },
+          {
+            "name": "Amount",
+            "value": "[CreatedRecord:Amount]"
+          },
+          {
+            "name": "RecurringDays",
+            "value": "[CreatedRecord:RecurringDays]"
+          },
+          {
+            "name": "MollieCustomerId",
+            "value": "[CreatedRecord:MollieCustomerId]"
+          },
+          {
+            "name": "NextRecurringDate",
+            "value": "[CreatedRecord:NextRecurringDate]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://kict015.dnncserver.nl/api/MollieSubscription?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
