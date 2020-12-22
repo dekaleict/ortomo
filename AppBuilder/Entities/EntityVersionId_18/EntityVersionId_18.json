@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
+  "RecordNamePropertyId": 74,
+  "Id": 18,
+  "VersionId": 18,
+  "Name": "ortomo_PreparaatContent",
+  "PluralName": "ortomo_PreparaatContent",
+  "Icon": "barcode",
+  "Type": "UserCreated"
+}
