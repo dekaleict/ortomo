@@ -1,0 +1,166 @@
+{
+  "Name": "CreateMollie",
+  "Description": "Create a MolliePayment",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "DnnAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "amount",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Description": "Amount is without the currency",
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"Invalid amount\"}",
+          "Type": "default-float",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "transactionGUID",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is required\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "description",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is required\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "Description": "Create record in Mollie table",
+      "ActionType": "RunSql",
+      "OrderIndex": 0,
+      "Parameters": {
+        "ConnectionString": "",
+        "QueryTimeout": "",
+        "SqlQuery": "insert into Mollie (transactionGUID, amount, description, redirecturl,webhookurl)\noutput inserted.id\nVALUES ( @transactionGUID, @amount, @description,@redirecturl,@webhookurl)",
+        "BindTokens": [
+          {
+            "value": "[transactionGUID]",
+            "name": "transactionGUID"
+          },
+          {
+            "value": "[amount]",
+            "name": "amount"
+          },
+          {
+            "value": "[description]",
+            "name": "description"
+          },
+          {
+            "value": "[Mollie:RedirectURL]",
+            "name": "redirecturl"
+          },
+          {
+            "value": "[Mollie:WebhookURL]",
+            "name": "webhookurl"
+          }
+        ],
+        "OutputTokenName": "createdid",
+        "ExtractColumns": "",
+        "OnError": [],
+        "ShowErrors": false
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "Description": "Create mollie payment url",
+      "ActionType": "PostData",
+      "OrderIndex": 1,
+      "Condition": "",
+      "Parameters": {
+        "URL": "https://api.mollie.nl/v2/payments",
+        "Data": "amount=[amount]\ndescription=[description]\nredirectUrl=[Mollie:RedirectURL]?id=[querystring:id]",
+        "Headers": [
+          {
+            "name": "Authorization",
+            "value": "Bearer [Mollie:MollieAPIkey]"
+          }
+        ],
+        "HttpMethod": {
+          "Value": "POST",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "SaveToken": "MollieRetourMP",
+        "IgnoreErrors": "",
+        "OnError": [],
+        "UrlTokenContext": {
+          "IsExpression": false,
+          "Parameters": {},
+          "Value": "Url"
+        },
+        "InputParameters": "",
+        "UseSSL": "",
+        "Timeout": "",
+        "DoNotEscapeTokens": "",
+        "DisableReferer": "",
+        "UseDNNProxySettings": "",
+        "AddCurrentCookies": "",
+        "OutputParameters": "",
+        "CookieContainerToken": "",
+        "OutputTokenName": "",
+        "OutputHeaders": "",
+        "Events": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "OrderIndex": 2,
+      "Parameters": {
+        "Content": "[createdid]",
+        "HttpCode": "",
+        "Headers": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}
