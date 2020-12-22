@@ -1,0 +1,91 @@
+{
+  "Name": "MollieSubscription",
+  "Description": "Returns the information of a MollieSubscription record in JSON object format.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 90,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.MollieSubscription",
+      "OrderIndex": 0,
+      "Parameters": {
+        "RecordId": "[RecordId]",
+        "OutputToken": "Record"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "MollieSubscription"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[RecordId]"
+          },
+          {
+            "name": "UserId",
+            "value": "[Record:UserId]"
+          },
+          {
+            "name": "StartDate",
+            "value": "[Record:StartDate]"
+          },
+          {
+            "name": "EndDate",
+            "value": "[Record:EndDate]"
+          },
+          {
+            "name": "Amount",
+            "value": "[Record:Amount]"
+          },
+          {
+            "name": "RecurringDays",
+            "value": "[Record:RecurringDays]"
+          },
+          {
+            "name": "MollieCustomerId",
+            "value": "[Record:MollieCustomerId]"
+          },
+          {
+            "name": "NextRecurringDate",
+            "value": "[Record:NextRecurringDate]"
+          }
+        ],
+        "Headers": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
