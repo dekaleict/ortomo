@@ -1,0 +1,226 @@
+{
+  "Name": "ortomo_Preparaat",
+  "Description": "Creates a new record of type ortomo_Preparaat",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 145,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "Preparaat",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"Preparaat is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Beschrijving",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Icon",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PrijsPerDag",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PrijsPerPack",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "StatusBeschikbaarheid",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "TypeSupplement",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "KleurSupplement",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AantalPerDag",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "InnameAdvies",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ADH",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.ortomo_Preparaat",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "Preparaat": "[Preparaat]",
+        "Beschrijving": "[Beschrijving]",
+        "Icon": "[Icon]",
+        "PrijsPerDag": "[PrijsPerDag]",
+        "PrijsPerPack": "[PrijsPerPack]",
+        "StatusBeschikbaarheid": "[StatusBeschikbaarheid]",
+        "TypeSupplement": "[TypeSupplement]",
+        "KleurSupplement": "[KleurSupplement]",
+        "AantalPerDag": "[AantalPerDag]",
+        "InnameAdvies": "[InnameAdvies]",
+        "ADH": "[ADH]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "ortomo_Preparaat"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_Preparaat",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ortomo_Preparaat"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "Preparaat",
+            "value": "[CreatedRecord:Preparaat]"
+          },
+          {
+            "name": "Beschrijving",
+            "value": "[CreatedRecord:Beschrijving]"
+          },
+          {
+            "name": "Icon",
+            "value": "[CreatedRecord:Icon]"
+          },
+          {
+            "name": "PrijsPerDag",
+            "value": "[CreatedRecord:PrijsPerDag]"
+          },
+          {
+            "name": "PrijsPerPack",
+            "value": "[CreatedRecord:PrijsPerPack]"
+          },
+          {
+            "name": "StatusBeschikbaarheid",
+            "value": "[CreatedRecord:StatusBeschikbaarheid]"
+          },
+          {
+            "name": "TypeSupplement",
+            "value": "[CreatedRecord:TypeSupplement]"
+          },
+          {
+            "name": "KleurSupplement",
+            "value": "[CreatedRecord:KleurSupplement]"
+          },
+          {
+            "name": "AantalPerDag",
+            "value": "[CreatedRecord:AantalPerDag]"
+          },
+          {
+            "name": "InnameAdvies",
+            "value": "[CreatedRecord:InnameAdvies]"
+          },
+          {
+            "name": "ADH",
+            "value": "[CreatedRecord:ADH]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://kict015.dnncserver.nl/api/ortomo_Preparaat?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
