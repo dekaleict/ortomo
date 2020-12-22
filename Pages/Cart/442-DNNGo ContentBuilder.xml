@@ -1,0 +1,78 @@
+<module type="DNNGoContentBuilder" version="02.04.04.00">
+    <contentKey />
+    <moduleID>442</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>DNNGo.ContentBuilder</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>ba270fa8-2364-4888-bc67-f1a1d69c5ecf</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>ContentJSON</settingname>
+            <settingvalue>{"CodeCSS":{},"settings":{}}</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>ContentBuilder</settingname>
+            <settingvalue>&lt;div class="is-section is-box is-light-text layout-no-mt layout-no-mb" style="background-color: rgb(0, 125, 100); border-radius:6px;"&gt;
+    &lt;div class="is-overlay"&gt;&lt;/div&gt;
+    &lt;div class="is-boxes"&gt;
+        &lt;div class="is-box-centered"&gt;
+            &lt;div class="is-container layout-container" style="padding-left:3rem;"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-12" data-noedit=""&gt;
+                        &lt;div class="spacer height-60 mb-10"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="row align-items-center"&gt;
+                    &lt;div class="col-md-12"&gt;
+                        &lt;h3 style="font-weight: 400;"&gt;Beste [User:Firstname]&lt;/h3&gt;
+                        &lt;p class="mb-0 size-18"&gt;Onderstaande hebben we samengesteld op basis van jouw antwoorden.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-12" data-noedit=""&gt;
+                        &lt;div class="spacer height-60 mb-10"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Hash</settingname>
+            <settingvalue>BF77F5DB0EF3C2A2138C67D012E3AFC5</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>DNNGo.ContentBuilder</definition>
+    <moduledefinition>DNNGo.ContentBuilder</moduledefinition>
+</module>
