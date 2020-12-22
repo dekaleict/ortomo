@@ -1,0 +1,17 @@
+{
+  "id": 22,
+  "namespace": {
+    "id": 10,
+    "name": "Mollie"
+  },
+  "name": "MollieAPIkey",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "value": "test_jMrG59pcaUrw92pEpH7PcC6JbndbWV",
+    "type": "string"
+  }
+}
