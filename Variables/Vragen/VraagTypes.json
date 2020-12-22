@@ -1,0 +1,17 @@
+{
+  "id": 3,
+  "namespace": {
+    "id": 2,
+    "name": "Vragen"
+  },
+  "name": "VraagTypes",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "value": "MC\nMS\nJN\nDatum",
+    "type": "string"
+  }
+}
