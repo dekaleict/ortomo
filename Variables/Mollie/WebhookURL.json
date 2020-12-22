@@ -1,0 +1,17 @@
+{
+  "id": 21,
+  "namespace": {
+    "id": 10,
+    "name": "Mollie"
+  },
+  "name": "WebhookURL",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "value": "http://[URL:Domain]/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=MollieCallBack",
+    "type": "string"
+  }
+}
