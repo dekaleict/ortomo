@@ -129,15 +129,6 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
-    },
-    {
-      "Name": "Content",
-      "IsDeleted": false,
-      "IsEnabled": true,
-      "OrderIndex": 12,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
     }
   ],
   "Actions": [
@@ -156,8 +147,7 @@
         "KleurSupplement": "[KleurSupplement]",
         "AantalPerDag": "[AantalPerDag]",
         "InnameAdvies": "[InnameAdvies]",
-        "ADH": "[ADH]",
-        "Content": "[Content]"
+        "ADH": "[ADH]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
