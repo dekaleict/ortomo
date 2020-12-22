@@ -1,0 +1,20 @@
+{
+  "id": 25,
+  "namespace": {
+    "id": 11,
+    "name": "ortomo"
+  },
+  "name": "PreparaatById",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT * FROM app.ortomo_Preparaat\nWHERE Id=[tknparams:id]",
+    "defaultColumn": "Preparaat",
+    "columns": "Preparaat\nIcon\n",
+    "connectionString": "",
+    "type": "db"
+  }
+}
