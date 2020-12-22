@@ -1,0 +1,156 @@
+{
+  "Name": "ortomo_Vraag",
+  "Description": "Creates a new record of type ortomo_Vraag",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 69,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "Vraag",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"Vraag is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Toelichting",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Type",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Doel",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Vragenlijst",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "VolgordeBinnenVragenlijst",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.ortomo_Vraag",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "Vraag": "[Vraag]",
+        "Toelichting": "[Toelichting]",
+        "Type": "[Type]",
+        "Doel": "[Doel]",
+        "Vragenlijst": "[Vragenlijst]",
+        "VolgordeBinnenVragenlijst": "[VolgordeBinnenVragenlijst]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "ortomo_Vraag"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_Vraag",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ortomo_Vraag"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "Vraag",
+            "value": "[CreatedRecord:Vraag]"
+          },
+          {
+            "name": "Toelichting",
+            "value": "[CreatedRecord:Toelichting]"
+          },
+          {
+            "name": "Type",
+            "value": "[CreatedRecord:Type]"
+          },
+          {
+            "name": "Doel",
+            "value": "[CreatedRecord:Doel]"
+          },
+          {
+            "name": "Vragenlijst",
+            "value": "[CreatedRecord:Vragenlijst]"
+          },
+          {
+            "name": "VolgordeBinnenVragenlijst",
+            "value": "[CreatedRecord:VolgordeBinnenVragenlijst]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://kict015.dnncserver.nl/api/ortomo_Vraag?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
