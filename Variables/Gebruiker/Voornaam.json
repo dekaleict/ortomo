@@ -1,0 +1,17 @@
+{
+  "id": 18,
+  "namespace": {
+    "id": 3,
+    "name": "Gebruiker"
+  },
+  "name": "Voornaam",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "value": "[User:FirstName]",
+    "type": "string"
+  }
+}
