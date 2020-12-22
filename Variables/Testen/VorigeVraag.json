@@ -1,0 +1,17 @@
+{
+  "id": 16,
+  "namespace": {
+    "id": 8,
+    "name": "Testen"
+  },
+  "name": "VorigeVraag",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "value": "[Session:VorigeVraagGUID]",
+    "type": "string"
+  }
+}
