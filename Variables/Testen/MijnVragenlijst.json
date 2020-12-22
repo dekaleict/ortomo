@@ -1,0 +1,20 @@
+{
+  "id": 17,
+  "namespace": {
+    "id": 8,
+    "name": "Testen"
+  },
+  "name": "MijnVragenlijst",
+  "description": "Dit is de huidige vragenlijst binnen de test. Dus de actuele vragenlijst die de gebruiker in de test aan het doen is.",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT        ortomo_MijnTest_MijnVragenlijsten.id, ortomo_MijnTest_MijnVragenlijsten.MijnTestGUID, ortomo_MijnTest_MijnVragenlijsten.VragenlijstGUID, ortomo_MijnTest_MijnVragenlijsten.Startdatum, \n                         ortomo_MijnTest_MijnVragenlijsten.Einddatum, ortomo_MijnTest_MijnVragenlijsten.Volgorde, ortomo_MijnTest_MijnVragenlijsten.AantalVragen, ortomo_MijnTest_MijnVragenlijsten.AantalVragen_Gedaan, \n                         ortomo_MijnTest_MijnVragenlijsten.AantalVragen_NogTeDoen, ortomo_MijnTest_MijnVragenlijsten.VragenlijstPercentageVoortgang, ortomo_tbl_vragenlijsten.VragenlijstNaam, \n                         ortomo_tbl_vragenlijsten.VragenlijstBeschrijving\nFROM            ortomo_MijnTest_MijnVragenlijsten INNER JOIN\n                         ortomo_tbl_vragenlijsten ON ortomo_MijnTest_MijnVragenlijsten.VragenlijstGUID = ortomo_tbl_vragenlijsten.VragenlijstGUID\nWHERE        (ortomo_MijnTest_MijnVragenlijsten.MijnTestGUID = '[Gebruiker:OpenTest.MijnTestGUID]') AND (ortomo_MijnTest_MijnVragenlijsten.AantalVragen_NogTeDoen > 0)\nORDER BY ortomo_MijnTest_MijnVragenlijsten.Startdatum",
+    "defaultColumn": "",
+    "columns": "VragenlijstGUID\nStartdatum\nEinddatum\nVolgorde\nAantalVragen\nAantalVragen_Gedaan\nAantalVragen_NogTeDoen\nVragenlijstPercentageVoortgang\nVragenlijstNaam\nVragenlijstBeschrijving",
+    "connectionString": "",
+    "type": "db"
+  }
+}
