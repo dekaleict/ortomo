@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": -1,
+  "RecordNamePropertyId": 126,
+  "Id": 22,
+  "VersionId": 22,
+  "Name": "tester",
+  "PluralName": "teseters",
+  "Icon": "table",
+  "Type": "UserCreated"
+}
