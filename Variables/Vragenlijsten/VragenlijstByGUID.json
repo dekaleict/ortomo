@@ -1,0 +1,20 @@
+{
+  "id": 11,
+  "namespace": {
+    "id": 7,
+    "name": "Vragenlijsten"
+  },
+  "name": "VragenlijstByGUID",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT * FROM ortomo_tbl_vragenlijsten\nWHERE VragenlijstGUID='[tknparams:vragenlijstguid]'",
+    "defaultColumn": "",
+    "columns": "id\nVragenlijstGUID\nVragenlijstNaam\nVragenlijstBeschrijving\nAantalVragen",
+    "connectionString": "",
+    "type": "db"
+  }
+}
