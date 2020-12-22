@@ -1,0 +1,175 @@
+{
+  "Name": "ortomo_Preparaat",
+  "Description": "Updates the information of the provided ortomo_Preparaat record",
+  "HttpMethod": "PUT",
+  "IsEnabled": true,
+  "OrderIndex": 147,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Preparaat",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"Preparaat is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Beschrijving",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Icon",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PrijsPerDag",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PrijsPerPack",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "StatusBeschikbaarheid",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "TypeSupplement",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "KleurSupplement",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AantalPerDag",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "InnameAdvies",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ADH",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.UpdateEntity.0.ortomo_Preparaat",
+      "OrderIndex": 0,
+      "Parameters": {
+        "RecordId": "[RecordId]",
+        "Preparaat": "[Preparaat]",
+        "Beschrijving": "[Beschrijving]",
+        "Icon": "[Icon]",
+        "PrijsPerDag": "[PrijsPerDag]",
+        "PrijsPerPack": "[PrijsPerPack]",
+        "StatusBeschikbaarheid": "[StatusBeschikbaarheid]",
+        "TypeSupplement": "[TypeSupplement]",
+        "KleurSupplement": "[KleurSupplement]",
+        "AantalPerDag": "[AantalPerDag]",
+        "InnameAdvies": "[InnameAdvies]",
+        "ADH": "[ADH]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.UpdateEntity",
+        "EntityIdentifier": "ortomo_Preparaat"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [],
+        "Headers": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
