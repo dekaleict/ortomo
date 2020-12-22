@@ -1,0 +1,66 @@
+<module type="DNNGoContentBuilder" version="02.04.04.00">
+    <contentKey />
+    <moduleID>462</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>DNNGo.ContentBuilder</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>ab17ca8f-d57a-47e7-b30c-0350836e1cb3</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>ContentJSON</settingname>
+            <settingvalue>{"settings":{}}</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>ContentBuilder</settingname>
+            <settingvalue>&lt;div class="is-section is-box"&gt;
+    &lt;div class="is-boxes"&gt;
+        &lt;div class="is-box-centered"&gt;
+            &lt;div class="is-container layout-container"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-12"&gt;
+                        &lt;h5 style="color: rgb(209, 209, 209);"&gt;Over ons&lt;/h5&gt;
+                        &lt;br&gt; &amp;gt; FAQ&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt; &amp;gt; Algemene voorwaarden&amp;nbsp; &amp;nbsp;&lt;br&gt; &amp;gt; Privacy verklaring&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Hash</settingname>
+            <settingvalue>D4DD21C7C18D286246DA6A5A31674189</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>DNNGo.ContentBuilder</definition>
+    <moduledefinition>DNNGo.ContentBuilder</moduledefinition>
+</module>
