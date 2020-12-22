@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": false,
+  "ParentPageId": 83,
+  "RecordNamePropertyId": 33,
+  "Id": 9,
+  "VersionId": 9,
+  "Name": "ortomo_ShoppingCartDetail",
+  "PluralName": "ortomo_ShoppingCartDetails",
+  "Icon": "shopping-basket",
+  "Type": "UserCreated"
+}
