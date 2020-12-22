@@ -1,0 +1,60 @@
+{
+  "Name": "MollieCallBack",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Inputs": [
+    {
+      "Name": "Id",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "LoadUser",
+      "OrderIndex": 0,
+      "Parameters": {
+        "Id": "6",
+        "Portal": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "PlantAnApp.ExecuteWorkflow.2",
+      "OrderIndex": 1,
+      "Parameters": {
+        "InputHelpText": "",
+        "ResponseJson": "[RawInput]",
+        "OutputHelpText": "",
+        "Status": "Status",
+        "TransactionId": "[Id]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "OrderIndex": 2,
+      "Parameters": {
+        "Content": "",
+        "HttpCode": "200 OK",
+        "Headers": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}
