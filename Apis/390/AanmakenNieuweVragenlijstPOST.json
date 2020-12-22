@@ -1,0 +1,246 @@
+{
+  "Name": "AanmakenNieuweVragenlijst",
+  "Description": "Hiermee wordt een nieuwe vragenlijst aangemaakt die een gebruiker kan gaan invullen of kan een vragenlijst worden toegevoegd aan een bestaande test",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "Userid",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "number",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is verplicht\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        },
+        {
+          "Data": "{\"Message\":\"Onjuist nummer\"}",
+          "Type": "default-integer",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 1
+        }
+      ]
+    },
+    {
+      "Name": "Vragenlijst",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "MijnTestGUID",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Description": "Eventueel kan aan een bestaande test een andere vragenlijst worden toegevoegd",
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "Description": "Aanmaken MijnTest",
+      "ActionType": "RunSql",
+      "OrderIndex": 0,
+      "Condition": "[MijnTestGUID]==''",
+      "Parameters": {
+        "ConnectionString": "",
+        "QueryTimeout": "",
+        "SqlQuery": "Insert into ortomo_MijnTest (UserId,MijnTestGUID,StartdatumTest,AantalVragen,AantalVragen_Gedaan,AantalVragen_NogTeDoen,MijnTestPercentageVoortgang)\noutput inserted.MijnTestGUID\nValues (@UserId,NewID(),GetDate(),@AantalVragen,@AantalVragen_Gedaan,@AantalVragen_NogTeDoen,@MijnTestPercentageVoortgang)",
+        "BindTokens": [
+          {
+            "value": "[UserId]",
+            "name": "UserId"
+          },
+          {
+            "value": "0",
+            "name": "AantalVragen"
+          },
+          {
+            "value": "0",
+            "name": "AantalVragen_Gedaan"
+          },
+          {
+            "value": "0",
+            "name": "AantalVragen_NogTeDoen"
+          },
+          {
+            "value": "0",
+            "name": "MijnTestPercentageVoortgang"
+          }
+        ],
+        "OutputTokenName": "",
+        "ExtractColumns": [
+          {
+            "value": "[MijnTestGUID]",
+            "name": "MijnTestGUID"
+          }
+        ],
+        "OnError": [],
+        "ShowErrors": false
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "Description": "Controleren of vragenlijst al voorkomt in Test",
+      "ActionType": "RunSql",
+      "OrderIndex": 1,
+      "Condition": "[MijnTestGUID]!=''",
+      "Parameters": {
+        "ConnectionString": "",
+        "QueryTimeout": "",
+        "SqlQuery": "SELECT Count(id) as AantalGevonden FROM ortomo_MijnTest_MijnVragenlijsten\nWHERE MijnTestGUID=@MijnTestGUID and VragenlijstGUID=@VragenlijstGUID",
+        "BindTokens": [
+          {
+            "value": "[MijnTestGUID]",
+            "name": "MijnTestGUID"
+          },
+          {
+            "value": "[Vragenlijst]",
+            "name": "VragenlijstGUID"
+          }
+        ],
+        "OutputTokenName": "",
+        "ExtractColumns": [
+          {
+            "value": "[AantalGevonden]",
+            "name": "AantalGevonden"
+          }
+        ],
+        "OnError": [],
+        "ShowErrors": false
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "Description": "Aanmaken MijnTest_MijnVragenlijsten",
+      "ActionType": "RunSql",
+      "OrderIndex": 2,
+      "Condition": "[AantalGevonden]==\"0\"",
+      "Parameters": {
+        "ConnectionString": "",
+        "QueryTimeout": "",
+        "SqlQuery": "INSERT INTO ortomo_MijnTest_MijnVragenlijsten\n                         (MijnTestGUID,VragenlijstGUID, AantalVragen, Startdatum, Volgorde, AantalVragen_Gedaan, AantalVragen_NogTeDoen, VragenlijstPercentageVoortgang)\nSELECT        @MijnTestGUID, VragenlijstGUID, AantalVragen, GETDATE() AS Startdatum, 0 AS Volgorde, 0 AS AantalVragen_Gedaan, AantalVragen AS AantalVragen_NogTeDoen, 0 AS VragenlijstPercentageVoortgang\nFROM            ortomo_tbl_vragenlijsten\nWHERE VragenlijstGUID=@VragenlijstGUID",
+        "BindTokens": [
+          {
+            "value": "[Vragenlijst]",
+            "name": "VragenlijstGUID"
+          },
+          {
+            "value": "[MijnTestGUID]",
+            "name": "MijnTestGUID"
+          }
+        ],
+        "OutputTokenName": "",
+        "ExtractColumns": [],
+        "OnError": [],
+        "ShowErrors": true
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "Description": "Aanmaken MijnTest_MijnAntwoorden",
+      "ActionType": "RunSql",
+      "OrderIndex": 3,
+      "Condition": "[AantalGevonden]==\"0\"",
+      "Parameters": {
+        "ConnectionString": "",
+        "QueryTimeout": "",
+        "SqlQuery": "INSERT INTO ortomo_MijnTest_MijnAntwoorden\n                         (MijnTestGUID, VragenlijstGUID, VraagGUID, Vraag, VraagToelichting, VraagType, VraagHoortBijDoel, VraagBeantwoord)\nSELECT        @MijnTestGUID, @VragenlijstGUID, VraagGUID, Vraag, VraagToelichting, VraagType, HoortBijDoel, 'False'\nFROM            ortomo_tbl_vragen\nWHERE HoortBijVragenlijstGUID=@VragenlijstGUID\nORDER BY VolgordeBinnenVragenlijst asc",
+        "BindTokens": [
+          {
+            "value": "[Vragenlijst]",
+            "name": "VragenlijstGUID"
+          },
+          {
+            "value": "[MijnTestGUID]",
+            "name": "MijnTestGUID"
+          }
+        ],
+        "OutputTokenName": "",
+        "ExtractColumns": [],
+        "OnError": [],
+        "ShowErrors": true
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "Description": "Bijwerken AantalVragen in MijnTest",
+      "ActionType": "RunSql",
+      "OrderIndex": 4,
+      "Condition": "[AantalGevonden]==\"0\"",
+      "Parameters": {
+        "ConnectionString": "",
+        "QueryTimeout": "",
+        "SqlQuery": "UPDATE       ortomo_MijnTest\nSET                AantalVragen = Q1.AantalVragen, AantalVragen_NogTeDoen = Q1.AantalVragen\nFROM            (SELECT        COUNT(id) AS AantalVragen, MijnTestGUID\n                          FROM            ortomo_MijnTest_MijnAntwoorden\n                          GROUP BY MijnTestGUID) AS Q1 INNER JOIN\n                         ortomo_MijnTest ON Q1.MijnTestGUID = ortomo_MijnTest.MijnTestGUID\nWHERE        (Q1.MijnTestGUID = @MijnTestGUID)",
+        "BindTokens": [
+          {
+            "value": "[MijnTestGUID]",
+            "name": "MijnTestGUID"
+          }
+        ],
+        "OutputTokenName": "",
+        "ExtractColumns": "",
+        "OnError": [],
+        "ShowErrors": true
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "OrderIndex": 5,
+      "Condition": "[AantalGevonden]==\"0\"",
+      "Parameters": {
+        "Content": "[MijnTestGUID]",
+        "HttpCode": "",
+        "Headers": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "OrderIndex": 6,
+      "Condition": "[AantalGevonden]!=\"0\"",
+      "Parameters": {
+        "Content": "Deze vragenlijst komt al voor bij deze gebruiker",
+        "HttpCode": "",
+        "Headers": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}
