@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type ortomo_Preparaat",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 145,
+  "OrderIndex": 157,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -112,6 +112,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Content",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -130,7 +139,8 @@
         "KleurSupplement": "[KleurSupplement]",
         "AantalPerDag": "[AantalPerDag]",
         "InnameAdvies": "[InnameAdvies]",
-        "ADH": "[ADH]"
+        "ADH": "[ADH]",
+        "Content": "[Content]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -206,6 +216,10 @@
           {
             "name": "ADH",
             "value": "[CreatedRecord:ADH]"
+          },
+          {
+            "name": "Content",
+            "value": "[CreatedRecord:Content]"
           }
         ],
         "Headers": [
