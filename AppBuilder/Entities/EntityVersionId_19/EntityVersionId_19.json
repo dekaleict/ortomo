@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
+  "RecordNamePropertyId": 87,
+  "Id": 19,
+  "VersionId": 19,
+  "Name": "ortomo_PreparaatDeclaratie",
+  "PluralName": "ortomo_PreparaatDeclaraties",
+  "Icon": "fingerprint",
+  "Type": "UserCreated"
+}
