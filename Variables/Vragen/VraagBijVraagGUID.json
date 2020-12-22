@@ -1,0 +1,20 @@
+{
+  "id": 2,
+  "namespace": {
+    "id": 2,
+    "name": "Vragen"
+  },
+  "name": "VraagBijVraagGUID",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT        ortomo_tbl_vragen.id, ortomo_tbl_vragen.VraagGUID, ortomo_tbl_vragen.Vraag, ortomo_tbl_vragen.VraagToelichting, ortomo_tbl_vragen.VraagType, ortomo_tbl_vragen.HoortBijDoel_id, ortomo_tbl_vragen.HoortBijDoel, \n                         ortomo_tbl_vragen.HoortBijVragenlijstGUID, ortomo_tbl_doelen.Doel, ortomo_tbl_doelen.Icon AS Doelicon, ortomo_tbl_doelen.DoelBeschrijving, ortomo_tbl_vragenlijsten.VragenlijstNaam, \n                         ortomo_tbl_vragenlijsten.VragenlijstBeschrijving\nFROM            ortomo_tbl_vragen LEFT OUTER JOIN\n                         ortomo_tbl_doelen ON ortomo_tbl_vragen.HoortBijDoel_id = ortomo_tbl_doelen.id LEFT OUTER JOIN\n                         ortomo_tbl_vragenlijsten ON ortomo_tbl_vragen.HoortBijVragenlijstGUID = ortomo_tbl_vragenlijsten.VragenlijstGUID\nWHERE VraagGUID='[tknparams:VraagGUID]'",
+    "defaultColumn": "",
+    "columns": "Vraag\nVraagToelichting\nVraagType\nHoortBijDoel_id\nHoortBijDoel\nDoel\nDoelicon\nDoelBeschrijving\nVragenlijstNaam\nVragenlijstBeschrijving",
+    "connectionString": "",
+    "type": "db"
+  }
+}
