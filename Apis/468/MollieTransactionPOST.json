@@ -1,0 +1,198 @@
+{
+  "Name": "MollieTransaction",
+  "Description": "Creates a new record of type MollieTransaction",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 93,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "TransactionId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"TransactionId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "CheckoutURL",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Status",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "User",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Amount",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Description",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "RedirectURL",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ExpiresAt",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "SequenceType",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.MollieTransaction",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "TransactionId": "[TransactionId]",
+        "CheckoutURL": "[CheckoutURL]",
+        "Status": "[Status]",
+        "User": "[User]",
+        "Amount": "[Amount]",
+        "Description": "[Description]",
+        "RedirectURL": "[RedirectURL]",
+        "ExpiresAt": "[ExpiresAt]",
+        "SequenceType": "[SequenceType]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "MollieTransaction"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.MollieTransaction",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "MollieTransaction"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "TransactionId",
+            "value": "[CreatedRecord:TransactionId]"
+          },
+          {
+            "name": "CheckoutURL",
+            "value": "[CreatedRecord:CheckoutURL]"
+          },
+          {
+            "name": "Status",
+            "value": "[CreatedRecord:Status]"
+          },
+          {
+            "name": "User",
+            "value": "[CreatedRecord:User]"
+          },
+          {
+            "name": "Amount",
+            "value": "[CreatedRecord:Amount]"
+          },
+          {
+            "name": "Description",
+            "value": "[CreatedRecord:Description]"
+          },
+          {
+            "name": "RedirectURL",
+            "value": "[CreatedRecord:RedirectURL]"
+          },
+          {
+            "name": "ExpiresAt",
+            "value": "[CreatedRecord:ExpiresAt]"
+          },
+          {
+            "name": "SequenceType",
+            "value": "[CreatedRecord:SequenceType]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://kict015.dnncserver.nl/api/MollieTransaction?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
