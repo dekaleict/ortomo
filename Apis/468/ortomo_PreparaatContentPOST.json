@@ -1,0 +1,248 @@
+{
+  "Name": "ortomo_PreparaatContent",
+  "Description": "Creates a new record of type ortomo_PreparaatContent",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 137,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "Preparaat",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"Preparaat is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "CommercieleNaam",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"CommercieleNaam is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Leverancier",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Ondertitel",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ActieveIngredienten",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Vulstoffen",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Eigenschappen",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AlgemeneProductinformatie",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Story",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Onderzoek",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PreparaatAfbeelding",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "SfeerAfbeelding",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.ortomo_PreparaatContent",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "Preparaat": "[Preparaat]",
+        "CommercieleNaam": "[CommercieleNaam]",
+        "Leverancier": "[Leverancier]",
+        "Ondertitel": "[Ondertitel]",
+        "ActieveIngredienten": "[ActieveIngredienten]",
+        "Vulstoffen": "[Vulstoffen]",
+        "Eigenschappen": "[Eigenschappen]",
+        "AlgemeneProductinformatie": "[AlgemeneProductinformatie]",
+        "Story": "[Story]",
+        "Onderzoek": "[Onderzoek]",
+        "PreparaatAfbeelding": "[PreparaatAfbeelding]",
+        "SfeerAfbeelding": "[SfeerAfbeelding]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "ortomo_PreparaatContent"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_PreparaatContent",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ortomo_PreparaatContent"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "Preparaat",
+            "value": "[CreatedRecord:Preparaat]"
+          },
+          {
+            "name": "CommercieleNaam",
+            "value": "[CreatedRecord:CommercieleNaam]"
+          },
+          {
+            "name": "Leverancier",
+            "value": "[CreatedRecord:Leverancier]"
+          },
+          {
+            "name": "Ondertitel",
+            "value": "[CreatedRecord:Ondertitel]"
+          },
+          {
+            "name": "ActieveIngredienten",
+            "value": "[CreatedRecord:ActieveIngredienten]"
+          },
+          {
+            "name": "Vulstoffen",
+            "value": "[CreatedRecord:Vulstoffen]"
+          },
+          {
+            "name": "Eigenschappen",
+            "value": "[CreatedRecord:Eigenschappen]"
+          },
+          {
+            "name": "AlgemeneProductinformatie",
+            "value": "[CreatedRecord:AlgemeneProductinformatie]"
+          },
+          {
+            "name": "Story",
+            "value": "[CreatedRecord:Story]"
+          },
+          {
+            "name": "Onderzoek",
+            "value": "[CreatedRecord:Onderzoek]"
+          },
+          {
+            "name": "PreparaatAfbeelding",
+            "value": "[CreatedRecord:PreparaatAfbeelding]"
+          },
+          {
+            "name": "SfeerAfbeelding",
+            "value": "[CreatedRecord:SfeerAfbeelding]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://kict015.dnncserver.nl/api/ortomo_PreparaatContent?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
