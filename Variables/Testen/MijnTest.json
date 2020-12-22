@@ -1,0 +1,20 @@
+{
+  "id": 14,
+  "namespace": {
+    "id": 8,
+    "name": "Testen"
+  },
+  "name": "MijnTest",
+  "description": "Dit is de test de de gebruiker actueel aan het doen is",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT * FROM ortomo_MijnTest\nWHERE MijnTestGUID='[Gebruiker:OpenTest.MijnTestGUID]'",
+    "defaultColumn": "",
+    "columns": "Userid\nStartdatumTest\nEinddatumTest\nAantalVragen\nAantalVragen_Gedaan\nAantalVragen_NogTeDoen\nMijnTestPercentageVoortgang",
+    "connectionString": "",
+    "type": "db"
+  }
+}
