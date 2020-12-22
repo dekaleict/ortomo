@@ -1,0 +1,111 @@
+{
+  "Name": "ortomo_PreparaatContent",
+  "Description": "Returns the information of a ortomo_PreparaatContent record in JSON object format.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 138,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_PreparaatContent",
+      "OrderIndex": 0,
+      "Parameters": {
+        "RecordId": "[RecordId]",
+        "OutputToken": "Record"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ortomo_PreparaatContent"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[RecordId]"
+          },
+          {
+            "name": "Preparaat",
+            "value": "[Record:Preparaat]"
+          },
+          {
+            "name": "CommercieleNaam",
+            "value": "[Record:CommercieleNaam]"
+          },
+          {
+            "name": "Leverancier",
+            "value": "[Record:Leverancier]"
+          },
+          {
+            "name": "Ondertitel",
+            "value": "[Record:Ondertitel]"
+          },
+          {
+            "name": "ActieveIngredienten",
+            "value": "[Record:ActieveIngredienten]"
+          },
+          {
+            "name": "Vulstoffen",
+            "value": "[Record:Vulstoffen]"
+          },
+          {
+            "name": "Eigenschappen",
+            "value": "[Record:Eigenschappen]"
+          },
+          {
+            "name": "AlgemeneProductinformatie",
+            "value": "[Record:AlgemeneProductinformatie]"
+          },
+          {
+            "name": "Story",
+            "value": "[Record:Story]"
+          },
+          {
+            "name": "Onderzoek",
+            "value": "[Record:Onderzoek]"
+          },
+          {
+            "name": "PreparaatAfbeelding",
+            "value": "[Record:PreparaatAfbeelding]"
+          },
+          {
+            "name": "SfeerAfbeelding",
+            "value": "[Record:SfeerAfbeelding]"
+          }
+        ],
+        "Headers": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
