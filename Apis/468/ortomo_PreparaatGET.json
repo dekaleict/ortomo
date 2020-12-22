@@ -3,7 +3,7 @@
   "Description": "Returns the information of a ortomo_Preparaat record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 146,
+  "OrderIndex": 158,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -92,6 +92,10 @@
           {
             "name": "ADH",
             "value": "[Record:ADH]"
+          },
+          {
+            "name": "Content",
+            "value": "[Record:Content]"
           }
         ],
         "Headers": []
