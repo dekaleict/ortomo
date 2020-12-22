@@ -1,0 +1,56 @@
+<module type="DNNGoContentBuilder" version="02.04.04.00">
+    <contentKey />
+    <moduleID>443</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>DNNGo.ContentBuilder</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>4f8fca5b-f545-4901-af6b-4f7cfbd32999</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>ContentJSON</settingname>
+            <settingvalue>{"settings":{},"CodeCSS":{},"VendorUrl":{}}</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>ContentBuilder</settingname>
+            <settingvalue>&lt;svg xmlns="http://www.w3.org/2000/svg" display="none" class="section-svg section-svg-443"&gt;&lt;symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="lnr-trash2"&gt;&lt;path d="M309.956,40.479h-69.98V30.5c0-16.508-13.453-29.936-29.992-29.936h-39.989c-16.539,0-29.992,13.428-29.992,29.936v9.979   h-69.98c-16.539,0-29.992,13.428-29.992,29.936v19.958c0,13.009,8.357,24.108,19.994,28.221v251.179   c0,16.508,13.454,29.936,29.992,29.936h199.945c16.538,0,29.992-13.428,29.992-29.936V118.593   c11.637-4.112,19.994-15.212,19.994-28.221V70.415C339.948,53.907,326.495,40.479,309.956,40.479z M159.998,30.5   c0-5.506,4.481-9.979,9.997-9.979h39.989c5.516,0,9.998,4.473,9.998,9.979v9.979h-59.983V30.5z M289.962,379.75H90.017   c-5.516,0-9.997-4.473-9.997-9.979V120.308h219.939v249.464C299.959,375.277,295.478,379.75,289.962,379.75z M319.954,90.372   c0,5.505-4.481,9.979-9.998,9.979H70.023c-5.516,0-9.998-4.474-9.998-9.979V70.415c0-5.506,4.481-9.979,9.998-9.979h239.933   c5.516,0,9.998,4.473,9.998,9.979V90.372z"&gt;&lt;/path&gt;&lt;path d="M249.973,140.265c-5.516,0-9.997,4.473-9.997,9.979v199.571c0,5.506,4.481,9.979,9.997,9.979   c5.516,0,9.998-4.473,9.998-9.979V150.243C259.97,144.737,255.489,140.265,249.973,140.265z"&gt;&lt;/path&gt;&lt;path d="M189.99,140.265c-5.516,0-9.998,4.473-9.998,9.979v199.571c0,5.506,4.481,9.979,9.998,9.979   c5.516,0,9.997-4.473,9.997-9.979V150.243C199.987,144.737,195.505,140.265,189.99,140.265z"&gt;&lt;/path&gt;&lt;path d="M130.006,140.265c-5.516,0-9.998,4.473-9.998,9.979v199.571c0,5.506,4.481,9.979,9.998,9.979s9.997-4.473,9.997-9.979   V150.243C140.003,144.737,135.522,140.265,130.006,140.265z"&gt;&lt;/path&gt;
+&lt;/symbol&gt;&lt;/svg&gt;&lt;div class="is-section is-box layout-no-mb"&gt;&lt;div class="is-boxes"&gt;&lt;div class="is-box-centered"&gt;&lt;div class="is-container layout-container"&gt;&lt;div class="row ourteam-05 active"&gt;&lt;div class="col-2"&gt;&lt;img src="http://kict015.dnncserver.nl/Portals/_default/Skins/minis/Resource/vendor/content-builder/contentbuilder/example.jpg"&gt;&lt;/div&gt;&lt;div class="col-7"&gt;&lt;strong&gt; Dit is de beschrijving van het product. Deze kan wat langer zijn om een goed beeld te schetsen &lt;/strong&gt;&lt;/div&gt;&lt;div class="col-2"&gt; 5 stuks / 3,99 euro&lt;/div&gt;&lt;div class="col-1"&gt;&lt;div class="icon"&gt;&lt;i class="sico lnr-trash2"&gt;&lt;svg&gt;&lt;use xlink:href="#lnr-trash2"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="row small" style="margin-left:1rem; margin-top:0.2rem;"&gt;Dit is toegevoegd omdat je hebt aangegeven dat je meer energie wilt. &lt;/div&gt;&lt;/div&gt;&lt;div class="row ourteam-05 active"&gt;&lt;div class="col-2"&gt;&lt;img src="http://kict015.dnncserver.nl/Portals/_default/Skins/minis/Resource/vendor/content-builder/contentbuilder/example.jpg"&gt;&lt;/div&gt;&lt;div class="col-7"&gt;&lt;strong&gt; Dit is de beschrijving van het product. Deze kan wat langer zijn om een goed beeld te schetsen &lt;/strong&gt;&lt;/div&gt;&lt;div class="col-2"&gt; 5 stuks / 3,99 euro&lt;/div&gt;&lt;div class="col-1"&gt;&lt;div class="icon"&gt;&lt;i class="sico lnr-trash2"&gt;&lt;svg&gt;&lt;use xlink:href="#lnr-trash2"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="row small" style="margin-left:1rem; margin-top:0.2rem;"&gt;Dit is toegevoegd omdat je hebt aangegeven dat je meer energie wilt. &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Hash</settingname>
+            <settingvalue>862FBB1076CACF191A85345155C4CAB6</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>DNNGo.ContentBuilder</definition>
+    <moduledefinition>DNNGo.ContentBuilder</moduledefinition>
+</module>
