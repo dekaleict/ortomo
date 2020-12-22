@@ -1,0 +1,20 @@
+{
+  "id": 19,
+  "namespace": {
+    "id": 9,
+    "name": "Preparaten"
+  },
+  "name": "GetPreparaat",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT * FROM ortomo_tbl_preparaten\nWHERE PreparaatGUID = '[tknparams:preparaatguid]'",
+    "defaultColumn": "",
+    "columns": "PreparaatGUID\nPreparaat\nPreparaatBeschrijving",
+    "connectionString": "",
+    "type": "db"
+  }
+}
