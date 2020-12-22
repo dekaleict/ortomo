@@ -1,0 +1,69 @@
+<module type="DNNGoContentBuilder" version="02.04.04.00">
+    <contentKey />
+    <moduleID>460</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>DNNGo.ContentBuilder</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>21c3e087-0df2-4f4f-9277-2d2bddda6b86</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>ContentJSON</settingname>
+            <settingvalue>{"CodeCSS":{"promo01":" .promo01 {display: table;width: 100%;font-size: 18px }.promo01&gt;* {display: table-cell;vertical-align: middle;}.promo01 .promo-icon&gt;i {width: 100px;height: 100px;text-align: center;line-height: 100px;border: 2px solid currentColor;border-radius: 50%;font-size: 48px;}.promo01 .promo-button {text-align: right;}.promo01 .promo-content&gt;*:first-child {margin-bottom: 16px }@media only screen and (min-width: 768px) and (max-width: 991px) {.promo01 .promo-content {padding: 0px 30px;}}@media only screen and (max-width: 767px) {.promo01 {display: block;text-align: center;}.promo01&gt;* {display: block;text-align: center !important;margin-bottom: 20px }}"},"settings":{}}</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>ContentBuilder</settingname>
+            <settingvalue>&lt;div class="is-section is-box is-light-text" style="background-color: rgb(158, 158, 158);"&gt;
+	&lt;div class="is-boxes is-section-md-auto"&gt;
+		&lt;div class="is-box-centered"&gt;
+			&lt;div class="is-container layout-container mt-md-60 mb-md-60"&gt;
+				&lt;div class="row"&gt;
+					&lt;div class="col-md-12"&gt;&lt;div class="promo01"&gt;
+
+    &lt;div class="promo-content"&gt;
+        &lt;p class="mb-10"&gt;Al de informatie op onze website is met de grootst mogelijke zorg samengesteld. Onze producten zijn niet bedoeld om ziektes te identificeren, behandelen, genezen of te voorkomen. In geval van twijfel over het gebruik van voedingssupplementen in uw specifieke situatie is het raadzaam contact met uw behandelend arts op te nemen&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Hash</settingname>
+            <settingvalue>AC95F4EDC16DA36440497578AE971A58</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>DNNGo.ContentBuilder</definition>
+    <moduledefinition>DNNGo.ContentBuilder</moduledefinition>
+</module>
