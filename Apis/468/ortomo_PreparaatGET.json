@@ -92,10 +92,6 @@
           {
             "name": "ADH",
             "value": "[Record:ADH]"
-          },
-          {
-            "name": "Content",
-            "value": "[Record:Content]"
           }
         ],
         "Headers": []
