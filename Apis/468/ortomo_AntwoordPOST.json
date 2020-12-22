@@ -1,0 +1,142 @@
+{
+  "Name": "ortomo_Antwoord",
+  "Description": "Creates a new record of type ortomo_Antwoord",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 57,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "Antwoord",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"Antwoord is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Volgorde",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "HoortBijVraag",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "VervolgVraag",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "VervolgVragenlijst",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.ortomo_Antwoord",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "Antwoord": "[Antwoord]",
+        "Volgorde": "[Volgorde]",
+        "HoortBijVraag": "[HoortBijVraag]",
+        "VervolgVraag": "[VervolgVraag]",
+        "VervolgVragenlijst": "[VervolgVragenlijst]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "ortomo_Antwoord"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_Antwoord",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ortomo_Antwoord"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "Antwoord",
+            "value": "[CreatedRecord:Antwoord]"
+          },
+          {
+            "name": "Volgorde",
+            "value": "[CreatedRecord:Volgorde]"
+          },
+          {
+            "name": "HoortBijVraag",
+            "value": "[CreatedRecord:HoortBijVraag]"
+          },
+          {
+            "name": "VervolgVraag",
+            "value": "[CreatedRecord:VervolgVraag]"
+          },
+          {
+            "name": "VervolgVragenlijst",
+            "value": "[CreatedRecord:VervolgVragenlijst]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://kict015.dnncserver.nl/api/ortomo_Antwoord?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
