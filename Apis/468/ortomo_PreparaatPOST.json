@@ -112,15 +112,6 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
-    },
-    {
-      "Name": "Content",
-      "IsDeleted": false,
-      "IsEnabled": true,
-      "OrderIndex": 11,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
     }
   ],
   "Actions": [
@@ -139,8 +130,7 @@
         "KleurSupplement": "[KleurSupplement]",
         "AantalPerDag": "[AantalPerDag]",
         "InnameAdvies": "[InnameAdvies]",
-        "ADH": "[ADH]",
-        "Content": "[Content]"
+        "ADH": "[ADH]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -216,10 +206,6 @@
           {
             "name": "ADH",
             "value": "[CreatedRecord:ADH]"
-          },
-          {
-            "name": "Content",
-            "value": "[CreatedRecord:Content]"
           }
         ],
         "Headers": [
