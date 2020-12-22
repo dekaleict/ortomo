@@ -1,0 +1,48 @@
+<module type="DNNGoContentBuilder" version="02.04.04.00">
+    <contentKey />
+    <moduleID>459</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>DNNGo.ContentBuilder</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>0848d18d-2d2c-4078-8bee-ba04c51076b1</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>ContentJSON</settingname>
+            <settingvalue>{"VendorUrl":{},"CodeCSS":{},"settings":{}}</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Hash</settingname>
+            <settingvalue>71181C3B21683B98691EDFC0BCE70519</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>DNNGo.ContentBuilder</definition>
+    <moduledefinition>DNNGo.ContentBuilder</moduledefinition>
+</module>
