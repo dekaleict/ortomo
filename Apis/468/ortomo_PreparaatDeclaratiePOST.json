@@ -1,0 +1,422 @@
+{
+  "Name": "ortomo_PreparaatDeclaratie",
+  "Description": "Creates a new record of type ortomo_PreparaatDeclaratie",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 141,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "Preparaat",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "DatumBijgewerkt",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"DatumBijgewerkt is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Vegetarisch",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Vegan",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Organic",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Kosher",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Halal",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ProductieEuropa",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ProductieBRC",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ProductieFSSC22000",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ProductieGMP",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenSelderij",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenGluten",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 12,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenSchaaldieren",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenEi",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenVis",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 15,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenLupine",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 16,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenLactose",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 17,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenSchelpdieren",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 18,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenMosterd",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 19,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenNoten",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 20,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenPinda",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 21,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenSesam",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 22,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenSoya",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 23,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AllergeenSulfiet",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 24,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.ortomo_PreparaatDeclaratie",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "Preparaat": "[Preparaat]",
+        "DatumBijgewerkt": "[DatumBijgewerkt]",
+        "Vegetarisch": "[Vegetarisch]",
+        "Vegan": "[Vegan]",
+        "Organic": "[Organic]",
+        "Kosher": "[Kosher]",
+        "Halal": "[Halal]",
+        "ProductieEuropa": "[ProductieEuropa]",
+        "ProductieBRC": "[ProductieBRC]",
+        "ProductieFSSC22000": "[ProductieFSSC22000]",
+        "ProductieGMP": "[ProductieGMP]",
+        "AllergeenSelderij": "[AllergeenSelderij]",
+        "AllergeenGluten": "[AllergeenGluten]",
+        "AllergeenSchaaldieren": "[AllergeenSchaaldieren]",
+        "AllergeenEi": "[AllergeenEi]",
+        "AllergeenVis": "[AllergeenVis]",
+        "AllergeenLupine": "[AllergeenLupine]",
+        "AllergeenLactose": "[AllergeenLactose]",
+        "AllergeenSchelpdieren": "[AllergeenSchelpdieren]",
+        "AllergeenMosterd": "[AllergeenMosterd]",
+        "AllergeenNoten": "[AllergeenNoten]",
+        "AllergeenPinda": "[AllergeenPinda]",
+        "AllergeenSesam": "[AllergeenSesam]",
+        "AllergeenSoya": "[AllergeenSoya]",
+        "AllergeenSulfiet": "[AllergeenSulfiet]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "ortomo_PreparaatDeclaratie"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_PreparaatDeclaratie",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ortomo_PreparaatDeclaratie"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "Preparaat",
+            "value": "[CreatedRecord:Preparaat]"
+          },
+          {
+            "name": "DatumBijgewerkt",
+            "value": "[CreatedRecord:DatumBijgewerkt]"
+          },
+          {
+            "name": "Vegetarisch",
+            "value": "[CreatedRecord:Vegetarisch]"
+          },
+          {
+            "name": "Vegan",
+            "value": "[CreatedRecord:Vegan]"
+          },
+          {
+            "name": "Organic",
+            "value": "[CreatedRecord:Organic]"
+          },
+          {
+            "name": "Kosher",
+            "value": "[CreatedRecord:Kosher]"
+          },
+          {
+            "name": "Halal",
+            "value": "[CreatedRecord:Halal]"
+          },
+          {
+            "name": "ProductieEuropa",
+            "value": "[CreatedRecord:ProductieEuropa]"
+          },
+          {
+            "name": "ProductieBRC",
+            "value": "[CreatedRecord:ProductieBRC]"
+          },
+          {
+            "name": "ProductieFSSC22000",
+            "value": "[CreatedRecord:ProductieFSSC22000]"
+          },
+          {
+            "name": "ProductieGMP",
+            "value": "[CreatedRecord:ProductieGMP]"
+          },
+          {
+            "name": "AllergeenSelderij",
+            "value": "[CreatedRecord:AllergeenSelderij]"
+          },
+          {
+            "name": "AllergeenGluten",
+            "value": "[CreatedRecord:AllergeenGluten]"
+          },
+          {
+            "name": "AllergeenSchaaldieren",
+            "value": "[CreatedRecord:AllergeenSchaaldieren]"
+          },
+          {
+            "name": "AllergeenEi",
+            "value": "[CreatedRecord:AllergeenEi]"
+          },
+          {
+            "name": "AllergeenVis",
+            "value": "[CreatedRecord:AllergeenVis]"
+          },
+          {
+            "name": "AllergeenLupine",
+            "value": "[CreatedRecord:AllergeenLupine]"
+          },
+          {
+            "name": "AllergeenLactose",
+            "value": "[CreatedRecord:AllergeenLactose]"
+          },
+          {
+            "name": "AllergeenSchelpdieren",
+            "value": "[CreatedRecord:AllergeenSchelpdieren]"
+          },
+          {
+            "name": "AllergeenMosterd",
+            "value": "[CreatedRecord:AllergeenMosterd]"
+          },
+          {
+            "name": "AllergeenNoten",
+            "value": "[CreatedRecord:AllergeenNoten]"
+          },
+          {
+            "name": "AllergeenPinda",
+            "value": "[CreatedRecord:AllergeenPinda]"
+          },
+          {
+            "name": "AllergeenSesam",
+            "value": "[CreatedRecord:AllergeenSesam]"
+          },
+          {
+            "name": "AllergeenSoya",
+            "value": "[CreatedRecord:AllergeenSoya]"
+          },
+          {
+            "name": "AllergeenSulfiet",
+            "value": "[CreatedRecord:AllergeenSulfiet]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://kict015.dnncserver.nl/api/ortomo_PreparaatDeclaratie?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
