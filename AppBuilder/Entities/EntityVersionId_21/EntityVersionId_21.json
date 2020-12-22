@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
+  "RecordNamePropertyId": 121,
+  "Id": 21,
+  "VersionId": 21,
+  "Name": "ortomo_AntwoordScore",
+  "PluralName": "ortomo_AntwoordScores",
+  "Icon": "gamepad",
+  "Type": "UserCreated"
+}
