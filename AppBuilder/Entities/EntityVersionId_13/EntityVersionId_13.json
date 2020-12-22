@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
+  "RecordNamePropertyId": 49,
+  "Id": 13,
+  "VersionId": 13,
+  "Name": "ortomo_Antwoord",
+  "PluralName": "ortomo_Antwoorden",
+  "Icon": "assistive-listening-systems",
+  "Type": "UserCreated"
+}
