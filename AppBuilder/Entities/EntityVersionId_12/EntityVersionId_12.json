@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
+  "RecordNamePropertyId": 43,
+  "Id": 12,
+  "VersionId": 12,
+  "Name": "ortomo_Vraag",
+  "PluralName": "ortomo_Vragen",
+  "Icon": "question",
+  "Type": "UserCreated"
+}
