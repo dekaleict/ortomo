@@ -1,0 +1,239 @@
+<module type="DNNGoContentBuilder" version="02.04.04.00">
+    <contentKey />
+    <moduleID>406</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>Producten</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>de50cd63-c811-42c4-8485-a550b103cc76</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>ContentJSON</settingname>
+            <settingvalue>{"CodeCSS":{"img-box08":" .img-box08{box-shadow: 0 0 10px rgba(0,0,0,.1);margin-bottom: 50px;text-align: center;padding-bottom: 30px;}.img-box08 .product{margin-bottom: 16px;}.img-box08 .price{margin: 0;font-weight: 600;}.img-box08 .title{margin: 4px 0 4px;font-size: 18px;}[class^='button-'], [class*=' button-'] {padding: 0 !important;}"},"VendorUrl":{"lazyloading":{"js":"[SkinPath]resource/vendor/scrollLoading/scrollLoading.js","css":"[SkinPath]resource/vendor/scrollLoading/scrollLoading.css","jsasync":true}},"settings":{}}</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>ContentBuilder</settingname>
+            <settingvalue>&lt;svg xmlns="http://www.w3.org/2000/svg" display="none" class="section-svg section-svg-406"&gt;&lt;symbol xmlns="http://www.w3.org/2000/svg" id="fas-angle-down" viewBox="0 0 320 512"&gt;&lt;path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"&gt;&lt;/path&gt;&lt;/symbol&gt;&lt;/svg&gt;&lt;div class="is-section is-box"&gt;
+    &lt;div class="is-boxes"&gt;
+        &lt;div class="is-box-centered"&gt;
+            &lt;div class="is-container layout-container"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-12"&gt;
+                        &lt;div class="center"&gt;
+                            &lt;a class="button-04" href="#" title="Doel" style="background-color: rgb(243, 217, 255); width: 100px; border-radius: 3px; margin-left: 10px; margin-right: 10px;"&gt;Doel 
+                                &lt;i class="sico fas-angle-down"&gt;&lt;svg&gt;&lt;use xlink:href="#fas-angle-down"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/i&gt;
+                            &lt;/a&gt;
+                            &lt;a class="button-04" href="#" title="Energy" style="background-color: rgb(243, 217, 255); width: 100px; border-radius: 3px; margin-left: 10px; margin-right: 10px;"&gt;Energy &lt;/a&gt;
+                            &lt;a class="button-04" href="#" title="Energy" style="background-color: rgb(1, 91, 151); width: 100px; border-radius: 3px; margin-left: 10px; margin-right: 10px; color: rgb(243, 217, 255);"&gt;Energy &lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="spacer height-40"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-6 col-lg-3"&gt;
+                        &lt;div class="img-box08" style="background-color: rgb(227, 227, 227);"&gt;
+                            &lt;div class="product img-Lazy-warp"&gt;
+                                &lt;img src="data:image/svg+xml,%3Csvg viewBox='0 0 500 315' width='500' height='315' xmlns='http://www.w3.org/2000/svg'/%3E" class="img-Lazy" style="background-color: rgb(243, 217, 255);" data-src="/Portals/0/ThemePluginPro/uploads/2020/10/28/pill-500breed.png"&gt;&lt;/div&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/vegan.png" style="width: 15%; height: auto; margin: 2px; margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/lactosevrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/eivrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/glutenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/Notenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;hr&gt;
+                            &lt;h6 class="title"&gt;Caroteen / 50mg&lt;/h6&gt;
+                            &lt;h6 class="small"&gt;live life to the max&lt;/h6&gt;
+                            &lt;p class="price"&gt;€ 1,99 / dag 
+                                &lt;br&gt;&lt;/p&gt;
+                            &lt;div class="spacer height-20"&gt;&lt;/div&gt;
+                            &lt;a href="#" title="Meer info" class="button-01 border-radius-3 mt-5 mb-5 mb-lg-5" style="width: 7em; font-size: 0.9em; text-align: center; border-width: 1px; border-color: rgb(0, 170, 137); background-color: rgb(255, 255, 255); color: rgb(0, 170, 137); border-style: solid;"&gt;Meer info&lt;/a&gt;
+                            &lt;a href="#" title="Add to pack" class="button-01 border-radius-3 mt-10 mb-5 mb-lg-10" style="background-color: rgb(0, 170, 137); width: 7em; text-align: center; font-size: 0.9em;"&gt;Add to pack&lt;/a&gt;
+                            &lt;hr&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6 col-lg-3"&gt;
+                        &lt;div class="img-box08" style="background-color: rgb(227, 227, 227);"&gt;
+                            &lt;div class="product img-Lazy-warp"&gt;
+                                &lt;img src="data:image/svg+xml,%3Csvg viewBox='0 0 500 315' width='500' height='315' xmlns='http://www.w3.org/2000/svg'/%3E" class="img-Lazy" style="background-color: rgb(1, 91, 151);" data-src="/Portals/0/ThemePluginPro/uploads/2020/10/28/pill-500breed.png"&gt;&lt;/div&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/vegan.png" style="width: 15%; height: auto; margin: 2px; margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/lactosevrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/eivrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/glutenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/Notenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;hr&gt;
+                            &lt;h6 class="title"&gt;Vitamine C&lt;/h6&gt;
+                            &lt;h6 class="small"&gt;live life to the max&lt;/h6&gt;
+                            &lt;p class="price"&gt;€ 1,99 / dag 
+                                &lt;br&gt;&lt;/p&gt;
+                             &lt;div class="spacer height-20"&gt;&lt;/div&gt;
+                            &lt;a href="#" title="Meer info" class="button-01 border-radius-3 mt-5 mb-5 mb-lg-5" style="width: 7em; font-size: 0.9em; text-align: center; border-width: 1px; border-color: rgb(0, 170, 137); background-color: rgb(255, 255, 255); color: rgb(0, 170, 137); border-style: solid;"&gt;Meer info&lt;/a&gt;
+                            &lt;a href="#" title="Add to pack" class="button-01 border-radius-3 mt-10 mb-5 mb-lg-10" style="background-color: rgb(0, 170, 137); width: 7em; text-align: center; font-size: 0.9em;"&gt;Add to pack&lt;/a&gt;
+                            &lt;hr&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6 col-lg-3"&gt;
+                        &lt;div class="img-box08" style="background-color: rgb(227, 227, 227);"&gt;
+                            &lt;div class="product img-Lazy-warp"&gt;
+                                &lt;img src="data:image/svg+xml,%3Csvg viewBox='0 0 500 315' width='500' height='315' xmlns='http://www.w3.org/2000/svg'/%3E" class="img-Lazy" style="background-color: rgb(0, 176, 129);" data-src="/Portals/0/ThemePluginPro/uploads/2020/10/28/pill-500breed.png"&gt;&lt;/div&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/vegan.png" style="width: 15%; height: auto; margin: 2px; margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/lactosevrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/eivrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/glutenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/Notenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;hr&gt;
+                            &lt;h6 class="title"&gt;Senior mix&lt;/h6&gt;
+                            &lt;h6 class="small"&gt;live life to the max&lt;/h6&gt;
+                            &lt;p class="price"&gt;€ 1,99 / dag 
+                                &lt;br&gt;&lt;/p&gt;
+                             &lt;div class="spacer height-20"&gt;&lt;/div&gt;
+                            &lt;a href="#" title="Meer info" class="button-01 border-radius-3 mt-5 mb-5 mb-lg-5" style="width: 7em; font-size: 0.9em; text-align: center; border-width: 1px; border-color: rgb(0, 170, 137); background-color: rgb(255, 255, 255); color: rgb(0, 170, 137); border-style: solid;"&gt;Meer info&lt;/a&gt;
+                            &lt;a href="#" title="Add to pack" class="button-01 border-radius-3 mt-10 mb-5 mb-lg-10" style="background-color: rgb(0, 170, 137); width: 7em; text-align: center; font-size: 0.9em;"&gt;Add to pack&lt;/a&gt;
+                            &lt;hr&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6 col-lg-3"&gt;
+                        &lt;div class="img-box08" style="background-color: rgb(227, 227, 227);"&gt;
+                            &lt;div class="product img-Lazy-warp"&gt;
+                                &lt;img src="data:image/svg+xml,%3Csvg viewBox='0 0 500 315' width='500' height='315' xmlns='http://www.w3.org/2000/svg'/%3E" class="img-Lazy" style="background-color: rgb(90, 255, 220);" data-src="/Portals/0/ThemePluginPro/uploads/2020/10/28/pill-500breed.png"&gt;&lt;/div&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/vegan.png" style="width: 15%; height: auto; margin: 2px; margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/lactosevrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/eivrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/glutenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/Notenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;hr&gt;
+                            &lt;h6 class="title"&gt;Energize&lt;/h6&gt;
+                            &lt;h6 class="small"&gt;live life to the max&lt;/h6&gt;
+                            &lt;p class="price"&gt;€ 1,99 / dag 
+                                &lt;br&gt;&lt;/p&gt;
+                             &lt;div class="spacer height-20"&gt;&lt;/div&gt;
+                            &lt;a href="#" title="Meer info" class="button-01 border-radius-3 mt-5 mb-5 mb-lg-5" style="width: 7em; font-size: 0.9em; text-align: center; border-width: 1px; border-color: rgb(0, 170, 137); background-color: rgb(255, 255, 255); color: rgb(0, 170, 137); border-style: solid;"&gt;Meer info&lt;/a&gt;
+                            &lt;a href="#" title="Add to pack" class="button-01 border-radius-3 mt-10 mb-5 mb-lg-10" style="background-color: rgb(0, 170, 137); width: 7em; text-align: center; font-size: 0.9em;"&gt;Add to pack&lt;/a&gt;
+                            &lt;hr&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-6 col-lg-3"&gt;&lt;div class="img-box08" style="background-color: rgb(227, 227, 227);"&gt;
+    &lt;div class="product img-Lazy-warp"&gt;
+        &lt;img src="data:image/svg+xml,%3Csvg viewBox='0 0 500 315' width='500' height='315' xmlns='http://www.w3.org/2000/svg'/%3E" class="img-Lazy" style="background-color: rgb(0, 138, 138);" data-src="/Portals/0/ThemePluginPro/uploads/2020/10/28/pill-500breed.png"&gt;&lt;/div&gt;
+    &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/vegan.png" style="width: 15%; height: auto; margin: 2px; margin-bottom: 5px;"&gt;
+    &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/lactosevrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+    &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/eivrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+    &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/glutenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+    &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/Notenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+    &lt;hr&gt;
+    &lt;h6 class="title" style="text-align: left; padding-left: 10px;"&gt;Beat the fall&lt;/h6&gt;
+    &lt;h6 class="small" style="text-align: left; padding-left: 10px;"&gt;live life to the max&lt;/h6&gt;
+    &lt;ul style="list-style: initial;padding-left: 20px;"&gt;
+        &lt;li style="font-size: 12px; color: rgb(97, 97, 97);"&gt;Lorem Ipsum is simply dummy &lt;/li&gt;
+        &lt;li style="font-size: 12px; color: rgb(97, 97, 97);"&gt;Lorem Ipsum is simply dummy &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p class="price" style="text-align: left; padding-left: 10px;"&gt;€ 1,99 / dag 
+        &lt;br&gt;&lt;/p&gt;
+    &lt;div class="spacer height-20"&gt;&lt;/div&gt;
+    &lt;a href="#" title="Meer info" class="button-01 border-radius-3 mt-5 mb-5 mb-lg-5" style="width: 7em; font-size: 0.9em; text-align: center; border-width: 1px; border-color: rgb(0, 170, 137); background-color: rgb(255, 255, 255); color: rgb(0, 170, 137); border-style: solid;"&gt;Meer info&lt;/a&gt;
+    &lt;a href="#" title="Add to pack" class="button-01 border-radius-3 mt-10 mb-5 mb-lg-10" style="background-color: rgb(0, 170, 137); width: 7em; text-align: center; font-size: 0.9em;"&gt;Add to pack&lt;/a&gt;
+    &lt;hr&gt;
+&lt;/div&gt;&lt;/div&gt;
+                    &lt;div class="col-md-6 col-lg-3"&gt;
+                        &lt;div class="img-box08" style="background-color: rgb(227, 227, 227);"&gt;
+                            &lt;div class="product img-Lazy-warp"&gt;
+                                &lt;img src="data:image/svg+xml,%3Csvg viewBox='0 0 500 315' width='500' height='315' xmlns='http://www.w3.org/2000/svg'/%3E" class="img-Lazy" data-src="/Portals/0/ThemePluginPro/uploads/2020/10/28/pill-500breed.png"&gt;&lt;/div&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/vegan.png" style="width: 15%; height: auto; margin: 2px; margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/lactosevrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/eivrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/glutenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/Notenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;hr&gt;
+                            &lt;h6 class="title"&gt;Zon in een flesje&lt;/h6&gt;
+                            &lt;h6 class="small"&gt;live life to the max&lt;/h6&gt;
+                            &lt;p class="price"&gt;€ 1,99 / dag 
+                                &lt;br&gt;&lt;/p&gt;
+                             &lt;div class="spacer height-20"&gt;&lt;/div&gt;
+                            &lt;a href="#" title="Meer info" class="button-01 border-radius-3 mt-5 mb-5 mb-lg-5" style="width: 7em; font-size: 0.9em; text-align: center; border-width: 1px; border-color: rgb(0, 170, 137); background-color: rgb(255, 255, 255); color: rgb(0, 170, 137); border-style: solid;"&gt;Meer info&lt;/a&gt;
+                            &lt;a href="#" title="Add to pack" class="button-01 border-radius-3 mt-10 mb-5 mb-lg-10" style="background-color: rgb(0, 170, 137); width: 7em; text-align: center; font-size: 0.9em;"&gt;Add to pack&lt;/a&gt;
+                            &lt;hr&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6 col-lg-3"&gt;
+                        &lt;div class="img-box08" style="background-color: rgb(227, 227, 227);"&gt;
+                            &lt;div class="product img-Lazy-warp"&gt;
+                                &lt;img src="data:image/svg+xml,%3Csvg viewBox='0 0 500 315' width='500' height='315' xmlns='http://www.w3.org/2000/svg'/%3E" class="img-Lazy" data-src="/Portals/0/ThemePluginPro/uploads/2020/10/28/pill-500breed.png"&gt;&lt;/div&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/vegan.png" style="width: 15%; height: auto; margin: 2px; margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/lactosevrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/eivrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/glutenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/Notenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;hr&gt;
+                            &lt;h6 class="title"&gt;Cranberry&lt;/h6&gt;
+                            &lt;h6 class="small"&gt;live life to the max&lt;/h6&gt;
+                            &lt;p class="price"&gt;€ 1,99 / dag 
+                                &lt;br&gt;&lt;/p&gt;
+                             &lt;div class="spacer height-20"&gt;&lt;/div&gt;
+                            &lt;a href="#" title="Meer info" class="button-01 border-radius-3 mt-5 mb-5 mb-lg-5" style="width: 7em; font-size: 0.9em; text-align: center; border-width: 1px; border-color: rgb(0, 170, 137); background-color: rgb(255, 255, 255); color: rgb(0, 170, 137); border-style: solid;"&gt;Meer info&lt;/a&gt;
+                            &lt;a href="#" title="Add to pack" class="button-01 border-radius-3 mt-10 mb-5 mb-lg-10" style="background-color: rgb(0, 170, 137); width: 7em; text-align: center; font-size: 0.9em;"&gt;Add to pack&lt;/a&gt;
+                            &lt;hr&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6 col-lg-3"&gt;
+                        &lt;div class="img-box08" style="background-color: rgb(227, 227, 227);"&gt;
+                            &lt;div class="product img-Lazy-warp"&gt;
+                                &lt;img src="data:image/svg+xml,%3Csvg viewBox='0 0 500 315' width='500' height='315' xmlns='http://www.w3.org/2000/svg'/%3E" class="img-Lazy" data-src="/Portals/0/ThemePluginPro/uploads/2020/10/28/pill-500breed.png"&gt;&lt;/div&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/vegan.png" style="width: 15%; height: auto; margin: 2px; margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/lactosevrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/eivrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/glutenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/Notenvrij.png" style="width: 15%; height: auto;margin: 2px;margin-bottom: 5px;"&gt;
+                            &lt;hr&gt;
+                            &lt;h6 class="title"&gt;Vitaminemix&lt;/h6&gt;
+                            &lt;h6 class="small"&gt;live life to the max&lt;/h6&gt;
+                            &lt;p class="price"&gt;€ 1,99 / dag 
+                                &lt;br&gt;&lt;/p&gt;
+                             &lt;div class="spacer height-20"&gt;&lt;/div&gt;
+                            &lt;a href="#" title="Meer info" class="button-01 border-radius-3 mt-5 mb-5 mb-lg-5" style="width: 7em; font-size: 0.9em; text-align: center; border-width: 1px; border-color: rgb(0, 170, 137); background-color: rgb(255, 255, 255); color: rgb(0, 170, 137); border-style: solid;"&gt;Meer info&lt;/a&gt;
+                            &lt;a href="#" title="Add to pack" class="button-01 border-radius-3 mt-10 mb-5 mb-lg-10" style="background-color: rgb(0, 170, 137); width: 7em; text-align: center; font-size: 0.9em;"&gt;Add to pack&lt;/a&gt;
+                            &lt;hr&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Hash</settingname>
+            <settingvalue>D11010CFAB17FC04E7A9150EA6A37CE4</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>DNNGo.ContentBuilder</definition>
+    <moduledefinition>DNNGo.ContentBuilder</moduledefinition>
+</module>
