@@ -1,0 +1,87 @@
+<module type="DNNGoContentBuilder" version="02.04.04.00">
+    <contentKey />
+    <moduleID>417</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc>[G]Containers/Xcillion/NoTitle.ascx</containersrc>
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>DNNGo.ContentBuilder</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>3be9b3f4-e00b-43bb-8a12-ef3af9669426</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>ContentJSON</settingname>
+            <settingvalue>{"CodeCSS":{"title-03":" .title-03{margin: 0 0 30px;position: relative;}.title-03 small{color: var(--accent-color);font-size: 18px;padding-bottom: 9px;display: inline-block;}.title-03::after{content: \"\";display: inline-block;border-bottom: 1px solid var(--accent-color);width: 50px;height: 2px;margin-bottom: 0px;}","button-01":" body .button-01, body .button-01:link, body .button-01:active, body .button-01:visited, body .button-01[type=\"button\"], body .button-01[type=\"submit\"] {display: inline-block;font-size: 16px;color: #fff;padding: 0 30px;background-color: var(--button-color);transition: all .3s cubic-bezier(0.22, 0.61, 0.36, 1);}body .button-01 * {color: #fff;}body .button-01:hover{background-color: var(--button-hover-color);}","accordion02":" .accordion02 h4{margin: 0;}.accordion02 .panel-heading a{color: #333333;font-size: 20px;padding:12px 30px;display: block;overflow: hidden;position: relative;font-weight: 600;}.accordion02 .accordion-content{display: none;padding:0px 30px;}.accordion02 .accordion-content .panel-body{position: relative;padding: 0px 20px;border-left: 2px solid transparent;}.accordion02 .accordion-content .panel-body::before{content: \"\";position: absolute;display: block;top: 8px;bottom: 6px;left: -2px;width: 2px;background:var(--accent-color);}.accordion02 .accordion-content .panel-body p{margin-bottom: 23px;margin-top: 23px;}.accordion02 .accordion-item{padding: 0;border-bottom:1px dashed #d5d5d5;transition: all ease 300ms;margin-bottom: -2px;}.accordion02 .accordion-item .panel-heading{transition: background-color ease 300ms;}.accordion02 .accordion-item.opened{}.accordion02 .accordion-item.opened .panel-heading{border-color: transparent;background-color:var(--accent-color);color: #fff;border-radius: 3px;}.accordion02 .accordion-item.opened a, .accordion02 .accordion-item.opened a i{color: #fff;}"},"settings":{"BYQ4tJ1":"%7B%22size%22%3A%22large%22%2C%22items%22%3A%7B%22item0%22%3A%7B%22title%22%3A%22Tegen%20vermoeidheid%22%2C%22description%22%3A%22De%20ginseng%20helpt%20je%20niet%20alleen%20beter%20te%20sporten%20maar%20ook%20tegen%20vermoeidheid.%20%22%7D%2C%22item1%22%3A%7B%22title%22%3A%22Alert%20%22%2C%22description%22%3A%22Het%20lichaam%20krijgt%20een%20opfrissertje%20maar%20de%20geest%20ook.%20Onder%20andere%20munt%20zorgt%20voor%20een%20langere%20en%20betere%20concentratie%22%7D%2C%22item2%22%3A%7B%22title%22%3A%22Tegen%20slapeloosheid%22%2C%22description%22%3A%22Overdag%20niet%20gefocused%20betekent%20een%20slechte%20nachtrust.%20Gelukkig%20ook%20andersom.%20%22%7D%7D%2C%22accopen%22%3A%22checked%22%2C%22accopenindex%22%3A%221%22%7D"},"VendorUrl":{"Accordions":{"js":"[SkinPath]resource/vendor/Accordion/jquery-accordion.js","jsasync":true}},"contentFont":{}}</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>ContentBuilder</settingname>
+            <settingvalue>&lt;div class="is-section"&gt;&lt;div class="is-boxes"&gt;&lt;div class="is-box-6 is-light-text is-box"&gt;&lt;div class="is-overlay"&gt;&lt;div class="is-overlay-content"&gt;&lt;/div&gt;&lt;div class="is-overlay-bg" style="background-image: url(&amp;quot;/Portals/0/ThemePluginPro/uploads/2020/9/18/beautiful-lady-in-sporty-top-standing-on-kitchen-2000.png&amp;quot;);"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="is-boxes"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="is-box-6 is-box" style="background-color: rgb(245, 247, 252);"&gt;&lt;div class="is-boxes"&gt;&lt;div class="is-box-centered"&gt;&lt;div class="is-container container-fluid" style="max-width: 640px;"&gt;&lt;div class="row"&gt;&lt;div class="col-md-12 pl-xl-70"&gt;&lt;div class="spacer height-20 d-none d-lg-block"&gt;&lt;/div&gt;
+&lt;div class="title-03"&gt;&lt;h3&gt;Boost my day&lt;/h3&gt;&lt;small class="color-accent"&gt;Haal meer uit je lichaam&lt;/small&gt;&lt;br&gt;&lt;h5 class="color-accent"&gt;€ 19,99 / 30 capsules&lt;/h5&gt;
+&lt;/div&gt;
+&lt;p style="font-size: 22px; color: rgb(51, 51, 51); font-weight: 600; padding-bottom: 5px;"&gt;'Boost my day' is een uitgekiende mix van vitaminen. Koolhydraten worden beter verbrand en zuurstof beter toegevoerd. Je verzuurt minder snel dus ideaal voor duursporters. Product summary&lt;/p&gt;
+&lt;div class="spacer height-20"&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href="#" title="Learn more" class="button-01 border-radius-3 mt-10 mb-5 mb-lg-10"&gt;Doe de test&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="spacer height-20"&gt;&lt;/div&gt;
+&lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/vegan.png" style="width: 7.92793%; height: auto; margin-right: 5px;"&gt;
+&lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/easyswallow.png" style="width: 7.92793%; height: auto;margin-right: 5px;"&gt;
+&lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/lactosevrij.png" style="width: 7.92793%; height: auto;margin-right: 5px;"&gt;
+&lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/eivrij.png" style="width: 7.92793%; height: auto;margin-right: 5px;"&gt;
+&lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/glutenvrij.png" style="width: 7.92793%; height: auto;margin-right: 5px;"&gt;
+&lt;img src="/Portals/0/ThemePluginPro/uploads/2020/9/23/Notenvrij.png" style="width: 7.92793%; height: auto;margin-right: 5px;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="is-section is-box"&gt;&lt;div class="is-boxes"&gt;&lt;div class="is-box-centered"&gt;&lt;div class="is-container layout-container"&gt;&lt;div class="row"&gt;&lt;div class="col-md-6" style="margin-top: -3px;"&gt;&lt;div class="card" style="width: 18rem;"&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Ingrediënten&lt;/h5&gt;
+        &lt;!-- &lt;h6 class="card-subtitle mb-2 text-muted"&gt;Card subtitle&lt;/h6&gt; --&gt;
+        &lt;p class="card-text"&gt;Gemberextract, sesamzaad, lijnzaadolie, vitamine B&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class="card" style="width: 18rem;"&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Allergieinformatie&lt;/h5&gt;
+        &lt;!-- &lt;h6 class="card-subtitle mb-2 text-muted"&gt;Card subtitle&lt;/h6&gt; --&gt;
+        &lt;p class="card-text"&gt;Vegan, lactosevrij, glutenvrij, notenvrij, vrij van e-nummers&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="col-md-6"&gt;&lt;div class="custom-module d-custom-active" id="module-BYQ4tJ1" data-moduleid="BYQ4tJ1" data-effect="Accordions" data-style="accordion02"&gt;                            &lt;div class="dg-accordion panel-group accordion-BYQ4tJ1 accordion-large accordion02" data-fade="false" data-open="true" data-index="1" data-interval=""&gt;                           &lt;div class="accordion-item panel panel-default"&gt;             &lt;div class="accordion-header panel-heading"&gt;                 &lt;h4&gt;                     &lt;a class="collapsed" href="javascript://"&gt;                                                  Tegen vermoeidheid                         &lt;span class="arrow"&gt;&lt;/span&gt;                     &lt;/a&gt;                 &lt;/h4&gt;             &lt;/div&gt;             &lt;div class="accordion-content panel-collapse"&gt;                 &lt;div class="panel-body"&gt;                     &lt;p&gt;De ginseng helpt je niet alleen beter te sporten maar ook tegen vermoeidheid. &lt;/p&gt;                 &lt;/div&gt;             &lt;/div&gt;         &lt;/div&gt;                  &lt;div class="accordion-item panel panel-default"&gt;             &lt;div class="accordion-header panel-heading"&gt;                 &lt;h4&gt;                     &lt;a class="collapsed" href="javascript://"&gt;                                                  Alert                          &lt;span class="arrow"&gt;&lt;/span&gt;                     &lt;/a&gt;                 &lt;/h4&gt;             &lt;/div&gt;             &lt;div class="accordion-content panel-collapse"&gt;                 &lt;div class="panel-body"&gt;                     &lt;p&gt;Het lichaam krijgt een opfrissertje maar de geest ook. Onder andere munt zorgt voor een langere en betere concentratie&lt;/p&gt;                 &lt;/div&gt;             &lt;/div&gt;         &lt;/div&gt;                  &lt;div class="accordion-item panel panel-default"&gt;             &lt;div class="accordion-header panel-heading"&gt;                 &lt;h4&gt;                     &lt;a class="collapsed" href="javascript://"&gt;                                                  Tegen slapeloosheid                         &lt;span class="arrow"&gt;&lt;/span&gt;                     &lt;/a&gt;                 &lt;/h4&gt;             &lt;/div&gt;             &lt;div class="accordion-content panel-collapse"&gt;                 &lt;div class="panel-body"&gt;                     &lt;p&gt;Overdag niet gefocused betekent een slechte nachtrust. Gelukkig ook andersom. &lt;/p&gt;                 &lt;/div&gt;             &lt;/div&gt;         &lt;/div&gt;                       &lt;/div&gt;      &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Hash</settingname>
+            <settingvalue>010B003CF4F65BE0D567382D88438A4B</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>DNNGo.ContentBuilder</definition>
+    <moduledefinition>DNNGo.ContentBuilder</moduledefinition>
+</module>
