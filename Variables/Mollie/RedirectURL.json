@@ -1,0 +1,17 @@
+{
+  "id": 20,
+  "namespace": {
+    "id": 10,
+    "name": "Mollie"
+  },
+  "name": "RedirectURL",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "value": "http://[URL:Domain]\\retourmollie",
+    "type": "string"
+  }
+}
