@@ -1,0 +1,163 @@
+{
+  "Name": "ortomo_PreparaatDeclaratie",
+  "Description": "Returns the information of a ortomo_PreparaatDeclaratie record in JSON object format.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 142,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_PreparaatDeclaratie",
+      "OrderIndex": 0,
+      "Parameters": {
+        "RecordId": "[RecordId]",
+        "OutputToken": "Record"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ortomo_PreparaatDeclaratie"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[RecordId]"
+          },
+          {
+            "name": "Preparaat",
+            "value": "[Record:Preparaat]"
+          },
+          {
+            "name": "DatumBijgewerkt",
+            "value": "[Record:DatumBijgewerkt]"
+          },
+          {
+            "name": "Vegetarisch",
+            "value": "[Record:Vegetarisch]"
+          },
+          {
+            "name": "Vegan",
+            "value": "[Record:Vegan]"
+          },
+          {
+            "name": "Organic",
+            "value": "[Record:Organic]"
+          },
+          {
+            "name": "Kosher",
+            "value": "[Record:Kosher]"
+          },
+          {
+            "name": "Halal",
+            "value": "[Record:Halal]"
+          },
+          {
+            "name": "ProductieEuropa",
+            "value": "[Record:ProductieEuropa]"
+          },
+          {
+            "name": "ProductieBRC",
+            "value": "[Record:ProductieBRC]"
+          },
+          {
+            "name": "ProductieFSSC22000",
+            "value": "[Record:ProductieFSSC22000]"
+          },
+          {
+            "name": "ProductieGMP",
+            "value": "[Record:ProductieGMP]"
+          },
+          {
+            "name": "AllergeenSelderij",
+            "value": "[Record:AllergeenSelderij]"
+          },
+          {
+            "name": "AllergeenGluten",
+            "value": "[Record:AllergeenGluten]"
+          },
+          {
+            "name": "AllergeenSchaaldieren",
+            "value": "[Record:AllergeenSchaaldieren]"
+          },
+          {
+            "name": "AllergeenEi",
+            "value": "[Record:AllergeenEi]"
+          },
+          {
+            "name": "AllergeenVis",
+            "value": "[Record:AllergeenVis]"
+          },
+          {
+            "name": "AllergeenLupine",
+            "value": "[Record:AllergeenLupine]"
+          },
+          {
+            "name": "AllergeenLactose",
+            "value": "[Record:AllergeenLactose]"
+          },
+          {
+            "name": "AllergeenSchelpdieren",
+            "value": "[Record:AllergeenSchelpdieren]"
+          },
+          {
+            "name": "AllergeenMosterd",
+            "value": "[Record:AllergeenMosterd]"
+          },
+          {
+            "name": "AllergeenNoten",
+            "value": "[Record:AllergeenNoten]"
+          },
+          {
+            "name": "AllergeenPinda",
+            "value": "[Record:AllergeenPinda]"
+          },
+          {
+            "name": "AllergeenSesam",
+            "value": "[Record:AllergeenSesam]"
+          },
+          {
+            "name": "AllergeenSoya",
+            "value": "[Record:AllergeenSoya]"
+          },
+          {
+            "name": "AllergeenSulfiet",
+            "value": "[Record:AllergeenSulfiet]"
+          }
+        ],
+        "Headers": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
