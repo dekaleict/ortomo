@@ -1,0 +1,77 @@
+<module type="DNNGoContentBuilder" version="02.04.04.00">
+    <contentKey />
+    <moduleID>446</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title />
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>60ffa6a3-9174-41c6-8842-7a3971cf23b9</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>ContentJSON</settingname>
+            <settingvalue>{"VendorUrl":{"visible":{"js":"[SkinPath]resource/vendor/visible/visible.js","jsasync":true}},"CodeCSS":{"counter-05":" .counter-05 {margin-bottom: 40px;}.counter-05 .custom-module{font-size: 60px;font-weight: 700;line-height: 1;margin:0;}.counter-05 .custom-module .number::after{content: \"+\";}.counter-05 .title{margin-top: 14px;margin-bottom: 24px;}"},"settings":{"wygWHvp":"%7B%22moduleid%22%3A%22Er8jgI%22%2C%22number%22%3A%22286%22%7D","zKKY9Wi":"%7B%22moduleid%22%3A%22dcbJdl%22%2C%22number%22%3A%22270%22%7D"}}</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>ContentBuilder</settingname>
+            <settingvalue>&lt;div class="is-section is-box"&gt;
+    &lt;div class="is-boxes"&gt;
+        &lt;div class="is-box-centered"&gt;
+            &lt;div class="is-container layout-container"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                        &lt;div class="counter-05"&gt;
+                            &lt;p class="custom-module color-accent" id="module-wygWHvp" data-moduleid="wygWHvp" data-effect="Number"&gt; &lt;span class="animation number" data-number="286"&gt;0&lt;/span&gt; &lt;/p&gt;
+                            &lt;h6 class="title"&gt;Vragenlijsten&lt;/h6&gt;
+                            &lt;p&gt;Aliquam tristique dignissim justo, hen drerit nibh consequat ac.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                        &lt;div class="counter-05"&gt;
+                            &lt;p style="color:#fc7b35" class="custom-module d-custom-active" id="module-zKKY9Wi" data-moduleid="zKKY9Wi" data-effect="Number"&gt; &lt;span class="animation number" data-number="270"&gt;0&lt;/span&gt; &lt;/p&gt;
+                            &lt;h6 class="title"&gt;Abonnementen&lt;/h6&gt;
+                            &lt;p&gt;Suspendisse molestie et leo vitaealqu amaugue sapien lectus.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Hash</settingname>
+            <settingvalue>811B8D0CE599937624400A5BC21C4C6B</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>DNNGo.ContentBuilder</definition>
+    <moduledefinition>DNNGo.ContentBuilder</moduledefinition>
+</module>
