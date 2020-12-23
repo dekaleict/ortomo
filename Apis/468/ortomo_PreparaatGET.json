@@ -92,6 +92,14 @@
           {
             "name": "ADH",
             "value": "[Record:ADH]"
+          },
+          {
+            "name": "Content",
+            "value": "[Record:Content]"
+          },
+          {
+            "name": "Declaratie",
+            "value": "[Record:Declaratie]"
           }
         ],
         "Headers": []
