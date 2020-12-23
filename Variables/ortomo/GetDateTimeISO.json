@@ -11,9 +11,9 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT GetDate() as DatumTijd",
+    "sql": "SELECT GetDate() as DatumTijd,\nCONVERT(VARCHAR(33), GetDate(), 126) as DatumTijd1",
     "defaultColumn": "",
-    "columns": "DatumTijd",
+    "columns": "DatumTijd\nDatumTijd1",
     "connectionString": "",
     "type": "db"
   }
