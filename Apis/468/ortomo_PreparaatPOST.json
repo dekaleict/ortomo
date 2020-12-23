@@ -112,6 +112,24 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Content",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Declaratie",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 12,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -130,7 +148,9 @@
         "KleurSupplement": "[KleurSupplement]",
         "AantalPerDag": "[AantalPerDag]",
         "InnameAdvies": "[InnameAdvies]",
-        "ADH": "[ADH]"
+        "ADH": "[ADH]",
+        "Content": "[Content]",
+        "Declaratie": "[Declaratie]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -206,6 +226,14 @@
           {
             "name": "ADH",
             "value": "[CreatedRecord:ADH]"
+          },
+          {
+            "name": "Content",
+            "value": "[CreatedRecord:Content]"
+          },
+          {
+            "name": "Declaratie",
+            "value": "[CreatedRecord:Declaratie]"
           }
         ],
         "Headers": [
