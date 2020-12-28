@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.10.10.00">
+<module type="ActionForm" version="05.11.06.00">
     <contentKey />
     <moduleID>552</moduleID>
     <alignment />
@@ -29,7 +29,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.10.10.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.11.06.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[197]]&gt;&lt;/Id&gt;
@@ -49,8 +49,9 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;hiden-constant&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[isEdit]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[isEdit]&quot;,&quot;SaveToReport&quot;:false,&quot;SecureInput&quot;:true}&lt;/InputData&gt;
       &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;SecureInput&gt;True&lt;/SecureInput&gt;
       &lt;Value&gt;&lt;![CDATA[[isEdit]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -75,7 +76,7 @@
       &lt;Title&gt;&lt;![CDATA[Preparaat]]&gt;&lt;/Title&gt;
       &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
       &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
-      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;IsEnabled&gt;False&lt;/IsEnabled&gt;
       &lt;OverrideName&gt;r_PreparaatId&lt;/OverrideName&gt;
       &lt;Name&gt;r_PreparaatId&lt;/Name&gt;
       &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
@@ -88,13 +89,20 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;dropdown-autocomplete&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Preparaat]&quot;,&quot;DisplayNumber&quot;:&quot;5&quot;,&quot;DataSource&quot;:{&quot;Value&quot;:&quot;SQL Query&quot;,&quot;Parameters&quot;:{&quot;SqlQuery&quot;:&quot;SELECT [Id] AS [Value], [Preparaat] AS [Text] FROM [app].[ortomo_Preparaat]&quot;}},&quot;DisableDropdownOnClick&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Preparaat]&quot;,&quot;DisplayNumber&quot;:&quot;5&quot;,&quot;DataSource&quot;:{&quot;Value&quot;:&quot;SQL Query&quot;,&quot;Parameters&quot;:{&quot;SqlQuery&quot;:&quot;SELECT [Id] AS [Value], [Preparaat] AS [Text] FROM [app].[ortomo_Preparaat]&quot;}},&quot;DisableDropdownOnClick&quot;:&quot;&quot;,&quot;LinkTo&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:[],&quot;IsExpression&quot;:false},&quot;NoResults&quot;:&quot;No results found&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
       &lt;DisplayNumber&gt;5&lt;/DisplayNumber&gt;
       &lt;DataSource&gt;
         &lt;Value&gt;SQL Query&lt;/Value&gt;
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/DataSource&gt;
       &lt;DisableDropdownOnClick /&gt;
+      &lt;LinkTo&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;System.Collections.ArrayList&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+      &lt;/LinkTo&gt;
+      &lt;NoResults&gt;No results found&lt;/NoResults&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Flag&gt;dropdown&lt;/Flag&gt;
       &lt;Value&gt;&lt;![CDATA[[original:Preparaat]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
@@ -120,7 +128,7 @@
       &lt;Title&gt;&lt;![CDATA[DatumBijgewerkt]]&gt;&lt;/Title&gt;
       &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
       &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
-      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;IsEnabled&gt;False&lt;/IsEnabled&gt;
       &lt;OverrideName&gt;p_DatumBijgewerkt&lt;/OverrideName&gt;
       &lt;Name&gt;p_DatumBijgewerkt&lt;/Name&gt;
       &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
@@ -133,7 +141,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;datetime-flatpickr&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:DatumBijgewerkt:ISO]&quot;,&quot;ClientFormat&quot;:&quot;MM/dd/yyyy hh:mm tt&quot;,&quot;PickerType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;dateandtime&quot;,&quot;Parameters&quot;:{}},&quot;DisableFutureOrPast&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;none&quot;,&quot;Parameters&quot;:{}},&quot;FirstDayOfWeek&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;sunday&quot;,&quot;Parameters&quot;:{}},&quot;DisableWeekends&quot;:false,&quot;Inline&quot;:false,&quot;Time24Hours&quot;:false,&quot;MinuteIncrement&quot;:&quot;5&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:DatumBijgewerkt:ISO]&quot;,&quot;ClientFormat&quot;:&quot;MM/dd/yyyy hh:mm tt&quot;,&quot;PickerType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;dateandtime&quot;,&quot;Parameters&quot;:{}},&quot;DisableFutureOrPast&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;none&quot;,&quot;Parameters&quot;:{}},&quot;FirstDayOfWeek&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;sunday&quot;,&quot;Parameters&quot;:{}},&quot;DisableWeekends&quot;:false,&quot;Inline&quot;:false,&quot;Time24Hours&quot;:false,&quot;MinuteIncrement&quot;:&quot;5&quot;,&quot;DateHelpText&quot;:&quot;&quot;,&quot;MinDate&quot;:&quot;&quot;,&quot;MaxDate&quot;:&quot;&quot;,&quot;MinTime&quot;:&quot;&quot;,&quot;MaxTime&quot;:&quot;&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
       &lt;ClientFormat&gt;MM/dd/yyyy hh:mm tt&lt;/ClientFormat&gt;
       &lt;PickerType&gt;
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
@@ -157,6 +165,12 @@
       &lt;Inline&gt;False&lt;/Inline&gt;
       &lt;Time24Hours&gt;False&lt;/Time24Hours&gt;
       &lt;MinuteIncrement&gt;5&lt;/MinuteIncrement&gt;
+      &lt;DateHelpText /&gt;
+      &lt;MinDate /&gt;
+      &lt;MaxDate /&gt;
+      &lt;MinTime /&gt;
+      &lt;MaxTime /&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;IsoFormats&gt;{&quot;time&quot;:&quot;HH&#39;:&#39;mm&quot;,&quot;timeWithSeconds&quot;:&quot;HH&#39;:&#39;mm&#39;:&#39;ss&quot;,&quot;timeSpan&quot;:&quot;hh&#39;:&#39;mm&quot;,&quot;timeSpanWithSeconds&quot;:&quot;hh&#39;:&#39;mm&#39;:&#39;ss&quot;,&quot;date&quot;:&quot;yyyy-MM-dd&quot;,&quot;dateTime&quot;:&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ssK&quot;,&quot;dateTimeWithMilliseconds&quot;:&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss.FFFFFFFK&quot;}&lt;/IsoFormats&gt;
       &lt;Value&gt;&lt;![CDATA[[original:DatumBijgewerkt:ISO]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;True&lt;/IsRequired&gt;
@@ -195,7 +209,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Vegetarisch]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Vegetarisch]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:Vegetarisch]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -233,7 +248,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Vegan]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Vegan]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:Vegan]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -271,7 +287,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Organic]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Organic]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:Organic]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -309,7 +326,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Kosher]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Kosher]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:Kosher]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -347,7 +365,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Halal]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Halal]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:Halal]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -385,7 +404,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:ProductieEuropa]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:ProductieEuropa]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:ProductieEuropa]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -423,7 +443,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:ProductieBRC]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:ProductieBRC]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:ProductieBRC]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -461,7 +482,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:ProductieFSSC22000]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:ProductieFSSC22000]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:ProductieFSSC22000]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -499,7 +521,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:ProductieGMP]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:ProductieGMP]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:ProductieGMP]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -537,7 +560,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSelderij]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSelderij]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenSelderij]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -575,7 +599,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenGluten]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenGluten]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenGluten]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -613,7 +638,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSchaaldieren]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSchaaldieren]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenSchaaldieren]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -651,7 +677,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenEi]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenEi]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenEi]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -689,7 +716,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenVis]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenVis]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenVis]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -727,7 +755,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenLupine]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenLupine]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenLupine]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -765,7 +794,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenLactose]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenLactose]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenLactose]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -803,7 +833,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSchelpdieren]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSchelpdieren]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenSchelpdieren]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -841,7 +872,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenMosterd]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenMosterd]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenMosterd]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -879,7 +911,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenNoten]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenNoten]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenNoten]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -917,7 +950,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenPinda]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenPinda]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenPinda]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -955,7 +989,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSesam]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSesam]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenSesam]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -993,7 +1028,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSoya]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSoya]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenSoya]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -1031,7 +1067,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;closed-truefalse&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSulfiet]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:AllergeenSulfiet]&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Value&gt;&lt;![CDATA[[original:AllergeenSulfiet]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -1069,7 +1106,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;button&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Normal&quot;,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Left&quot;,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ButtonType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;Parameters&quot;:{}}}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Normal&quot;,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Left&quot;,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ButtonType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;Parameters&quot;:{}},&quot;ConnectedForms&quot;:&quot;&quot;,&quot;Actions&quot;:[]}&lt;/InputData&gt;
       &lt;CausesValidation&gt;True&lt;/CausesValidation&gt;
       &lt;IsDefaultButton&gt;True&lt;/IsDefaultButton&gt;
       &lt;ButtonSize&gt;
@@ -1098,6 +1135,8 @@
         &lt;Value&gt;btn-info&lt;/Value&gt;
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/ButtonType&gt;
+      &lt;ConnectedForms /&gt;
+      &lt;Actions /&gt;
       &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -1135,7 +1174,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;button&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Normal&quot;,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Left&quot;,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ButtonType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;Parameters&quot;:{}}}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Normal&quot;,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Left&quot;,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ButtonType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;Parameters&quot;:{}},&quot;ConnectedForms&quot;:&quot;&quot;,&quot;Actions&quot;:[]}&lt;/InputData&gt;
       &lt;CausesValidation&gt;True&lt;/CausesValidation&gt;
       &lt;IsDefaultButton&gt;True&lt;/IsDefaultButton&gt;
       &lt;ButtonSize&gt;
@@ -1164,6 +1203,8 @@
         &lt;Value&gt;btn-info&lt;/Value&gt;
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/ButtonType&gt;
+      &lt;ConnectedForms /&gt;
+      &lt;Actions /&gt;
       &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -1187,9 +1228,9 @@
   &lt;Settings&gt;
     &lt;Title&gt;Form&lt;/Title&gt;
     &lt;CssName&gt;form&lt;/CssName&gt;
-    &lt;Version&gt;5.10.0&lt;/Version&gt;
-    &lt;Build&gt;5.10.10&lt;/Build&gt;
-    &lt;CultureCode&gt;nl&lt;/CultureCode&gt;
+    &lt;Version&gt;5.11.0&lt;/Version&gt;
+    &lt;Build&gt;5.11.6&lt;/Build&gt;
+    &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
     &lt;HasCustomLayout&gt;False&lt;/HasCustomLayout&gt;
@@ -1205,7 +1246,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Manual&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;552&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.10.10&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.11.6&lt;/ModuleVersion&gt;
     &lt;TabId&gt;101&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -1234,13 +1275,13 @@
     &lt;Background /&gt;
     &lt;TextColor /&gt;
     &lt;Padding&gt;0&lt;/Padding&gt;
-    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn552&lt;/BaseId&gt;
     &lt;PopupName&gt;[popupTitle]&lt;/PopupName&gt;
     &lt;LeftSidebarHtml /&gt;
     &lt;RightSidebarHtml /&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=nl-NL&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
+    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
@@ -1249,7 +1290,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.767&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.17&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1266,7 +1307,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.797&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.25&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1283,7 +1324,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.86&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.593&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1298,7 +1339,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.877&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.607&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add ortomo_PreparaatDeclaratie&quot;},{&quot;name&quot;:&quot;original:Preparaat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:DatumBijgewerkt:ISO&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vegetarisch&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vegan&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Organic&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Kosher&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Halal&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ProductieEuropa&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ProductieBRC&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ProductieFSSC22000&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ProductieGMP&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenSelderij&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenGluten&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenSchaaldieren&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenEi&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenVis&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenLupine&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenLactose&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenSchelpdieren&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenMosterd&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenNoten&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenPinda&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenSesam&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenSoya&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AllergeenSulfiet&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1312,7 +1353,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.0.ortomo_PreparaatDeclaratie&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.767&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.187&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;Newortomo_PreparaatDeclaratieId&quot;,&quot;Preparaat&quot;:&quot;[r_PreparaatId]&quot;,&quot;DatumBijgewerkt&quot;:&quot;[p_DatumBijgewerkt]&quot;,&quot;Vegetarisch&quot;:&quot;[p_Vegetarisch]&quot;,&quot;Vegan&quot;:&quot;[p_Vegan]&quot;,&quot;Organic&quot;:&quot;[p_Organic]&quot;,&quot;Kosher&quot;:&quot;[p_Kosher]&quot;,&quot;Halal&quot;:&quot;[p_Halal]&quot;,&quot;ProductieEuropa&quot;:&quot;[p_ProductieEuropa]&quot;,&quot;ProductieBRC&quot;:&quot;[p_ProductieBRC]&quot;,&quot;ProductieFSSC22000&quot;:&quot;[p_ProductieFSSC22000]&quot;,&quot;ProductieGMP&quot;:&quot;[p_ProductieGMP]&quot;,&quot;AllergeenSelderij&quot;:&quot;[p_AllergeenSelderij]&quot;,&quot;AllergeenGluten&quot;:&quot;[p_AllergeenGluten]&quot;,&quot;AllergeenSchaaldieren&quot;:&quot;[p_AllergeenSchaaldieren]&quot;,&quot;AllergeenEi&quot;:&quot;[p_AllergeenEi]&quot;,&quot;AllergeenVis&quot;:&quot;[p_AllergeenVis]&quot;,&quot;AllergeenLupine&quot;:&quot;[p_AllergeenLupine]&quot;,&quot;AllergeenLactose&quot;:&quot;[p_AllergeenLactose]&quot;,&quot;AllergeenSchelpdieren&quot;:&quot;[p_AllergeenSchelpdieren]&quot;,&quot;AllergeenMosterd&quot;:&quot;[p_AllergeenMosterd]&quot;,&quot;AllergeenNoten&quot;:&quot;[p_AllergeenNoten]&quot;,&quot;AllergeenPinda&quot;:&quot;[p_AllergeenPinda]&quot;,&quot;AllergeenSesam&quot;:&quot;[p_AllergeenSesam]&quot;,&quot;AllergeenSoya&quot;:&quot;[p_AllergeenSoya]&quot;,&quot;AllergeenSulfiet&quot;:&quot;[p_AllergeenSulfiet]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1328,7 +1369,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.UpdateEntity.0.ortomo_PreparaatDeclaratie&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.83&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.25&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_PreparaatDeclaratieId=]&quot;,&quot;Preparaat&quot;:&quot;[r_PreparaatId]&quot;,&quot;DatumBijgewerkt&quot;:&quot;[p_DatumBijgewerkt]&quot;,&quot;Vegetarisch&quot;:&quot;[p_Vegetarisch]&quot;,&quot;Vegan&quot;:&quot;[p_Vegan]&quot;,&quot;Organic&quot;:&quot;[p_Organic]&quot;,&quot;Kosher&quot;:&quot;[p_Kosher]&quot;,&quot;Halal&quot;:&quot;[p_Halal]&quot;,&quot;ProductieEuropa&quot;:&quot;[p_ProductieEuropa]&quot;,&quot;ProductieBRC&quot;:&quot;[p_ProductieBRC]&quot;,&quot;ProductieFSSC22000&quot;:&quot;[p_ProductieFSSC22000]&quot;,&quot;ProductieGMP&quot;:&quot;[p_ProductieGMP]&quot;,&quot;AllergeenSelderij&quot;:&quot;[p_AllergeenSelderij]&quot;,&quot;AllergeenGluten&quot;:&quot;[p_AllergeenGluten]&quot;,&quot;AllergeenSchaaldieren&quot;:&quot;[p_AllergeenSchaaldieren]&quot;,&quot;AllergeenEi&quot;:&quot;[p_AllergeenEi]&quot;,&quot;AllergeenVis&quot;:&quot;[p_AllergeenVis]&quot;,&quot;AllergeenLupine&quot;:&quot;[p_AllergeenLupine]&quot;,&quot;AllergeenLactose&quot;:&quot;[p_AllergeenLactose]&quot;,&quot;AllergeenSchelpdieren&quot;:&quot;[p_AllergeenSchelpdieren]&quot;,&quot;AllergeenMosterd&quot;:&quot;[p_AllergeenMosterd]&quot;,&quot;AllergeenNoten&quot;:&quot;[p_AllergeenNoten]&quot;,&quot;AllergeenPinda&quot;:&quot;[p_AllergeenPinda]&quot;,&quot;AllergeenSesam&quot;:&quot;[p_AllergeenSesam]&quot;,&quot;AllergeenSoya&quot;:&quot;[p_AllergeenSoya]&quot;,&quot;AllergeenSulfiet&quot;:&quot;[p_AllergeenSulfiet]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1345,7 +1386,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.877&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.607&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1362,7 +1403,7 @@
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:ortomo_PreparaatDeclaratieId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.89&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.623&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit ortomo_PreparaatDeclaratie&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1378,7 +1419,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.783&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.187&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/BeheerOrtomo/ortomo_PreparaatDeclaraties/Detail?ortomo_PreparaatDeclaratieId=[Newortomo_PreparaatDeclaratieId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1394,7 +1435,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.843&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.263&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;554&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1410,7 +1451,7 @@
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_PreparaatDeclaratie&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.89&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.653&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_PreparaatDeclaratieId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1426,7 +1467,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.783&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.217&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:551,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1442,7 +1483,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.843&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.28&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;553&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1457,7 +1498,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.797&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.217&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:552,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1473,7 +1514,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.843&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.297&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/BeheerOrtomo/ortomo_PreparaatDeclaraties/Detail?ortomo_PreparaatDeclaratieId=[QueryString:ortomo_PreparaatDeclaratieId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1489,7 +1530,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.86&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.31&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:551,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
@@ -1504,7 +1545,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-14T20:07:58.86&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:07:52.31&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:552,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;552&lt;/ModuleId&gt;
