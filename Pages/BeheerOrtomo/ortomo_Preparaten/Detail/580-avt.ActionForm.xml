@@ -154,7 +154,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;dropdown-autocomplete&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Preparaat]&quot;,&quot;DisplayNumber&quot;:&quot;5&quot;,&quot;DataSource&quot;:{&quot;Value&quot;:&quot;SQL Query&quot;,&quot;Parameters&quot;:{&quot;SqlQuery&quot;:&quot;SELECT [Id] AS [Value], [Preparaat] AS [Text] FROM [app].[ortomo_Preparaat]&quot;}},&quot;DisableDropdownOnClick&quot;:&quot;&quot;,&quot;LinkTo&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:[],&quot;IsExpression&quot;:false},&quot;NoResults&quot;:&quot;No results found&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Preparaat]&quot;,&quot;DisplayNumber&quot;:&quot;5&quot;,&quot;DataSource&quot;:{&quot;Value&quot;:&quot;SQL Query&quot;,&quot;Parameters&quot;:{&quot;SqlQuery&quot;:&quot;SELECT [Id] AS [Value], [Preparaat] AS [Text] FROM [app].[ortomo_Preparaat]\nWHERE Id = \u0027[querystring:ortomo_PreparaatId]\u0027&quot;}},&quot;DisableDropdownOnClick&quot;:&quot;&quot;,&quot;LinkTo&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:[],&quot;IsExpression&quot;:false},&quot;NoResults&quot;:&quot;No results found&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
       &lt;DisplayNumber&gt;5&lt;/DisplayNumber&gt;
       &lt;DataSource&gt;
         &lt;Value&gt;SQL Query&lt;/Value&gt;
@@ -364,7 +364,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.377&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.163&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
@@ -381,7 +381,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.423&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.163&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
@@ -396,7 +396,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.44&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.18&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add ortomo_PreparaatClaim&quot;},{&quot;name&quot;:&quot;original:TypeClaim&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Preparaat&quot;,&quot;value&quot;:&quot;[original:Preparaat]&quot;},{&quot;name&quot;:&quot;original:Claim&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
@@ -410,7 +410,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.0.ortomo_PreparaatClaim&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.377&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.163&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;insertedChildId&quot;,&quot;TypeClaim&quot;:&quot;[p_TypeClaim]&quot;,&quot;Preparaat&quot;:&quot;[r_PreparaatId]&quot;,&quot;Claim&quot;:&quot;[p_Claim]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
@@ -427,7 +427,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.44&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.18&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
@@ -443,7 +443,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:ortomo_PreparaatId=] == &#39;&#39;&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.457&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.18&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;No ortomo_Preparaat filter was set.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
@@ -457,7 +457,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.LinkChildEntity.0.ortomo_PreparaatClaims&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.393&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.163&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ParentRecordId&quot;:&quot;[QueryString:ortomo_PreparaatId]&quot;,&quot;ChildRecordId&quot;:&quot;[insertedChildId]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
@@ -474,7 +474,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.47&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.18&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:[{&quot;name&quot;:&quot;Id&quot;,&quot;value&quot;:&quot;parentId&quot;}],&quot;SqlQuery&quot;:&quot;SELECT [Id] FROM [app].[ortomo_Preparaat] WHERE [Id] = @p0&quot;,&quot;BindTokens&quot;:[{&quot;name&quot;:&quot;p0&quot;,&quot;value&quot;:&quot;[QueryString:ortomo_PreparaatId]&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
@@ -488,7 +488,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.393&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.163&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:578,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
@@ -504,7 +504,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[parentId] == &#39;&#39;&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.487&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.18&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;Invalid ortomo_Preparaat filter value set.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
@@ -518,7 +518,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-28T10:16:40.41&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-28T10:20:21.163&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:580,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;580&lt;/ModuleId&gt;
