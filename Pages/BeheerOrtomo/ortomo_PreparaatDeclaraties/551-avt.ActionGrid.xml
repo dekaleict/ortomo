@@ -342,7 +342,7 @@
       &lt;CanBeFilterable&gt;true&lt;/CanBeFilterable&gt;
       &lt;FormatFilters&gt;false&lt;/FormatFilters&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;Template&gt;&amp;lt;a href=&quot;//[Portal:url]/BeheerOrtomo/ortomo_PreparaatDeclaraties/Detail?ortomo_PreparaatDeclaratieId=[Id]#Doelen&quot;&amp;gt;[ortomo_PreparaatDeclaratieortomo_DoelDoelenCount] [Pluralization:Get(Value=&#39;[ortomo_PreparaatDeclaratieortomo_DoelDoelenCount]&#39;, Singular=&#39;ortomo_Doel&#39;, Plural=&#39;ortomo_Doelen&#39;)]&amp;lt;/a&amp;gt;&amp;amp;nbsp;&amp;lt;a href=&quot;//[Portal:url]/BeheerOrtomo/ortomo_PreparaatDeclaraties/Detail?ortomo_PreparaatDeclaratieId=[Id]#Doelen&quot; target=&quot;_blank&quot;&amp;gt;&amp;lt;i class=&quot;fas fa-external-link-alt&quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;&lt;/Template&gt;
+      &lt;Template&gt;&amp;lt;a href=&quot;//[Portal:url]/BeheerOrtomo/ortomo_PreparaatDeclaraties/Detail?ortomo_PreparaatDeclaratieId=[Id]#Doelen&quot; target=&quot;_blank&quot;&amp;gt;&amp;lt;i class=&quot;fas fa-external-link-alt&quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;&lt;/Template&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
       &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
