@@ -16,9 +16,9 @@
     "EntityVersionRefId": 14,
     "IsDeleted": false,
     "IsRequired": true,
-    "IsSearchable": false,
-    "IsFilterable": false,
-    "IsSortable": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsSortable": true,
     "OrderIndex": 1
   },
   {
