@@ -7,5 +7,6 @@
   "Name": "ortomo_PreparaatDeclaratie",
   "PluralName": "ortomo_PreparaatDeclaraties",
   "Icon": "fingerprint",
-  "Type": "UserCreated"
+  "Type": "UserCreated",
+  "EnableIndexing": false
 }

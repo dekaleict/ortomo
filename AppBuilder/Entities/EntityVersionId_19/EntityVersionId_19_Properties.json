@@ -15,10 +15,10 @@
     },
     "EntityVersionRefId": 14,
     "IsDeleted": false,
-    "IsRequired": false,
-    "IsSearchable": false,
-    "IsFilterable": false,
-    "IsSortable": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsSortable": true,
     "OrderIndex": 1
   },
   {
