@@ -11,9 +11,9 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT sysdatetime() as DatumTijd",
+    "sql": "SELECT sysdatetime() as CurrentDateTime",
     "defaultColumn": "CurrentDateTime",
-    "columns": "DatumTijd\nDatumTijd1\nCurrentDateTime",
+    "columns": "CurrentDateTime",
     "connectionString": "",
     "type": "db"
   }
