@@ -190,7 +190,7 @@
                         {
                           "Id": 545,
                           "Name": "Startdatum",
-                          "Value": "[CurrentDateTime:ISOAsUtc]]",
+                          "Value": "[CurrentDateTime:ISOAsUtc]",
                           "IsExpression": false,
                           "ActionId": 84,
                           "OrderIndex": 0,
@@ -440,7 +440,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T15:24:00.1381784+01:00",
+  "LastModifiedOn": "2020-12-30T15:26:11.8090594+01:00",
   "InputFields": [
     {
       "Id": 65,
