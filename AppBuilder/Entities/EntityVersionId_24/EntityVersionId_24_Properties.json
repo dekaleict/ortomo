@@ -19,7 +19,7 @@
     "IsSearchable": false,
     "IsFilterable": false,
     "IsSortable": false,
-    "OrderIndex": 1
+    "OrderIndex": 2
   },
   {
     "Id": 139,
@@ -195,6 +195,6 @@
     "IsSearchable": false,
     "IsFilterable": false,
     "IsSortable": false,
-    "OrderIndex": 2
+    "OrderIndex": 1
   }
 ]
