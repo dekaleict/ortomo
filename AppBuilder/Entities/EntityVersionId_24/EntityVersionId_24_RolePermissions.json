@@ -1,0 +1,182 @@
+{
+  "9": [
+    {
+      "Id": 273,
+      "PermissionType": {
+        "Id": 1,
+        "Name": "Can View"
+      },
+      "RoleId": 9,
+      "RoleName": "Users",
+      "Value": "own"
+    }
+  ],
+  "11": [
+    {
+      "Id": 274,
+      "PermissionType": {
+        "Id": 1,
+        "Name": "Can View"
+      },
+      "RoleId": 11,
+      "RoleName": "Beheerder",
+      "Value": "all"
+    },
+    {
+      "Id": 275,
+      "PermissionType": {
+        "Id": 2,
+        "Name": "Can Add"
+      },
+      "RoleId": 11,
+      "RoleName": "Beheerder",
+      "Value": "true"
+    },
+    {
+      "Id": 276,
+      "PermissionType": {
+        "Id": 3,
+        "Name": "Can Edit"
+      },
+      "RoleId": 11,
+      "RoleName": "Beheerder",
+      "Value": "all"
+    },
+    {
+      "Id": 277,
+      "PermissionType": {
+        "Id": 4,
+        "Name": "Can Delete"
+      },
+      "RoleId": 11,
+      "RoleName": "Beheerder",
+      "Value": "all"
+    }
+  ],
+  "7": [
+    {
+      "Id": 278,
+      "PermissionType": {
+        "Id": 1,
+        "Name": "Can View"
+      },
+      "RoleId": 7,
+      "RoleName": "Admins",
+      "Value": "all"
+    },
+    {
+      "Id": 279,
+      "PermissionType": {
+        "Id": 2,
+        "Name": "Can Add"
+      },
+      "RoleId": 7,
+      "RoleName": "Admins",
+      "Value": "true"
+    },
+    {
+      "Id": 280,
+      "PermissionType": {
+        "Id": 3,
+        "Name": "Can Edit"
+      },
+      "RoleId": 7,
+      "RoleName": "Admins",
+      "Value": "all"
+    },
+    {
+      "Id": 281,
+      "PermissionType": {
+        "Id": 4,
+        "Name": "Can Delete"
+      },
+      "RoleId": 7,
+      "RoleName": "Admins",
+      "Value": "all"
+    }
+  ],
+  "6": [
+    {
+      "Id": 282,
+      "PermissionType": {
+        "Id": 1,
+        "Name": "Can View"
+      },
+      "RoleId": 6,
+      "RoleName": "Citizen Developers",
+      "Value": "all"
+    },
+    {
+      "Id": 283,
+      "PermissionType": {
+        "Id": 2,
+        "Name": "Can Add"
+      },
+      "RoleId": 6,
+      "RoleName": "Citizen Developers",
+      "Value": "true"
+    },
+    {
+      "Id": 284,
+      "PermissionType": {
+        "Id": 3,
+        "Name": "Can Edit"
+      },
+      "RoleId": 6,
+      "RoleName": "Citizen Developers",
+      "Value": "all"
+    },
+    {
+      "Id": 285,
+      "PermissionType": {
+        "Id": 4,
+        "Name": "Can Delete"
+      },
+      "RoleId": 6,
+      "RoleName": "Citizen Developers",
+      "Value": "all"
+    }
+  ],
+  "8": [
+    {
+      "Id": 286,
+      "PermissionType": {
+        "Id": 1,
+        "Name": "Can View"
+      },
+      "RoleId": 8,
+      "RoleName": "Managers",
+      "Value": "all"
+    },
+    {
+      "Id": 287,
+      "PermissionType": {
+        "Id": 2,
+        "Name": "Can Add"
+      },
+      "RoleId": 8,
+      "RoleName": "Managers",
+      "Value": "true"
+    },
+    {
+      "Id": 288,
+      "PermissionType": {
+        "Id": 3,
+        "Name": "Can Edit"
+      },
+      "RoleId": 8,
+      "RoleName": "Managers",
+      "Value": "all"
+    },
+    {
+      "Id": 289,
+      "PermissionType": {
+        "Id": 4,
+        "Name": "Can Delete"
+      },
+      "RoleId": 8,
+      "RoleName": "Managers",
+      "Value": "all"
+    }
+  ]
+}

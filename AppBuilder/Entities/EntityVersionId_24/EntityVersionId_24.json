@@ -1,0 +1,12 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 109,
+  "RecordNamePropertyId": 139,
+  "Id": 24,
+  "VersionId": 24,
+  "Name": "ortomo_MijnVragenlijst",
+  "PluralName": "ortomo_MijnVragenlijsten",
+  "Icon": "clipboard-check",
+  "Type": "UserCreated",
+  "EnableIndexing": false
+}
