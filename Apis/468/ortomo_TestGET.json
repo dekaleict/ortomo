@@ -1,6 +1,6 @@
 {
-  "Name": "Test",
-  "Description": "Returns the information of a Test record in JSON object format.",
+  "Name": "ortomo_Test",
+  "Description": "Returns the information of a ortomo_Test record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
   "OrderIndex": 214,
@@ -29,7 +29,7 @@
   ],
   "Actions": [
     {
-      "ActionType": "PlantAnApp.ReadEntity.0.Test",
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_Test",
       "OrderIndex": 0,
       "Parameters": {
         "RecordId": "[RecordId]",
@@ -39,7 +39,7 @@
       "ExecutionType": "OnExecute",
       "Metadata": {
         "PAP_InternalIdentifier": "Api.ReadEntity",
-        "EntityIdentifier": "Test"
+        "EntityIdentifier": "ortomo_Test"
       }
     },
     {
