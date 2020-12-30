@@ -703,7 +703,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.103&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -720,7 +720,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.947&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.12&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -737,7 +737,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.993&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.12&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -752,7 +752,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:47.01&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.133&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add ortomo_MijnVragenlijst&quot;},{&quot;name&quot;:&quot;original:Vragenlijst&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Volgorde&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Startdatum:ISO&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Einddatum:ISO&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vragen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VragenOpenstaand&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VragenBeantwoord&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:PercentageVoortgang&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:MijnTest&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -766,7 +766,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.0.ortomo_MijnVragenlijst&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.103&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;Newortomo_MijnVragenlijstId&quot;,&quot;Vragenlijst&quot;:&quot;[r_VragenlijstId]&quot;,&quot;Volgorde&quot;:&quot;[p_Volgorde]&quot;,&quot;Startdatum&quot;:&quot;[p_Startdatum]&quot;,&quot;Einddatum&quot;:&quot;[p_Einddatum]&quot;,&quot;Vragen&quot;:&quot;[p_Vragen]&quot;,&quot;VragenOpenstaand&quot;:&quot;[p_VragenOpenstaand]&quot;,&quot;VragenBeantwoord&quot;:&quot;[p_VragenBeantwoord]&quot;,&quot;PercentageVoortgang&quot;:&quot;[p_PercentageVoortgang]&quot;,&quot;MijnTest&quot;:&quot;[r_MijnTestId]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -782,7 +782,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.UpdateEntity.0.ortomo_MijnVragenlijst&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.947&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.12&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_MijnVragenlijstId=]&quot;,&quot;Vragenlijst&quot;:&quot;[r_VragenlijstId]&quot;,&quot;Volgorde&quot;:&quot;[p_Volgorde]&quot;,&quot;Startdatum&quot;:&quot;[p_Startdatum]&quot;,&quot;Einddatum&quot;:&quot;[p_Einddatum]&quot;,&quot;Vragen&quot;:&quot;[p_Vragen]&quot;,&quot;VragenOpenstaand&quot;:&quot;[p_VragenOpenstaand]&quot;,&quot;VragenBeantwoord&quot;:&quot;[p_VragenBeantwoord]&quot;,&quot;PercentageVoortgang&quot;:&quot;[p_PercentageVoortgang]&quot;,&quot;MijnTest&quot;:&quot;[r_MijnTestId]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -799,7 +799,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.993&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.133&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -816,7 +816,7 @@
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:ortomo_MijnVragenlijstId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:47.01&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.133&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit ortomo_MijnVragenlijst&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -832,7 +832,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.917&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.103&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/BeheerOrtomo/ortomo_MijnTesten/ortomo_MijnVragenlijsten/Detail?ortomo_MijnVragenlijstId=[Newortomo_MijnVragenlijstId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -848,7 +848,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.963&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.12&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;592&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -864,7 +864,7 @@
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_MijnVragenlijst&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:47.023&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.133&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_MijnVragenlijstId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -880,7 +880,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.917&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.103&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:589,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -896,7 +896,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.963&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.12&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;591&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -911,7 +911,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.93&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.103&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:590,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -927,7 +927,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.977&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.12&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/BeheerOrtomo/ortomo_MijnTesten/ortomo_MijnVragenlijsten/Detail?ortomo_MijnVragenlijstId=[QueryString:ortomo_MijnVragenlijstId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -943,7 +943,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.977&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.12&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:589,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
@@ -958,7 +958,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T21:15:46.993&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T21:15:48.12&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:590,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;590&lt;/ModuleId&gt;
