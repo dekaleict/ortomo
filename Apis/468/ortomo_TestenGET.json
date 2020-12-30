@@ -1,6 +1,6 @@
 {
-  "Name": "Testen",
-  "Description": "Returns the information of all Test records in JSON object format.",
+  "Name": "ortomo_Testen",
+  "Description": "Returns the information of all ortomo_Test records in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
   "OrderIndex": 215,
@@ -29,17 +29,17 @@
   ],
   "Actions": [
     {
-      "ActionType": "PlantAnApp.ReadAllEntity.0.Test",
+      "ActionType": "PlantAnApp.ReadAllEntity.0.ortomo_Test",
       "OrderIndex": 0,
       "Parameters": {
-        "OutputToken": "Testen",
+        "OutputToken": "ortomo_Testen",
         "RowLimit": "[RowLimit]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
       "Metadata": {
         "PAP_InternalIdentifier": "Api.ReadAllEntityRecords",
-        "EntityIdentifier": "Test"
+        "EntityIdentifier": "ortomo_Test"
       }
     },
     {
@@ -47,7 +47,7 @@
       "OrderIndex": 1,
       "Parameters": {
         "HttpCode": "200 OK",
-        "Content": "{\"Testen\" : [Testen:json]}",
+        "Content": "{\"ortomo_Testen\" : [ortomo_Testen:json]}",
         "Headers": [
           {
             "name": "Content-Type",
