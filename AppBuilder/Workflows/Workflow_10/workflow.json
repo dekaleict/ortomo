@@ -31,7 +31,7 @@
           {
             "Id": 534,
             "Name": "SqlQuery",
-            "Value": "SELECT *\nFROM app.ortomo_Test\nWHERE Gebruiker = @Userid and Einddatum is null",
+            "Value": "SELECT *\nFROM app.ortomo_MijnTest\nWHERE Gebruiker = @Userid and Einddatum is null",
             "IsExpression": false,
             "ActionId": 82,
             "OrderIndex": 0,
@@ -237,96 +237,98 @@
                   "EventName": "click",
                   "Actions": [
                     {
-                      "Id": 84,
-                      "ActionType": "PlantAnApp.CreateEntity.0.ortomo_Test",
+                      "Id": 87,
+                      "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnTest",
                       "OrderIndex": 0,
                       "ActionParameters": [
                         {
-                          "Id": 542,
+                          "Id": 571,
                           "Name": "ConnectionString",
                           "IsExpression": false,
-                          "ActionId": 84,
+                          "ActionId": 87,
                           "OrderIndex": 0,
                           "SubParameters": []
                         },
                         {
-                          "Id": 543,
+                          "Id": 572,
                           "Name": "GUID",
-                          "Value": "[GUID:New]",
+                          "Value": "[Guid:New]",
                           "IsExpression": false,
-                          "ActionId": 84,
+                          "ActionId": 87,
                           "OrderIndex": 0,
                           "SubParameters": []
                         },
                         {
-                          "Id": 544,
+                          "Id": 573,
                           "Name": "Gebruiker",
                           "Value": "[Gebruiker]",
                           "IsExpression": false,
-                          "ActionId": 84,
+                          "ActionId": 87,
                           "OrderIndex": 0,
                           "SubParameters": []
                         },
                         {
-                          "Id": 545,
+                          "Id": 574,
                           "Name": "Startdatum",
                           "IsExpression": false,
-                          "ActionId": 84,
+                          "ActionId": 87,
                           "OrderIndex": 0,
                           "SubParameters": []
                         },
                         {
-                          "Id": 546,
+                          "Id": 575,
                           "Name": "Einddatum",
                           "IsExpression": false,
-                          "ActionId": 84,
+                          "ActionId": 87,
                           "OrderIndex": 0,
                           "SubParameters": []
                         },
                         {
-                          "Id": 547,
+                          "Id": 576,
                           "Name": "Vragen",
+                          "Value": "0",
                           "IsExpression": false,
-                          "ActionId": 84,
+                          "ActionId": 87,
                           "OrderIndex": 0,
                           "SubParameters": []
                         },
                         {
-                          "Id": 548,
+                          "Id": 577,
                           "Name": "VragenOpenstaand",
+                          "Value": "0",
                           "IsExpression": false,
-                          "ActionId": 84,
+                          "ActionId": 87,
                           "OrderIndex": 0,
                           "SubParameters": []
                         },
                         {
-                          "Id": 549,
+                          "Id": 578,
                           "Name": "VragenBeantwoord",
                           "Value": "0",
                           "IsExpression": false,
-                          "ActionId": 84,
+                          "ActionId": 87,
                           "OrderIndex": 0,
                           "SubParameters": []
                         },
                         {
-                          "Id": 550,
+                          "Id": 579,
                           "Name": "PercentageVoortgang",
                           "Value": "0",
                           "IsExpression": false,
-                          "ActionId": 84,
+                          "ActionId": 87,
                           "OrderIndex": 0,
                           "SubParameters": []
                         },
                         {
-                          "Id": 551,
+                          "Id": 580,
                           "Name": "OutputToken",
                           "IsExpression": false,
-                          "ActionId": 84,
+                          "ActionId": 87,
                           "OrderIndex": 0,
                           "SubParameters": []
                         }
                       ],
-                      "DiagramUID": "Activity_0vvsh1w"
+                      "DiagramUID": "Activity_1iks7h6"
                     },
                     {
                       "Id": 85,
@@ -352,7 +354,7 @@
                         {
                           "Id": 554,
                           "Name": "SqlQuery",
-                          "Value": "SELECT * FROM app.ortomo_Test\nWHERE Gebruiker = @Userid and Einddatum is null",
+                          "Value": "SELECT * FROM app.ortomo_MijnTest\nWHERE Gebruiker = @Userid and Einddatum is null",
                           "IsExpression": false,
                           "ActionId": 85,
                           "OrderIndex": 0,
@@ -520,7 +522,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T15:47:11.6345482+01:00",
+  "LastModifiedOn": "2020-12-30T20:03:38.719832+01:00",
   "InputFields": [
     {
       "Id": 65,
