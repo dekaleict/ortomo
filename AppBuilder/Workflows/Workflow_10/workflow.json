@@ -421,6 +421,11 @@
                               "value": "VragenOpenstaand",
                               "$$hashKey": "object:92",
                               "name": "VragenOpenstaand"
+                            },
+                            {
+                              "value": "MijnTestid",
+                              "$$hashKey": "object:91",
+                              "name": "ID"
                             }
                           ],
                           "IsExpression": false,
@@ -642,6 +647,15 @@
                                     "ActionId": 90,
                                     "OrderIndex": 0,
                                     "SubParameters": []
+                                  },
+                                  {
+                                    "Id": 611,
+                                    "Name": "MijnTest",
+                                    "Value": "[MijnTestid]",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
                                   }
                                 ]
                               }
@@ -824,7 +838,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T20:18:39.5112412+01:00",
+  "LastModifiedOn": "2020-12-30T20:22:38.9103672+01:00",
   "InputFields": [
     {
       "Id": 65,
