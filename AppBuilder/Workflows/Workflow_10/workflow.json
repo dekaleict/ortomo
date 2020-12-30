@@ -153,7 +153,7 @@
           {
             "Id": 565,
             "Name": "SqlQuery",
-            "Value": "SELECT GetDate() as CurrentDateTime",
+            "Value": "SELECT SYSDATETIME () as CurrentDateTime",
             "IsExpression": false,
             "ActionId": 86,
             "OrderIndex": 0,
@@ -270,7 +270,7 @@
                         {
                           "Id": 545,
                           "Name": "Startdatum",
-                          "Value": "[ortomo:GetDateTimeISO.CurrentDateTime]",
+                          "Value": "[CurrentDateTime]",
                           "IsExpression": false,
                           "ActionId": 84,
                           "OrderIndex": 0,
@@ -521,7 +521,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T15:41:18.2098729+01:00",
+  "LastModifiedOn": "2020-12-30T15:42:01.6173909+01:00",
   "InputFields": [
     {
       "Id": 65,
