@@ -41,7 +41,7 @@
     "IsSearchable": true,
     "IsFilterable": false,
     "IsSortable": false,
-    "OrderIndex": 2
+    "OrderIndex": 3
   },
   {
     "Id": 140,
@@ -63,7 +63,7 @@
     "IsSearchable": false,
     "IsFilterable": false,
     "IsSortable": false,
-    "OrderIndex": 3
+    "OrderIndex": 4
   },
   {
     "Id": 141,
@@ -85,7 +85,7 @@
     "IsSearchable": false,
     "IsFilterable": false,
     "IsSortable": false,
-    "OrderIndex": 4
+    "OrderIndex": 5
   },
   {
     "Id": 142,
@@ -107,7 +107,7 @@
     "IsSearchable": false,
     "IsFilterable": false,
     "IsSortable": false,
-    "OrderIndex": 5
+    "OrderIndex": 6
   },
   {
     "Id": 143,
@@ -129,7 +129,7 @@
     "IsSearchable": false,
     "IsFilterable": false,
     "IsSortable": false,
-    "OrderIndex": 6
+    "OrderIndex": 7
   },
   {
     "Id": 144,
@@ -151,7 +151,7 @@
     "IsSearchable": false,
     "IsFilterable": false,
     "IsSortable": false,
-    "OrderIndex": 7
+    "OrderIndex": 8
   },
   {
     "Id": 145,
@@ -173,6 +173,28 @@
     "IsSearchable": false,
     "IsFilterable": false,
     "IsSortable": false,
-    "OrderIndex": 8
+    "OrderIndex": 9
+  },
+  {
+    "Id": 148,
+    "EntityVersionId": 24,
+    "Name": "MijnTest",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 23,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 2
   }
 ]
