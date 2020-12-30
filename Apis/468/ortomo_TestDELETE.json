@@ -1,6 +1,6 @@
 {
-  "Name": "Test",
-  "Description": "Deletes the provided Test record",
+  "Name": "ortomo_Test",
+  "Description": "Deletes the provided ortomo_Test record",
   "HttpMethod": "DELETE",
   "IsEnabled": true,
   "OrderIndex": 217,
@@ -29,7 +29,7 @@
   ],
   "Actions": [
     {
-      "ActionType": "PlantAnApp.DeleteEntity.0.Test",
+      "ActionType": "PlantAnApp.DeleteEntity.0.ortomo_Test",
       "OrderIndex": 0,
       "Parameters": {
         "RecordId": "[RecordId]"
@@ -38,7 +38,7 @@
       "ExecutionType": "OnExecute",
       "Metadata": {
         "PAP_InternalIdentifier": "Api.DeleteEntity",
-        "EntityIdentifier": "Test"
+        "EntityIdentifier": "ortomo_Test"
       }
     },
     {
