@@ -1,6 +1,6 @@
 {
-  "DisplayInMenu": false,
-  "ParentPageId": 63,
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
   "RecordNamePropertyId": 130,
   "Id": 23,
   "VersionId": 23,
