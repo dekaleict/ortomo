@@ -53,6 +53,10 @@
             "value": "[RecordId]"
           },
           {
+            "name": "MijnTest",
+            "value": "[Record:MijnTest]"
+          },
+          {
             "name": "Vragenlijst",
             "value": "[Record:Vragenlijst]"
           },
