@@ -130,12 +130,97 @@
         "DiagramUID": "Activity_1e28tf2"
       },
       {
+        "Id": 86,
+        "ActionType": "RunSql",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 563,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 86,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 564,
+            "Name": "QueryTimeout",
+            "IsExpression": false,
+            "ActionId": 86,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 565,
+            "Name": "SqlQuery",
+            "Value": "SELECT GetDate() as CurrentDateTime",
+            "IsExpression": false,
+            "ActionId": 86,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 566,
+            "Name": "BindTokens",
+            "IsExpression": false,
+            "ActionId": 86,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 567,
+            "Name": "OutputTokenName",
+            "IsExpression": false,
+            "ActionId": 86,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 568,
+            "Name": "ExtractColumns",
+            "Value": [
+              {
+                "value": "CurrentDateTime",
+                "$$hashKey": "object:51",
+                "name": "CurrentDateTime"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 86,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 569,
+            "Name": "OnError",
+            "Value": {
+              "Id": 45,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 86,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 570,
+            "Name": "ShowErrors",
+            "IsExpression": false,
+            "ActionId": 86,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0taf2ct"
+      },
+      {
         "Id": 83,
         "Description": "",
         "ActionErrorMessage": "",
         "Condition": "",
         "ActionType": "PlantAnApp.ExecuteConditionally",
-        "OrderIndex": 1,
+        "OrderIndex": 2,
         "ActionParameters": [
           {
             "Id": 540,
@@ -185,7 +270,7 @@
                         {
                           "Id": 545,
                           "Name": "Startdatum",
-                          "Value": "[DateTime:ISOAsUtc]",
+                          "Value": "[CurrentDateTime:ISOAsUtc]",
                           "IsExpression": false,
                           "ActionId": 84,
                           "OrderIndex": 0,
@@ -436,7 +521,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T15:27:36.79467+01:00",
+  "LastModifiedOn": "2020-12-30T15:30:33.4241571+01:00",
   "InputFields": [
     {
       "Id": 65,
