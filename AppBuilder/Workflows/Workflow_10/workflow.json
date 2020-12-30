@@ -675,6 +675,84 @@
                         }
                       ],
                       "DiagramUID": "Activity_0dokuyl"
+                    },
+                    {
+                      "Id": 91,
+                      "ActionType": "RunSql",
+                      "OrderIndex": 4,
+                      "ActionParameters": [
+                        {
+                          "Id": 603,
+                          "Name": "ConnectionString",
+                          "IsExpression": false,
+                          "ActionId": 91,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 604,
+                          "Name": "QueryTimeout",
+                          "IsExpression": false,
+                          "ActionId": 91,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 605,
+                          "Name": "SqlQuery",
+                          "Value": "UPDATE       app.ortomo_Vragenlijst\nSET                AantalVragen = ISNULL(Q1.AantalVragen, 0)\nFROM            (SELECT        TOP (1000) ortomo_vragenlijst_1.Id, COUNT(app.ortomo_Vraag.Id) AS AantalVragen\n                          FROM            app.ortomo_Vraag INNER JOIN\n                                                    app.ortomo_Vragenlijst AS ortomo_vragenlijst_1 ON app.ortomo_Vraag.Vragenlijst = ortomo_vragenlijst_1.Id\n                          GROUP BY ortomo_vragenlijst_1.Id) AS Q1 RIGHT OUTER JOIN\n                         app.ortomo_Vragenlijst ON Q1.Id = app.ortomo_Vragenlijst.Id",
+                          "IsExpression": false,
+                          "ActionId": 91,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 606,
+                          "Name": "BindTokens",
+                          "IsExpression": false,
+                          "ActionId": 91,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 607,
+                          "Name": "OutputTokenName",
+                          "IsExpression": false,
+                          "ActionId": 91,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 608,
+                          "Name": "ExtractColumns",
+                          "IsExpression": false,
+                          "ActionId": 91,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 609,
+                          "Name": "OnError",
+                          "Value": {
+                            "Id": 49,
+                            "EventName": "OnError",
+                            "Actions": []
+                          },
+                          "IsExpression": false,
+                          "ActionId": 91,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 610,
+                          "Name": "ShowErrors",
+                          "IsExpression": false,
+                          "ActionId": 91,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        }
+                      ],
+                      "DiagramUID": "Activity_0ig3vl0"
                     }
                   ]
                 }
@@ -746,7 +824,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T20:12:06.6547051+01:00",
+  "LastModifiedOn": "2020-12-30T20:18:39.5112412+01:00",
   "InputFields": [
     {
       "Id": 65,
