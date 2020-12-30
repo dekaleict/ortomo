@@ -270,7 +270,7 @@
                         {
                           "Id": 545,
                           "Name": "Startdatum",
-                          "Value": "[CurrentDateTime:ISOAsUtc]",
+                          "Value": "[ortomo:GetDateTimeISO]",
                           "IsExpression": false,
                           "ActionId": 84,
                           "OrderIndex": 0,
@@ -521,7 +521,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T15:30:33.4241571+01:00",
+  "LastModifiedOn": "2020-12-30T15:31:11.906734+01:00",
   "InputFields": [
     {
       "Id": 65,
