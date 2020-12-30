@@ -7,7 +7,6 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -87,8 +86,8 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;static-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;#[QueryString:TestId=]&quot;}&lt;/InputData&gt;
-      &lt;Value&gt;&lt;![CDATA[#[QueryString:TestId=]]]&gt;&lt;/Value&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;#[QueryString:ortomo_TestId=]&quot;}&lt;/InputData&gt;
+      &lt;Value&gt;&lt;![CDATA[#[QueryString:ortomo_TestId=]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
       &lt;EnableCondition /&gt;
@@ -248,7 +247,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:9] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T15:08:08.11&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T15:08:29.97&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;584&lt;/ModuleId&gt;
@@ -264,7 +263,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T15:08:08.14&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T15:08:30&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:GUID&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Gebruiker&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Startdatum&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Einddatum&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vragen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VragenOpenstaand&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VragenBeantwoord&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:PercentageVoortgang&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;584&lt;/ModuleId&gt;
@@ -278,7 +277,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;OpenAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T15:08:08.123&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T15:08:29.97&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ReinitForm&quot;:true,&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:583,&quot;Parameters&quot;:{}},&quot;Params&quot;:[{&quot;name&quot;:&quot;detailPage&quot;,&quot;value&quot;:&quot;true&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;584&lt;/ModuleId&gt;
@@ -291,17 +290,17 @@
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.ReadEntity.0.Test&lt;/ActionType&gt;
+      &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_Test&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T15:08:08.157&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T15:08:30&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:TestId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_TestId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;584&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.LoadVariablesValues&quot;,&quot;EntityIdentifier&quot;:&quot;Test&quot;}&lt;/MetadataJson&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.LoadVariablesValues&quot;,&quot;EntityIdentifier&quot;:&quot;ortomo_Test&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.LoadVariablesValues&lt;/PAP_InternalIdentifier&gt;
-        &lt;EntityIdentifier&gt;Test&lt;/EntityIdentifier&gt;
+        &lt;EntityIdentifier&gt;ortomo_Test&lt;/EntityIdentifier&gt;
       &lt;/Metadata&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
@@ -309,7 +308,24 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:9] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T15:08:08.123&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-12-30T15:08:29.983&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;584&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Edit&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:9] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:9] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
+      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:9] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
+      &lt;LastModified&gt;2020-12-30T15:08:29.983&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;584&lt;/ModuleId&gt;
