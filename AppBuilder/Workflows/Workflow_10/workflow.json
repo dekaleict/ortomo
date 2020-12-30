@@ -714,7 +714,7 @@
                         {
                           "Id": 605,
                           "Name": "SqlQuery",
-                          "Value": "UPDATE       app.ortomo_Vragenlijst\nSET                AantalVragen = ISNULL(Q1.AantalVragen, 0)\nFROM            (SELECT        TOP (1000) ortomo_vragenlijst_1.Id, COUNT(app.ortomo_Vraag.Id) AS AantalVragen\n                          FROM            app.ortomo_Vraag INNER JOIN\n                                                    app.ortomo_Vragenlijst AS ortomo_vragenlijst_1 ON app.ortomo_Vraag.Vragenlijst = ortomo_vragenlijst_1.Id\n                          GROUP BY ortomo_vragenlijst_1.Id) AS Q1 RIGHT OUTER JOIN\n                         app.ortomo_Vragenlijst ON Q1.Id = app.ortomo_Vragenlijst.Id",
+                          "Value": "UPDATE       app.ortomo_MijnTest\nSET                Vragen = Q1.Vragen, VragenBeantwoord = Q1.VragenBeantwoord, VragenOpenstaand = Q1.VragenOpenstaand\nFROM            (SELECT        TOP (1000) SUM(app.ortomo_MijnVragenlijst.Vragen) AS Vragen, SUM(app.ortomo_MijnVragenlijst.VragenBeantwoord) AS VragenBeantwoord, SUM(app.ortomo_MijnVragenlijst.VragenOpenstaand) \n                                                    AS VragenOpenstaand, app.ortomo_MijnVragenlijst.Id AS MijnTestId\n                          FROM            app.ortomo_MijnVragenlijst INNER JOIN\n                                                    app.ortomo_MijnTest AS ortomo_MijnTest_1 ON app.ortomo_MijnVragenlijst.MijnTest = ortomo_MijnTest_1.Id\n                          GROUP BY app.ortomo_MijnVragenlijst.Id) AS Q1 INNER JOIN\n                         app.ortomo_MijnTest ON Q1.MijnTestId = app.ortomo_MijnTest.Id",
                           "IsExpression": false,
                           "ActionId": 91,
                           "OrderIndex": 0,
@@ -838,7 +838,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T20:22:38.9103672+01:00",
+  "LastModifiedOn": "2020-12-30T20:29:08.0314495+01:00",
   "InputFields": [
     {
       "Id": 65,
