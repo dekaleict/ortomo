@@ -1,6 +1,6 @@
 {
-  "Name": "Test",
-  "Description": "Creates a new record of type Test",
+  "Name": "ortomo_Test",
+  "Description": "Creates a new record of type ortomo_Test",
   "HttpMethod": "POST",
   "IsEnabled": true,
   "OrderIndex": 213,
@@ -92,7 +92,7 @@
   ],
   "Actions": [
     {
-      "ActionType": "PlantAnApp.CreateEntity.0.Test",
+      "ActionType": "PlantAnApp.CreateEntity.0.ortomo_Test",
       "OrderIndex": 0,
       "Parameters": {
         "OutputToken": "CreatedRecordId",
@@ -109,11 +109,11 @@
       "ExecutionType": "OnExecute",
       "Metadata": {
         "PAP_InternalIdentifier": "Api.CreateEntity",
-        "EntityIdentifier": "Test"
+        "EntityIdentifier": "ortomo_Test"
       }
     },
     {
-      "ActionType": "PlantAnApp.ReadEntity.0.Test",
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_Test",
       "OrderIndex": 1,
       "Parameters": {
         "RecordId": "[CreatedRecordId]",
@@ -123,7 +123,7 @@
       "ExecutionType": "OnExecute",
       "Metadata": {
         "PAP_InternalIdentifier": "Api.ReadEntity",
-        "EntityIdentifier": "Test"
+        "EntityIdentifier": "ortomo_Test"
       }
     },
     {
@@ -172,7 +172,7 @@
         "Headers": [
           {
             "name": "Location",
-            "value": "http://kict015.dnncserver.nl/api/Test?recordId=[CreatedRecordId]"
+            "value": "http://kict015.dnncserver.nl/api/ortomo_Test?recordId=[CreatedRecordId]"
           }
         ]
       },
