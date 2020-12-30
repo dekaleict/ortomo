@@ -1,0 +1,98 @@
+{
+  "Name": "ortomo_MijnVragenlijst",
+  "Description": "Returns the information of a ortomo_MijnVragenlijst record in JSON object format.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 219,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_MijnVragenlijst",
+      "OrderIndex": 0,
+      "Parameters": {
+        "RecordId": "[RecordId]",
+        "OutputToken": "Record"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ortomo_MijnVragenlijst"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[RecordId]"
+          },
+          {
+            "name": "Vragenlijst",
+            "value": "[Record:Vragenlijst]"
+          },
+          {
+            "name": "Volgorde",
+            "value": "[Record:Volgorde]"
+          },
+          {
+            "name": "Startdatum",
+            "value": "[Record:Startdatum]"
+          },
+          {
+            "name": "Einddatum",
+            "value": "[Record:Einddatum]"
+          },
+          {
+            "name": "Vragen",
+            "value": "[Record:Vragen]"
+          },
+          {
+            "name": "VragenOpenstaand",
+            "value": "[Record:VragenOpenstaand]"
+          },
+          {
+            "name": "VragenBeantwoord",
+            "value": "[Record:VragenBeantwoord]"
+          },
+          {
+            "name": "PercentageVoortgang",
+            "value": "[Record:PercentageVoortgang]"
+          }
+        ],
+        "Headers": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
