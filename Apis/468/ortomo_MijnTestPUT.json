@@ -1,6 +1,6 @@
 {
-  "Name": "ortomo_Test",
-  "Description": "Updates the information of the provided ortomo_Test record",
+  "Name": "ortomo_MijnTest",
+  "Description": "Updates the information of the provided ortomo_MijnTest record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
   "OrderIndex": 216,
@@ -112,7 +112,7 @@
   ],
   "Actions": [
     {
-      "ActionType": "PlantAnApp.UpdateEntity.0.ortomo_Test",
+      "ActionType": "PlantAnApp.UpdateEntity.0.ortomo_MijnTest",
       "OrderIndex": 0,
       "Parameters": {
         "RecordId": "[RecordId]",
@@ -129,7 +129,7 @@
       "ExecutionType": "OnExecute",
       "Metadata": {
         "PAP_InternalIdentifier": "Api.UpdateEntity",
-        "EntityIdentifier": "ortomo_Test"
+        "EntityIdentifier": "ortomo_MijnTest"
       }
     },
     {
