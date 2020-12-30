@@ -7,7 +7,6 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -170,8 +169,8 @@
     &lt;/FieldInfo&gt;
     &lt;FieldInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Title&gt;Vragenlijst&lt;/Title&gt;
-      &lt;RefName&gt;VragenlijstVragenlijstNaam&lt;/RefName&gt;
+      &lt;Title&gt;MijnTest&lt;/Title&gt;
+      &lt;RefName&gt;MijnTestGUID&lt;/RefName&gt;
       &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
       &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
       &lt;IsSortable&gt;false&lt;/IsSortable&gt;
@@ -227,15 +226,15 @@
       &lt;ShowOnTablet&gt;true&lt;/ShowOnTablet&gt;
       &lt;ShowOnDesktop&gt;true&lt;/ShowOnDesktop&gt;
       &lt;ShowOnLargeScreens&gt;true&lt;/ShowOnLargeScreens&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Field.EntityRef.138&quot;}&lt;/MetadataJson&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Field.EntityRef.148&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Field.EntityRef.138&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_InternalIdentifier&gt;Field.EntityRef.148&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
     &lt;/FieldInfo&gt;
     &lt;FieldInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Title&gt;MijnTest&lt;/Title&gt;
-      &lt;RefName&gt;MijnTestGUID&lt;/RefName&gt;
+      &lt;Title&gt;Vragenlijst&lt;/Title&gt;
+      &lt;RefName&gt;VragenlijstVragenlijstNaam&lt;/RefName&gt;
       &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
       &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
       &lt;IsSortable&gt;false&lt;/IsSortable&gt;
@@ -291,9 +290,9 @@
       &lt;ShowOnTablet&gt;true&lt;/ShowOnTablet&gt;
       &lt;ShowOnDesktop&gt;true&lt;/ShowOnDesktop&gt;
       &lt;ShowOnLargeScreens&gt;true&lt;/ShowOnLargeScreens&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Field.EntityRef.148&quot;}&lt;/MetadataJson&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Field.EntityRef.138&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Field.EntityRef.148&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_InternalIdentifier&gt;Field.EntityRef.138&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
     &lt;/FieldInfo&gt;
     &lt;FieldInfo&gt;
