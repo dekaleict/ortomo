@@ -86,5 +86,27 @@
     "IsFilterable": false,
     "IsSortable": false,
     "OrderIndex": 4
+  },
+  {
+    "Id": 147,
+    "EntityVersionId": 11,
+    "Name": "Volgorde",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 5
   }
 ]
