@@ -1,0 +1,12 @@
+{
+  "DisplayInMenu": false,
+  "ParentPageId": 63,
+  "RecordNamePropertyId": 130,
+  "Id": 23,
+  "VersionId": 23,
+  "Name": "Test",
+  "PluralName": "Testen",
+  "Icon": "clipboard-check",
+  "Type": "UserCreated",
+  "EnableIndexing": false
+}

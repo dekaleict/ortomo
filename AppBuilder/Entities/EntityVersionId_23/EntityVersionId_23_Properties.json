@@ -1,0 +1,178 @@
+[
+  {
+    "Id": 130,
+    "EntityVersionId": 23,
+    "Name": "GUID",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 1
+  },
+  {
+    "Id": 131,
+    "EntityVersionId": 23,
+    "Name": "Gebruiker",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 1,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 2
+  },
+  {
+    "Id": 132,
+    "EntityVersionId": 23,
+    "Name": "Startdatum",
+    "Type": {
+      "Id": "DateTime",
+      "Name": "Date and Time",
+      "InputType": {
+        "Id": "DateTime",
+        "Name": "Date and Time",
+        "ValueType": "DateTime",
+        "Length": 8,
+        "Icon": "today"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 3
+  },
+  {
+    "Id": 133,
+    "EntityVersionId": 23,
+    "Name": "Einddatum",
+    "Type": {
+      "Id": "DateTime",
+      "Name": "Date and Time",
+      "InputType": {
+        "Id": "DateTime",
+        "Name": "Date and Time",
+        "ValueType": "DateTime",
+        "Length": 8,
+        "Icon": "today"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 4
+  },
+  {
+    "Id": 134,
+    "EntityVersionId": 23,
+    "Name": "Vragen",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 5
+  },
+  {
+    "Id": 135,
+    "EntityVersionId": 23,
+    "Name": "VragenOpenstaand",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 6
+  },
+  {
+    "Id": 136,
+    "EntityVersionId": 23,
+    "Name": "VragenBeantwoord",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 7
+  },
+  {
+    "Id": 137,
+    "EntityVersionId": 23,
+    "Name": "PercentageVoortgang",
+    "Type": {
+      "Id": "Decimal",
+      "Name": "Number (Decimal)",
+      "InputType": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "ValueType": "Decimal",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 8
+  }
+]
