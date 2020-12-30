@@ -31,7 +31,7 @@
           {
             "Id": 534,
             "Name": "SqlQuery",
-            "Value": "SELECT * FROM app.ortomo_Test\nWHERE Gebruiker = @Userid and Einddatum is null",
+            "Value": "SELECT *,\nGetDate() as CurrentDateTime\nFROM app.ortomo_Test\nWHERE Gebruiker = @Userid and Einddatum is null",
             "IsExpression": false,
             "ActionId": 82,
             "OrderIndex": 0,
@@ -98,6 +98,11 @@
                 "value": "VragenOpenstaand",
                 "$$hashKey": "object:92",
                 "name": "VragenOpenstaand"
+              },
+              {
+                "value": "CurrentDateTime",
+                "$$hashKey": "object:91",
+                "name": "CurrentDateTime"
               }
             ],
             "IsExpression": false,
@@ -185,7 +190,7 @@
                         {
                           "Id": 545,
                           "Name": "Startdatum",
-                          "Value": "[DateTime:Now]",
+                          "Value": "[CurrentDateTime:ISOAsUtc]]",
                           "IsExpression": false,
                           "ActionId": 84,
                           "OrderIndex": 0,
@@ -435,7 +440,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T15:21:46.5497123+01:00",
+  "LastModifiedOn": "2020-12-30T15:24:00.1381784+01:00",
   "InputFields": [
     {
       "Id": 65,
