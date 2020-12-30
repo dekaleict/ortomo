@@ -4,8 +4,8 @@
   "RecordNamePropertyId": 130,
   "Id": 23,
   "VersionId": 23,
-  "Name": "ortomo_Test",
-  "PluralName": "ortomo_Testen",
+  "Name": "ortomo_MijnTest",
+  "PluralName": "ortomo_MijnTesten",
   "Icon": "clipboard-check",
   "Type": "UserCreated",
   "EnableIndexing": false
