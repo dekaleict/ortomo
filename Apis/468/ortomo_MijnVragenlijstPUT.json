@@ -108,6 +108,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "MijnTest",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -123,7 +132,8 @@
         "Vragen": "[Vragen]",
         "VragenOpenstaand": "[VragenOpenstaand]",
         "VragenBeantwoord": "[VragenBeantwoord]",
-        "PercentageVoortgang": "[PercentageVoortgang]"
+        "PercentageVoortgang": "[PercentageVoortgang]",
+        "MijnTest": "[MijnTest]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
