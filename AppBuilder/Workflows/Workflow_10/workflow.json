@@ -1,0 +1,52 @@
+{
+  "Id": 10,
+  "Name": "ortomo- Mijn Test",
+  "Description": "De actuele test van een ingelogde gebruiker incl de actuele vragenlijst",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 40,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 81,
+        "ActionType": "LoadUser",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 530,
+            "Name": "Id",
+            "Value": "[User:Userid]",
+            "IsExpression": false,
+            "ActionId": 81,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 531,
+            "Name": "Portal",
+            "IsExpression": false,
+            "ActionId": 81,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_14ctjps"
+      }
+    ]
+  },
+  "CreatedBy": "Hans Lenting",
+  "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
+  "LastModifiedBy": "Hans Lenting",
+  "LastModifiedOn": "2020-12-30T15:11:23.2946167+01:00",
+  "InputFields": [],
+  "OutputFields": [
+    {
+      "Value": "[User:Userid]",
+      "Id": 64,
+      "Name": "Userid",
+      "InputType": "Text",
+      "WorkflowId": 10,
+      "IsDeleted": false
+    }
+  ]
+}
