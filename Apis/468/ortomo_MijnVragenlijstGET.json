@@ -53,10 +53,6 @@
             "value": "[RecordId]"
           },
           {
-            "name": "MijnTest",
-            "value": "[Record:MijnTest]"
-          },
-          {
             "name": "Vragenlijst",
             "value": "[Record:Vragenlijst]"
           },
@@ -87,6 +83,10 @@
           {
             "name": "PercentageVoortgang",
             "value": "[Record:PercentageVoortgang]"
+          },
+          {
+            "name": "MijnTest",
+            "value": "[Record:MijnTest]"
           }
         ],
         "Headers": []
