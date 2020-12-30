@@ -451,6 +451,230 @@
                         }
                       ],
                       "DiagramUID": "Activity_0naou2m"
+                    },
+                    {
+                      "Id": 88,
+                      "ActionType": "LoadEntitiesFromSql",
+                      "OrderIndex": 2,
+                      "ActionParameters": [
+                        {
+                          "Id": 581,
+                          "Name": "ConnectionString",
+                          "IsExpression": false,
+                          "ActionId": 88,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 582,
+                          "Name": "SqlQuery",
+                          "Value": "SELECT * FROM ortomo_Vragenlijst\nWHERE AltijdToevoegen = 1\nORDER BY Volgorde",
+                          "IsExpression": false,
+                          "ActionId": 88,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 583,
+                          "Name": "BindTokens",
+                          "IsExpression": false,
+                          "ActionId": 88,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 584,
+                          "Name": "EntityName",
+                          "Value": "Vragenlijsten",
+                          "IsExpression": false,
+                          "ActionId": 88,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 585,
+                          "Name": "EntityProps",
+                          "IsExpression": false,
+                          "ActionId": 88,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 586,
+                          "Name": "OnError",
+                          "Value": {
+                            "Id": 46,
+                            "EventName": "OnError",
+                            "Actions": []
+                          },
+                          "IsExpression": false,
+                          "ActionId": 88,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        }
+                      ],
+                      "DiagramUID": "Activity_08eec8u"
+                    },
+                    {
+                      "Id": 89,
+                      "ActionType": "ExecuteActionsOnEntityList",
+                      "OrderIndex": 3,
+                      "ActionParameters": [
+                        {
+                          "Id": 587,
+                          "Name": "EntityName",
+                          "Value": "Vragenlijsten",
+                          "IsExpression": false,
+                          "ActionId": 89,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 588,
+                          "Name": "Filters",
+                          "IsExpression": false,
+                          "ActionId": 89,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 589,
+                          "Name": "ContextBehavior",
+                          "IsExpression": false,
+                          "ActionId": 89,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 600,
+                          "Name": "ActionList",
+                          "Value": {
+                            "Id": 47,
+                            "EventName": "click",
+                            "Actions": [
+                              {
+                                "Id": 90,
+                                "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnVragenlijst",
+                                "OrderIndex": 0,
+                                "ActionParameters": [
+                                  {
+                                    "Id": 590,
+                                    "Name": "ConnectionString",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
+                                  },
+                                  {
+                                    "Id": 591,
+                                    "Name": "Vragenlijst",
+                                    "Value": "[Vragenlijsten:id]",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
+                                  },
+                                  {
+                                    "Id": 592,
+                                    "Name": "Volgorde",
+                                    "Value": "[Vragenlijsten:volgorde]",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
+                                  },
+                                  {
+                                    "Id": 593,
+                                    "Name": "Startdatum",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
+                                  },
+                                  {
+                                    "Id": 594,
+                                    "Name": "Einddatum",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
+                                  },
+                                  {
+                                    "Id": 595,
+                                    "Name": "Vragen",
+                                    "Value": "[Vragenlijsten:Vragen]",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
+                                  },
+                                  {
+                                    "Id": 596,
+                                    "Name": "VragenOpenstaand",
+                                    "Value": "[Vragenlijsten:Vragen]",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
+                                  },
+                                  {
+                                    "Id": 597,
+                                    "Name": "VragenBeantwoord",
+                                    "Value": "0",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
+                                  },
+                                  {
+                                    "Id": 598,
+                                    "Name": "PercentageVoortgang",
+                                    "Value": "0",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
+                                  },
+                                  {
+                                    "Id": 599,
+                                    "Name": "OutputToken",
+                                    "IsExpression": false,
+                                    "ActionId": 90,
+                                    "OrderIndex": 0,
+                                    "SubParameters": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          "IsExpression": false,
+                          "ActionId": 89,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 601,
+                          "Name": "ContinueOnError",
+                          "IsExpression": false,
+                          "ActionId": 89,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 602,
+                          "Name": "OnError",
+                          "Value": {
+                            "Id": 48,
+                            "EventName": "OnError",
+                            "Actions": []
+                          },
+                          "IsExpression": false,
+                          "ActionId": 89,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        }
+                      ],
+                      "DiagramUID": "Activity_0dokuyl"
                     }
                   ]
                 }
@@ -522,7 +746,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T20:06:04.0236185+01:00",
+  "LastModifiedOn": "2020-12-30T20:09:18.5412958+01:00",
   "InputFields": [
     {
       "Id": 65,
