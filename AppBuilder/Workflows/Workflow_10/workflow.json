@@ -602,7 +602,7 @@
                                   {
                                     "Id": 595,
                                     "Name": "Vragen",
-                                    "Value": "[Vragenlijsten:Vragen]",
+                                    "Value": "[Vragenlijsten:AantalVragen]",
                                     "IsExpression": false,
                                     "ActionId": 90,
                                     "OrderIndex": 0,
@@ -611,7 +611,7 @@
                                   {
                                     "Id": 596,
                                     "Name": "VragenOpenstaand",
-                                    "Value": "[Vragenlijsten:Vragen]",
+                                    "Value": "[Vragenlijsten:AantalVragen]",
                                     "IsExpression": false,
                                     "ActionId": 90,
                                     "OrderIndex": 0,
@@ -746,7 +746,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T20:10:51.6127776+01:00",
+  "LastModifiedOn": "2020-12-30T20:12:06.6547051+01:00",
   "InputFields": [
     {
       "Id": 65,
