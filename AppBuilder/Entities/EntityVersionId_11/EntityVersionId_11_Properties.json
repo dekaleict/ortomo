@@ -64,5 +64,27 @@
     "IsFilterable": false,
     "IsSortable": false,
     "OrderIndex": 3
+  },
+  {
+    "Id": 146,
+    "EntityVersionId": 11,
+    "Name": "AltijdToevoegen",
+    "Type": {
+      "Id": "Boolean",
+      "Name": "Boolean",
+      "InputType": {
+        "Id": "Boolean",
+        "Name": "Boolean",
+        "ValueType": "Boolean",
+        "Length": 1,
+        "Icon": "check_circle_outline"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 4
   }
 ]

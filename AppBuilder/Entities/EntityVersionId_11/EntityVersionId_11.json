@@ -7,5 +7,6 @@
   "Name": "ortomo_Vragenlijst",
   "PluralName": "ortomo_Vragenlijsten",
   "Icon": "clipboard-list",
-  "Type": "UserCreated"
+  "Type": "UserCreated",
+  "EnableIndexing": false
 }
