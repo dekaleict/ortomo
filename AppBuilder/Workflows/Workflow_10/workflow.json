@@ -468,7 +468,7 @@
                         {
                           "Id": 582,
                           "Name": "SqlQuery",
-                          "Value": "SELECT * FROM ortomo_Vragenlijst\nWHERE AltijdToevoegen = 1\nORDER BY Volgorde",
+                          "Value": "SELECT * FROM app.ortomo_Vragenlijst\nWHERE AltijdToevoegen = 1\nORDER BY Volgorde",
                           "IsExpression": false,
                           "ActionId": 88,
                           "OrderIndex": 0,
@@ -746,7 +746,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2020-12-30T20:09:18.5412958+01:00",
+  "LastModifiedOn": "2020-12-30T20:10:51.6127776+01:00",
   "InputFields": [
     {
       "Id": 65,
