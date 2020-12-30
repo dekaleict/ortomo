@@ -147,10 +147,6 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "MijnTest",
-            "value": "[CreatedRecord:MijnTest]"
-          },
-          {
             "name": "Vragenlijst",
             "value": "[CreatedRecord:Vragenlijst]"
           },
@@ -181,6 +177,10 @@
           {
             "name": "PercentageVoortgang",
             "value": "[CreatedRecord:PercentageVoortgang]"
+          },
+          {
+            "name": "MijnTest",
+            "value": "[CreatedRecord:MijnTest]"
           }
         ],
         "Headers": [
