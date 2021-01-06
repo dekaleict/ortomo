@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "Id": 4,
+    "EntityVersionId": 20,
+    "RelationName": "Claims",
+    "OrderIndex": 13
+  }
+]

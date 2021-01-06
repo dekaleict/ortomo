@@ -7,5 +7,6 @@
   "Name": "ortomo_Preparaat",
   "PluralName": "ortomo_Preparaten",
   "Icon": "seedling",
-  "Type": "UserCreated"
+  "Type": "UserCreated",
+  "EnableIndexing": false
 }
