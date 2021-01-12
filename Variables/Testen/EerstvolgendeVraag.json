@@ -11,9 +11,9 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT TOP(1) * FROM ortomo_MijnTest_MijnAntwoorden\nWHERE MijnTest=[Gebruiker:OpenTest.MijnTestId] and VraagBeantwoord=0",
+    "sql": "SELECT TOP(1) * FROM app.ortomo_MijnAntwoord\nWHERE MijnTest=[Gebruiker:OpenTest.MijnTestId] and VraagBeantwoord=0",
     "defaultColumn": "",
-    "columns": "VragenlijstGUID\nVraagGUID\nVraag\nVraagToelichting\nVraagType\nVraagHoortBijDoel\nAntwoordGUID\nAntwoordVolgorde",
+    "columns": "Vragenlijst\nVraag\nVraagTekst\nVraagToelichting\nVraagType\nVraagDoel\nGekozenAntwoordId\nGekozenAntwoordTekst",
     "connectionString": "",
     "type": "db"
   }
