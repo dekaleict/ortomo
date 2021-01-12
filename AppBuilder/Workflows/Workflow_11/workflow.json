@@ -120,7 +120,7 @@
           {
             "Id": 626,
             "Name": "SqlQuery",
-            "Value": "SELECT        app.ortomo_MijnVragenlijst.*\nFROM            app.ortomo_MijnVragenlijst LEFT OUTER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnVragenlijst.Vragenlijst = app.ortomo_MijnAntwoord.Vragenlijst\nWHERE        (app.ortomo_MijnVragenlijst.MijnTest = @MijnTest) AND (app.ortomo_MijnAntwoord.Vragenlijst IS NULL)",
+            "Value": "SELECT        app.ortomo_MijnVragenlijst.*\nFROM            app.ortomo_MijnVragenlijst LEFT OUTER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnVragenlijst.Vragenlijst = app.ortomo_MijnAntwoord.Vragenlijst\nWHERE        (app.ortomo_MijnVragenlijst.MijnTest = @MijnTest) AND (app.ortomo_MijnAntwoord.MijnTest IS NULL)",
             "IsExpression": false,
             "ActionId": 94,
             "OrderIndex": 0,
@@ -237,7 +237,7 @@
                     {
                       "Id": 636,
                       "Name": "SqlQuery",
-                      "Value": "INSERT INTO app.ortomo_MijnAntwoord\n                         (VraagToelichting, VraagType, VraagVolgorde, VraagTekst, Vragenlijst, Vraag, CreatedBy, CreatedDate, VraagBeantwoord)\nSELECT        Toelichting, Type, VolgordeBinnenVragenlijst, Vraag, Vragenlijst, Id AS VraagId, @Gebruiker, GetDate(), 0\nFROM            app.ortomo_Vraag\nWHERE        (Vragenlijst =@Vragenlijst)\nORDER BY VolgordeBinnenVragenlijst asc",
+                      "Value": "INSERT INTO app.ortomo_MijnAntwoord\n                         (VraagToelichting, VraagType, VraagVolgorde, VraagTekst, Vragenlijst, Vraag, CreatedBy, CreatedDate, VraagBeantwoord, MijnTest)\nSELECT        Toelichting, Type, VolgordeBinnenVragenlijst, Vraag, Vragenlijst, Id AS VraagId, @Gebruiker, GetDate(), 0, @MijnTest\nFROM            app.ortomo_Vraag\nWHERE        (Vragenlijst =@Vragenlijst)\nORDER BY VolgordeBinnenVragenlijst asc",
                       "IsExpression": false,
                       "ActionId": 96,
                       "OrderIndex": 0,
@@ -256,6 +256,11 @@
                           "value": "[Gebruiker]",
                           "$$hashKey": "object:663",
                           "name": "Gebruiker"
+                        },
+                        {
+                          "value": "[MijnTestId]",
+                          "$$hashKey": "object:119",
+                          "name": "MijnTest"
                         }
                       ],
                       "IsExpression": false,
@@ -339,7 +344,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-01-12T15:24:39.9987972+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-01-12T15:56:24.1865913+01:00",
+  "LastModifiedOn": "2021-01-12T15:58:44.0385038+01:00",
   "InputFields": [
     {
       "Id": 73,
