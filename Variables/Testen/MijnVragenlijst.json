@@ -11,9 +11,9 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT        ortomo_MijnTest_MijnVragenlijsten.id, ortomo_MijnTest_MijnVragenlijsten.MijnTestGUID, ortomo_MijnTest_MijnVragenlijsten.VragenlijstGUID, ortomo_MijnTest_MijnVragenlijsten.Startdatum, \n                         ortomo_MijnTest_MijnVragenlijsten.Einddatum, ortomo_MijnTest_MijnVragenlijsten.Volgorde, ortomo_MijnTest_MijnVragenlijsten.AantalVragen, ortomo_MijnTest_MijnVragenlijsten.AantalVragen_Gedaan, \n                         ortomo_MijnTest_MijnVragenlijsten.AantalVragen_NogTeDoen, ortomo_MijnTest_MijnVragenlijsten.VragenlijstPercentageVoortgang, ortomo_tbl_vragenlijsten.VragenlijstNaam, \n                         ortomo_tbl_vragenlijsten.VragenlijstBeschrijving\nFROM            ortomo_MijnTest_MijnVragenlijsten INNER JOIN\n                         ortomo_tbl_vragenlijsten ON ortomo_MijnTest_MijnVragenlijsten.VragenlijstGUID = ortomo_tbl_vragenlijsten.VragenlijstGUID\nWHERE        (ortomo_MijnTest_MijnVragenlijsten.MijnTestGUID = '[Gebruiker:OpenTest.MijnTestGUID]') AND (ortomo_MijnTest_MijnVragenlijsten.AantalVragen_NogTeDoen > 0)\nORDER BY ortomo_MijnTest_MijnVragenlijsten.Startdatum",
+    "sql": "SELECT        *\nFROM            app.ortomo_MijnVragenlijst INNER JOIN\n                         app.ortomo_Vragenlijst ON app.ortomo_MijnVragenlijst.id = app.ortomo_Vragenlijst.id\nWHERE        (app.ortomo_MijnVragenlijst.MijnTest = [Gebruiker:OpenTest.MijnTestId]) AND (app.ortomo_MijnVragenlijst.VragenOpenstaand > 0)\nORDER BY app.ortomo_MijnVragenlijst.Startdatum",
     "defaultColumn": "",
-    "columns": "VragenlijstGUID\nStartdatum\nEinddatum\nVolgorde\nAantalVragen\nAantalVragen_Gedaan\nAantalVragen_NogTeDoen\nVragenlijstPercentageVoortgang\nVragenlijstNaam\nVragenlijstBeschrijving",
+    "columns": "Vragenlijst\nStartdatum\nEinddatum\nVolgorde\nVragen\nVragenBeantwoord\nVragenOpenstaand\nPercentageVoortgang\nVragenlijstNaam\nVragenlijstBeschrijving",
     "connectionString": "",
     "type": "db"
   }
