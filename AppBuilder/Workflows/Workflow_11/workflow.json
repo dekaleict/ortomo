@@ -153,7 +153,13 @@
           {
             "Id": 629,
             "Name": "EntityProps",
-            "Value": [],
+            "Value": [
+              {
+                "value": "MijnVragenlijstenId",
+                "$$hashKey": "object:48",
+                "name": "Vragenlijst"
+              }
+            ],
             "IsExpression": false,
             "ActionId": 94,
             "OrderIndex": 0,
@@ -248,7 +254,7 @@
                       "Name": "BindTokens",
                       "Value": [
                         {
-                          "value": "[MijnVragenlijsten:Id]",
+                          "value": "[MijnVragenlijsten:MijnVragenlijstenId]",
                           "$$hashKey": "object:639",
                           "name": "Vragenlijst"
                         },
@@ -345,7 +351,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-01-12T15:24:39.9987972+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-01-12T16:07:59.8670174+01:00",
+  "LastModifiedOn": "2021-01-12T16:10:27.4993492+01:00",
   "InputFields": [
     {
       "Id": 73,
