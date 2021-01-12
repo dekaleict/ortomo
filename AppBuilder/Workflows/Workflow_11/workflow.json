@@ -174,13 +174,172 @@
           }
         ],
         "DiagramUID": "Activity_0g2867u"
+      },
+      {
+        "Id": 95,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 631,
+            "Name": "EntityName",
+            "Value": "MijnVragenlijsten",
+            "IsExpression": false,
+            "ActionId": 95,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 632,
+            "Name": "Filters",
+            "IsExpression": false,
+            "ActionId": 95,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 633,
+            "Name": "ContextBehavior",
+            "IsExpression": false,
+            "ActionId": 95,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 642,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 53,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 96,
+                  "Description": "Selecteren vragen per vragenlijst",
+                  "ActionType": "RunSql",
+                  "OrderIndex": 0,
+                  "ActionParameters": [
+                    {
+                      "Id": 634,
+                      "Name": "ConnectionString",
+                      "IsExpression": false,
+                      "ActionId": 96,
+                      "OrderIndex": 0,
+                      "SubParameters": []
+                    },
+                    {
+                      "Id": 635,
+                      "Name": "QueryTimeout",
+                      "IsExpression": false,
+                      "ActionId": 96,
+                      "OrderIndex": 0,
+                      "SubParameters": []
+                    },
+                    {
+                      "Id": 636,
+                      "Name": "SqlQuery",
+                      "Value": "INSERT INTO app.ortomo_MijnAntwoord\n                         (VraagToelichting, VraagType, VraagVolgorde, VraagTekst, Vragenlijst, Vraag, CreatedBy, CreatedDate)\nSELECT        Toelichting, Type, VolgordeBinnenVragenlijst, Vraag, Vragenlijst, Id AS VraagId, @Gebruiker, GetDate()\nFROM            app.ortomo_Vraag\nWHERE        (Vragenlijst =@Vragenlijst)",
+                      "IsExpression": false,
+                      "ActionId": 96,
+                      "OrderIndex": 0,
+                      "SubParameters": []
+                    },
+                    {
+                      "Id": 637,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "value": "[MijnVragenlijsten:Id]",
+                          "$$hashKey": "object:639",
+                          "name": "Vragenlijst"
+                        },
+                        {
+                          "value": "[Gebruiker]",
+                          "$$hashKey": "object:663",
+                          "name": "Gebruiker"
+                        }
+                      ],
+                      "IsExpression": false,
+                      "ActionId": 96,
+                      "OrderIndex": 0,
+                      "SubParameters": []
+                    },
+                    {
+                      "Id": 638,
+                      "Name": "OutputTokenName",
+                      "IsExpression": false,
+                      "ActionId": 96,
+                      "OrderIndex": 0,
+                      "SubParameters": []
+                    },
+                    {
+                      "Id": 639,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "IsExpression": false,
+                      "ActionId": 96,
+                      "OrderIndex": 0,
+                      "SubParameters": []
+                    },
+                    {
+                      "Id": 640,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 54,
+                        "EventName": "OnError",
+                        "Actions": []
+                      },
+                      "IsExpression": false,
+                      "ActionId": 96,
+                      "OrderIndex": 0,
+                      "SubParameters": []
+                    },
+                    {
+                      "Id": 641,
+                      "Name": "ShowErrors",
+                      "IsExpression": false,
+                      "ActionId": 96,
+                      "OrderIndex": 0,
+                      "SubParameters": []
+                    }
+                  ]
+                }
+              ]
+            },
+            "IsExpression": false,
+            "ActionId": 95,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 643,
+            "Name": "ContinueOnError",
+            "IsExpression": false,
+            "ActionId": 95,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 644,
+            "Name": "OnError",
+            "Value": {
+              "Id": 55,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 95,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_1t9gmef"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-01-12T15:24:39.9987972+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-01-12T15:38:55.6463802+01:00",
+  "LastModifiedOn": "2021-01-12T15:49:12.8969959+01:00",
   "InputFields": [
     {
       "Id": 73,
