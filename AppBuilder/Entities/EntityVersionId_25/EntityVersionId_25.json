@@ -1,0 +1,12 @@
+{
+  "DisplayInMenu": false,
+  "ParentPageId": 109,
+  "RecordNamePropertyId": 151,
+  "Id": 25,
+  "VersionId": 25,
+  "Name": "ortomo_MijnAntwoord",
+  "PluralName": "ortomo_MijnAntwoorden",
+  "Icon": "question",
+  "Type": "UserCreated",
+  "EnableIndexing": false
+}
