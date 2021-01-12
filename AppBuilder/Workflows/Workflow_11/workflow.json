@@ -103,13 +103,84 @@
           }
         ],
         "DiagramUID": "Activity_08hj4em"
+      },
+      {
+        "Id": 94,
+        "ActionType": "LoadEntitiesFromSql",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 625,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 94,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 626,
+            "Name": "SqlQuery",
+            "Value": "SELECT * FROM app.ortomo_MijnVragenlijst\nWHERE MijnTest = @MijnTest",
+            "IsExpression": false,
+            "ActionId": 94,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 627,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[MijnTestId]",
+                "$$hashKey": "object:49",
+                "name": "MijnTest"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 94,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 628,
+            "Name": "EntityName",
+            "Value": "MijnVragenlijsten",
+            "IsExpression": false,
+            "ActionId": 94,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 629,
+            "Name": "EntityProps",
+            "Value": [],
+            "IsExpression": false,
+            "ActionId": 94,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 630,
+            "Name": "OnError",
+            "Value": {
+              "Id": 52,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 94,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0g2867u"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-01-12T15:24:39.9987972+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-01-12T15:35:24.931756+01:00",
+  "LastModifiedOn": "2021-01-12T15:38:55.6463802+01:00",
   "InputFields": [
     {
       "Id": 73,
@@ -124,6 +195,14 @@
       "Value": "[MijnTestGUID]",
       "Id": 74,
       "Name": "MijnTest",
+      "InputType": "Text",
+      "WorkflowId": 11,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[MijnVragenlijsten]",
+      "Id": 75,
+      "Name": "MijnVragenlijsten",
       "InputType": "Text",
       "WorkflowId": 11,
       "IsDeleted": false
