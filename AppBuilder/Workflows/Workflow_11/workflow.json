@@ -1,0 +1,25 @@
+{
+  "Id": 11,
+  "Name": "Vragen toevoegen bij MijnTest",
+  "Description": "Aan de hand van de geselecteerde vragenlijsten worden alle vragen klaargezet voor de gebruiker",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 50,
+    "EventName": "Event",
+    "Actions": []
+  },
+  "CreatedBy": "Hans Lenting",
+  "CreatedOn": "2021-01-12T15:24:39.9987972+01:00",
+  "LastModifiedBy": "Hans Lenting",
+  "LastModifiedOn": "2021-01-12T15:24:39.9987972+01:00",
+  "InputFields": [
+    {
+      "Id": 73,
+      "Name": "Gebruiker",
+      "InputType": "Integer",
+      "WorkflowId": 11,
+      "IsDeleted": false
+    }
+  ],
+  "OutputFields": []
+}
