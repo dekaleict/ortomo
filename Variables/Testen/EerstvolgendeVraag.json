@@ -13,7 +13,7 @@
   "src": {
     "sql": "SELECT TOP(1) * FROM app.ortomo_MijnAntwoord\nWHERE MijnTest=[Gebruiker:OpenTest.MijnTestId] and VraagBeantwoord=0",
     "defaultColumn": "",
-    "columns": "Vragenlijst\nVraag\nVraagTekst\nVraagToelichting\nVraagType\nVraagDoel\nGekozenAntwoordId\nGekozenAntwoordTekst",
+    "columns": "Vragenlijst\nVraag\nVraagTekst\nVraagToelichting\nVraagType\nVraagDoel\nGekozenAntwoordId\nGekozenAntwoordTekst\nVorigeVraag",
     "connectionString": "",
     "type": "db"
   }
