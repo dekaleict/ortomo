@@ -31,7 +31,7 @@
           {
             "Id": 619,
             "Name": "SqlQuery",
-            "Value": "SELECT * FROM ortomo_MijnTest\nWHERE Gebruiker = @Userid and Einddatum is null",
+            "Value": "SELECT * FROM app.ortomo_MijnTest\nWHERE Gebruiker = @Userid and Einddatum is null",
             "IsExpression": false,
             "ActionId": 93,
             "OrderIndex": 0,
@@ -109,7 +109,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-01-12T15:24:39.9987972+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-01-12T15:33:45.1084219+01:00",
+  "LastModifiedOn": "2021-01-12T15:35:24.931756+01:00",
   "InputFields": [
     {
       "Id": 73,
