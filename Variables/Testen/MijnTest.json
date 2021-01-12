@@ -13,7 +13,7 @@
   "src": {
     "sql": "SELECT * FROM app.ortomo_MijnTest\nWHERE id='[Gebruiker:OpenTest.MijnTestid]'",
     "defaultColumn": "",
-    "columns": "Userid\nStartdatumTest\nEinddatumTest\nAantalVragen\nAantalVragen_Gedaan\nAantalVragen_NogTeDoen\nMijnTestPercentageVoortgang",
+    "columns": "Startdatum\nEinddatum\nVragen\nVragenBeantwoord\nVragenOpenstaand\nPercentageVoortgang",
     "connectionString": "",
     "type": "db"
   }
