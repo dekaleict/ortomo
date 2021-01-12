@@ -1,0 +1,110 @@
+{
+  "Name": "ortomo_MijnAntwoord",
+  "Description": "Returns the information of a ortomo_MijnAntwoord record in JSON object format.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 224,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.ortomo_MijnAntwoord",
+      "OrderIndex": 0,
+      "Parameters": {
+        "RecordId": "[RecordId]",
+        "OutputToken": "Record"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ortomo_MijnAntwoord"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[RecordId]"
+          },
+          {
+            "name": "Vragenlijst",
+            "value": "[Record:Vragenlijst]"
+          },
+          {
+            "name": "VraagVolgorde",
+            "value": "[Record:VraagVolgorde]"
+          },
+          {
+            "name": "VraagTekst",
+            "value": "[Record:VraagTekst]"
+          },
+          {
+            "name": "Vraag",
+            "value": "[Record:Vraag]"
+          },
+          {
+            "name": "VraagToelichting",
+            "value": "[Record:VraagToelichting]"
+          },
+          {
+            "name": "VraagType",
+            "value": "[Record:VraagType]"
+          },
+          {
+            "name": "VraagDoel",
+            "value": "[Record:VraagDoel]"
+          },
+          {
+            "name": "VorigeVraag",
+            "value": "[Record:VorigeVraag]"
+          },
+          {
+            "name": "VraagBeantwoord",
+            "value": "[Record:VraagBeantwoord]"
+          },
+          {
+            "name": "GekozenAntwoordId",
+            "value": "[Record:GekozenAntwoordId]"
+          },
+          {
+            "name": "GekozenAntwoordTekst",
+            "value": "[Record:GekozenAntwoordTekst]"
+          }
+        ],
+        "Headers": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
