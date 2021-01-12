@@ -135,6 +135,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "MijnTest",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 12,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -153,7 +162,8 @@
         "VorigeVraag": "[VorigeVraag]",
         "VraagBeantwoord": "[VraagBeantwoord]",
         "GekozenAntwoordId": "[GekozenAntwoordId]",
-        "GekozenAntwoordTekst": "[GekozenAntwoordTekst]"
+        "GekozenAntwoordTekst": "[GekozenAntwoordTekst]",
+        "MijnTest": "[MijnTest]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
