@@ -11,7 +11,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT TOP(1) * FROM ortomo_MijnTest_MijnAntwoorden\nWHERE MijnTestGUID='[Gebruiker:OpenTest.MijnTestGUID]' and VraagBeantwoord='false'",
+    "sql": "SELECT TOP(1) * FROM ortomo_MijnTest_MijnAntwoorden\nWHERE MijnTestGUID='[Gebruiker:OpenTest.MijnTestGUID]' and VraagBeantwoord=0",
     "defaultColumn": "",
     "columns": "VragenlijstGUID\nVraagGUID\nVraag\nVraagToelichting\nVraagType\nVraagHoortBijDoel\nAntwoordGUID\nAntwoordVolgorde",
     "connectionString": "",
