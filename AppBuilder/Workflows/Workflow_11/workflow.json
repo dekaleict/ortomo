@@ -301,6 +301,7 @@
                     {
                       "Id": 641,
                       "Name": "ShowErrors",
+                      "Value": true,
                       "IsExpression": false,
                       "ActionId": 96,
                       "OrderIndex": 0,
@@ -344,7 +345,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-01-12T15:24:39.9987972+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-01-12T16:04:34.3145654+01:00",
+  "LastModifiedOn": "2021-01-12T16:07:59.8670174+01:00",
   "InputFields": [
     {
       "Id": 73,
