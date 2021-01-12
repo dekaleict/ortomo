@@ -240,5 +240,27 @@
     "IsFilterable": false,
     "IsSortable": false,
     "OrderIndex": 11
+  },
+  {
+    "Id": 161,
+    "EntityVersionId": 25,
+    "Name": "MijnTest",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 23,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 12
   }
 ]
