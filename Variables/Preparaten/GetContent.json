@@ -1,0 +1,20 @@
+{
+  "id": 27,
+  "namespace": {
+    "id": 9,
+    "name": "Preparaten"
+  },
+  "name": "GetContent",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT * FROM app.ortomo_PreparaatContent\nWHERE Id = [tknparameters:contentid]",
+    "defaultColumn": "",
+    "columns": "Id\nActieveIngredienten\nAlgemeneProductinformatie\nCommercieleNaam\nEigenschappen\nLeverancier\nOndertitel\nOnderzoek\nPreparaat\nPreparaatAfbeelding\nSfeerAfbeelding\nStory\nVulstoffen",
+    "connectionString": "",
+    "type": "db"
+  }
+}
