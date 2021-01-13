@@ -11,7 +11,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT *\nFROM app.ortomo_Preparaat\nWHERE Preparaat = '[querystring:product]'",
+    "sql": "SELECT *\nFROM app.ortomo_Preparaat\nWHERE Preparaat = 'Magnesium'",
     "defaultColumn": "",
     "columns": "Id\nBeschrijving\nLastModifiedDate\nPreparaat\nIcon\nPrijsPerDag\nStatusBeschikbaarheid\nADH\nAantalPerDag\nInnameAdvies\nKleurSupplement\nPrijsPerPack\nTypeSupplement\nContentId\nDeclaratieId\nExternArtikelnummer",
     "connectionString": "",
