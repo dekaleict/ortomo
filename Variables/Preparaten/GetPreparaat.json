@@ -13,7 +13,7 @@
   "src": {
     "sql": "SELECT *\nFROM app.ortomo_Preparaat\nWHERE Preparaat = 'Vitamine B12'",
     "defaultColumn": "",
-    "columns": "Id\nBeschrijving\nLastModifiedDate\nPreparaat\nIcon\nPrijsPerDag\nStatusBeschikbaarheid\nADH\nAantalPerDag\nInnameAdvies\nKleurSupplement\nPrijsPerPack\nTypeSupplement\nContentId\nDeclaratieId\nExternArtikelnummer",
+    "columns": "Id\nBeschrijving\nLastModifiedDate\nPreparaat\nIcon\nPrijsPerDag\nStatusBeschikbaarheid\nADH\nAantalPerDag\nInnameAdvies\nKleurSupplement\nPrijsPerPack\nTypeSupplement\nContent\nDeclaratie\nExternArtikelnummer",
     "connectionString": "",
     "type": "db"
   }
