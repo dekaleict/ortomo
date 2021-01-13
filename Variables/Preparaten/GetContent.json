@@ -11,7 +11,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT * FROM app.ortomo_PreparaatContent\nWHERE Id = [tknparams:contentid]",
+    "sql": "SELECT * FROM app.ortomo_PreparaatContent\nWHERE Id = '[tknparams:contentid]'",
     "defaultColumn": "",
     "columns": "Id\nActieveIngredienten\nAlgemeneProductinformatie\nCommercieleNaam\nEigenschappen\nLeverancier\nOndertitel\nOnderzoek\nPreparaat\nPreparaatAfbeelding\nSfeerAfbeelding\nStory\nVulstoffen",
     "connectionString": "",
