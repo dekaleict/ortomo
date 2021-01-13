@@ -1,9 +1,10 @@
 <module type="DNNHTML" version="09.06.00.00">
+    <contentKey />
     <moduleID>600</moduleID>
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>1200</cachetime>
     <color />
     <containersrc />
@@ -24,9 +25,9 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>Text/HTML</title>
+    <title>ProductDetailpagina</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>6b0a6b4f-4576-4dbd-807d-4fe43aade0d2</uniqueId>
+    <uniqueId>b4144a0d-ee2e-4083-a508-735cbd27d56f</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
     <webslicetitle />
