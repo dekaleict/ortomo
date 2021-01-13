@@ -15,9 +15,15 @@
     <footer />
     <header />
     <iconfile />
-    <inheritviewpermissions>true</inheritviewpermissions>
+    <inheritviewpermissions>false</inheritviewpermissions>
     <iswebslice>false</iswebslice>
     <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
         <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
@@ -30,6 +36,7 @@
     <uniqueId>b4144a0d-ee2e-4083-a508-735cbd27d56f</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings>
@@ -43,7 +50,7 @@
         </modulesetting>
         <modulesetting>
             <settingname>WorkFlowID</settingname>
-            <settingvalue>-1</settingvalue>
+            <settingvalue>1</settingvalue>
         </modulesetting>
         <modulesetting>
             <settingname>HtmlText_SearchDescLength</settingname>
@@ -53,4 +60,5 @@
     <tabmodulesettings />
     <definition>DNN_HTML</definition>
     <moduledefinition>Text/HTML</moduledefinition>
+    <content type="DNNHTML" version="09.06.00.00"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;div class=&amp;quot;is-section&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;is-boxes&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;is-box-6 is-light-text is-box&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;is-overlay&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;is-overlay-content&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;is-overlay-bg&amp;quot; style=&amp;quot;background-image: url(&amp;quot;{{PortalRoot}}ThemePluginPro/uploads/2020/9/18/beautiful-lady-in-sporty-top-standing-on-kitchen-2000.png&amp;quot;);&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;is-boxes&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;is-box-6 is-box&amp;quot; style=&amp;quot;background-color: rgb(245, 247, 252);&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;is-boxes&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;is-box-centered&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;is-container container-fluid&amp;quot; style=&amp;quot;max-width: 640px;&amp;quot; dragwithouthandle=&amp;quot;&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;col-md-12 pl-xl-70&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;spacer height-20 d-none d-lg-block&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;title-03&amp;quot;&amp;gt; &amp;lt;h3&amp;gt;[Preparaten:GetContent.CommercieleNaam(contentid=&amp;quot;[Preparaten:GetPreparaat.Content]&amp;quot;)]&amp;lt;/h3&amp;gt; &amp;lt;small class=&amp;quot;color-accent&amp;quot;&amp;gt;Haal meer uit je lichaam&amp;lt;/small&amp;gt; &amp;lt;br&amp;gt; &amp;lt;h5 class=&amp;quot;color-accent&amp;quot;&amp;gt;€ 19,99 / [Testen:EerstvolgendeVraag.Vraag] capsules&amp;lt;/h5&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;p style=&amp;quot;font-size: 22px; color: rgb(51, 51, 51); font-weight: 600; padding-bottom: 5px;&amp;quot;&amp;gt;[Preparaten:GetPreparaat.Beschrijving]&amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;spacer height-20&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;a href=&amp;quot;#&amp;quot; title=&amp;quot;Learn more&amp;quot; class=&amp;quot;button-01 border-radius-3 mt-10 mb-5 mb-lg-10&amp;quot;&amp;gt;Doe de test&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;spacer height-20&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;img src=&amp;quot;{{PortalRoot}}ThemePluginPro/uploads/2020/9/23/vegan.png&amp;quot; style=&amp;quot;width: 7.92793%; height: auto; margin-right: 5px;&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;{{PortalRoot}}ThemePluginPro/uploads/2020/9/23/easyswallow.png&amp;quot; style=&amp;quot;width: 7.92793%; height: auto;margin-right: 5px;&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;{{PortalRoot}}ThemePluginPro/uploads/2020/9/23/lactosevrij.png&amp;quot; style=&amp;quot;width: 7.92793%; height: auto;margin-right: 5px;&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;{{PortalRoot}}ThemePluginPro/uploads/2020/9/23/eivrij.png&amp;quot; style=&amp;quot;width: 7.92793%; height: auto;margin-right: 5px;&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;{{PortalRoot}}ThemePluginPro/uploads/2020/9/23/glutenvrij.png&amp;quot; style=&amp;quot;width: 7.92793%; height: auto;margin-right: 5px;&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;{{PortalRoot}}ThemePluginPro/uploads/2020/9/23/Notenvrij.png&amp;quot; style=&amp;quot;width: 7.92793%; height: auto;margin-right: 5px;&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
 </module>
