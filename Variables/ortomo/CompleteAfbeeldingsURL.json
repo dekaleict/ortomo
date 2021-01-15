@@ -1,0 +1,17 @@
+{
+  "id": 29,
+  "namespace": {
+    "id": 11,
+    "name": "ortomo"
+  },
+  "name": "CompleteAfbeeldingsURL",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "value": "[URL:Domain][File:Getlink(FileIdentifier=185)]",
+    "type": "string"
+  }
+}
