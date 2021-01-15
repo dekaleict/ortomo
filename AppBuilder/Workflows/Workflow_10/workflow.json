@@ -270,6 +270,7 @@
                         {
                           "Id": 574,
                           "Name": "Startdatum",
+                          "Value": "[PAST:DateTimeNowO]",
                           "IsExpression": false,
                           "ActionId": 87,
                           "OrderIndex": 0,
@@ -591,6 +592,7 @@
                                   {
                                     "Id": 593,
                                     "Name": "Startdatum",
+                                    "Value": "[PAST:DateTimeNowO]",
                                     "IsExpression": false,
                                     "ActionId": 90,
                                     "OrderIndex": 0,
@@ -887,7 +889,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-01-12T16:22:59.0091892+01:00",
+  "LastModifiedOn": "2021-01-15T16:25:31.7119784+01:00",
   "InputFields": [
     {
       "Id": 65,
