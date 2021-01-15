@@ -41,7 +41,7 @@
           {
             "Id": 653,
             "Name": "Startdatum",
-            "Value": "[DateTime:now|o]",
+            "Value": "[DateTime:now|o]Z",
             "IsExpression": false,
             "ActionId": 98,
             "OrderIndex": 0,
@@ -103,7 +103,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-01-14T20:04:43.7847911+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-01-14T20:08:54.9744104+01:00",
+  "LastModifiedOn": "2021-01-15T10:44:00.6863302+01:00",
   "InputFields": [],
   "OutputFields": []
 }
