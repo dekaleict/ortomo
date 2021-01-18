@@ -11,9 +11,9 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT * FROM app.ortomo_MijnTest\nWHERE id='[Gebruiker:OpenTest.MijnTestid]'",
+    "sql": "SELECT *,\nVragen-VragenBeantwoord as HuidigeVraag\nFROM app.ortomo_MijnTest\nWHERE id='[Gebruiker:OpenTest.MijnTestid]'",
     "defaultColumn": "",
-    "columns": "Startdatum\nEinddatum\nVragen\nVragenBeantwoord\nVragenOpenstaand\nPercentageVoortgang\nid\nGUID",
+    "columns": "Startdatum\nEinddatum\nVragen\nVragenBeantwoord\nVragenOpenstaand\nPercentageVoortgang\nid\nGUID\nHuidigeVraag",
     "connectionString": "",
     "type": "db"
   }
