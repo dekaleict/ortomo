@@ -1,0 +1,134 @@
+[
+  {
+    "Id": 162,
+    "EntityVersionId": 26,
+    "Name": "MijnTest",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 23,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 1
+  },
+  {
+    "Id": 163,
+    "EntityVersionId": 26,
+    "Name": "Vragenlijst",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 2
+  },
+  {
+    "Id": 164,
+    "EntityVersionId": 26,
+    "Name": "Vraag",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 3
+  },
+  {
+    "Id": 165,
+    "EntityVersionId": 26,
+    "Name": "Antwoord",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 4
+  },
+  {
+    "Id": 166,
+    "EntityVersionId": 26,
+    "Name": "Preparaat",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 5
+  },
+  {
+    "Id": 167,
+    "EntityVersionId": 26,
+    "Name": "Score",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 6
+  }
+]

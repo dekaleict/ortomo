@@ -1,0 +1,12 @@
+{
+  "DisplayInMenu": false,
+  "ParentPageId": 109,
+  "RecordNamePropertyId": 163,
+  "Id": 26,
+  "VersionId": 26,
+  "Name": "ortomo_MijnAntwoordScore",
+  "PluralName": "ortomo_MijnAntwoordScores",
+  "Icon": "calculator",
+  "Type": "UserCreated",
+  "EnableIndexing": false
+}
