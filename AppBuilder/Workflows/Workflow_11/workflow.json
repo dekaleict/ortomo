@@ -120,7 +120,7 @@
           {
             "Id": 626,
             "Name": "SqlQuery",
-            "Value": "SELECT        app.ortomo_MijnVragenlijst.*\nFROM            app.ortomo_MijnVragenlijst LEFT OUTER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnVragenlijst.Vragenlijst = app.ortomo_MijnAntwoord.Vragenlijst\nWHERE        (app.ortomo_MijnVragenlijst.MijnTest = @MijnTest) AND (app.ortomo_MijnAntwoord.MijnTest IS NULL)",
+            "Value": "SELECT        app.ortomo_MijnVragenlijst.Id, app.ortomo_MijnVragenlijst.CreatedBy, app.ortomo_MijnVragenlijst.CreatedDate, app.ortomo_MijnVragenlijst.Einddatum, app.ortomo_MijnVragenlijst.LastModifiedBy, \n                         app.ortomo_MijnVragenlijst.LastModifiedDate, app.ortomo_MijnVragenlijst.PercentageVoortgang, app.ortomo_MijnVragenlijst.Startdatum, app.ortomo_MijnVragenlijst.Volgorde, app.ortomo_MijnVragenlijst.Vragen, \n                         app.ortomo_MijnVragenlijst.VragenBeantwoord, app.ortomo_MijnVragenlijst.VragenOpenstaand, app.ortomo_MijnVragenlijst.Vragenlijst, app.ortomo_MijnVragenlijst.MijnTest\nFROM            app.ortomo_MijnVragenlijst LEFT OUTER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnVragenlijst.MijnTest = app.ortomo_MijnAntwoord.MijnTest AND app.ortomo_MijnVragenlijst.Vragenlijst = app.ortomo_MijnAntwoord.Vragenlijst\nWHERE        (app.ortomo_MijnVragenlijst.MijnTest = 9) AND (app.ortomo_MijnAntwoord.MijnTest IS NULL)",
             "IsExpression": false,
             "ActionId": 94,
             "OrderIndex": 0,
@@ -351,7 +351,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-01-12T15:24:39.9987972+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-01-15T16:26:28.725392+01:00",
+  "LastModifiedOn": "2021-01-18T21:50:42.7288291+01:00",
   "InputFields": [
     {
       "Id": 73,
