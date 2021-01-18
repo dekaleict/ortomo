@@ -74,7 +74,7 @@
     &lt;EnableGridSelect&gt;True&lt;/EnableGridSelect&gt;
     &lt;DataSourceAutoRefreshInterval&gt;1&lt;/DataSourceAutoRefreshInterval&gt;
     &lt;DataSourceRefreshType&gt;manual&lt;/DataSourceRefreshType&gt;
-    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn582&lt;/BaseId&gt;
     &lt;ItemButtonGroups&gt;[]&lt;/ItemButtonGroups&gt;
     &lt;GridButtonGroups&gt;[]&lt;/GridButtonGroups&gt;
