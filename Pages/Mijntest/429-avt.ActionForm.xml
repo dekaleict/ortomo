@@ -682,7 +682,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;ShowMessage&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.747&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.967&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;We gaan terug naar de vorige vraag&amp;lt;/p&amp;gt;&quot;,&quot;ButtonsList&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:[],&quot;IsExpression&quot;:false}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
@@ -696,7 +696,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;ActionType&gt;ShowMessage&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[Testen:MijnTest.VragenOpenstaand]==&#39;0&#39;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.747&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.967&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;&amp;lt;p style=\&quot;text-align: center;\&quot;&amp;gt;Hier komt de doorlink te staan als alle vragen zijn beantwoord&amp;lt;/p&amp;gt;&quot;,&quot;ButtonsList&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:[],&quot;IsExpression&quot;:false}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
@@ -709,7 +709,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;Description&gt;Huidige vraag vasthouden als vorige vraag&lt;/Description&gt;
       &lt;ActionType&gt;ExecuteToken&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.713&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.953&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Token&quot;:&quot;[SessionOrInit:VorigeVraag(InitValue=\&quot;[Testen:EerstvolgendeVraag.Vraag]\&quot;, UpdateAlways=true)]&quot;,&quot;OutputTokenName&quot;:&quot;[VorigeVraag]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
@@ -724,9 +724,9 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[Testen:EerstvolgendeVraag.VraagType]==&quot;MC&quot;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.713&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.953&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;UPDATE app.ortomo_MijnAntwoord\nSET GekozenAntwoordId = @AntwoordGUID,\nGekozenAntwoordTekst=@Antwoord,\nVraagBeantwoord= 1,\nVorigeVraag = @VorigeVraagGUID\nWHERE MijnTest=@MijnTestGUID and Vragenlijst=@VragenlijstGUID and Vraag=@VraagGUID;\n\nINSERT INTO app.ortomo_MijnAntwoordScore\n                         (Antwoord, Score, Vraag, Preparaat)\nSELECT         Antwoord, Score, Vraag, Preparaat\nFROM            app.ortomo_AntwoordScore\nWHERE        (Vraag = @VraagGUID) AND (Antwoord = @AntwoordGUID) \n\n\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[AntwoordMC:Value]&quot;,&quot;name&quot;:&quot;AntwoordGUID&quot;},{&quot;value&quot;:&quot;[AntwoordMC:Text]&quot;,&quot;name&quot;:&quot;Antwoord&quot;},{&quot;value&quot;:&quot;[Testen:MijnTest.id]&quot;,&quot;name&quot;:&quot;MijnTestGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vragenlijst]&quot;,&quot;name&quot;:&quot;VragenlijstGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vraag]&quot;,&quot;name&quot;:&quot;VraagGUID&quot;},{&quot;value&quot;:&quot;[VorigeVraag]&quot;,&quot;name&quot;:&quot;VorigeVraagGUID&quot;}],&quot;OutputTokenName&quot;:&quot;AangemaaktAntwoordId&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:true}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;UPDATE app.ortomo_MijnAntwoord\nSET GekozenAntwoordId = @AntwoordGUID,\nGekozenAntwoordTekst=@Antwoord,\nVraagBeantwoord= 1,\nVorigeVraag = @VorigeVraagGUID\nWHERE MijnTest=@MijnTestGUID and Vragenlijst=@VragenlijstGUID and Vraag=@VraagGUID;\n\nINSERT INTO app.ortomo_MijnAntwoordScore\n                         (Antwoord, Score, Vraag, Preparaat, Vragenlijst, MijnTest)\nSELECT         Antwoord, Score, Vraag, Preparaat, @VragenlijstGUID, @MijnTestGUID\nFROM            app.ortomo_AntwoordScore\nWHERE        (Vraag = @VraagGUID) AND (Antwoord = @AntwoordGUID) AND (Score &amp;gt; 0)\n\n\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[AntwoordMC:Value]&quot;,&quot;name&quot;:&quot;AntwoordGUID&quot;},{&quot;value&quot;:&quot;[AntwoordMC:Text]&quot;,&quot;name&quot;:&quot;Antwoord&quot;},{&quot;value&quot;:&quot;[Testen:MijnTest.id]&quot;,&quot;name&quot;:&quot;MijnTestGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vragenlijst]&quot;,&quot;name&quot;:&quot;VragenlijstGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vraag]&quot;,&quot;name&quot;:&quot;VraagGUID&quot;},{&quot;value&quot;:&quot;[VorigeVraag]&quot;,&quot;name&quot;:&quot;VorigeVraagGUID&quot;}],&quot;OutputTokenName&quot;:&quot;AangemaaktAntwoordId&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:true}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
       &lt;FieldName&gt;AntwoordOpslaan&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
@@ -739,7 +739,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[Testen:EerstvolgendeVraag.VraagType]==&quot;MS&quot;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.73&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.953&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;UPDATE app.ortomo_MijnAntwoord\nSET GekozenAntwoordTekst=@Antwoord,\nVraagBeantwoord= 1,\nVorigeVraag = @VorigeVraagGUID\nWHERE MijnTest=@MijnTestGUID and Vragenlijst=@VragenlijstGUID and Vraag=@VraagGUID;\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[AntwoordMS:Value]&quot;,&quot;name&quot;:&quot;AntwoordGUID&quot;},{&quot;value&quot;:&quot;[AntwoordMS:Text]&quot;,&quot;name&quot;:&quot;Antwoord&quot;},{&quot;value&quot;:&quot;[Testen:MijnTest.id]&quot;,&quot;name&quot;:&quot;MijnTestGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vragenlijst]&quot;,&quot;name&quot;:&quot;VragenlijstGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vraag]&quot;,&quot;name&quot;:&quot;VraagGUID&quot;},{&quot;value&quot;:&quot;[VorigeVraag]&quot;,&quot;name&quot;:&quot;VorigeVraagGUID&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
@@ -754,7 +754,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;ActionType&gt;LoadEntitiesFromSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[Testen:EerstvolgendeVraag.VraagType]==&quot;MS&quot;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.73&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.953&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;select Vraag, Antwoord, cs.Value , Preparaat, Score\nfrom app.ortomo_AntwoordScore\ncross apply STRING_SPLIT (REPLACE(REPLACE(REPLACE(&#39;[AntwoordMS:JsonArray]&#39;, &#39;\&quot;&#39;, &#39;&#39;) ,&#39;[&#39;, &#39;&#39;) , &#39;]&#39;,&#39;&#39;), &#39;,&#39;) cs\nWHERE Antwoord = cs.Value And score &amp;gt; 0 and Vraag = @VraagGUID&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vraag]&quot;,&quot;name&quot;:&quot;VraagGUID&quot;}],&quot;EntityName&quot;:&quot;MSAntwoorden&quot;,&quot;EntityProps&quot;:&quot;&quot;,&quot;OnError&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
@@ -769,7 +769,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;ActionType&gt;ExecuteActionsOnEntityList&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;[Testen:EerstvolgendeVraag.VraagType]==&quot;MS&quot;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.73&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.953&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;EntityName&quot;:&quot;MSAntwoorden&quot;,&quot;Filters&quot;:&quot;&quot;,&quot;ContextBehavior&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;NoPreserve&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ActionList&quot;:[{&quot;Id&quot;:-1,&quot;$_uid&quot;:&quot;action16116897131337281&quot;,&quot;EventName&quot;:&quot;click&quot;,&quot;Parameters&quot;:{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;INSERT INTO app.ortomo_MijnAntwoordScore\n                         (Vraag, Antwoord, Preparaat, Score, MijnTest,Vragenlijst)\nVALUES (@VraagGUID, @AntwoordGUID, @PreparaatGUID, @Score, @MijnTestGUID, @VragenlijstGUID)\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vraag]&quot;,&quot;name&quot;:&quot;VraagGUID&quot;},{&quot;value&quot;:&quot;[MSAntwoorden:Antwoord]&quot;,&quot;name&quot;:&quot;AntwoordGUID&quot;},{&quot;value&quot;:&quot;[MSAntwoorden:Preparaat]&quot;,&quot;name&quot;:&quot;PreparaatGUID&quot;},{&quot;value&quot;:&quot;[MSAntwoorden:Score]&quot;,&quot;name&quot;:&quot;Score&quot;},{&quot;value&quot;:&quot;[Testen:MijnTest.id]&quot;,&quot;name&quot;:&quot;MijnTestGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vragenlijst]&quot;,&quot;name&quot;:&quot;VragenlijstGUID&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:true},&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;Definition&quot;:{&quot;IsClientAction&quot;:false,&quot;Settings&quot;:{&quot;Group&quot;:&quot;Data&quot;}}}],&quot;ContinueOnError&quot;:&quot;&quot;,&quot;OnError&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
@@ -784,9 +784,9 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;[Testen:EerstvolgendeVraag.VraagType]==&quot;JN&quot;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.73&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.967&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;UPDATE app.ortomo_MijnAntwoord\nSET GekozenAntwoordId = @AntwoordGUID,\nGekozenAntwoordTekst=@Antwoord,\nVraagBeantwoord= 1,\nVorigeVraag = @VorigeVraagGUID\nWHERE MijnTest=@MijnTestGUID and Vragenlijst=@VragenlijstGUID and Vraag=@VraagGUID;\n\nINSERT INTO app.ortomo_MijnAntwoordScore\n                         (Antwoord, Score, Vraag, Preparaat)\nSELECT         Antwoord, Score, Vraag, Preparaat\nFROM            app.ortomo_AntwoordScore\nWHERE        (Vraag = @VraagGUID) AND (Antwoord = @AntwoordGUID) AND (Score &amp;gt; 0)&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[AntwoordJN:Value]&quot;,&quot;name&quot;:&quot;AntwoordGUID&quot;},{&quot;value&quot;:&quot;[AntwoordJN:Text]&quot;,&quot;name&quot;:&quot;Antwoord&quot;},{&quot;value&quot;:&quot;[Testen:MijnTest.id]&quot;,&quot;name&quot;:&quot;MijnTestGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vragenlijst]&quot;,&quot;name&quot;:&quot;VragenlijstGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vraag]&quot;,&quot;name&quot;:&quot;VraagGUID&quot;},{&quot;value&quot;:&quot;[VorigeVraag]&quot;,&quot;name&quot;:&quot;VorigeVraagGUID&quot;}],&quot;OutputTokenName&quot;:&quot;AangemaaktAntwoordId&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;UPDATE app.ortomo_MijnAntwoord\nSET GekozenAntwoordId = @AntwoordGUID,\nGekozenAntwoordTekst=@Antwoord,\nVraagBeantwoord= 1,\nVorigeVraag = @VorigeVraagGUID\nWHERE MijnTest=@MijnTestGUID and Vragenlijst=@VragenlijstGUID and Vraag=@VraagGUID;\n\nINSERT INTO app.ortomo_MijnAntwoordScore\n                         (Antwoord, Score, Vraag, Preparaat, Vragenlijst, MijnTest)\nSELECT         Antwoord, Score, Vraag, Preparaat, @VragenlijstGUID, @MijnTestGUID\nFROM            app.ortomo_AntwoordScore\nWHERE        (Vraag = @VraagGUID) AND (Antwoord = @AntwoordGUID) AND (Score &amp;gt; 0)&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[AntwoordJN:Value]&quot;,&quot;name&quot;:&quot;AntwoordGUID&quot;},{&quot;value&quot;:&quot;[AntwoordJN:Text]&quot;,&quot;name&quot;:&quot;Antwoord&quot;},{&quot;value&quot;:&quot;[Testen:MijnTest.id]&quot;,&quot;name&quot;:&quot;MijnTestGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vragenlijst]&quot;,&quot;name&quot;:&quot;VragenlijstGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vraag]&quot;,&quot;name&quot;:&quot;VraagGUID&quot;},{&quot;value&quot;:&quot;[VorigeVraag]&quot;,&quot;name&quot;:&quot;VorigeVraagGUID&quot;}],&quot;OutputTokenName&quot;:&quot;AangemaaktAntwoordId&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
       &lt;FieldName&gt;AntwoordOpslaan&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
@@ -799,7 +799,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
       &lt;Condition&gt;[Testen:EerstvolgendeVraag.VraagType]==&quot;Datum&quot;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.73&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.967&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;UPDATE app.ortomo_MijnAntwoord\nSET GekozenAntwoordTekst=@Antwoord,\nVraagBeantwoord= 1,\nVorigeVraag = @VorigeVraagGUID\nWHERE MijnTest=@MijnTestGUID and Vragenlijst=@VragenlijstGUID and Vraag=@VraagGUID;\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[AntwoordDatum:Date]&quot;,&quot;name&quot;:&quot;AntwoordGUID&quot;},{&quot;value&quot;:&quot;[AntwoordDatum:Formatted]&quot;,&quot;name&quot;:&quot;Antwoord&quot;},{&quot;value&quot;:&quot;[Testen:MijnTest.id]&quot;,&quot;name&quot;:&quot;MijnTestGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vragenlijst]&quot;,&quot;name&quot;:&quot;VragenlijstGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vraag]&quot;,&quot;name&quot;:&quot;VraagGUID&quot;},{&quot;value&quot;:&quot;[VorigeVraag]&quot;,&quot;name&quot;:&quot;VorigeVraagGUID&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:true}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
@@ -813,7 +813,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;Description&gt;Bijwerken tellers&lt;/Description&gt;
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;7&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.73&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.967&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;UPDATE app.ortomo_MijnVragenlijst\nSET VragenBeantwoord = VragenBeantwoord + 1,\nVragenOpenstaand = VragenOpenstaand -1\nWHERE MijnTest=@MijnTestGUID and Vragenlijst=@VragenlijstGUID;\n\nUPDATE app.ortomo_MijnVragenlijst\nSET PercentageVoortgang = (VragenBeantwoord*100) / Vragen \nWHERE MijnTest=@MijnTestGUID and Vragenlijst=@VragenlijstGUID;\n\nUPDATE       app.ortomo_MijnTest\nSET         VragenBeantwoord = VragenBeantwoord + 1,\n\t\t\tVragenOpenstaand = VragenOpenstaand - 1\nWHERE id=@MijnTestGUID;\n\nUPDATE       app.ortomo_MijnTest\nSET         PercentageVoortgang = (VragenBeantwoord*100) / Vragen \nWHERE id=@MijnTestGUID;\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[Testen:MijnTest.id]&quot;,&quot;name&quot;:&quot;MijnTestGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vragenlijst]&quot;,&quot;name&quot;:&quot;VragenlijstGUID&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:true}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
@@ -828,7 +828,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;8&lt;/OrderIndex&gt;
       &lt;Condition&gt;[Testen:EerstvolgendeVraag.VraagType]==&quot;MC&quot;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.73&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.967&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;SELECT \nCASE WHEN LEN(VervolgVraag) &amp;gt; 0 THEN VervolgVraag ELSE &#39;0&#39; END as VolgendeVraag From app.ortomo_Antwoord\nWHERE Id=@AntwoordGUID&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[AntwoordMC:Value]&quot;,&quot;name&quot;:&quot;AntwoordGUID&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:[{&quot;value&quot;:&quot;VolgendeVraagGUID&quot;,&quot;name&quot;:&quot;VolgendeVraag&quot;}],&quot;OnError&quot;:[],&quot;ShowErrors&quot;:true}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
@@ -843,7 +843,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;9&lt;/OrderIndex&gt;
       &lt;Condition&gt;[VolgendeVraagGUID]!=&#39;0&#39;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.747&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.967&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;SELECT id FROM app.ortomo_MijnAntwoord\nWHERE MijnTest=@MijnTestGUID and Vragenlijst=@VragenlijstGUID and Vraag=@VolgendeVraagGUID&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[Testen:MijnTest.id]&quot;,&quot;name&quot;:&quot;MijnTestGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vragenlijst]&quot;,&quot;name&quot;:&quot;VragenlijstGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vraag]&quot;,&quot;name&quot;:&quot;VraagGUID&quot;},{&quot;value&quot;:&quot;[VolgendeVraagGUID]&quot;,&quot;name&quot;:&quot;VolgendeVraagGUID&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:[{&quot;value&quot;:&quot;GevondenId&quot;,&quot;name&quot;:&quot;id&quot;}],&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
@@ -858,7 +858,7 @@ Vorige vraag: [Testen:EerstvolgendeVraag.VorigeVraag]&lt;hr&gt;]]&gt;&lt;/Value&
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;10&lt;/OrderIndex&gt;
       &lt;Condition&gt;[VolgendeVraagGUID]!=&#39;0&#39;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-26T20:47:14.747&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-26T20:51:29.967&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;UPDATE app.ortomo_MijnAntwoord\nSet VraagBeantwoord = 1\nWHERE MijnTest=@MijnTestGUID and Vragenlijst=@VragenlijstGUID and Id &amp;lt; @GevondenId\nand VraagBeantwoord = 0&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[Testen:MijnTest.id]&quot;,&quot;name&quot;:&quot;MijnTestGUID&quot;},{&quot;value&quot;:&quot;[Testen:EerstvolgendeVraag.Vragenlijst]&quot;,&quot;name&quot;:&quot;VragenlijstGUID&quot;},{&quot;value&quot;:&quot;[GevondenId]&quot;,&quot;name&quot;:&quot;GevondenId&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
       &lt;ModuleId&gt;429&lt;/ModuleId&gt;
