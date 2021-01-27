@@ -369,7 +369,7 @@
       &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
       &lt;ShowInFooter&gt;sum&lt;/ShowInFooter&gt;
       &lt;ShowInFooterSumDecimals&gt;0&lt;/ShowInFooterSumDecimals&gt;
-      &lt;ShowInFooterTextBeforeSum&gt;Totaal&lt;/ShowInFooterTextBeforeSum&gt;
+      &lt;ShowInFooterTextBeforeSum /&gt;
       &lt;EditFieldType&gt;auto&lt;/EditFieldType&gt;
       &lt;EditFieldTypeParameters /&gt;
       &lt;Validation /&gt;
