@@ -1,0 +1,64 @@
+{
+  "ApiId": "ff4982acea07ce96fbde20",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Toevoegen default score voor antwoorden bij toevoegen van preparaat of antwoord",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "OnDbInsert",
+      "Parameters": {
+        "TableName": {
+          "Expression": "",
+          "Value": "app.ortomo_Antwoord",
+          "IsExpression": false,
+          "Parameters": {}
+        }
+      }
+    },
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "OnDbInsert",
+      "Parameters": {
+        "TableName": {
+          "Expression": "",
+          "Value": "app.ortomo_Vraag",
+          "IsExpression": false,
+          "Parameters": {}
+        }
+      }
+    },
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "OnDbInsert",
+      "Parameters": {
+        "TableName": {
+          "Expression": "",
+          "Value": "app.ortomo_Preparaat",
+          "IsExpression": false,
+          "Parameters": {}
+        }
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "RunSql",
+      "ExecutionType": "OnExecute",
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {
+        "ConnectionString": "",
+        "QueryTimeout": "",
+        "SqlQuery": "INSERT INTO app.ortomo_AntwoordScore\n                         (Vraag, Antwoord, Preparaat, Score)\nSELECT        Q1.VraagId, Q1.AntwoordId, Q1.PreparaatId, 0 AS Score\nFROM            (SELECT        app.ortomo_Vraag.Id AS VraagId, app.ortomo_Antwoord.Id AS AntwoordId, app.ortomo_Preparaat.Id AS PreparaatId\n                          FROM            app.ortomo_Vraag INNER JOIN\n                                                    app.ortomo_Antwoord ON app.ortomo_Vraag.Id = app.ortomo_Antwoord.HoortBijVraag CROSS JOIN\n                                                    app.ortomo_Preparaat\n                          GROUP BY app.ortomo_Vraag.Id, app.ortomo_Antwoord.Id, app.ortomo_Preparaat.Id) AS Q1 LEFT OUTER JOIN\n                         app.ortomo_AntwoordScore AS ortomo_AntwoordScore_1 ON Q1.VraagId = ortomo_AntwoordScore_1.Vraag AND Q1.AntwoordId = ortomo_AntwoordScore_1.Antwoord AND \n                         Q1.PreparaatId = ortomo_AntwoordScore_1.Preparaat\nWHERE        (ortomo_AntwoordScore_1.Score IS NULL)",
+        "BindTokens": "",
+        "OutputTokenName": "",
+        "ExtractColumns": "",
+        "OnError": [],
+        "ShowErrors": false
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
