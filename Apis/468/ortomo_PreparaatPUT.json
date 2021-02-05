@@ -68,7 +68,7 @@
       "Name": "StatusBeschikbaarheid",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 6,
+      "OrderIndex": 4,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -77,7 +77,7 @@
       "Name": "TypeSupplement",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 7,
+      "OrderIndex": 5,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -86,7 +86,7 @@
       "Name": "KleurSupplement",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 8,
+      "OrderIndex": 6,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -95,7 +95,7 @@
       "Name": "AantalPerDag",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 9,
+      "OrderIndex": 7,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -104,7 +104,7 @@
       "Name": "InnameAdvies",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 10,
+      "OrderIndex": 8,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -113,7 +113,7 @@
       "Name": "ADH",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 11,
+      "OrderIndex": 9,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -122,7 +122,7 @@
       "Name": "Content",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 12,
+      "OrderIndex": 10,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -131,7 +131,7 @@
       "Name": "Declaratie",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 13,
+      "OrderIndex": 11,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -140,10 +140,50 @@
       "Name": "CategorieSupplement",
       "IsDeleted": false,
       "IsEnabled": false,
-      "OrderIndex": 14,
+      "OrderIndex": 12,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "PrijsPerDag",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"PrijsPerDag is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "PrijsPerPack",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"PrijsPerPack is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
     }
   ],
   "Actions": [
@@ -164,7 +204,9 @@
         "Content": "[Content]",
         "Declaratie": "[Declaratie]",
         "CategorieSupplement": "[CategorieSupplement]",
-        "ExternArtikelnummer": "[ExternArtikelnummer]"
+        "ExternArtikelnummer": "[ExternArtikelnummer]",
+        "PrijsPerDag": "[PrijsPerDag]",
+        "PrijsPerPack": "[PrijsPerPack]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
