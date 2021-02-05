@@ -1,4 +1,4 @@
-<module type="avtTabsPro" version="05.10.02.00">
+<module type="avtTabsPro" version="05.11.00.00">
     <contentKey />
     <moduleID>537</moduleID>
     <alignment />
@@ -7,7 +7,6 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -29,7 +28,7 @@
     <tabmodulesettings />
     <definition>avt.TabsPro</definition>
     <moduledefinition>avt.TabsPro</moduledefinition>
-    <content type="avtTabsPro" version="05.10.02.00"><![CDATA[&lt;TabsPro&gt;
+    <content type="avtTabsPro" version="05.11.00.00"><![CDATA[&lt;TabsPro&gt;
   &lt;Theme&gt;ui-lightness&lt;/Theme&gt;
   &lt;TabsLayout&gt;HorizontalTop&lt;/TabsLayout&gt;
   &lt;TabsFullWidth&gt;False&lt;/TabsFullWidth&gt;
@@ -74,7 +73,7 @@
       &lt;IconUrl /&gt;
       &lt;IconClass /&gt;
       &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
-      &lt;ViewOrder&gt;1&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;2&lt;/ViewOrder&gt;
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;True&lt;/DefaultTab&gt;
@@ -84,6 +83,12 @@
         &lt;nl-NL&gt;Details&lt;/nl-NL&gt;
       &lt;/Localization&gt;
       &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;536&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;View Form&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
         &lt;Module&gt;
           &lt;ModuleId&gt;536&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;View Form&lt;/ModuleTitle&gt;
@@ -185,7 +190,7 @@
       &lt;IconUrl /&gt;
       &lt;IconClass /&gt;
       &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
-      &lt;ViewOrder&gt;2&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;3&lt;/ViewOrder&gt;
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
@@ -195,6 +200,12 @@
         &lt;nl-NL&gt;Claims&lt;/nl-NL&gt;
       &lt;/Localization&gt;
       &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;578&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Claims Listing&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;2&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
         &lt;Module&gt;
           &lt;ModuleId&gt;578&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;Claims Listing&lt;/ModuleTitle&gt;
