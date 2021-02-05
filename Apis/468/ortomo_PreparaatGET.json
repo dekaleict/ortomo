@@ -53,6 +53,14 @@
             "value": "[RecordId]"
           },
           {
+            "name": "PrijsPerDag",
+            "value": "[Record:PrijsPerDag]"
+          },
+          {
+            "name": "PrijsPerPack",
+            "value": "[Record:PrijsPerPack]"
+          },
+          {
             "name": "Preparaat",
             "value": "[Record:Preparaat]"
           },
