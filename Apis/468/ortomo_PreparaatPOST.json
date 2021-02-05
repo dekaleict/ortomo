@@ -90,15 +90,6 @@
       "Validations": []
     },
     {
-      "Name": "ADH",
-      "IsDeleted": false,
-      "IsEnabled": true,
-      "OrderIndex": 8,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
-    },
-    {
       "Name": "Content",
       "IsDeleted": false,
       "IsEnabled": true,
@@ -198,7 +189,6 @@
         "KleurSupplement": "[KleurSupplement]",
         "AantalPerDag": "[AantalPerDag]",
         "InnameAdvies": "[InnameAdvies]",
-        "ADH": "[ADH]",
         "Content": "[Content]",
         "Declaratie": "[Declaratie]",
         "CategorieSupplement": "[CategorieSupplement]",
@@ -240,14 +230,6 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "InnameOchtend",
-            "value": "[CreatedRecord:InnameOchtend]"
-          },
-          {
-            "name": "InnameAvond",
-            "value": "[CreatedRecord:InnameAvond]"
-          },
-          {
             "name": "Preparaat",
             "value": "[CreatedRecord:Preparaat]"
           },
@@ -280,10 +262,6 @@
             "value": "[CreatedRecord:InnameAdvies]"
           },
           {
-            "name": "ADH",
-            "value": "[CreatedRecord:ADH]"
-          },
-          {
             "name": "Content",
             "value": "[CreatedRecord:Content]"
           },
@@ -306,6 +284,14 @@
           {
             "name": "PrijsPerPack",
             "value": "[CreatedRecord:PrijsPerPack]"
+          },
+          {
+            "name": "InnameOchtend",
+            "value": "[CreatedRecord:InnameOchtend]"
+          },
+          {
+            "name": "InnameAvond",
+            "value": "[CreatedRecord:InnameAvond]"
           }
         ],
         "Headers": [
