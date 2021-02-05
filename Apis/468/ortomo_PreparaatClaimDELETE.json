@@ -3,7 +3,7 @@
   "Description": "Deletes the provided ortomo_PreparaatClaim record",
   "HttpMethod": "DELETE",
   "IsEnabled": true,
-  "OrderIndex": 152,
+  "OrderIndex": 208,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -19,7 +19,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     }
