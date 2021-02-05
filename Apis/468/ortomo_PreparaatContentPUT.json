@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided ortomo_PreparaatContent record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 139,
+  "OrderIndex": 199,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -19,7 +19,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -36,7 +39,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -53,7 +59,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -146,6 +155,24 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "InnameAdvies",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "MaxAantalPerSupplement",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -165,7 +192,9 @@
         "Story": "[Story]",
         "Onderzoek": "[Onderzoek]",
         "PreparaatAfbeelding": "[PreparaatAfbeelding]",
-        "SfeerAfbeelding": "[SfeerAfbeelding]"
+        "SfeerAfbeelding": "[SfeerAfbeelding]",
+        "InnameAdvies": "[InnameAdvies]",
+        "MaxAantalPerSupplement": "[MaxAantalPerSupplement]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
