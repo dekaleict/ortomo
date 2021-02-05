@@ -53,12 +53,16 @@
             "value": "[RecordId]"
           },
           {
-            "name": "InnameAdvies",
-            "value": "[Record:InnameAdvies]"
+            "name": "IngredientenDeclaratie",
+            "value": "[Record:IngredientenDeclaratie]"
           },
           {
-            "name": "MaxAantalPerSupplement",
-            "value": "[Record:MaxAantalPerSupplement]"
+            "name": "VerplichteWaarschuwingen",
+            "value": "[Record:VerplichteWaarschuwingen]"
+          },
+          {
+            "name": "ReferentieInnameTabel",
+            "value": "[Record:ReferentieInnameTabel]"
           },
           {
             "name": "Preparaat",
@@ -107,6 +111,14 @@
           {
             "name": "SfeerAfbeelding",
             "value": "[Record:SfeerAfbeelding]"
+          },
+          {
+            "name": "InnameAdvies",
+            "value": "[Record:InnameAdvies]"
+          },
+          {
+            "name": "MaxAantalPerSupplement",
+            "value": "[Record:MaxAantalPerSupplement]"
           }
         ],
         "Headers": []
