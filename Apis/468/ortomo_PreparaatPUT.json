@@ -65,24 +65,6 @@
       "Validations": []
     },
     {
-      "Name": "PrijsPerDag",
-      "IsDeleted": false,
-      "IsEnabled": true,
-      "OrderIndex": 4,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
-    },
-    {
-      "Name": "PrijsPerPack",
-      "IsDeleted": false,
-      "IsEnabled": true,
-      "OrderIndex": 5,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
-    },
-    {
       "Name": "StatusBeschikbaarheid",
       "IsDeleted": false,
       "IsEnabled": true,
@@ -173,8 +155,6 @@
         "Preparaat": "[Preparaat]",
         "Beschrijving": "[Beschrijving]",
         "Icon": "[Icon]",
-        "PrijsPerDag": "[PrijsPerDag]",
-        "PrijsPerPack": "[PrijsPerPack]",
         "StatusBeschikbaarheid": "[StatusBeschikbaarheid]",
         "TypeSupplement": "[TypeSupplement]",
         "KleurSupplement": "[KleurSupplement]",
