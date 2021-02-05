@@ -65,16 +65,8 @@
             "value": "[Record:Icon]"
           },
           {
-            "name": "PrijsPerDag",
-            "value": "[Record:PrijsPerDag]"
-          },
-          {
             "name": "StatusBeschikbaarheid",
             "value": "[Record:StatusBeschikbaarheid]"
-          },
-          {
-            "name": "PrijsPerPack",
-            "value": "[Record:PrijsPerPack]"
           },
           {
             "name": "TypeSupplement",
