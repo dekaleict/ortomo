@@ -124,46 +124,6 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
-    },
-    {
-      "Name": "PrijsPerDag",
-      "IsDeleted": false,
-      "IsEnabled": false,
-      "OrderIndex": 12,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": [
-        {
-          "Data": "{\"Message\":\"PrijsPerDag is required.\"}",
-          "Type": "default-required",
-          "IsDeleted": false,
-          "IsEnabled": false,
-          "OrderIndex": 0,
-          "Metadata": {
-            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
-          }
-        }
-      ]
-    },
-    {
-      "Name": "PrijsPerPack",
-      "IsDeleted": false,
-      "IsEnabled": false,
-      "OrderIndex": 13,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": [
-        {
-          "Data": "{\"Message\":\"PrijsPerPack is required.\"}",
-          "Type": "default-required",
-          "IsDeleted": false,
-          "IsEnabled": false,
-          "OrderIndex": 0,
-          "Metadata": {
-            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
-          }
-        }
-      ]
     }
   ],
   "Actions": [
@@ -184,9 +144,7 @@
         "Content": "[Content]",
         "Declaratie": "[Declaratie]",
         "CategorieSupplement": "[CategorieSupplement]",
-        "ExternArtikelnummer": "[ExternArtikelnummer]",
-        "PrijsPerDag": "[PrijsPerDag]",
-        "PrijsPerPack": "[PrijsPerPack]"
+        "ExternArtikelnummer": "[ExternArtikelnummer]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -218,14 +176,6 @@
           {
             "name": "Id",
             "value": "[CreatedRecordId]"
-          },
-          {
-            "name": "PrijsPerDag",
-            "value": "[CreatedRecord:PrijsPerDag]"
-          },
-          {
-            "name": "PrijsPerPack",
-            "value": "[CreatedRecord:PrijsPerPack]"
           },
           {
             "name": "Preparaat",
