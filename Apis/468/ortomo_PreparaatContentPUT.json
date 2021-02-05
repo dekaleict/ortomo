@@ -173,6 +173,55 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "IngredientenDeclaratie",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 15,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"IngredientenDeclaratie is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "VerplichteWaarschuwingen",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 16,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ReferentieInnameTabel",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 17,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"ReferentieInnameTabel is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
     }
   ],
   "Actions": [
@@ -194,7 +243,10 @@
         "PreparaatAfbeelding": "[PreparaatAfbeelding]",
         "SfeerAfbeelding": "[SfeerAfbeelding]",
         "InnameAdvies": "[InnameAdvies]",
-        "MaxAantalPerSupplement": "[MaxAantalPerSupplement]"
+        "MaxAantalPerSupplement": "[MaxAantalPerSupplement]",
+        "IngredientenDeclaratie": "[IngredientenDeclaratie]",
+        "VerplichteWaarschuwingen": "[VerplichteWaarschuwingen]",
+        "ReferentieInnameTabel": "[ReferentieInnameTabel]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
