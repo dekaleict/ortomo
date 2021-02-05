@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided ortomo_Preparaat record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 159,
+  "OrderIndex": 195,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -19,7 +19,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -36,7 +39,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -147,6 +153,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "CategorieSupplement",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -167,7 +182,9 @@
         "InnameAdvies": "[InnameAdvies]",
         "ADH": "[ADH]",
         "Content": "[Content]",
-        "Declaratie": "[Declaratie]"
+        "Declaratie": "[Declaratie]",
+        "CategorieSupplement": "[CategorieSupplement]",
+        "ExternArtikelnummer": "[ExternArtikelnummer]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
