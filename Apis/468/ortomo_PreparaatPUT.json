@@ -110,15 +110,6 @@
       "Validations": []
     },
     {
-      "Name": "ADH",
-      "IsDeleted": false,
-      "IsEnabled": true,
-      "OrderIndex": 9,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
-    },
-    {
       "Name": "Content",
       "IsDeleted": false,
       "IsEnabled": true,
@@ -218,7 +209,6 @@
         "KleurSupplement": "[KleurSupplement]",
         "AantalPerDag": "[AantalPerDag]",
         "InnameAdvies": "[InnameAdvies]",
-        "ADH": "[ADH]",
         "Content": "[Content]",
         "Declaratie": "[Declaratie]",
         "CategorieSupplement": "[CategorieSupplement]",
