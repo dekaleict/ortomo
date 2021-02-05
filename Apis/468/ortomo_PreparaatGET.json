@@ -53,12 +53,12 @@
             "value": "[RecordId]"
           },
           {
-            "name": "PrijsPerDag",
-            "value": "[Record:PrijsPerDag]"
+            "name": "InnameOchtend",
+            "value": "[Record:InnameOchtend]"
           },
           {
-            "name": "PrijsPerPack",
-            "value": "[Record:PrijsPerPack]"
+            "name": "InnameAvond",
+            "value": "[Record:InnameAvond]"
           },
           {
             "name": "Preparaat",
@@ -111,6 +111,14 @@
           {
             "name": "CategorieSupplement",
             "value": "[Record:CategorieSupplement]"
+          },
+          {
+            "name": "PrijsPerDag",
+            "value": "[Record:PrijsPerDag]"
+          },
+          {
+            "name": "PrijsPerPack",
+            "value": "[Record:PrijsPerPack]"
           }
         ],
         "Headers": []
