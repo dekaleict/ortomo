@@ -164,6 +164,24 @@
           }
         }
       ]
+    },
+    {
+      "Name": "InnameOchtend",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "InnameAvond",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 15,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -186,7 +204,9 @@
         "CategorieSupplement": "[CategorieSupplement]",
         "ExternArtikelnummer": "[ExternArtikelnummer]",
         "PrijsPerDag": "[PrijsPerDag]",
-        "PrijsPerPack": "[PrijsPerPack]"
+        "PrijsPerPack": "[PrijsPerPack]",
+        "InnameOchtend": "[InnameOchtend]",
+        "InnameAvond": "[InnameAvond]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -220,12 +240,12 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "PrijsPerDag",
-            "value": "[CreatedRecord:PrijsPerDag]"
+            "name": "InnameOchtend",
+            "value": "[CreatedRecord:InnameOchtend]"
           },
           {
-            "name": "PrijsPerPack",
-            "value": "[CreatedRecord:PrijsPerPack]"
+            "name": "InnameAvond",
+            "value": "[CreatedRecord:InnameAvond]"
           },
           {
             "name": "Preparaat",
@@ -278,6 +298,14 @@
           {
             "name": "CategorieSupplement",
             "value": "[CreatedRecord:CategorieSupplement]"
+          },
+          {
+            "name": "PrijsPerDag",
+            "value": "[CreatedRecord:PrijsPerDag]"
+          },
+          {
+            "name": "PrijsPerPack",
+            "value": "[CreatedRecord:PrijsPerPack]"
           }
         ],
         "Headers": [
