@@ -198,10 +198,6 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "CategorieSupplement",
-            "value": "[CreatedRecord:CategorieSupplement]"
-          },
-          {
             "name": "Preparaat",
             "value": "[CreatedRecord:Preparaat]"
           },
@@ -256,6 +252,10 @@
           {
             "name": "ExternArtikelnummer",
             "value": "[CreatedRecord:ExternArtikelnummer]"
+          },
+          {
+            "name": "CategorieSupplement",
+            "value": "[CreatedRecord:CategorieSupplement]"
           }
         ],
         "Headers": [
