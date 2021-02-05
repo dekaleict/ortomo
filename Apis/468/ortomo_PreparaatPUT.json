@@ -184,6 +184,24 @@
           }
         }
       ]
+    },
+    {
+      "Name": "InnameOchtend",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 15,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "InnameAvond",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 16,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -206,7 +224,9 @@
         "CategorieSupplement": "[CategorieSupplement]",
         "ExternArtikelnummer": "[ExternArtikelnummer]",
         "PrijsPerDag": "[PrijsPerDag]",
-        "PrijsPerPack": "[PrijsPerPack]"
+        "PrijsPerPack": "[PrijsPerPack]",
+        "InnameOchtend": "[InnameOchtend]",
+        "InnameAvond": "[InnameAvond]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
