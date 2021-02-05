@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided ortomo_PreparaatClaim record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 151,
+  "OrderIndex": 207,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -19,7 +19,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -36,7 +39,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -53,7 +59,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -70,7 +79,30 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ClaimKort",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"ClaimKort is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     }
@@ -83,7 +115,8 @@
         "RecordId": "[RecordId]",
         "TypeClaim": "[TypeClaim]",
         "Preparaat": "[Preparaat]",
-        "Claim": "[Claim]"
+        "Claim": "[Claim]",
+        "ClaimKort": "[ClaimKort]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
