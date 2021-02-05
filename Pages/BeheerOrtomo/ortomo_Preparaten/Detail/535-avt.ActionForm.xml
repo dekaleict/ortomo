@@ -7,7 +7,6 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -179,7 +178,7 @@
     &lt;CssName&gt;title-form&lt;/CssName&gt;
     &lt;Version&gt;5.11.0&lt;/Version&gt;
     &lt;Build&gt;5.11.7&lt;/Build&gt;
-    &lt;CultureCode&gt;en&lt;/CultureCode&gt;
+    &lt;CultureCode&gt;nl&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
     &lt;HasCustomLayout&gt;True&lt;/HasCustomLayout&gt;
@@ -233,22 +232,36 @@
     &lt;Background /&gt;
     &lt;TextColor /&gt;
     &lt;Padding&gt;0&lt;/Padding&gt;
-    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn535&lt;/BaseId&gt;
     &lt;PopupName /&gt;
     &lt;LeftSidebarHtml /&gt;
     &lt;RightSidebarHtml /&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
+    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=nl-NL&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.273&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:Preparaat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Beschrijving&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Icon&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Prijs&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Beschikbaar&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;535&lt;/ModuleId&gt;
+      &lt;EventName&gt;preinit&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;PreInit.InitializeVariablesWithDefaultValues&lt;/PAP_InternalIdentifier&gt;
+      &lt;/Metadata&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.217&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.07&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -262,23 +275,9 @@
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.407&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:Preparaat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Beschrijving&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Icon&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Prijs&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Beschikbaar&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;535&lt;/ModuleId&gt;
-      &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;PreInit.InitializeVariablesWithDefaultValues&lt;/PAP_InternalIdentifier&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;OpenAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.233&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.07&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ReinitForm&quot;:true,&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:534,&quot;Parameters&quot;:{}},&quot;Params&quot;:[{&quot;name&quot;:&quot;detailPage&quot;,&quot;value&quot;:&quot;true&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -293,7 +292,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_Preparaat&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.42&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.29&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_PreparaatId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -309,7 +308,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.233&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.087&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -326,7 +325,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.25&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.103&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -343,7 +342,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.25&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.103&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -360,7 +359,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.267&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.117&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -377,7 +376,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.267&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.117&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -394,7 +393,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;7&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.28&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.137&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -411,7 +410,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;8&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.28&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.137&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -428,7 +427,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;9&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.297&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.15&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -445,7 +444,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;10&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.297&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.163&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -462,7 +461,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;11&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.313&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.163&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -479,7 +478,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;12&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.327&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.18&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -496,7 +495,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;13&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.327&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.18&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -513,7 +512,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;14&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.343&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.197&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -530,7 +529,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;15&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.343&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.197&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -547,7 +546,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;16&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.36&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.21&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -564,7 +563,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;17&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.36&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.21&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -581,7 +580,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;18&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.36&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.21&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -598,7 +597,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;19&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.373&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.227&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -615,7 +614,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;20&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.373&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.243&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -632,7 +631,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;21&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.39&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.243&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
@@ -649,7 +648,24 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;22&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:06:18.39&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.26&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;535&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Edit&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;23&lt;/OrderIndex&gt;
+      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:11]&lt;/Condition&gt;
+      &lt;LastModified&gt;2021-02-05T14:14:15.273&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;535&lt;/ModuleId&gt;
