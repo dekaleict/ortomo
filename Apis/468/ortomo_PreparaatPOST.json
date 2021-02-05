@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type ortomo_Preparaat",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 157,
+  "OrderIndex": 193,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -19,7 +19,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -130,6 +133,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "CategorieSupplement",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -150,7 +162,9 @@
         "InnameAdvies": "[InnameAdvies]",
         "ADH": "[ADH]",
         "Content": "[Content]",
-        "Declaratie": "[Declaratie]"
+        "Declaratie": "[Declaratie]",
+        "CategorieSupplement": "[CategorieSupplement]",
+        "ExternArtikelnummer": "[ExternArtikelnummer]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -184,6 +198,10 @@
             "value": "[CreatedRecordId]"
           },
           {
+            "name": "CategorieSupplement",
+            "value": "[CreatedRecord:CategorieSupplement]"
+          },
+          {
             "name": "Preparaat",
             "value": "[CreatedRecord:Preparaat]"
           },
@@ -200,12 +218,12 @@
             "value": "[CreatedRecord:PrijsPerDag]"
           },
           {
-            "name": "PrijsPerPack",
-            "value": "[CreatedRecord:PrijsPerPack]"
-          },
-          {
             "name": "StatusBeschikbaarheid",
             "value": "[CreatedRecord:StatusBeschikbaarheid]"
+          },
+          {
+            "name": "PrijsPerPack",
+            "value": "[CreatedRecord:PrijsPerPack]"
           },
           {
             "name": "TypeSupplement",
@@ -234,6 +252,10 @@
           {
             "name": "Declaratie",
             "value": "[CreatedRecord:Declaratie]"
+          },
+          {
+            "name": "ExternArtikelnummer",
+            "value": "[CreatedRecord:ExternArtikelnummer]"
           }
         ],
         "Headers": [
