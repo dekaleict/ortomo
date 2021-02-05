@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.10.10.00">
+<module type="ActionForm" version="05.11.07.00">
     <contentKey />
     <moduleID>569</moduleID>
     <alignment />
@@ -29,7 +29,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.10.10.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.11.07.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[262]]&gt;&lt;/Id&gt;
@@ -105,8 +105,8 @@
   &lt;Settings&gt;
     &lt;Title&gt;View Form&lt;/Title&gt;
     &lt;CssName&gt;view-form&lt;/CssName&gt;
-    &lt;Version&gt;5.10.0&lt;/Version&gt;
-    &lt;Build&gt;5.10.10&lt;/Build&gt;
+    &lt;Version&gt;5.11.0&lt;/Version&gt;
+    &lt;Build&gt;5.11.7&lt;/Build&gt;
     &lt;CultureCode&gt;nl&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -123,7 +123,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;569&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.10.10&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.11.7&lt;/ModuleVersion&gt;
     &lt;TabId&gt;106&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -167,7 +167,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-23T15:08:05.973&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T13:34:36.263&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to view this item.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;569&lt;/ModuleId&gt;
@@ -182,7 +182,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-23T15:08:05.973&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T13:34:36.263&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:Score&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Antwoord&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vraag&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Preparaat&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;569&lt;/ModuleId&gt;
@@ -196,7 +196,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_AntwoordScore&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-23T15:08:05.987&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T13:34:36.277&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_AntwoordScoreId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;569&lt;/ModuleId&gt;
@@ -211,7 +211,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_Antwoord&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-23T15:08:06.003&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T13:34:36.293&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[original:Antwoord]&quot;,&quot;OutputToken&quot;:&quot;originalortomo_Antwoord&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;569&lt;/ModuleId&gt;
@@ -226,7 +226,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_Vraag&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-23T15:08:06.003&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T13:34:36.293&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[original:Vraag]&quot;,&quot;OutputToken&quot;:&quot;originalortomo_Vraag&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;569&lt;/ModuleId&gt;
@@ -241,7 +241,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_Preparaat&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-23T15:08:06.02&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T13:34:36.293&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[original:Preparaat]&quot;,&quot;OutputToken&quot;:&quot;originalortomo_Preparaat&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;569&lt;/ModuleId&gt;
