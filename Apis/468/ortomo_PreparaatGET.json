@@ -53,10 +53,6 @@
             "value": "[RecordId]"
           },
           {
-            "name": "CategorieSupplement",
-            "value": "[Record:CategorieSupplement]"
-          },
-          {
             "name": "Preparaat",
             "value": "[Record:Preparaat]"
           },
@@ -111,6 +107,10 @@
           {
             "name": "ExternArtikelnummer",
             "value": "[Record:ExternArtikelnummer]"
+          },
+          {
+            "name": "CategorieSupplement",
+            "value": "[Record:CategorieSupplement]"
           }
         ],
         "Headers": []
