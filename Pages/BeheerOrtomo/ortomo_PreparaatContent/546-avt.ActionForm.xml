@@ -7,7 +7,6 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -836,9 +835,11 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;open-text-large&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:InnameAdvies]&quot;,&quot;Rows&quot;:&quot;3&quot;,&quot;AllowTokens&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:InnameAdvies]&quot;,&quot;Rows&quot;:&quot;3&quot;,&quot;AllowTokens&quot;:&quot;&quot;,&quot;SaveToReport&quot;:false,&quot;SecureInput&quot;:true}&lt;/InputData&gt;
       &lt;Rows&gt;3&lt;/Rows&gt;
       &lt;AllowTokens /&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;SecureInput&gt;True&lt;/SecureInput&gt;
       &lt;Value&gt;&lt;![CDATA[[original:InnameAdvies]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -876,7 +877,9 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;open-number&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:MaxAantalPerSupplement]&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:MaxAantalPerSupplement]&quot;,&quot;MaxValue&quot;:&quot;&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;MaxValue /&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Flag&gt;number&lt;/Flag&gt;
       &lt;Value&gt;&lt;![CDATA[[original:MaxAantalPerSupplement]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
@@ -915,11 +918,34 @@
       &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
-      &lt;InputType&gt;open-text-large&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:IngredientenDeclaratie]&quot;,&quot;Rows&quot;:&quot;3&quot;,&quot;AllowTokens&quot;:&quot;&quot;}&lt;/InputData&gt;
-      &lt;Rows&gt;3&lt;/Rows&gt;
+      &lt;InputType&gt;trumbowyg&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;AllowTokens&quot;:&quot;&quot;,&quot;SaveToReport&quot;:false,&quot;SecureInput&quot;:true,&quot;InitalValue&quot;:&quot;[original:IngredientenDeclaratie]&quot;,&quot;ImageManager&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false},&quot;Buttons&quot;:&quot;viewHTML|undo,redo|formatting|Emphasis|superscript,subscript|foreColor,backColor|link|insertImage|Justify|btnGrp-lists|horizontalRule|removeformat|fullscreen&quot;,&quot;Language&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;en&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;BtnGroups&quot;:[{&quot;name&quot;:&quot;lists&quot;,&quot;value&quot;:&quot;unorderedList orderedList&quot;}],&quot;ButtonDropdowns&quot;:[{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;justify-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Justify&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;justifyLeft justifyCenter justifyRight justifyFull&quot;,&quot;IsExpression&quot;:false}},{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;bold&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Emphasis&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;bold italic underline strikethrough&quot;,&quot;IsExpression&quot;:false}}],&quot;Semantic&quot;:true,&quot;DarkTheme&quot;:false,&quot;RemoveFormatPastedOption&quot;:false,&quot;TagsToRemoveOption&quot;:false,&quot;TagsToRemove&quot;:&quot;&quot;,&quot;TagsToKeepOption&quot;:false,&quot;TagsToKeep&quot;:&quot;&quot;}&lt;/InputData&gt;
       &lt;AllowTokens /&gt;
-      &lt;Value&gt;&lt;![CDATA[[original:IngredientenDeclaratie]]]&gt;&lt;/Value&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;SecureInput&gt;True&lt;/SecureInput&gt;
+      &lt;InitalValue /&gt;
+      &lt;ImageManager&gt;
+        &lt;Expression /&gt;
+        &lt;Value /&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+      &lt;/ImageManager&gt;
+      &lt;Buttons&gt;viewHTML|undo,redo|formatting|Emphasis|superscript,subscript|foreColor,backColor|link|insertImage|Justify|btnGrp-lists|horizontalRule|removeformat|fullscreen&lt;/Buttons&gt;
+      &lt;Language&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;en&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Language&gt;
+      &lt;BtnGroups&gt;[{&quot;name&quot;:&quot;lists&quot;,&quot;value&quot;:&quot;unorderedList orderedList&quot;}]&lt;/BtnGroups&gt;
+      &lt;ButtonDropdowns&gt;[{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;justify-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Justify&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;justifyLeft justifyCenter justifyRight justifyFull&quot;,&quot;IsExpression&quot;:false}},{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;bold&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Emphasis&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;bold italic underline strikethrough&quot;,&quot;IsExpression&quot;:false}}]&lt;/ButtonDropdowns&gt;
+      &lt;Semantic&gt;True&lt;/Semantic&gt;
+      &lt;DarkTheme&gt;False&lt;/DarkTheme&gt;
+      &lt;RemoveFormatPastedOption&gt;False&lt;/RemoveFormatPastedOption&gt;
+      &lt;TagsToRemoveOption&gt;False&lt;/TagsToRemoveOption&gt;
+      &lt;TagsToRemove /&gt;
+      &lt;TagsToKeepOption&gt;False&lt;/TagsToKeepOption&gt;
+      &lt;TagsToKeep /&gt;
+      &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;True&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
       &lt;EnableCondition /&gt;
@@ -955,11 +981,34 @@
       &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
-      &lt;InputType&gt;open-text-large&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:VerplichteWaarschuwingen]&quot;,&quot;Rows&quot;:&quot;3&quot;,&quot;AllowTokens&quot;:&quot;&quot;}&lt;/InputData&gt;
-      &lt;Rows&gt;3&lt;/Rows&gt;
+      &lt;InputType&gt;trumbowyg&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;AllowTokens&quot;:&quot;&quot;,&quot;SaveToReport&quot;:false,&quot;SecureInput&quot;:true,&quot;InitalValue&quot;:&quot;[original:VerplichteWaarschuwingen]&quot;,&quot;ImageManager&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false},&quot;Buttons&quot;:&quot;viewHTML|undo,redo|formatting|Emphasis|superscript,subscript|foreColor,backColor|link|insertImage|Justify|btnGrp-lists|horizontalRule|removeformat|fullscreen&quot;,&quot;Language&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;en&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;BtnGroups&quot;:[{&quot;name&quot;:&quot;lists&quot;,&quot;value&quot;:&quot;unorderedList orderedList&quot;}],&quot;ButtonDropdowns&quot;:[{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;justify-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Justify&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;justifyLeft justifyCenter justifyRight justifyFull&quot;,&quot;IsExpression&quot;:false}},{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;bold&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Emphasis&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;bold italic underline strikethrough&quot;,&quot;IsExpression&quot;:false}}],&quot;Semantic&quot;:true,&quot;DarkTheme&quot;:false,&quot;RemoveFormatPastedOption&quot;:false,&quot;TagsToRemoveOption&quot;:false,&quot;TagsToRemove&quot;:&quot;&quot;,&quot;TagsToKeepOption&quot;:false,&quot;TagsToKeep&quot;:&quot;&quot;}&lt;/InputData&gt;
       &lt;AllowTokens /&gt;
-      &lt;Value&gt;&lt;![CDATA[[original:VerplichteWaarschuwingen]]]&gt;&lt;/Value&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;SecureInput&gt;True&lt;/SecureInput&gt;
+      &lt;InitalValue /&gt;
+      &lt;ImageManager&gt;
+        &lt;Expression /&gt;
+        &lt;Value /&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+      &lt;/ImageManager&gt;
+      &lt;Buttons&gt;viewHTML|undo,redo|formatting|Emphasis|superscript,subscript|foreColor,backColor|link|insertImage|Justify|btnGrp-lists|horizontalRule|removeformat|fullscreen&lt;/Buttons&gt;
+      &lt;Language&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;en&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Language&gt;
+      &lt;BtnGroups&gt;[{&quot;name&quot;:&quot;lists&quot;,&quot;value&quot;:&quot;unorderedList orderedList&quot;}]&lt;/BtnGroups&gt;
+      &lt;ButtonDropdowns&gt;[{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;justify-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Justify&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;justifyLeft justifyCenter justifyRight justifyFull&quot;,&quot;IsExpression&quot;:false}},{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;bold&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Emphasis&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;bold italic underline strikethrough&quot;,&quot;IsExpression&quot;:false}}]&lt;/ButtonDropdowns&gt;
+      &lt;Semantic&gt;True&lt;/Semantic&gt;
+      &lt;DarkTheme&gt;False&lt;/DarkTheme&gt;
+      &lt;RemoveFormatPastedOption&gt;False&lt;/RemoveFormatPastedOption&gt;
+      &lt;TagsToRemoveOption&gt;False&lt;/TagsToRemoveOption&gt;
+      &lt;TagsToRemove /&gt;
+      &lt;TagsToKeepOption&gt;False&lt;/TagsToKeepOption&gt;
+      &lt;TagsToKeep /&gt;
+      &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
       &lt;EnableCondition /&gt;
@@ -995,11 +1044,34 @@
       &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
-      &lt;InputType&gt;open-text-large&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:ReferentieInnameTabel]&quot;,&quot;Rows&quot;:&quot;3&quot;,&quot;AllowTokens&quot;:&quot;&quot;}&lt;/InputData&gt;
-      &lt;Rows&gt;3&lt;/Rows&gt;
+      &lt;InputType&gt;trumbowyg&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;AllowTokens&quot;:&quot;&quot;,&quot;SaveToReport&quot;:false,&quot;SecureInput&quot;:true,&quot;InitalValue&quot;:&quot;[original:ReferentieInnameTabel]&quot;,&quot;ImageManager&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false},&quot;Buttons&quot;:&quot;viewHTML|undo,redo|formatting|Emphasis|superscript,subscript|foreColor,backColor|link|insertImage|Justify|btnGrp-lists|horizontalRule|removeformat|fullscreen&quot;,&quot;Language&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;en&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;BtnGroups&quot;:[{&quot;name&quot;:&quot;lists&quot;,&quot;value&quot;:&quot;unorderedList orderedList&quot;}],&quot;ButtonDropdowns&quot;:[{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;justify-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Justify&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;justifyLeft justifyCenter justifyRight justifyFull&quot;,&quot;IsExpression&quot;:false}},{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;bold&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Emphasis&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;bold italic underline strikethrough&quot;,&quot;IsExpression&quot;:false}}],&quot;Semantic&quot;:true,&quot;DarkTheme&quot;:false,&quot;RemoveFormatPastedOption&quot;:false,&quot;TagsToRemoveOption&quot;:false,&quot;TagsToRemove&quot;:&quot;&quot;,&quot;TagsToKeepOption&quot;:false,&quot;TagsToKeep&quot;:&quot;&quot;}&lt;/InputData&gt;
       &lt;AllowTokens /&gt;
-      &lt;Value&gt;&lt;![CDATA[[original:ReferentieInnameTabel]]]&gt;&lt;/Value&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;SecureInput&gt;True&lt;/SecureInput&gt;
+      &lt;InitalValue /&gt;
+      &lt;ImageManager&gt;
+        &lt;Expression /&gt;
+        &lt;Value /&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+      &lt;/ImageManager&gt;
+      &lt;Buttons&gt;viewHTML|undo,redo|formatting|Emphasis|superscript,subscript|foreColor,backColor|link|insertImage|Justify|btnGrp-lists|horizontalRule|removeformat|fullscreen&lt;/Buttons&gt;
+      &lt;Language&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;en&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Language&gt;
+      &lt;BtnGroups&gt;[{&quot;name&quot;:&quot;lists&quot;,&quot;value&quot;:&quot;unorderedList orderedList&quot;}]&lt;/BtnGroups&gt;
+      &lt;ButtonDropdowns&gt;[{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;justify-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Justify&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;justifyLeft justifyCenter justifyRight justifyFull&quot;,&quot;IsExpression&quot;:false}},{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;bold&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Emphasis&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;bold italic underline strikethrough&quot;,&quot;IsExpression&quot;:false}}]&lt;/ButtonDropdowns&gt;
+      &lt;Semantic&gt;True&lt;/Semantic&gt;
+      &lt;DarkTheme&gt;False&lt;/DarkTheme&gt;
+      &lt;RemoveFormatPastedOption&gt;False&lt;/RemoveFormatPastedOption&gt;
+      &lt;TagsToRemoveOption&gt;False&lt;/TagsToRemoveOption&gt;
+      &lt;TagsToRemove /&gt;
+      &lt;TagsToKeepOption&gt;False&lt;/TagsToKeepOption&gt;
+      &lt;TagsToKeep /&gt;
+      &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;True&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
       &lt;EnableCondition /&gt;
@@ -1174,7 +1246,7 @@
     &lt;LabelAlign&gt;right&lt;/LabelAlign&gt;
     &lt;LabelWidth&gt;3&lt;/LabelWidth&gt;
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
-    &lt;OpenFormMode&gt;Manual&lt;/OpenFormMode&gt;
+    &lt;OpenFormMode&gt;Popup&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;546&lt;/ModuleId&gt;
     &lt;ModuleVersion&gt;5.11.7&lt;/ModuleVersion&gt;
     &lt;TabId&gt;99&lt;/TabId&gt;
@@ -1192,7 +1264,7 @@
     &lt;ShowTooltipTitle&gt;True&lt;/ShowTooltipTitle&gt;
     &lt;ShowFormCondition /&gt;
     &lt;InitJs&gt;&lt;![CDATA[]]&gt;&lt;/InitJs&gt;
-    &lt;PopupWidth&gt;600&lt;/PopupWidth&gt;
+    &lt;PopupWidth&gt;1000&lt;/PopupWidth&gt;
     &lt;WidthCoordinate&gt;px&lt;/WidthCoordinate&gt;
     &lt;PopupHeight /&gt;
     &lt;jQueryTheme&gt;sunny&lt;/jQueryTheme&gt;
@@ -1220,7 +1292,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.94&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.797&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1237,7 +1309,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.973&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.813&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1254,7 +1326,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:31.003&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.86&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1269,7 +1341,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:31.003&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.86&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add ortomo_PreparaatContent&quot;},{&quot;name&quot;:&quot;original:Preparaat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CommercieleNaam&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Leverancier&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Ondertitel&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ActieveIngredienten&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vulstoffen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Eigenschappen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AlgemeneProductinformatie&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Story&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Onderzoek&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:PreparaatAfbeelding&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:SfeerAfbeelding&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:InnameAdvies&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:MaxAantalPerSupplement&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:IngredientenDeclaratie&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VerplichteWaarschuwingen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ReferentieInnameTabel&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1283,7 +1355,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.0.ortomo_PreparaatContent&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.957&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.797&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;Newortomo_PreparaatContentId&quot;,&quot;Preparaat&quot;:&quot;[r_PreparaatId]&quot;,&quot;CommercieleNaam&quot;:&quot;[p_CommercieleNaam]&quot;,&quot;Leverancier&quot;:&quot;[p_Leverancier]&quot;,&quot;Ondertitel&quot;:&quot;[p_Ondertitel]&quot;,&quot;ActieveIngredienten&quot;:&quot;[p_ActieveIngredienten]&quot;,&quot;Vulstoffen&quot;:&quot;[p_Vulstoffen]&quot;,&quot;Eigenschappen&quot;:&quot;[p_Eigenschappen]&quot;,&quot;AlgemeneProductinformatie&quot;:&quot;[p_AlgemeneProductinformatie]&quot;,&quot;Story&quot;:&quot;[p_Story]&quot;,&quot;Onderzoek&quot;:&quot;[p_Onderzoek]&quot;,&quot;PreparaatAfbeelding&quot;:&quot;[r_PreparaatAfbeeldingId:FileId]&quot;,&quot;SfeerAfbeelding&quot;:&quot;[r_SfeerAfbeeldingId:FileId]&quot;,&quot;InnameAdvies&quot;:&quot;[p_InnameAdvies]&quot;,&quot;MaxAantalPerSupplement&quot;:&quot;[p_MaxAantalPerSupplement]&quot;,&quot;IngredientenDeclaratie&quot;:&quot;[p_IngredientenDeclaratie]&quot;,&quot;VerplichteWaarschuwingen&quot;:&quot;[p_VerplichteWaarschuwingen]&quot;,&quot;ReferentieInnameTabel&quot;:&quot;[p_ReferentieInnameTabel]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1299,7 +1371,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.UpdateEntity.0.ortomo_PreparaatContent&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.973&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.813&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_PreparaatContentId=]&quot;,&quot;Preparaat&quot;:&quot;[r_PreparaatId]&quot;,&quot;CommercieleNaam&quot;:&quot;[p_CommercieleNaam]&quot;,&quot;Leverancier&quot;:&quot;[p_Leverancier]&quot;,&quot;Ondertitel&quot;:&quot;[p_Ondertitel]&quot;,&quot;ActieveIngredienten&quot;:&quot;[p_ActieveIngredienten]&quot;,&quot;Vulstoffen&quot;:&quot;[p_Vulstoffen]&quot;,&quot;Eigenschappen&quot;:&quot;[p_Eigenschappen]&quot;,&quot;AlgemeneProductinformatie&quot;:&quot;[p_AlgemeneProductinformatie]&quot;,&quot;Story&quot;:&quot;[p_Story]&quot;,&quot;Onderzoek&quot;:&quot;[p_Onderzoek]&quot;,&quot;PreparaatAfbeelding&quot;:&quot;[r_PreparaatAfbeeldingId:FileId]&quot;,&quot;SfeerAfbeelding&quot;:&quot;[r_SfeerAfbeeldingId:FileId]&quot;,&quot;InnameAdvies&quot;:&quot;[p_InnameAdvies]&quot;,&quot;MaxAantalPerSupplement&quot;:&quot;[p_MaxAantalPerSupplement]&quot;,&quot;IngredientenDeclaratie&quot;:&quot;[p_IngredientenDeclaratie]&quot;,&quot;VerplichteWaarschuwingen&quot;:&quot;[p_VerplichteWaarschuwingen]&quot;,&quot;ReferentieInnameTabel&quot;:&quot;[p_ReferentieInnameTabel]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1316,7 +1388,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:31.003&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.86&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1333,7 +1405,7 @@
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:ortomo_PreparaatContentId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:31.003&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.86&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit ortomo_PreparaatContent&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1349,7 +1421,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.957&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.797&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/BeheerOrtomo/Preparaten/ortomo_PreparaatContent/Detail?ortomo_PreparaatContentId=[Newortomo_PreparaatContentId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1365,7 +1437,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.987&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.813&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;548&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1381,7 +1453,7 @@
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_PreparaatContent&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:31.017&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.877&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_PreparaatContentId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1397,7 +1469,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.957&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.797&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:545,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1413,7 +1485,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.987&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.813&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;547&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1428,7 +1500,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.973&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.797&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:546,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1444,7 +1516,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.987&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.813&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/BeheerOrtomo/Preparaten/ortomo_PreparaatContent/Detail?ortomo_PreparaatContentId=[QueryString:ortomo_PreparaatContentId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1460,7 +1532,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.987&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.813&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:545,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
@@ -1475,7 +1547,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-05T14:27:30.987&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-05T17:53:02.813&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:546,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
