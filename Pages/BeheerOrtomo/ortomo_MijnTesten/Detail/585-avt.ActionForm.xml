@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.11.06.00">
+<module type="ActionForm" version="05.11.07.00">
     <contentKey />
     <moduleID>585</moduleID>
     <alignment />
@@ -7,7 +7,6 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -29,7 +28,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.11.06.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.11.07.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[297]]&gt;&lt;/Id&gt;
@@ -49,7 +48,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;static-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;entity-details-container\&quot;\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eGUID:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:GUID=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container entityref\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003ci class=\&quot;fas fa-fw fa-lg i-icon fa-clipboard-check\&quot;\u003e\r\n            \u003c/i\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eGebruiker:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[originalUser:Username=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container datetime\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003etoday\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eStartdatum:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[DateTime:Convert(Value=\&quot;[original:Startdatum:ISO]\&quot;, TimeZone=\&quot;UserTime\&quot;)=\u0027-\u0027|MM/dd/yyyy hh:mm tt]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container datetime\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003etoday\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eEinddatum:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[DateTime:Convert(Value=\&quot;[original:Einddatum:ISO]\&quot;, TimeZone=\&quot;UserTime\&quot;)=\u0027-\u0027|MM/dd/yyyy hh:mm tt]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eVragen:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Vragen=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eVragenOpenstaand:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:VragenOpenstaand=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eVragenBeantwoord:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:VragenBeantwoord=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container decimal\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003ePercentageVoortgang:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:PercentageVoortgang=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n\u003c/div\u003e&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;entity-details-container\&quot;\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eGUID:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:GUID=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container entityref\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003ci class=\&quot;fas fa-fw fa-lg i-icon fa-clipboard-check\&quot;\u003e\r\n            \u003c/i\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eGebruiker:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[originalUser:Username=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container datetime\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003etoday\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eStartdatum:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[DateTime:Convert(Value=\&quot;[original:Startdatum:ISO]\&quot;, TimeZone=\&quot;UserTime\&quot;)=\u0027-\u0027|MM/dd/yyyy hh:mm tt]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container datetime\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003etoday\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eEinddatum:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[DateTime:Convert(Value=\&quot;[original:Einddatum:ISO]\&quot;, TimeZone=\&quot;UserTime\&quot;)=\u0027-\u0027|MM/dd/yyyy hh:mm tt]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eVragen:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Vragen=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eVragenOpenstaand:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:VragenOpenstaand=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eVragenBeantwoord:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:VragenBeantwoord=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container decimal\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003ePercentageVoortgang:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:PercentageVoortgang=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container entityref\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003ci class=\&quot;fas fa-fw fa-lg i-icon fa-clipboard-check\&quot;\u003e\r\n            \u003c/i\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eShoppingCart:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[originalortomo_ShoppingCart:OrderId=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n\u003c/div\u003e&quot;}&lt;/InputData&gt;
       &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;entity-details-container&quot;&gt;
     &lt;div class=&quot;properties-container text&quot;&gt;
         &lt;div class=&quot;entity-property&quot;&gt;
@@ -108,6 +107,14 @@
         &lt;/div&gt;
         &lt;div class=&quot;entity-value&quot;&gt;[original:PercentageVoortgang=&#39;-&#39;]&lt;/div&gt;
     &lt;/div&gt;
+    &lt;div class=&quot;properties-container entityref&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;i class=&quot;fas fa-fw fa-lg i-icon fa-clipboard-check&quot;&gt;
+            &lt;/i&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;ShoppingCart:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[originalortomo_ShoppingCart:OrderId=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -132,8 +139,8 @@
     &lt;Title&gt;View Form&lt;/Title&gt;
     &lt;CssName&gt;view-form&lt;/CssName&gt;
     &lt;Version&gt;5.11.0&lt;/Version&gt;
-    &lt;Build&gt;5.11.6&lt;/Build&gt;
-    &lt;CultureCode&gt;nl&lt;/CultureCode&gt;
+    &lt;Build&gt;5.11.7&lt;/Build&gt;
+    &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
     &lt;HasCustomLayout&gt;False&lt;/HasCustomLayout&gt;
@@ -149,7 +156,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;585&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.11.6&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.11.7&lt;/ModuleVersion&gt;
     &lt;TabId&gt;110&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -178,13 +185,13 @@
     &lt;Background /&gt;
     &lt;TextColor /&gt;
     &lt;Padding&gt;0&lt;/Padding&gt;
-    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn585&lt;/BaseId&gt;
     &lt;PopupName /&gt;
     &lt;LeftSidebarHtml /&gt;
     &lt;RightSidebarHtml /&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=nl-NL&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
+    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
@@ -193,7 +200,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![HasRole:9] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-12-30T18:23:40.39&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-06T14:04:58.017&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to view this item.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;585&lt;/ModuleId&gt;
@@ -208,9 +215,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T18:23:40.39&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-06T14:04:58.017&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:GUID&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Gebruiker&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Startdatum&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Einddatum&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vragen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VragenOpenstaand&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VragenBeantwoord&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:PercentageVoortgang&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:GUID&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Gebruiker&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Startdatum&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Einddatum&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vragen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VragenOpenstaand&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VragenBeantwoord&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:PercentageVoortgang&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ShoppingCart&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;585&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
@@ -222,7 +229,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_MijnTest&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T18:23:40.407&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-06T14:04:58.03&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_MijnTestId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;585&lt;/ModuleId&gt;
@@ -237,7 +244,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.User&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-12-30T18:23:40.407&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-06T14:04:58.047&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[original:Gebruiker]&quot;,&quot;OutputToken&quot;:&quot;originalUser&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;585&lt;/ModuleId&gt;
@@ -246,6 +253,21 @@
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.LoadRefEntityVariablesValues.1&lt;/PAP_InternalIdentifier&gt;
         &lt;EntityIdentifier&gt;User&lt;/EntityIdentifier&gt;
+      &lt;/Metadata&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_ShoppingCart&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
+      &lt;LastModified&gt;2021-02-06T14:04:58.047&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[original:ShoppingCart]&quot;,&quot;OutputToken&quot;:&quot;originalortomo_ShoppingCart&quot;}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;585&lt;/ModuleId&gt;
+      &lt;EventName&gt;preinit&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.LoadRefEntityVariablesValues.8&quot;,&quot;EntityIdentifier&quot;:&quot;ortomo_ShoppingCart&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;PreInit.LoadRefEntityVariablesValues.8&lt;/PAP_InternalIdentifier&gt;
+        &lt;EntityIdentifier&gt;ortomo_ShoppingCart&lt;/EntityIdentifier&gt;
       &lt;/Metadata&gt;
     &lt;/ActionInfo&gt;
   &lt;/Actions&gt;
