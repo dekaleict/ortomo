@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type ortomo_ShoppingCart",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 97,
+  "OrderIndex": 169,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -28,7 +28,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -49,6 +52,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "MijnTest",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -60,7 +72,8 @@
         "User": "[User]",
         "OrderId": "[OrderId]",
         "Quantity": "[Quantity]",
-        "TotalAmount": "[TotalAmount]"
+        "TotalAmount": "[TotalAmount]",
+        "MijnTest": "[MijnTest]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -92,6 +105,10 @@
           {
             "name": "Id",
             "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "MijnTest",
+            "value": "[CreatedRecord:MijnTest]"
           },
           {
             "name": "User",
