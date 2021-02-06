@@ -174,5 +174,27 @@
     "IsFilterable": false,
     "IsSortable": false,
     "OrderIndex": 8
+  },
+  {
+    "Id": 183,
+    "EntityVersionId": 23,
+    "Name": "ShoppingCart",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 8,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 9
   }
 ]
