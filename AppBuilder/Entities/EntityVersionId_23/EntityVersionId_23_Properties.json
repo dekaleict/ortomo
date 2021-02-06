@@ -174,5 +174,27 @@
     "IsFilterable": false,
     "IsSortable": false,
     "OrderIndex": 8
+  },
+  {
+    "Id": 184,
+    "EntityVersionId": 23,
+    "Name": "ShoppingCart",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsSortable": false,
+    "OrderIndex": 9
   }
 ]
