@@ -161,7 +161,7 @@
     &lt;CssName&gt;view-form&lt;/CssName&gt;
     &lt;Version&gt;5.11.0&lt;/Version&gt;
     &lt;Build&gt;5.11.7&lt;/Build&gt;
-    &lt;CultureCode&gt;en&lt;/CultureCode&gt;
+    &lt;CultureCode&gt;nl&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
     &lt;HasCustomLayout&gt;False&lt;/HasCustomLayout&gt;
@@ -206,13 +206,13 @@
     &lt;Background /&gt;
     &lt;TextColor /&gt;
     &lt;Padding&gt;0&lt;/Padding&gt;
-    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn598&lt;/BaseId&gt;
     &lt;PopupName /&gt;
     &lt;LeftSidebarHtml /&gt;
     &lt;RightSidebarHtml /&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
+    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=nl-NL&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
@@ -221,7 +221,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![HasRole:9] &amp;amp;&amp;amp; ![HasRole:11] &amp;amp;&amp;amp; ![HasRole:7] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:8]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-06T14:05:00.437&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-06T14:20:55.513&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to view this item.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;598&lt;/ModuleId&gt;
@@ -236,7 +236,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-06T14:05:00.453&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-06T14:20:55.513&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:Vragenlijst&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VraagVolgorde&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VraagTekst&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vraag&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VraagToelichting&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VraagType&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VraagDoel&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VorigeVraag&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VraagBeantwoord&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:GekozenAntwoordId&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:GekozenAntwoordTekst&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:MijnTest&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;598&lt;/ModuleId&gt;
@@ -250,7 +250,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_MijnAntwoord&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-06T14:05:00.47&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-06T14:20:55.53&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ortomo_MijnAntwoordId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;598&lt;/ModuleId&gt;
@@ -265,7 +265,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.ortomo_MijnTest&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-06T14:05:00.483&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-06T14:20:55.543&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[original:MijnTest]&quot;,&quot;OutputToken&quot;:&quot;originalortomo_MijnTest&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;598&lt;/ModuleId&gt;
