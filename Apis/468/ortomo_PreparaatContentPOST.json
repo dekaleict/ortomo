@@ -146,7 +146,7 @@
       "Validations": []
     },
     {
-      "Name": "MaxAantalPerSupplement",
+      "Name": "MaxAantalPerPreparaat",
       "IsDeleted": false,
       "IsEnabled": false,
       "OrderIndex": 13,
@@ -202,6 +202,15 @@
           }
         }
       ]
+    },
+    {
+      "Name": "DefaultAantalPerPreparaat",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 17,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -223,10 +232,11 @@
         "PreparaatAfbeelding": "[PreparaatAfbeelding]",
         "SfeerAfbeelding": "[SfeerAfbeelding]",
         "InnameAdvies": "[InnameAdvies]",
-        "MaxAantalPerSupplement": "[MaxAantalPerSupplement]",
+        "DefaultAantalPerPreparaat": "[DefaultAantalPerPreparaat]",
         "IngredientenDeclaratie": "[IngredientenDeclaratie]",
         "VerplichteWaarschuwingen": "[VerplichteWaarschuwingen]",
-        "ReferentieInnameTabel": "[ReferentieInnameTabel]"
+        "ReferentieInnameTabel": "[ReferentieInnameTabel]",
+        "MaxAantalPerPreparaat": "[MaxAantalPerPreparaat]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -260,16 +270,8 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "IngredientenDeclaratie",
-            "value": "[CreatedRecord:IngredientenDeclaratie]"
-          },
-          {
-            "name": "VerplichteWaarschuwingen",
-            "value": "[CreatedRecord:VerplichteWaarschuwingen]"
-          },
-          {
-            "name": "ReferentieInnameTabel",
-            "value": "[CreatedRecord:ReferentieInnameTabel]"
+            "name": "DefaultAantalPerPreparaat",
+            "value": "[CreatedRecord:DefaultAantalPerPreparaat]"
           },
           {
             "name": "Preparaat",
@@ -324,8 +326,20 @@
             "value": "[CreatedRecord:InnameAdvies]"
           },
           {
-            "name": "MaxAantalPerSupplement",
-            "value": "[CreatedRecord:MaxAantalPerSupplement]"
+            "name": "MaxAantalPerPreparaat",
+            "value": "[CreatedRecord:MaxAantalPerPreparaat]"
+          },
+          {
+            "name": "IngredientenDeclaratie",
+            "value": "[CreatedRecord:IngredientenDeclaratie]"
+          },
+          {
+            "name": "VerplichteWaarschuwingen",
+            "value": "[CreatedRecord:VerplichteWaarschuwingen]"
+          },
+          {
+            "name": "ReferentieInnameTabel",
+            "value": "[CreatedRecord:ReferentieInnameTabel]"
           }
         ],
         "Headers": [
