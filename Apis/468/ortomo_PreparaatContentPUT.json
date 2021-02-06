@@ -166,7 +166,7 @@
       "Validations": []
     },
     {
-      "Name": "MaxAantalPerSupplement",
+      "Name": "MaxAantalPerPreparaat",
       "IsDeleted": false,
       "IsEnabled": false,
       "OrderIndex": 14,
@@ -222,6 +222,15 @@
           }
         }
       ]
+    },
+    {
+      "Name": "DefaultAantalPerPreparaat",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 18,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -243,10 +252,11 @@
         "PreparaatAfbeelding": "[PreparaatAfbeelding]",
         "SfeerAfbeelding": "[SfeerAfbeelding]",
         "InnameAdvies": "[InnameAdvies]",
-        "MaxAantalPerSupplement": "[MaxAantalPerSupplement]",
+        "DefaultAantalPerPreparaat": "[DefaultAantalPerPreparaat]",
         "IngredientenDeclaratie": "[IngredientenDeclaratie]",
         "VerplichteWaarschuwingen": "[VerplichteWaarschuwingen]",
-        "ReferentieInnameTabel": "[ReferentieInnameTabel]"
+        "ReferentieInnameTabel": "[ReferentieInnameTabel]",
+        "MaxAantalPerPreparaat": "[MaxAantalPerPreparaat]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
