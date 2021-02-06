@@ -53,10 +53,6 @@
             "value": "[RecordId]"
           },
           {
-            "name": "ShoppingCart",
-            "value": "[Record:ShoppingCart]"
-          },
-          {
             "name": "GUID",
             "value": "[Record:GUID]"
           },
