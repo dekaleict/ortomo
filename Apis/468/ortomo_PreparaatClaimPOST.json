@@ -65,26 +65,6 @@
           }
         }
       ]
-    },
-    {
-      "Name": "ClaimKort",
-      "IsDeleted": false,
-      "IsEnabled": false,
-      "OrderIndex": 3,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": [
-        {
-          "Data": "{\"Message\":\"ClaimKort is required.\"}",
-          "Type": "default-required",
-          "IsDeleted": false,
-          "IsEnabled": false,
-          "OrderIndex": 0,
-          "Metadata": {
-            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
-          }
-        }
-      ]
     }
   ],
   "Actions": [
@@ -95,8 +75,7 @@
         "OutputToken": "CreatedRecordId",
         "TypeClaim": "[TypeClaim]",
         "Preparaat": "[Preparaat]",
-        "Claim": "[Claim]",
-        "ClaimKort": "[ClaimKort]"
+        "Claim": "[Claim]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -128,10 +107,6 @@
           {
             "name": "Id",
             "value": "[CreatedRecordId]"
-          },
-          {
-            "name": "ClaimKort",
-            "value": "[CreatedRecord:ClaimKort]"
           },
           {
             "name": "TypeClaim",
