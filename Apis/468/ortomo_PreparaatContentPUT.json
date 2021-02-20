@@ -231,6 +231,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "MaatvoeringAfbeelding",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 19,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -256,7 +265,8 @@
         "IngredientenDeclaratie": "[IngredientenDeclaratie]",
         "VerplichteWaarschuwingen": "[VerplichteWaarschuwingen]",
         "ReferentieInnameTabel": "[ReferentieInnameTabel]",
-        "MaxAantalPerPreparaat": "[MaxAantalPerPreparaat]"
+        "MaxAantalPerPreparaat": "[MaxAantalPerPreparaat]",
+        "MaatvoeringAfbeelding": "[MaatvoeringAfbeelding]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
