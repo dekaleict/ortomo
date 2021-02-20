@@ -211,6 +211,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "MaatvoeringAfbeelding",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 18,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -236,7 +245,8 @@
         "IngredientenDeclaratie": "[IngredientenDeclaratie]",
         "VerplichteWaarschuwingen": "[VerplichteWaarschuwingen]",
         "ReferentieInnameTabel": "[ReferentieInnameTabel]",
-        "MaxAantalPerPreparaat": "[MaxAantalPerPreparaat]"
+        "MaxAantalPerPreparaat": "[MaxAantalPerPreparaat]",
+        "MaatvoeringAfbeelding": "[MaatvoeringAfbeelding]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -270,8 +280,8 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "DefaultAantalPerPreparaat",
-            "value": "[CreatedRecord:DefaultAantalPerPreparaat]"
+            "name": "MaatvoeringAfbeelding",
+            "value": "[CreatedRecord:MaatvoeringAfbeelding]"
           },
           {
             "name": "Preparaat",
@@ -340,6 +350,10 @@
           {
             "name": "ReferentieInnameTabel",
             "value": "[CreatedRecord:ReferentieInnameTabel]"
+          },
+          {
+            "name": "DefaultAantalPerPreparaat",
+            "value": "[CreatedRecord:DefaultAantalPerPreparaat]"
           }
         ],
         "Headers": [
