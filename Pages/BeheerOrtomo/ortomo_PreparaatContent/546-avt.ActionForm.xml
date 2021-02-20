@@ -7,7 +7,6 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -1195,7 +1194,7 @@
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
       &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;18&lt;/RowIndex&gt;
+      &lt;RowIndex&gt;20&lt;/RowIndex&gt;
       &lt;ColSpan&gt;9&lt;/ColSpan&gt;
       &lt;ColOffset&gt;3&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -1263,7 +1262,7 @@
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
       &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;18&lt;/RowIndex&gt;
+      &lt;RowIndex&gt;20&lt;/RowIndex&gt;
       &lt;ColSpan&gt;9&lt;/ColSpan&gt;
       &lt;ColOffset&gt;3&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -1384,7 +1383,7 @@
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;LastModified&gt;2021-02-06T13:12:04.303&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add ortomo_PreparaatContent&quot;},{&quot;name&quot;:&quot;original:Preparaat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CommercieleNaam&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Leverancier&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Ondertitel&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ActieveIngredienten&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vulstoffen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Eigenschappen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AlgemeneProductinformatie&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Story&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Onderzoek&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:PreparaatAfbeelding&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:SfeerAfbeelding&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:InnameAdvies&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:MaxAantalPerSupplement&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:IngredientenDeclaratie&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VerplichteWaarschuwingen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ReferentieInnameTabel&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:DefaultAantalPerPreparaat&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add ortomo_PreparaatContent&quot;},{&quot;name&quot;:&quot;original:Preparaat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CommercieleNaam&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Leverancier&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Ondertitel&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ActieveIngredienten&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Vulstoffen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Eigenschappen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:AlgemeneProductinformatie&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Story&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Onderzoek&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:PreparaatAfbeelding&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:SfeerAfbeelding&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:InnameAdvies&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:MaxAantalPerSupplement&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:IngredientenDeclaratie&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:VerplichteWaarschuwingen&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ReferentieInnameTabel&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:DefaultAantalPerPreparaat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:MaatvoeringAfbeelding&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;546&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
