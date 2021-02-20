@@ -74,7 +74,7 @@
     &lt;EnableGridSelect&gt;True&lt;/EnableGridSelect&gt;
     &lt;DataSourceAutoRefreshInterval&gt;1&lt;/DataSourceAutoRefreshInterval&gt;
     &lt;DataSourceRefreshType&gt;manual&lt;/DataSourceRefreshType&gt;
-    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn545&lt;/BaseId&gt;
     &lt;ItemButtonGroups&gt;[]&lt;/ItemButtonGroups&gt;
     &lt;GridButtonGroups&gt;[]&lt;/GridButtonGroups&gt;
@@ -1392,7 +1392,7 @@
       &lt;IsSortable&gt;false&lt;/IsSortable&gt;
       &lt;CanBeSortable&gt;true&lt;/CanBeSortable&gt;
       &lt;IsSearchable&gt;true&lt;/IsSearchable&gt;
-      &lt;AllowHtml&gt;false&lt;/AllowHtml&gt;
+      &lt;AllowHtml&gt;true&lt;/AllowHtml&gt;
       &lt;CanBeSearchable&gt;true&lt;/CanBeSearchable&gt;
       &lt;IsFilterable&gt;false&lt;/IsFilterable&gt;
       &lt;CanBeFilterable&gt;true&lt;/CanBeFilterable&gt;
