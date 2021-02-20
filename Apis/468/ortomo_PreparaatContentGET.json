@@ -53,8 +53,8 @@
             "value": "[RecordId]"
           },
           {
-            "name": "DefaultAantalPerPreparaat",
-            "value": "[Record:DefaultAantalPerPreparaat]"
+            "name": "MaatvoeringAfbeelding",
+            "value": "[Record:MaatvoeringAfbeelding]"
           },
           {
             "name": "Preparaat",
@@ -123,6 +123,10 @@
           {
             "name": "ReferentieInnameTabel",
             "value": "[Record:ReferentieInnameTabel]"
+          },
+          {
+            "name": "DefaultAantalPerPreparaat",
+            "value": "[Record:DefaultAantalPerPreparaat]"
           }
         ],
         "Headers": []
