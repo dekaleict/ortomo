@@ -220,6 +220,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "DefaultDagelijksGebruik",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 19,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -246,7 +255,8 @@
         "VerplichteWaarschuwingen": "[VerplichteWaarschuwingen]",
         "ReferentieInnameTabel": "[ReferentieInnameTabel]",
         "MaxAantalPerPreparaat": "[MaxAantalPerPreparaat]",
-        "MaatvoeringAfbeelding": "[MaatvoeringAfbeelding]"
+        "MaatvoeringAfbeelding": "[MaatvoeringAfbeelding]",
+        "DefaultDagelijksGebruik": "[DefaultDagelijksGebruik]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -280,8 +290,8 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "MaatvoeringAfbeelding",
-            "value": "[CreatedRecord:MaatvoeringAfbeelding]"
+            "name": "DefaultDagelijksGebruik",
+            "value": "[CreatedRecord:DefaultDagelijksGebruik]"
           },
           {
             "name": "Preparaat",
@@ -354,6 +364,10 @@
           {
             "name": "DefaultAantalPerPreparaat",
             "value": "[CreatedRecord:DefaultAantalPerPreparaat]"
+          },
+          {
+            "name": "MaatvoeringAfbeelding",
+            "value": "[CreatedRecord:MaatvoeringAfbeelding]"
           }
         ],
         "Headers": [
