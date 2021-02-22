@@ -118,12 +118,13 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;image-button&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;ButtonAlign&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false},&quot;Actions&quot;:[],&quot;ShowIn&quot;:{&quot;Value&quot;:{&quot;ButtonsPane&quot;:true},&quot;IsExpression&quot;:false},&quot;ImageURL&quot;:&quot;DesktopModules/DnnSharp/Common/DnnSharp.SocialMedia/SocialMediaImages/GplusLoginButton.bmp&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;ButtonAlign&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;Actions&quot;:[],&quot;ShowIn&quot;:{&quot;Value&quot;:{&quot;ButtonsPane&quot;:true},&quot;IsExpression&quot;:false},&quot;ImageURL&quot;:&quot;DesktopModules/DnnSharp/Common/DnnSharp.SocialMedia/SocialMediaImages/GplusLoginButton.bmp&quot;}&lt;/InputData&gt;
       &lt;CausesValidation&gt;True&lt;/CausesValidation&gt;
       &lt;ButtonAlign&gt;
         &lt;Expression /&gt;
         &lt;Value&gt;left&lt;/Value&gt;
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/ButtonAlign&gt;
       &lt;Actions /&gt;
       &lt;ShowIn&gt;
@@ -271,7 +272,7 @@
       &lt;ActionType&gt;FacebookLogin&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-02-22T08:40:53.653&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-22T08:41:14.757&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AppId&quot;:&quot;&quot;,&quot;AppSecret&quot;:&quot;&quot;,&quot;OnRegistration&quot;:[],&quot;OnSuccess&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;610&lt;/ModuleId&gt;
@@ -287,7 +288,7 @@
       &lt;ActionType&gt;GplusLogin&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-02-22T08:40:53.653&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-22T08:41:14.773&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AppId&quot;:&quot;&quot;,&quot;AppSecret&quot;:&quot;&quot;,&quot;OnRegistration&quot;:[],&quot;OnSuccess&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;610&lt;/ModuleId&gt;
@@ -303,7 +304,7 @@
       &lt;ActionType&gt;TwitterLogin&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-02-22T08:40:53.653&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-22T08:41:14.79&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AppId&quot;:&quot;&quot;,&quot;AppSecret&quot;:&quot;&quot;,&quot;OnRegistration&quot;:[],&quot;OnSuccess&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;610&lt;/ModuleId&gt;
