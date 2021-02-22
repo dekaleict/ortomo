@@ -1,9 +1,10 @@
 <module type="DNNHTML" version="09.06.00.00">
+    <contentKey />
     <moduleID>609</moduleID>
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>1200</cachetime>
     <color />
     <containersrc />
@@ -14,21 +15,34 @@
     <footer />
     <header />
     <iconfile />
-    <inheritviewpermissions>true</inheritviewpermissions>
+    <inheritviewpermissions>false</inheritviewpermissions>
     <iswebslice>false</iswebslice>
     <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
         <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
         </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Registered Users</rolename>
+        </permission>
     </modulepermissions>
-    <title>Enter Title</title>
+    <title>Start test voor ingelogde gebruiker</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>8936a0f7-d2fa-44ca-a070-08407c62a6ec</uniqueId>
+    <uniqueId>f4773dc8-549a-4816-959f-cfb492962d71</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
