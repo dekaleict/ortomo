@@ -53,10 +53,6 @@
             "value": "[RecordId]"
           },
           {
-            "name": "DefaultDagelijksGebruik",
-            "value": "[Record:DefaultDagelijksGebruik]"
-          },
-          {
             "name": "Preparaat",
             "value": "[Record:Preparaat]"
           },
@@ -125,12 +121,12 @@
             "value": "[Record:ReferentieInnameTabel]"
           },
           {
-            "name": "DefaultAantalPerPreparaat",
-            "value": "[Record:DefaultAantalPerPreparaat]"
-          },
-          {
             "name": "MaatvoeringAfbeelding",
             "value": "[Record:MaatvoeringAfbeelding]"
+          },
+          {
+            "name": "DefaultDagelijksGebruik",
+            "value": "[Record:DefaultDagelijksGebruik]"
           }
         ],
         "Headers": []
