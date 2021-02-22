@@ -53,8 +53,8 @@
             "value": "[RecordId]"
           },
           {
-            "name": "MaatvoeringAfbeelding",
-            "value": "[Record:MaatvoeringAfbeelding]"
+            "name": "DefaultDagelijksGebruik",
+            "value": "[Record:DefaultDagelijksGebruik]"
           },
           {
             "name": "Preparaat",
@@ -127,6 +127,10 @@
           {
             "name": "DefaultAantalPerPreparaat",
             "value": "[Record:DefaultAantalPerPreparaat]"
+          },
+          {
+            "name": "MaatvoeringAfbeelding",
+            "value": "[Record:MaatvoeringAfbeelding]"
           }
         ],
         "Headers": []
