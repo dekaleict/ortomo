@@ -34,6 +34,12 @@
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
+            <rolename>Unauthenticated Users</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
             <rolename>Unverified Users</rolename>
         </permission>
     </modulepermissions>
@@ -42,6 +48,7 @@
     <uniqueId>bcfd640b-cee6-4922-8a70-7537bce41533</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
