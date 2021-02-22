@@ -5,7 +5,7 @@
     <alltabs>false</alltabs>
     <border />
     <cachemethod>MemoryModuleCachingProvider</cachemethod>
-    <cachetime>1200</cachetime>
+    <cachetime>0</cachetime>
     <color />
     <containersrc />
     <displayprint>false</displayprint>
@@ -42,13 +42,12 @@
     <uniqueId>f4773dc8-549a-4816-959f-cfb492962d71</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
-    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings>
         <modulesetting>
             <settingname>HtmlText_ReplaceTokens</settingname>
-            <settingvalue>False</settingvalue>
+            <settingvalue>True</settingvalue>
         </modulesetting>
         <modulesetting>
             <settingname>HtmlText_UseDecorate</settingname>
@@ -56,7 +55,7 @@
         </modulesetting>
         <modulesetting>
             <settingname>WorkFlowID</settingname>
-            <settingvalue>1</settingvalue>
+            <settingvalue>-1</settingvalue>
         </modulesetting>
         <modulesetting>
             <settingname>HtmlText_SearchDescLength</settingname>
