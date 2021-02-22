@@ -224,15 +224,6 @@
       ]
     },
     {
-      "Name": "DefaultAantalPerPreparaat",
-      "IsDeleted": false,
-      "IsEnabled": false,
-      "OrderIndex": 18,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
-    },
-    {
       "Name": "MaatvoeringAfbeelding",
       "IsDeleted": false,
       "IsEnabled": false,
@@ -270,7 +261,6 @@
         "PreparaatAfbeelding": "[PreparaatAfbeelding]",
         "SfeerAfbeelding": "[SfeerAfbeelding]",
         "InnameAdvies": "[InnameAdvies]",
-        "DefaultAantalPerPreparaat": "[DefaultAantalPerPreparaat]",
         "IngredientenDeclaratie": "[IngredientenDeclaratie]",
         "VerplichteWaarschuwingen": "[VerplichteWaarschuwingen]",
         "ReferentieInnameTabel": "[ReferentieInnameTabel]",
