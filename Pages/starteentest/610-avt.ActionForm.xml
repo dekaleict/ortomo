@@ -1,9 +1,10 @@
 <module type="ActionForm" version="05.11.07.00">
+    <contentKey />
     <moduleID>610</moduleID>
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
     <containersrc />
@@ -14,19 +15,31 @@
     <footer />
     <header />
     <iconfile />
-    <inheritviewpermissions>true</inheritviewpermissions>
+    <inheritviewpermissions>false</inheritviewpermissions>
     <iswebslice>false</iswebslice>
     <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
         <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
         </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Unverified Users</rolename>
+        </permission>
     </modulepermissions>
-    <title>avt.Action Form</title>
+    <title>Aanmaken account voor starten test</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>5febb772-6ff1-4a1b-9db3-36948c53fc83</uniqueId>
+    <uniqueId>586b7c47-a3a8-42e5-a082-79a5941c6562</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
     <webslicetitle />
@@ -39,8 +52,8 @@
     <content type="ActionForm" version="05.11.07.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields /&gt;
   &lt;Settings&gt;
-    &lt;Title&gt;avt.Action Form&lt;/Title&gt;
-    &lt;CssName&gt;avt-action-form&lt;/CssName&gt;
+    &lt;Title&gt;Aanmaken account voor starten test&lt;/Title&gt;
+    &lt;CssName&gt;aanmaken-account-voor-starten-test&lt;/CssName&gt;
     &lt;Version&gt;5.11.0&lt;/Version&gt;
     &lt;Build&gt;5.11.7&lt;/Build&gt;
     &lt;CultureCode&gt;nl&lt;/CultureCode&gt;
