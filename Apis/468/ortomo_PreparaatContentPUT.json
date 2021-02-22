@@ -240,6 +240,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "DefaultDagelijksGebruik",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 20,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -266,7 +275,8 @@
         "VerplichteWaarschuwingen": "[VerplichteWaarschuwingen]",
         "ReferentieInnameTabel": "[ReferentieInnameTabel]",
         "MaxAantalPerPreparaat": "[MaxAantalPerPreparaat]",
-        "MaatvoeringAfbeelding": "[MaatvoeringAfbeelding]"
+        "MaatvoeringAfbeelding": "[MaatvoeringAfbeelding]",
+        "DefaultDagelijksGebruik": "[DefaultDagelijksGebruik]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
