@@ -53,10 +53,6 @@
             "value": "[RecordId]"
           },
           {
-            "name": "MijnTest",
-            "value": "[Record:MijnTest]"
-          },
-          {
             "name": "User",
             "value": "[Record:User]"
           },
@@ -71,6 +67,10 @@
           {
             "name": "TotalAmount",
             "value": "[Record:TotalAmount]"
+          },
+          {
+            "name": "MijnTest",
+            "value": "[Record:MijnTest]"
           }
         ],
         "Headers": []
