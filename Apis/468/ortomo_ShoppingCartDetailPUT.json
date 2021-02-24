@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided ortomo_ShoppingCartDetail record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 111,
+  "OrderIndex": 175,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -19,7 +19,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
@@ -45,7 +48,10 @@
           "Type": "default-required",
           "IsDeleted": false,
           "IsEnabled": false,
-          "OrderIndex": 0
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
         }
       ]
     },
