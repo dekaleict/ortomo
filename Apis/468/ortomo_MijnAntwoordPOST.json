@@ -177,10 +177,6 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "MijnTest",
-            "value": "[CreatedRecord:MijnTest]"
-          },
-          {
             "name": "Vragenlijst",
             "value": "[CreatedRecord:Vragenlijst]"
           },
@@ -223,6 +219,10 @@
           {
             "name": "GekozenAntwoordTekst",
             "value": "[CreatedRecord:GekozenAntwoordTekst]"
+          },
+          {
+            "name": "MijnTest",
+            "value": "[CreatedRecord:MijnTest]"
           }
         ],
         "Headers": [
