@@ -107,10 +107,6 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "MijnTest",
-            "value": "[CreatedRecord:MijnTest]"
-          },
-          {
             "name": "User",
             "value": "[CreatedRecord:User]"
           },
@@ -125,6 +121,10 @@
           {
             "name": "TotalAmount",
             "value": "[CreatedRecord:TotalAmount]"
+          },
+          {
+            "name": "MijnTest",
+            "value": "[CreatedRecord:MijnTest]"
           }
         ],
         "Headers": [
