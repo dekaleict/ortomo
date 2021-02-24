@@ -53,10 +53,6 @@
             "value": "[RecordId]"
           },
           {
-            "name": "MijnTest",
-            "value": "[Record:MijnTest]"
-          },
-          {
             "name": "Vragenlijst",
             "value": "[Record:Vragenlijst]"
           },
@@ -99,6 +95,10 @@
           {
             "name": "GekozenAntwoordTekst",
             "value": "[Record:GekozenAntwoordTekst]"
+          },
+          {
+            "name": "MijnTest",
+            "value": "[Record:MijnTest]"
           }
         ],
         "Headers": []
