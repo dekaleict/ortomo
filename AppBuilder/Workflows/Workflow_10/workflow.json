@@ -215,12 +215,37 @@
         "DiagramUID": "Activity_0taf2ct"
       },
       {
+        "Id": 104,
+        "ActionType": "LoadUser",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 692,
+            "Name": "Id",
+            "Value": "application@dekaleict.nl",
+            "IsExpression": false,
+            "ActionId": 104,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 693,
+            "Name": "Portal",
+            "IsExpression": false,
+            "ActionId": 104,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0kkdvii"
+      },
+      {
         "Id": 83,
         "Description": "",
         "ActionErrorMessage": "",
         "Condition": "",
         "ActionType": "PlantAnApp.ExecuteConditionally",
-        "OrderIndex": 2,
+        "OrderIndex": 3,
         "ActionParameters": [
           {
             "Id": 540,
@@ -838,7 +863,7 @@
       {
         "Id": 99,
         "ActionType": "PlantAnApp.ExecuteWorkflow.11",
-        "OrderIndex": 3,
+        "OrderIndex": 4,
         "ActionParameters": [
           {
             "Id": 660,
@@ -889,7 +914,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-01-26T20:16:31.7282631+01:00",
+  "LastModifiedOn": "2021-02-24T10:13:59.1297657+01:00",
   "InputFields": [
     {
       "Id": 65,
