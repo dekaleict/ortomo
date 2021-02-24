@@ -51,6 +51,16 @@
       "RoleId": 11,
       "RoleName": "Beheerder",
       "Value": "all"
+    },
+    {
+      "Id": 325,
+      "PermissionType": {
+        "Id": 2,
+        "Name": "Can Add"
+      },
+      "RoleId": 11,
+      "RoleName": "Beheerder",
+      "Value": "true"
     }
   ],
   "7": [
