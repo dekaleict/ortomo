@@ -20,22 +20,23 @@
     <modulepermissions>
         <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
-            <permissionkey>EDIT</permissionkey>
+            <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
-            <permissionkey>VIEW</permissionkey>
+            <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
     <title>ProductDetailpagina-Kop</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>b67006b0-0e81-46c9-b815-284bc43d5d57</uniqueId>
+    <uniqueId>cc12f226-70b5-4c4e-ae21-3a20f114e390</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
