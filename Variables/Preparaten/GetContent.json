@@ -13,7 +13,7 @@
   "src": {
     "sql": "SELECT * FROM app.ortomo_PreparaatContent\nWHERE Id = '[tknparams:contentid]'",
     "defaultColumn": "",
-    "columns": "Id\nActieveIngredienten\nAlgemeneProductinformatie\nCommercieleNaam\nEigenschappen\nLeverancier\nOndertitel\nOnderzoek\nPreparaat\nPreparaatAfbeelding\nSfeerAfbeelding\nStory\nVulstoffen",
+    "columns": "Id\nActieveIngredienten\nAlgemeneProductinformatie\nCommercieleNaam\nEigenschappen\nLeverancier\nOndertitel\nOnderzoek\nPreparaat\nPreparaatAfbeelding\nSfeerAfbeelding\nStory\nVulstoffen\nInnameAdvies\nMaxAantalPerPreparaat\nIngredientenDeclaratie\nReferentieInnameTabel\nVerplichteWaarschuwingen\nMaatvoeringAfbeelding\nDefaultDagelijksGebruik",
     "connectionString": "",
     "type": "db"
   }
