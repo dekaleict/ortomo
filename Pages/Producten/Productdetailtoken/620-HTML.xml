@@ -1,0 +1,108 @@
+<module type="DNNHTML" version="09.06.00.00">
+    <contentKey />
+    <moduleID>620</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>ProductDetailpagina - Kop2</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>a9e9b599-43b4-4ec4-a6e8-810c4ed02375</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>DNN_HTML</definition>
+    <moduledefinition>Text/HTML</moduledefinition>
+    <content type="DNNHTML" version="09.06.00.00"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;col-sm-6&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;card&amp;quot; &amp;gt;
+      &amp;lt;div class=&amp;quot;card-body&amp;quot;&amp;gt;
+        &amp;lt;h5 class=&amp;quot;card-title&amp;quot;&amp;gt;Algemene productinformatie&amp;lt;/h5&amp;gt;
+        &amp;lt;!-- &amp;lt;h6 class=&amp;quot;card-subtitle mb-2 text-muted&amp;quot;&amp;gt;Card subtitle&amp;lt;/h6&amp;gt; --&amp;gt;
+        &amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;[Preparaten:GetContent.AlgemeneProductinformatie(contentid=&amp;quot;[Preparaten:GetPreparaat.Content]&amp;quot;)]&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;card-body&amp;quot;&amp;gt;
+        &amp;lt;h5 class=&amp;quot;card-title&amp;quot;&amp;gt;Ingredientendeclaratie&amp;lt;/h5&amp;gt;
+        &amp;lt;!-- &amp;lt;h6 class=&amp;quot;card-subtitle mb-2 text-muted&amp;quot;&amp;gt;Card subtitle&amp;lt;/h6&amp;gt; --&amp;gt;
+        &amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;[Preparaten:GetContent.IngredientenDeclaratie(contentid=&amp;quot;[Preparaten:GetPreparaat.Content]&amp;quot;)]&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;col-sm-6&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;card&amp;quot; style=&amp;quot;width: 18rem;&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;card-body&amp;quot;&amp;gt;
+        &amp;lt;h5 class=&amp;quot;card-title&amp;quot;&amp;gt;ReferentieInnameTabel&amp;lt;/h5&amp;gt;
+        &amp;lt;!-- &amp;lt;h6 class=&amp;quot;card-subtitle mb-2 text-muted&amp;quot;&amp;gt;Card subtitle&amp;lt;/h6&amp;gt; --&amp;gt;
+        &amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;[Preparaten:GetContent.ReferentieInnameTabel(contentid=&amp;quot;[Preparaten:GetPreparaat.Content]&amp;quot;)]&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;card&amp;quot; style=&amp;quot;width: 18rem;&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;card-body&amp;quot;&amp;gt;
+        &amp;lt;h5 class=&amp;quot;card-title&amp;quot;&amp;gt;Vulstoffen&amp;lt;/h5&amp;gt;
+        &amp;lt;!-- &amp;lt;h6 class=&amp;quot;card-subtitle mb-2 text-muted&amp;quot;&amp;gt;Card subtitle&amp;lt;/h6&amp;gt; --&amp;gt;
+        &amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;[Preparaten:GetContent.Vulstoffen(contentid=&amp;quot;[Preparaten:GetPreparaat.Content]&amp;quot;)]&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;col-sm-6&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;card&amp;quot; &amp;gt;
+      &amp;lt;div class=&amp;quot;card-body&amp;quot;&amp;gt;
+        &amp;lt;h5 class=&amp;quot;card-title&amp;quot;&amp;gt;ActieveIngredienten&amp;lt;/h5&amp;gt;
+        &amp;lt;!-- &amp;lt;h6 class=&amp;quot;card-subtitle mb-2 text-muted&amp;quot;&amp;gt;Card subtitle&amp;lt;/h6&amp;gt; --&amp;gt;
+        &amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;[Preparaten:GetContent.ActieveIngredienten(contentid=&amp;quot;[Preparaten:GetPreparaat.Content]&amp;quot;)]&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;card-body&amp;quot;&amp;gt;
+        &amp;lt;h5 class=&amp;quot;card-title&amp;quot;&amp;gt;Eigenschappen&amp;lt;/h5&amp;gt;
+        &amp;lt;!-- &amp;lt;h6 class=&amp;quot;card-subtitle mb-2 text-muted&amp;quot;&amp;gt;Card subtitle&amp;lt;/h6&amp;gt; --&amp;gt;
+        &amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;[Preparaten:GetContent.Eigenschappen(contentid=&amp;quot;[Preparaten:GetPreparaat.Content]&amp;quot;)]&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;col-sm-6&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;card&amp;quot; style=&amp;quot;width: 18rem;&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;card-body&amp;quot;&amp;gt;
+        &amp;lt;h5 class=&amp;quot;card-title&amp;quot;&amp;gt;Onderzoek&amp;lt;/h5&amp;gt;
+        &amp;lt;!-- &amp;lt;h6 class=&amp;quot;card-subtitle mb-2 text-muted&amp;quot;&amp;gt;Card subtitle&amp;lt;/h6&amp;gt; --&amp;gt;
+        &amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;[Preparaten:GetContent.Onderzoek(contentid=&amp;quot;[Preparaten:GetPreparaat.Content]&amp;quot;)]&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;card&amp;quot; style=&amp;quot;width: 18rem;&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;card-body&amp;quot;&amp;gt;
+        &amp;lt;h5 class=&amp;quot;card-title&amp;quot;&amp;gt;VerplichteWaarschuwingen&amp;lt;/h5&amp;gt;
+        &amp;lt;!-- &amp;lt;h6 class=&amp;quot;card-subtitle mb-2 text-muted&amp;quot;&amp;gt;Card subtitle&amp;lt;/h6&amp;gt; --&amp;gt;
+        &amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;[Preparaten:GetContent.VerplichteWaarschuwingen(contentid=&amp;quot;[Preparaten:GetPreparaat.Content]&amp;quot;)]&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
+</module>
