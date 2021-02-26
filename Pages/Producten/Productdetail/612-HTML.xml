@@ -1,9 +1,10 @@
 <module type="DNNHTML" version="09.06.00.00">
+    <contentKey />
     <moduleID>612</moduleID>
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>1200</cachetime>
     <color />
     <containersrc />
@@ -24,9 +25,9 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>Text/HTML</title>
+    <title>ProductDetailpagina - Kop2</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>4935eea3-df73-4d45-b3d9-8147cfc135c0</uniqueId>
+    <uniqueId>97bf8ad1-7884-47f7-81e6-28bdf5841a3b</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
     <webslicetitle />
