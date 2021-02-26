@@ -15,18 +15,16 @@
     <footer />
     <header />
     <iconfile />
-    <inheritviewpermissions>false</inheritviewpermissions>
+    <inheritviewpermissions>true</inheritviewpermissions>
     <iswebslice>false</iswebslice>
     <modulepermissions>
         <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
-            <permissionkey>VIEW</permissionkey>
+            <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
         </permission>
         <permission>
-            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
-            <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
         </permission>
@@ -39,7 +37,24 @@
     <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
-    <modulesettings />
+    <modulesettings>
+        <modulesetting>
+            <settingname>HtmlText_ReplaceTokens</settingname>
+            <settingvalue>True</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>HtmlText_UseDecorate</settingname>
+            <settingvalue>True</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>WorkFlowID</settingname>
+            <settingvalue>1</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>HtmlText_SearchDescLength</settingname>
+            <settingvalue>100</settingvalue>
+        </modulesetting>
+    </modulesettings>
     <tabmodulesettings />
     <definition>DNN_HTML</definition>
     <moduledefinition>Text/HTML</moduledefinition>
