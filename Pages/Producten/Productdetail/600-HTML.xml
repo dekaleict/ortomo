@@ -31,7 +31,7 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>ProductDetailpagina</title>
+    <title>ProductDetailpagina-Kop</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>b4144a0d-ee2e-4083-a508-735cbd27d56f</uniqueId>
     <visibility>Maximized</visibility>
@@ -66,13 +66,13 @@
 &amp;lt;div class=&amp;quot;is-overlay&amp;quot;&amp;gt;
 &amp;lt;div class=&amp;quot;is-overlay-content&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/div&amp;gt;
 
-&amp;lt;div class=&amp;quot;is-overlay-bg&amp;quot; style=&amp;quot;background-image: url(&amp;amp;quot;{{PortalRoot}}ThemePluginPro/uploads/2020/9/18/beautiful-lady-in-sporty-top-standing-on-kitchen-2000.png&amp;amp;quot;);&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;is-overlay-bg&amp;quot; style=&amp;quot;background-image: url(&amp;#39;{{PortalRoot}}ThemePluginPro/uploads/2020/9/18/beautiful-lady-in-sporty-top-standing-on-kitchen-2000.png&amp;#39;);&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 
 &amp;lt;div class=&amp;quot;is-boxes&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 
-&amp;lt;div class=&amp;quot;is-box-6 is-box&amp;quot; style=&amp;quot;background-color: rgb(245, 247, 252);&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;is-box-6 is-box&amp;quot; style=&amp;quot;background-color: #f5f7fc;&amp;quot;&amp;gt;
 &amp;lt;div class=&amp;quot;is-boxes&amp;quot;&amp;gt;
 &amp;lt;div class=&amp;quot;is-box-centered&amp;quot;&amp;gt;
 &amp;lt;div class=&amp;quot;is-container container-fluid&amp;quot; style=&amp;quot;max-width: 640px;&amp;quot;&amp;gt;
@@ -81,13 +81,13 @@
 &amp;lt;div class=&amp;quot;spacer height-20 d-none d-lg-block&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/div&amp;gt;
 
 &amp;lt;div class=&amp;quot;title-03&amp;quot;&amp;gt;
-&amp;lt;h3&amp;gt;Boost my day&amp;lt;/h3&amp;gt;
-&amp;lt;small&amp;gt;Haal meer uit je lichaam&amp;lt;/small&amp;gt;
+&amp;lt;h3&amp;gt;[Preparaten:GetPreparaat.Preparaat]&amp;lt;/h3&amp;gt;
+&amp;lt;small&amp;gt;[Preparaten:GetContent.Ondertitel(contentid=&amp;quot;[Preparaten:GetPreparaat.Id]&amp;quot;)]&amp;lt;/small&amp;gt;
 
-&amp;lt;h5&amp;gt;&amp;amp;euro; 19,99 / [Testen:EerstvolgendeVraag.Vraag] capsules&amp;lt;/h5&amp;gt;
+&amp;lt;h5&amp;gt;&amp;amp;euro; 19,99 / [Preparaten:GetPreparaat.AantalPerDag] capsules per dag&amp;lt;/h5&amp;gt;
 &amp;lt;/div&amp;gt;
 
-&amp;lt;p&amp;gt;&amp;amp;#39;Boost my day&amp;amp;#39; is een uitgekiende mix van vitaminen. Koolhydraten worden beter verbrand en zuurstof beter toegevoerd. Je verzuurt minder snel dus ideaal voor duursporters. Product summary&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;[Preparaten:GetPreparaat.Beschrijving]&amp;lt;/p&amp;gt;
 
 &amp;lt;div class=&amp;quot;spacer height-20&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/div&amp;gt;
 
