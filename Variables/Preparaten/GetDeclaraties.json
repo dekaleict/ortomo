@@ -1,0 +1,20 @@
+{
+  "id": 33,
+  "namespace": {
+    "id": 9,
+    "name": "Preparaten"
+  },
+  "name": "GetDeclaraties",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT * FROM app.ortomo_PreparaatDeclaratie\nWHERE Id = '[tknparams:declaratieid]'",
+    "defaultColumn": "",
+    "columns": "Id\nAllergeenEi\nAllergeenGluten\nAllergeenLactose\nAllergeenLupine\nAllergeenMosterd\nAllergeenNoten\nAllergeenPinda\nAllergeenSchaaldieren\nAllergeenSchelpdieren\nAllergeenSelderij\nAllergeenSesam\nAllergeenSoya\nAllergeenSulfiet\nAllergeenVis\nHalal\nKosher\nOrganic\nProductieBRC\nProductieEuropa\nProductieFSSC22000\nProductieGMP\nVegan\nVegetarisch",
+    "connectionString": "",
+    "type": "db"
+  }
+}
