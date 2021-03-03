@@ -25,7 +25,7 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>ShoppingCart</title>
+    <title>Aanbevolen producten</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>913d9384-b41a-4453-9ae4-4f389501f6cb</uniqueId>
     <visibility>Maximized</visibility>
