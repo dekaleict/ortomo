@@ -11,9 +11,9 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT *\n, CASE WHEN InnameOchtend = 1 then '&#10004;'\nelse '&#10006;' end as InnameOchtendSymbol\n, CASE WHEN InnameAvond = 1 then '&#10004;'\nelse '&#10006;' end as InnameAvondSymbol\n\n\nFROM app.ortomo_Preparaat\nWHERE Id=[tknparams:id]",
+    "sql": "SELECT        app.ortomo_Preparaat.Id, app.ortomo_Preparaat.Beschrijving, app.ortomo_Preparaat.CreatedBy, app.ortomo_Preparaat.CreatedDate, app.ortomo_Preparaat.LastModifiedBy, app.ortomo_Preparaat.LastModifiedDate, \n                         app.ortomo_Preparaat.Preparaat, app.ortomo_Preparaat.Icon, app.ortomo_Preparaat.StatusBeschikbaarheid, app.ortomo_Preparaat.AantalPerDag, app.ortomo_Preparaat.InnameAdvies, app.ortomo_Preparaat.KleurSupplement, \n                         app.ortomo_Preparaat.TypeSupplement, app.ortomo_Preparaat.[Content], app.ortomo_Preparaat.Declaratie, app.ortomo_Preparaat.ExternArtikelnummer, app.ortomo_Preparaat.CategorieSupplement, \n                         app.ortomo_Preparaat.PrijsPerDag, app.ortomo_Preparaat.PrijsPerPack, app.ortomo_Preparaat.InnameAvond, app.ortomo_Preparaat.InnameOchtend, \n                         CASE WHEN InnameOchtend = 1 THEN '&#10004;' ELSE '&#10006;' END AS InnameOchtendSymbol, CASE WHEN InnameAvond = 1 THEN '&#10004;' ELSE '&#10006;' END AS InnameAvondSymbol, \n                         app.ortomo_PreparaatContent.MaxAantalPerPreparaat, app.ortomo_PreparaatContent.DefaultDagelijksGebruik\nFROM            app.ortomo_Preparaat INNER JOIN\n                         app.ortomo_PreparaatContent ON app.ortomo_Preparaat.[Content] = app.ortomo_PreparaatContent.Id AND app.ortomo_Preparaat.Id = app.ortomo_PreparaatContent.Preparaat\nWHERE        (app.ortomo_Preparaat.Id = [tknparams:id])",
     "defaultColumn": "Preparaat",
-    "columns": "Preparaat\nIcon\nInnameAdvies\nTypeSupplement\nInnameAvond\nInnameOchtend\nInnameOchtendSymbol\nInnameAvondSymbol\nPrijsPerDag\nPrijsPerPack",
+    "columns": "Preparaat\nIcon\nInnameAdvies\nTypeSupplement\nInnameAvond\nInnameOchtend\nInnameOchtendSymbol\nInnameAvondSymbol\nPrijsPerDag\nPrijsPerPack\nMaxAantalPerPreparaat\nDefaultDagelijksGebruik",
     "connectionString": "",
     "type": "db"
   }
