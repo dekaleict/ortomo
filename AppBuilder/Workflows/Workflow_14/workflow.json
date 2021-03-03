@@ -6,12 +6,152 @@
   "ActionList": {
     "Id": 62,
     "EventName": "Event",
-    "Actions": []
+    "Actions": [
+      {
+        "Id": 107,
+        "ActionType": "LoadEntitiesFromSql",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 707,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 107,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 708,
+            "Name": "SqlQuery",
+            "Value": "SELECT * FROM app.ortomo_ShoppingCartDetail\nWHERE Shoppingcart=@ShoppingCart\nORDER BY Toppositie asc",
+            "IsExpression": false,
+            "ActionId": 107,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 709,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[ShoppingCart]",
+                "$$hashKey": "object:43",
+                "name": "ShoppingCart"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 107,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 710,
+            "Name": "EntityName",
+            "Value": "ShoppingcartDetails",
+            "IsExpression": false,
+            "ActionId": 107,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 711,
+            "Name": "EntityProps",
+            "IsExpression": false,
+            "ActionId": 107,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 712,
+            "Name": "OnError",
+            "Value": {
+              "Id": 63,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 107,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0eze88s"
+      },
+      {
+        "Id": 108,
+        "ActionType": "LoadEntitiesFromSql",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 713,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 108,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 714,
+            "Name": "SqlQuery",
+            "Value": "SELECT        app.ortomo_MijnTest.ShoppingCart, app.ortomo_MijnAntwoord.MijnTest, app.ortomo_MijnAntwoord.Vragenlijst, app.ortomo_MijnAntwoord.Vraag, app.ortomo_MijnAntwoord.VraagTekst, \n                         app.ortomo_MijnAntwoord.GekozenAntwoordTekst\nFROM            app.ortomo_MijnTest INNER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnTest.Id = app.ortomo_MijnAntwoord.MijnTest\nWHERE        (app.ortomo_MijnTest.Id = @Mijntest)",
+            "IsExpression": false,
+            "ActionId": 108,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 715,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[Mijntest]",
+                "$$hashKey": "object:43",
+                "name": "Mijntest"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 108,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 716,
+            "Name": "EntityName",
+            "IsExpression": false,
+            "ActionId": 108,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 717,
+            "Name": "EntityProps",
+            "IsExpression": false,
+            "ActionId": 108,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 718,
+            "Name": "OnError",
+            "Value": {
+              "Id": 64,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 108,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_155ogdk"
+      }
+    ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-03T19:59:07.0940623+01:00",
+  "LastModifiedOn": "2021-03-03T20:13:01.706317+01:00",
   "InputFields": [
     {
       "Id": 77,
