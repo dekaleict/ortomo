@@ -81,6 +81,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "TopPositie",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -93,7 +102,8 @@
         "Product": "[Product]",
         "Quantity": "[Quantity]",
         "Amount": "[Amount]",
-        "RowAmount": "[RowAmount]"
+        "RowAmount": "[RowAmount]",
+        "TopPositie": "[TopPositie]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
