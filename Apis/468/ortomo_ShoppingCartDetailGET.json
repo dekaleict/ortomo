@@ -53,6 +53,10 @@
             "value": "[RecordId]"
           },
           {
+            "name": "TopPositie",
+            "value": "[Record:TopPositie]"
+          },
+          {
             "name": "ShoppingCart",
             "value": "[Record:ShoppingCart]"
           },
