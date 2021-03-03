@@ -105,8 +105,8 @@
     &lt;LockIntoEditMode&gt;False&lt;/LockIntoEditMode&gt;
     &lt;LockInEditForEachRowActions&gt;[]&lt;/LockInEditForEachRowActions&gt;
     &lt;LockInEditFinalActions&gt;[]&lt;/LockInEditFinalActions&gt;
-    &lt;Template&gt;listing&lt;/Template&gt;
-    &lt;MobileTemplate&gt;listing&lt;/MobileTemplate&gt;
+    &lt;Template&gt;grid&lt;/Template&gt;
+    &lt;MobileTemplate&gt;grid&lt;/MobileTemplate&gt;
     &lt;SwitchingTemplates&gt;False&lt;/SwitchingTemplates&gt;
     &lt;TemplateConfig&gt;{&quot;entriesPerRowMobile&quot;:{&quot;Value&quot;:1,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;entriesPerRowTablet&quot;:{&quot;Value&quot;:1,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;entriesPerRowDesktop&quot;:{&quot;Value&quot;:1,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;entriesPerRowLarge&quot;:{&quot;Value&quot;:1,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}}}&lt;/TemplateConfig&gt;
   &lt;/Settings&gt;
