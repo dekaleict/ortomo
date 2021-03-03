@@ -190,7 +190,7 @@
     &lt;/FieldInfo&gt;
     &lt;FieldInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Title&gt;Quantity&lt;/Title&gt;
+      &lt;Title&gt;Aantal&lt;/Title&gt;
       &lt;RefName&gt;Quantity&lt;/RefName&gt;
       &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
       &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
@@ -267,7 +267,7 @@
     &lt;/FieldInfo&gt;
     &lt;FieldInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Title&gt;Amount&lt;/Title&gt;
+      &lt;Title&gt;Bedrag&lt;/Title&gt;
       &lt;RefName&gt;Amount&lt;/RefName&gt;
       &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
       &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
@@ -328,7 +328,7 @@
     &lt;/FieldInfo&gt;
     &lt;FieldInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Title&gt;RowAmount&lt;/Title&gt;
+      &lt;Title&gt;Subtotaal&lt;/Title&gt;
       &lt;RefName&gt;RowAmount&lt;/RefName&gt;
       &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
       &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
