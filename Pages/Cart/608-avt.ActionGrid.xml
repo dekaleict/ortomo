@@ -138,10 +138,10 @@
               &lt;TypeStr&gt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/TypeStr&gt;
               &lt;Name&gt;Html&lt;/Name&gt;
               &lt;IsExpression&gt;false&lt;/IsExpression&gt;
-              &lt;Value xsi:type=&quot;xsd:string&quot;&gt;&amp;lt;p&amp;gt;[ortomo:PreparaatById(id=&quot;[Product]&quot;)]&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;i&amp;gt;inname: &amp;lt;/i&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;[ortomo:PreparaatById.InnameAdvies(id=&quot;[Product]&quot;)]&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;i&amp;gt;type: &amp;lt;/i&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;[ortomo:PreparaatById.TypeSupplement(id=&quot;[Product]&quot;)]&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;i&amp;gt;ochtend: &amp;lt;/i&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;[ortomo:PreparaatById.InnameOchtend(id=&quot;[Product]&quot;)]&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;i&amp;gt;- avond:&amp;lt;/i&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;[ortomo:PreparaatById.InnameAvond(id=&quot;[Product]&quot;)]&amp;lt;/p&amp;gt;&lt;/Value&gt;
+              &lt;Value xsi:type=&quot;xsd:string&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;[ortomo:PreparaatById(id=&quot;[Product]&quot;)]&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;i&amp;gt;inname: &amp;lt;/i&amp;gt;[ortomo:PreparaatById.InnameAdvies(id=&quot;[Product]&quot;)]&amp;lt;br&amp;gt;
+&amp;lt;i&amp;gt;type: &amp;lt;/i&amp;gt;[ortomo:PreparaatById.TypeSupplement(id=&quot;[Product]&quot;)]&amp;lt;br&amp;gt;
+&amp;lt;i&amp;gt;ochtend: &amp;lt;/i&amp;gt;[ortomo:PreparaatById.InnameOchtend(id=&quot;[Product]&quot;)]&amp;lt;i&amp;gt;- avond:&amp;lt;/i&amp;gt;[ortomo:PreparaatById.InnameAvond(id=&quot;[Product]&quot;)]&amp;lt;/p&amp;gt;&lt;/Value&gt;
             &lt;/FormatterParameterInfo&gt;
           &lt;/value&gt;
         &lt;/item&gt;
