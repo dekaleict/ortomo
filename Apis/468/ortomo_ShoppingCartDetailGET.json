@@ -53,8 +53,8 @@
             "value": "[RecordId]"
           },
           {
-            "name": "MaxAantalVanPreparaatBereikt",
-            "value": "[Record:MaxAantalVanPreparaatBereikt]"
+            "name": "MaxAantalVanPreparaat",
+            "value": "[Record:MaxAantalVanPreparaat]"
           },
           {
             "name": "ShoppingCart",
