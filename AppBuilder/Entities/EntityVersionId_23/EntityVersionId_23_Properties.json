@@ -196,5 +196,27 @@
     "IsFilterable": true,
     "IsSortable": false,
     "OrderIndex": 9
+  },
+  {
+    "Id": 187,
+    "EntityVersionId": 23,
+    "Name": "LaatstBeantwoordeVraag",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 10
   }
 ]
