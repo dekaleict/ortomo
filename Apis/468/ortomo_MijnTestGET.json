@@ -53,8 +53,8 @@
             "value": "[RecordId]"
           },
           {
-            "name": "ShoppingCart",
-            "value": "[Record:ShoppingCart]"
+            "name": "LaatstBeantwoordeVraag",
+            "value": "[Record:LaatstBeantwoordeVraag]"
           },
           {
             "name": "GUID",
@@ -87,6 +87,10 @@
           {
             "name": "PercentageVoortgang",
             "value": "[Record:PercentageVoortgang]"
+          },
+          {
+            "name": "ShoppingCart",
+            "value": "[Record:ShoppingCart]"
           }
         ],
         "Headers": []
