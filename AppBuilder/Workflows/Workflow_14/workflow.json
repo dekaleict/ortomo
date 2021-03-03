@@ -151,21 +151,19 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-03T20:13:01.706317+01:00",
+  "LastModifiedOn": "2021-03-03T20:13:37.925849+01:00",
   "InputFields": [
     {
       "Id": 77,
       "Name": "ShoppingCart",
-      "InputType": "EntityRef",
-      "EntityVersionId": 8,
+      "InputType": "Integer",
       "WorkflowId": 14,
       "IsDeleted": false
     },
     {
       "Id": 78,
       "Name": "MijnTest",
-      "InputType": "EntityRef",
-      "EntityVersionId": 23,
+      "InputType": "Integer",
       "WorkflowId": 14,
       "IsDeleted": false
     }
