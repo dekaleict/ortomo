@@ -53,8 +53,8 @@
             "value": "[RecordId]"
           },
           {
-            "name": "TopPositie",
-            "value": "[Record:TopPositie]"
+            "name": "VanuitTestToegevoegd",
+            "value": "[Record:VanuitTestToegevoegd]"
           },
           {
             "name": "ShoppingCart",
@@ -75,6 +75,10 @@
           {
             "name": "RowAmount",
             "value": "[Record:RowAmount]"
+          },
+          {
+            "name": "TopPositie",
+            "value": "[Record:TopPositie]"
           }
         ],
         "Headers": []
