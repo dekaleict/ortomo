@@ -79,6 +79,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "MaxAantalVanPreparaatBereikt",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -93,7 +102,8 @@
         "Amount": "[Amount]",
         "RowAmount": "[RowAmount]",
         "TopPositie": "[TopPositie]",
-        "VanuitTestToegevoegd": "[VanuitTestToegevoegd]"
+        "VanuitTestToegevoegd": "[VanuitTestToegevoegd]",
+        "MaxAantalVanPreparaatBereikt": "[MaxAantalVanPreparaatBereikt]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -127,8 +137,8 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "VanuitTestToegevoegd",
-            "value": "[CreatedRecord:VanuitTestToegevoegd]"
+            "name": "MaxAantalVanPreparaatBereikt",
+            "value": "[CreatedRecord:MaxAantalVanPreparaatBereikt]"
           },
           {
             "name": "ShoppingCart",
@@ -153,6 +163,10 @@
           {
             "name": "TopPositie",
             "value": "[CreatedRecord:TopPositie]"
+          },
+          {
+            "name": "VanuitTestToegevoegd",
+            "value": "[CreatedRecord:VanuitTestToegevoegd]"
           }
         ],
         "Headers": [
