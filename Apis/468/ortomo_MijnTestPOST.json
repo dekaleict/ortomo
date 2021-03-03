@@ -97,6 +97,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "LaatstBeantwoordeVraag",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -113,7 +122,8 @@
         "VragenOpenstaand": "[VragenOpenstaand]",
         "VragenBeantwoord": "[VragenBeantwoord]",
         "PercentageVoortgang": "[PercentageVoortgang]",
-        "ShoppingCart": "[ShoppingCart]"
+        "ShoppingCart": "[ShoppingCart]",
+        "LaatstBeantwoordeVraag": "[LaatstBeantwoordeVraag]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -147,8 +157,8 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "ShoppingCart",
-            "value": "[CreatedRecord:ShoppingCart]"
+            "name": "LaatstBeantwoordeVraag",
+            "value": "[CreatedRecord:LaatstBeantwoordeVraag]"
           },
           {
             "name": "GUID",
@@ -181,6 +191,10 @@
           {
             "name": "PercentageVoortgang",
             "value": "[CreatedRecord:PercentageVoortgang]"
+          },
+          {
+            "name": "ShoppingCart",
+            "value": "[CreatedRecord:ShoppingCart]"
           }
         ],
         "Headers": [
