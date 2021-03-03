@@ -101,10 +101,10 @@
       "Validations": []
     },
     {
-      "Name": "MaxAantalVanPreparaatBereikt",
+      "Name": "MaxAantalVanPreparaat",
       "IsDeleted": false,
       "IsEnabled": false,
-      "OrderIndex": 8,
+      "OrderIndex": 9,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -123,7 +123,7 @@
         "RowAmount": "[RowAmount]",
         "TopPositie": "[TopPositie]",
         "VanuitTestToegevoegd": "[VanuitTestToegevoegd]",
-        "MaxAantalVanPreparaatBereikt": "[MaxAantalVanPreparaatBereikt]"
+        "MaxAantalVanPreparaat": "[MaxAantalVanPreparaat]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
