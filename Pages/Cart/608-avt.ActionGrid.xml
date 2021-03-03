@@ -561,7 +561,7 @@
     &lt;/FieldInfo&gt;
     &lt;FieldInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Title&gt;Max. toegestaan&lt;/Title&gt;
+      &lt;Title&gt;Max.&lt;/Title&gt;
       &lt;RefName&gt;MaxAantalVanPreparaat&lt;/RefName&gt;
       &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
       &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
@@ -596,7 +596,7 @@
       &lt;TooltipContent&gt;Voor dit preparaat zijn er maximaal [MaxAantalVanPreparaat] toegestaan in je winkelwagen.&lt;/TooltipContent&gt;
       &lt;TooltipOrientation&gt;auto left&lt;/TooltipOrientation&gt;
       &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
-      &lt;TooltipIcon&gt;glyphicon-exclamation-sign&lt;/TooltipIcon&gt;
+      &lt;TooltipIcon&gt;glyphicon-flash&lt;/TooltipIcon&gt;
       &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
