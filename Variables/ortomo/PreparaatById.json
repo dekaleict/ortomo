@@ -13,7 +13,7 @@
   "src": {
     "sql": "SELECT * FROM app.ortomo_Preparaat\nWHERE Id=[tknparams:id]",
     "defaultColumn": "Preparaat",
-    "columns": "Preparaat\nIcon\n",
+    "columns": "Preparaat\nIcon\nInnameAdvies\nTypeSupplement\nInnameAvond\nInnameOchtend",
     "connectionString": "",
     "type": "db"
   }
