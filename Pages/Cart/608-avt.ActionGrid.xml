@@ -352,7 +352,7 @@
       &lt;ColumnTextAlignment&gt;left&lt;/ColumnTextAlignment&gt;
       &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
       &lt;ShowInFooter&gt;sum&lt;/ShowInFooter&gt;
-      &lt;ShowInFooterSumDecimals&gt;0&lt;/ShowInFooterSumDecimals&gt;
+      &lt;ShowInFooterSumDecimals&gt;4&lt;/ShowInFooterSumDecimals&gt;
       &lt;Format&gt;Money&lt;/Format&gt;
       &lt;EditFieldType&gt;auto&lt;/EditFieldType&gt;
       &lt;EditFieldTypeParameters /&gt;
