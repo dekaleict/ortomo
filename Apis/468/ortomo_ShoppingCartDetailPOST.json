@@ -70,6 +70,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "VanuitTestToegevoegd",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -83,7 +92,8 @@
         "Quantity": "[Quantity]",
         "Amount": "[Amount]",
         "RowAmount": "[RowAmount]",
-        "TopPositie": "[TopPositie]"
+        "TopPositie": "[TopPositie]",
+        "VanuitTestToegevoegd": "[VanuitTestToegevoegd]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -117,8 +127,8 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "TopPositie",
-            "value": "[CreatedRecord:TopPositie]"
+            "name": "VanuitTestToegevoegd",
+            "value": "[CreatedRecord:VanuitTestToegevoegd]"
           },
           {
             "name": "ShoppingCart",
@@ -139,6 +149,10 @@
           {
             "name": "RowAmount",
             "value": "[CreatedRecord:RowAmount]"
+          },
+          {
+            "name": "TopPositie",
+            "value": "[CreatedRecord:TopPositie]"
           }
         ],
         "Headers": [
