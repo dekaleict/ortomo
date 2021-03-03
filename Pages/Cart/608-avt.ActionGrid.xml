@@ -219,7 +219,7 @@
 &amp;lt;small&amp;gt;&amp;lt;i&amp;gt;inname: &amp;lt;/i&amp;gt;[ortomo:PreparaatById.InnameAdvies(id=&quot;[Product]&quot;)]&amp;lt;br&amp;gt;
 &amp;lt;i&amp;gt;type: &amp;lt;/i&amp;gt;[ortomo:PreparaatById.TypeSupplement(id=&quot;[Product]&quot;)]&amp;lt;br&amp;gt;
 &amp;lt;i&amp;gt;ochtend: &amp;lt;/i&amp;gt;[ortomo:PreparaatById.InnameOchtendSymbol(id=&quot;[Product]&quot;)]&amp;lt;i&amp;gt; - avond: &amp;lt;/i&amp;gt;[ortomo:PreparaatById.InnameAvondSymbol(id=&quot;[Product]&quot;)]&amp;lt;br&amp;gt;
-maximaal [MaxAantalVanPreparaat] in winkelwagen toegestaan&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;&lt;/Value&gt;
+maximaal &amp;lt;b&amp;gt;[MaxAantalVanPreparaat] &amp;lt;/b&amp;gt;in winkelwagen toegestaan&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;&lt;/Value&gt;
             &lt;/FormatterParameterInfo&gt;
           &lt;/value&gt;
         &lt;/item&gt;
