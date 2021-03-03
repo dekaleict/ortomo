@@ -53,8 +53,8 @@
             "value": "[RecordId]"
           },
           {
-            "name": "VanuitTestToegevoegd",
-            "value": "[Record:VanuitTestToegevoegd]"
+            "name": "MaxAantalVanPreparaatBereikt",
+            "value": "[Record:MaxAantalVanPreparaatBereikt]"
           },
           {
             "name": "ShoppingCart",
@@ -79,6 +79,10 @@
           {
             "name": "TopPositie",
             "value": "[Record:TopPositie]"
+          },
+          {
+            "name": "VanuitTestToegevoegd",
+            "value": "[Record:VanuitTestToegevoegd]"
           }
         ],
         "Headers": []
