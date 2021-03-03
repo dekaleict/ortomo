@@ -716,7 +716,7 @@
                         {
                           "Id": 605,
                           "Name": "SqlQuery",
-                          "Value": "UPDATE       app.ortomo_MijnTest\nSET                Vragen = Q1.Vragen, VragenBeantwoord = Q1.VragenBeantwoord, VragenOpenstaand = Q1.VragenOpenstaand\nFROM            (SELECT        TOP (1000) SUM(app.ortomo_MijnVragenlijst.Vragen) AS Vragen, SUM(app.ortomo_MijnVragenlijst.VragenBeantwoord) AS VragenBeantwoord, SUM(app.ortomo_MijnVragenlijst.VragenOpenstaand) AS VragenOpenstaand, \n                         app.ortomo_MijnVragenlijst.MijnTest AS MijnTestId\nFROM            app.ortomo_MijnVragenlijst INNER JOIN\n                         app.ortomo_MijnTest AS ortomo_MijnTest_1 ON app.ortomo_MijnVragenlijst.MijnTest = ortomo_MijnTest_1.Id\nGROUP BY app.ortomo_MijnVragenlijst.MijnTest) AS Q1 INNER JOIN\n                         app.ortomo_MijnTest ON Q1.MijnTestId = app.ortomo_MijnTest.Id",
+                          "Value": "UPDATE       app.ortomo_MijnTest\nSET                Vragen = Q1.Vragen, VragenBeantwoord = Q1.VragenBeantwoord, VragenOpenstaand = Q1.VragenOpenstaand\nFROM            (SELECT        TOP (100000) SUM(app.ortomo_MijnVragenlijst.Vragen) AS Vragen, SUM(app.ortomo_MijnVragenlijst.VragenBeantwoord) AS VragenBeantwoord, SUM(app.ortomo_MijnVragenlijst.VragenOpenstaand) AS VragenOpenstaand, \n                         app.ortomo_MijnVragenlijst.MijnTest AS MijnTestId\nFROM            app.ortomo_MijnVragenlijst INNER JOIN\n                         app.ortomo_MijnTest AS ortomo_MijnTest_1 ON app.ortomo_MijnVragenlijst.MijnTest = ortomo_MijnTest_1.Id\nGROUP BY app.ortomo_MijnVragenlijst.MijnTest) AS Q1 INNER JOIN\n                         app.ortomo_MijnTest ON Q1.MijnTestId = app.ortomo_MijnTest.Id",
                           "IsExpression": false,
                           "ActionId": 91,
                           "OrderIndex": 0,
@@ -889,7 +889,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2020-12-30T15:11:23.2946167+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-02-24T10:15:00.6928389+01:00",
+  "LastModifiedOn": "2021-03-03T11:51:27.0321607+01:00",
   "InputFields": [
     {
       "Id": 65,
