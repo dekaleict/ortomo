@@ -1,0 +1,34 @@
+{
+  "Id": 14,
+  "Name": "ortome - Als Dan Bijwerken",
+  "Description": "Op basis van externe factoren werken we de Top10 bij voordsat de shoppingcart getoond gaat worden",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 62,
+    "EventName": "Event",
+    "Actions": []
+  },
+  "CreatedBy": "Hans Lenting",
+  "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
+  "LastModifiedBy": "Hans Lenting",
+  "LastModifiedOn": "2021-03-03T19:59:07.0940623+01:00",
+  "InputFields": [
+    {
+      "Id": 77,
+      "Name": "ShoppingCart",
+      "InputType": "EntityRef",
+      "EntityVersionId": 8,
+      "WorkflowId": 14,
+      "IsDeleted": false
+    },
+    {
+      "Id": 78,
+      "Name": "MijnTest",
+      "InputType": "EntityRef",
+      "EntityVersionId": 23,
+      "WorkflowId": 14,
+      "IsDeleted": false
+    }
+  ],
+  "OutputFields": []
+}
