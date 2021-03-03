@@ -11,9 +11,9 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT * FROM app.ortomo_Preparaat\nWHERE Id=[tknparams:id]",
+    "sql": "SELECT *\n, CASE WHEN InnameOchtend = 1 then '&#10004;'\nelse '&#10006;' end as InnameOchtendSymbol\n, CASE WHEN InnameAvond = 1 then '&#10004;'\nelse '&#10006;' end as InnameAvondSymbol\n\n\nFROM app.ortomo_Preparaat\nWHERE Id=[tknparams:id]",
     "defaultColumn": "Preparaat",
-    "columns": "Preparaat\nIcon\nInnameAdvies\nTypeSupplement\nInnameAvond\nInnameOchtend",
+    "columns": "Preparaat\nIcon\nInnameAdvies\nTypeSupplement\nInnameAvond\nInnameOchtend\nInnameOchtendSymbol\nInnameAvondSymbol",
     "connectionString": "",
     "type": "db"
   }
