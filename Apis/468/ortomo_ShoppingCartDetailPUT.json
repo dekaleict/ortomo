@@ -90,6 +90,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "VanuitTestToegevoegd",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -103,7 +112,8 @@
         "Quantity": "[Quantity]",
         "Amount": "[Amount]",
         "RowAmount": "[RowAmount]",
-        "TopPositie": "[TopPositie]"
+        "TopPositie": "[TopPositie]",
+        "VanuitTestToegevoegd": "[VanuitTestToegevoegd]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
