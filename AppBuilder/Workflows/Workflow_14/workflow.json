@@ -326,7 +326,7 @@
             "Name": "ExtractColumns",
             "Value": [
               {
-                "value": "Check1",
+                "value": "Check2",
                 "$$hashKey": "object:52",
                 "name": "Resultaat"
               }
@@ -600,7 +600,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T21:14:16.9447837+01:00",
+  "LastModifiedOn": "2021-03-09T21:15:34.7629809+01:00",
   "InputFields": [
     {
       "Id": 77,
