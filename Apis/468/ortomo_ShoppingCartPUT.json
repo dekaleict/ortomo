@@ -81,6 +81,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "PackSplitsen",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -93,7 +102,8 @@
         "OrderId": "[OrderId]",
         "Quantity": "[Quantity]",
         "TotalAmount": "[TotalAmount]",
-        "MijnTest": "[MijnTest]"
+        "MijnTest": "[MijnTest]",
+        "PackSplitsen": "[PackSplitsen]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
