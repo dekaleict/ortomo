@@ -84,7 +84,34 @@
       "Name": "MaxAantalVanPreparaat",
       "IsDeleted": false,
       "IsEnabled": false,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "InnameOchtend",
+      "IsDeleted": false,
+      "IsEnabled": false,
       "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "InnameAvond",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "SplitPackGewenst",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 10,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -103,7 +130,10 @@
         "RowAmount": "[RowAmount]",
         "TopPositie": "[TopPositie]",
         "VanuitTestToegevoegd": "[VanuitTestToegevoegd]",
-        "MaxAantalVanPreparaat": "[MaxAantalVanPreparaat]"
+        "MaxAantalVanPreparaat": "[MaxAantalVanPreparaat]",
+        "InnameOchtend": "[InnameOchtend]",
+        "InnameAvond": "[InnameAvond]",
+        "SplitPackGewenst": "[SplitPackGewenst]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -137,8 +167,16 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "MaxAantalVanPreparaat",
-            "value": "[CreatedRecord:MaxAantalVanPreparaat]"
+            "name": "InnameOchtend",
+            "value": "[CreatedRecord:InnameOchtend]"
+          },
+          {
+            "name": "InnameAvond",
+            "value": "[CreatedRecord:InnameAvond]"
+          },
+          {
+            "name": "SplitPackGewenst",
+            "value": "[CreatedRecord:SplitPackGewenst]"
           },
           {
             "name": "ShoppingCart",
@@ -167,6 +205,10 @@
           {
             "name": "VanuitTestToegevoegd",
             "value": "[CreatedRecord:VanuitTestToegevoegd]"
+          },
+          {
+            "name": "MaxAantalVanPreparaat",
+            "value": "[CreatedRecord:MaxAantalVanPreparaat]"
           }
         ],
         "Headers": [
