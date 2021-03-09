@@ -215,7 +215,9 @@
               &lt;TypeStr&gt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/TypeStr&gt;
               &lt;Name&gt;Html&lt;/Name&gt;
               &lt;IsExpression&gt;false&lt;/IsExpression&gt;
-              &lt;Value xsi:type=&quot;xsd:string&quot;&gt;&amp;lt;p&amp;gt;[ortomo:icon_ochtend_avond(moment=&quot;[Packnaam]&quot;)]&amp;amp;nbsp;&amp;lt;span style=&quot;color: rgb(102, 102, 102); font-family: Roboto, &amp;amp;quot;Helvetica Neue&amp;amp;quot;, Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0.1px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&amp;gt;[Packnaam]&amp;lt;/span&amp;gt;&amp;lt;!--EndFragment--&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/p&amp;gt;&lt;/Value&gt;
+              &lt;Value xsi:type=&quot;xsd:string&quot;&gt;&amp;lt;div style=&quot;text-align: center;&quot;&amp;gt;[ortomo:icon_ochtend_avond(moment=&quot;[Packnaam]&quot;)]&amp;lt;/div&amp;gt;
+&amp;lt;div style=&quot;text-align: center;&quot;&amp;gt;[Packnaam]&amp;lt;/div&amp;gt;
+&lt;/Value&gt;
             &lt;/FormatterParameterInfo&gt;
           &lt;/value&gt;
         &lt;/item&gt;
