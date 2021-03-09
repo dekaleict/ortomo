@@ -392,8 +392,8 @@ maximaal &amp;lt;b&amp;gt;[MaxAantalVanPreparaat] &amp;lt;/b&amp;gt;in winkelwag
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
       &lt;ColumnTextAlignment&gt;left&lt;/ColumnTextAlignment&gt;
       &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
-      &lt;ShowInFooter&gt;no&lt;/ShowInFooter&gt;
-      &lt;ShowInFooterSumDecimals&gt;2&lt;/ShowInFooterSumDecimals&gt;
+      &lt;ShowInFooter&gt;sum&lt;/ShowInFooter&gt;
+      &lt;ShowInFooterSumDecimals&gt;0&lt;/ShowInFooterSumDecimals&gt;
       &lt;Format&gt;Number&lt;/Format&gt;
       &lt;EditFieldType&gt;auto&lt;/EditFieldType&gt;
       &lt;EditFieldTypeParameters /&gt;
