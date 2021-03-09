@@ -78,80 +78,194 @@
         "DiagramUID": "Activity_0eze88s"
       },
       {
-        "Id": 108,
-        "ActionType": "LoadEntitiesFromSql",
+        "Id": 112,
+        "ActionType": "RunSql",
         "OrderIndex": 1,
         "ActionParameters": [
           {
-            "Id": 713,
+            "Id": 749,
             "Name": "ConnectionString",
             "IsExpression": false,
-            "ActionId": 108,
+            "ActionId": 112,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 714,
-            "Name": "SqlQuery",
-            "Value": "SELECT        app.ortomo_MijnTest.ShoppingCart, app.ortomo_MijnAntwoord.MijnTest, app.ortomo_MijnAntwoord.Vragenlijst, app.ortomo_MijnAntwoord.Vraag, app.ortomo_MijnAntwoord.VraagTekst, \n                         app.ortomo_MijnAntwoord.GekozenAntwoordTekst, app.ortomo_MijnAntwoord.GekozenAntwoordId\nFROM            app.ortomo_MijnTest INNER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnTest.Id = app.ortomo_MijnAntwoord.MijnTest\nWHERE        (app.ortomo_MijnTest.Id = @MijnTest)",
+            "Id": 750,
+            "Name": "QueryTimeout",
             "IsExpression": false,
-            "ActionId": 108,
+            "ActionId": 112,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 715,
+            "Id": 751,
+            "Name": "SqlQuery",
+            "Value": "SELECT CAST(Q1.GekozenAntwoordTekst as date) as Geboortedatum,\nCONVERT(int,ROUND(DATEDIFF(hour,CAST(Q1.GekozenAntwoordTekst as date),GETDATE())/8766.0,0)) AS Leeftijd\nFROM (\nSELECT        app.ortomo_MijnTest.ShoppingCart, app.ortomo_MijnAntwoord.MijnTest, app.ortomo_MijnAntwoord.Vragenlijst, app.ortomo_MijnAntwoord.Vraag, app.ortomo_MijnAntwoord.VraagTekst, \n                         app.ortomo_MijnAntwoord.GekozenAntwoordTekst, app.ortomo_MijnAntwoord.GekozenAntwoordId\nFROM            app.ortomo_MijnTest INNER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnTest.Id = app.ortomo_MijnAntwoord.MijnTest\nWHERE        app.ortomo_MijnTest.Id = @MijnTest and Vraag = 1)Q1",
+            "IsExpression": false,
+            "ActionId": 112,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 752,
             "Name": "BindTokens",
             "Value": [
               {
-                "value": "[Mijntest]",
-                "$$hashKey": "object:43",
-                "name": "Mijntest"
+                "value": "MijnTest",
+                "$$hashKey": "object:64",
+                "name": "MijnTest"
               }
             ],
             "IsExpression": false,
-            "ActionId": 108,
+            "ActionId": 112,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 716,
-            "Name": "EntityName",
+            "Id": 753,
+            "Name": "OutputTokenName",
             "IsExpression": false,
-            "ActionId": 108,
+            "ActionId": 112,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 717,
-            "Name": "EntityProps",
+            "Id": 754,
+            "Name": "ExtractColumns",
+            "Value": [
+              {
+                "value": "Leeftijd",
+                "$$hashKey": "object:52",
+                "name": "Leeftijd"
+              },
+              {
+                "value": "Geboortedatum",
+                "$$hashKey": "object:58",
+                "name": "Geboortedatum"
+              }
+            ],
             "IsExpression": false,
-            "ActionId": 108,
+            "ActionId": 112,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 718,
+            "Id": 755,
             "Name": "OnError",
             "Value": {
-              "Id": 64,
+              "Id": 66,
               "EventName": "OnError",
               "Actions": []
             },
             "IsExpression": false,
-            "ActionId": 108,
+            "ActionId": 112,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 756,
+            "Name": "ShowErrors",
+            "IsExpression": false,
+            "ActionId": 112,
             "OrderIndex": 0,
             "SubParameters": []
           }
         ],
-        "DiagramUID": "Activity_155ogdk"
+        "DiagramUID": "Activity_0fngjkl"
+      },
+      {
+        "Id": 113,
+        "Description": "ALS leeftijd is > 50 en alcoholconsumptie (vraagID 47) heeft antwoordID 126 DAN adviseer geen Vitamine B6 5000 score erbij",
+        "ActionType": "RunSql",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 757,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 113,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 758,
+            "Name": "QueryTimeout",
+            "IsExpression": false,
+            "ActionId": 113,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 759,
+            "Name": "SqlQuery",
+            "Value": "SELECT COUNT(*) As Resultaat\n\nFROM (\nSELECT        app.ortomo_MijnTest.ShoppingCart, app.ortomo_MijnAntwoord.MijnTest, app.ortomo_MijnAntwoord.Vragenlijst, app.ortomo_MijnAntwoord.Vraag, app.ortomo_MijnAntwoord.VraagTekst, \n                         app.ortomo_MijnAntwoord.GekozenAntwoordTekst, app.ortomo_MijnAntwoord.GekozenAntwoordId\nFROM            app.ortomo_MijnTest INNER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnTest.Id = app.ortomo_MijnAntwoord.MijnTest\nWHERE        app.ortomo_MijnTest.Id = @MijnTest AND GekozenAntwoordId = 126 and Vraag = 47)Q1",
+            "IsExpression": false,
+            "ActionId": 113,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 760,
+            "Name": "BindTokens",
+            "IsExpression": false,
+            "ActionId": 113,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 761,
+            "Name": "OutputTokenName",
+            "IsExpression": false,
+            "ActionId": 113,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 762,
+            "Name": "ExtractColumns",
+            "Value": [
+              {
+                "value": "Check1",
+                "$$hashKey": "object:52",
+                "name": "Resultaat"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 113,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 763,
+            "Name": "OnError",
+            "Value": {
+              "Id": 67,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 113,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 764,
+            "Name": "ShowErrors",
+            "IsExpression": false,
+            "ActionId": 113,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0mgb550"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T20:41:31.5237754+01:00",
+  "LastModifiedOn": "2021-03-09T20:56:33.9490835+01:00",
   "InputFields": [
     {
       "Id": 77,
