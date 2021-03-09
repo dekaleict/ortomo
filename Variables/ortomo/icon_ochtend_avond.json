@@ -11,7 +11,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT\nCASE \nWHEN '[tknparams:moment]' = 'ochtend' then '<i class=\"fas fa-cloud-sun\"></i>'\nWHEN '[tknparams:moment]' = 'avond' then '<i class=\"fas fa-cloud-moon\"></i>'\nelse ''\nend as IconInname",
+    "sql": "SELECT\nCASE \nWHEN '[tknparams:moment]' = 'ochtend' then '<i class=\"fas fa-cloud-sun\"></i>'\nWHEN '[tknparams:moment]' = 'avond' then '<i class=\"fas fa-cloud-moon\"></i>'\nelse '<i class=\"fas fa-mixer\"></i>'\nend as IconInname",
     "defaultColumn": "",
     "columns": "IconInname",
     "connectionString": "",
