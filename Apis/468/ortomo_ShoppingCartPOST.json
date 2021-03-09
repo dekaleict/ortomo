@@ -61,6 +61,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "PackSplitsen",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -73,7 +82,8 @@
         "OrderId": "[OrderId]",
         "Quantity": "[Quantity]",
         "TotalAmount": "[TotalAmount]",
-        "MijnTest": "[MijnTest]"
+        "MijnTest": "[MijnTest]",
+        "PackSplitsen": "[PackSplitsen]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -105,6 +115,10 @@
           {
             "name": "Id",
             "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "PackSplitsen",
+            "value": "[CreatedRecord:PackSplitsen]"
           },
           {
             "name": "User",
