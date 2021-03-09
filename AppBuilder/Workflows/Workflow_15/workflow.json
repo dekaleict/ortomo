@@ -364,13 +364,192 @@
           }
         ],
         "DiagramUID": "Activity_0mc82zw"
+      },
+      {
+        "Id": 131,
+        "Description": "ALS Vitamine B12 in Top 5 DAN Vitamine B Complex uit Top 10",
+        "ActionType": "RunSql",
+        "OrderIndex": 4,
+        "ActionParameters": [
+          {
+            "Id": 904,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 131,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 905,
+            "Name": "QueryTimeout",
+            "IsExpression": false,
+            "ActionId": 131,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 906,
+            "Name": "SqlQuery",
+            "Value": "/****** Als resultaat TRUE is , dan moet de cart bijgewerkt worden  ******/\nSELECT CASE WHEN Count(q1.Product) > 1 then 'true' else 'false' end as Resultaat FROM\n(\nSELECT DISTINCT app.ortomo_ShoppingCartDetail.Product\nFROM            app.ortomo_ShoppingCartDetail \nWHERE app.ortomo_ShoppingCartDetail.Product IN (2, 36)\n  AND app.ortomo_ShoppingCartDetail.ShoppingCart = @ShoppingCart\n) Q1",
+            "IsExpression": false,
+            "ActionId": 131,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 907,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[ShoppingCart]",
+                "$$hashKey": "object:52",
+                "name": "ShoppingCart"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 131,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 908,
+            "Name": "OutputTokenName",
+            "IsExpression": false,
+            "ActionId": 131,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 909,
+            "Name": "ExtractColumns",
+            "Value": [
+              {
+                "value": "[Check3]",
+                "$$hashKey": "object:58",
+                "name": "Resultaat"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 131,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 910,
+            "Name": "OnError",
+            "Value": {
+              "Id": 78,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 131,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 911,
+            "Name": "ShowErrors",
+            "IsExpression": false,
+            "ActionId": 131,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_1acoplh"
+      },
+      {
+        "Id": 132,
+        "Condition": "[Check3]=='true'",
+        "ActionType": "RunSql",
+        "OrderIndex": 5,
+        "ActionParameters": [
+          {
+            "Id": 912,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 132,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 913,
+            "Name": "QueryTimeout",
+            "IsExpression": false,
+            "ActionId": 132,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 914,
+            "Name": "SqlQuery",
+            "Value": "UPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 0\nWHERE ShoppingCart=@ShoppingCart and (Product = '36')",
+            "IsExpression": false,
+            "ActionId": 132,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 915,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[ShoppingCart]",
+                "$$hashKey": "object:52",
+                "name": "ShoppingCart"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 132,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 916,
+            "Name": "OutputTokenName",
+            "IsExpression": false,
+            "ActionId": 132,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 917,
+            "Name": "ExtractColumns",
+            "IsExpression": false,
+            "ActionId": 132,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 918,
+            "Name": "OnError",
+            "Value": {
+              "Id": 79,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 132,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 919,
+            "Name": "ShowErrors",
+            "IsExpression": false,
+            "ActionId": 132,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_14qtnk4"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-09T21:21:25.9785255+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T21:48:29.0071661+01:00",
+  "LastModifiedOn": "2021-03-09T21:50:51.413239+01:00",
   "InputFields": [
     {
       "Id": 83,
