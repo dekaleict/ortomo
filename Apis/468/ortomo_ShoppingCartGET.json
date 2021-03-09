@@ -53,6 +53,10 @@
             "value": "[RecordId]"
           },
           {
+            "name": "PackSplitsen",
+            "value": "[Record:PackSplitsen]"
+          },
+          {
             "name": "User",
             "value": "[Record:User]"
           },
