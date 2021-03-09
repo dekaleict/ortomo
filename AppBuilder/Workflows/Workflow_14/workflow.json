@@ -1,7 +1,7 @@
 {
   "Id": 14,
   "Name": "ortome - Als Dan Bijwerken (1)",
-  "Description": "Op basis van externe factoren werken we de Top10 bij voordsat de shoppingcart getoond gaat worden",
+  "Description": "Op basis van externe factoren werken we de antwoordscores bij voordsat de shoppingcart getoond gaat worden",
   "IsDebug": false,
   "ActionList": {
     "Id": 62,
@@ -679,7 +679,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T21:20:57.4224128+01:00",
+  "LastModifiedOn": "2021-03-09T21:22:08.0981519+01:00",
   "InputFields": [
     {
       "Id": 77,
