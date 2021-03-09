@@ -1,0 +1,20 @@
+{
+  "id": 35,
+  "namespace": {
+    "id": 11,
+    "name": "ortomo"
+  },
+  "name": "icon_ochtend_avond",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>true</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT\nCASE \nWHEN '[tkparams:moment]' = 'ochtend' then '<i class=\"fas fa-cloud-sun\"></i>'\nWHEN '[tkparams:moment]' = 'avond' then '<i class=\"fas fa-cloud-moon\"></i>'\nelse ''\nend as IconInname",
+    "defaultColumn": "",
+    "columns": "IconInname",
+    "connectionString": "",
+    "type": "db"
+  }
+}
