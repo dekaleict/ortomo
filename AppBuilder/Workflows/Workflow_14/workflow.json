@@ -93,7 +93,7 @@
           {
             "Id": 714,
             "Name": "SqlQuery",
-            "Value": "SELECT        app.ortomo_MijnTest.ShoppingCart, app.ortomo_MijnAntwoord.MijnTest, app.ortomo_MijnAntwoord.Vragenlijst, app.ortomo_MijnAntwoord.Vraag, app.ortomo_MijnAntwoord.VraagTekst, \n                         app.ortomo_MijnAntwoord.GekozenAntwoordTekst\nFROM            app.ortomo_MijnTest INNER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnTest.Id = app.ortomo_MijnAntwoord.MijnTest\nWHERE        (app.ortomo_MijnTest.Id = @Mijntest)",
+            "Value": "SELECT        app.ortomo_MijnTest.ShoppingCart, app.ortomo_MijnAntwoord.MijnTest, app.ortomo_MijnAntwoord.Vragenlijst, app.ortomo_MijnAntwoord.Vraag, app.ortomo_MijnAntwoord.VraagTekst, \n                         app.ortomo_MijnAntwoord.GekozenAntwoordTekst, app.ortomo_MijnAntwoord.GekozenAntwoordId\nFROM            app.ortomo_MijnTest INNER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnTest.Id = app.ortomo_MijnAntwoord.MijnTest\nWHERE        (app.ortomo_MijnTest.Id = @MijnTest)",
             "IsExpression": false,
             "ActionId": 108,
             "OrderIndex": 0,
@@ -151,7 +151,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-03T20:16:44.2969064+01:00",
+  "LastModifiedOn": "2021-03-09T20:39:03.6294784+01:00",
   "InputFields": [
     {
       "Id": 77,
