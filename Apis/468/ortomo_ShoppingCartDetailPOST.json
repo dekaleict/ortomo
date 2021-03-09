@@ -115,6 +115,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Packnaam",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -133,7 +142,8 @@
         "MaxAantalVanPreparaat": "[MaxAantalVanPreparaat]",
         "InnameOchtend": "[InnameOchtend]",
         "InnameAvond": "[InnameAvond]",
-        "SplitPackGewenst": "[SplitPackGewenst]"
+        "SplitPackGewenst": "[SplitPackGewenst]",
+        "Packnaam": "[Packnaam]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -167,16 +177,8 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "InnameOchtend",
-            "value": "[CreatedRecord:InnameOchtend]"
-          },
-          {
-            "name": "InnameAvond",
-            "value": "[CreatedRecord:InnameAvond]"
-          },
-          {
-            "name": "SplitPackGewenst",
-            "value": "[CreatedRecord:SplitPackGewenst]"
+            "name": "Packnaam",
+            "value": "[CreatedRecord:Packnaam]"
           },
           {
             "name": "ShoppingCart",
@@ -209,6 +211,18 @@
           {
             "name": "MaxAantalVanPreparaat",
             "value": "[CreatedRecord:MaxAantalVanPreparaat]"
+          },
+          {
+            "name": "InnameOchtend",
+            "value": "[CreatedRecord:InnameOchtend]"
+          },
+          {
+            "name": "InnameAvond",
+            "value": "[CreatedRecord:InnameAvond]"
+          },
+          {
+            "name": "SplitPackGewenst",
+            "value": "[CreatedRecord:SplitPackGewenst]"
           }
         ],
         "Headers": [
