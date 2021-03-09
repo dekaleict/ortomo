@@ -204,7 +204,7 @@
       &lt;FormatFilters&gt;false&lt;/FormatFilters&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
-      &lt;CellCondition&gt;[Packnaam]!=&#39;niet geplitst&#39;&lt;/CellCondition&gt;
+      &lt;CellCondition&gt;[Packnaam]!=&#39;niet gesplitst&#39;&lt;/CellCondition&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
       &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
       &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
