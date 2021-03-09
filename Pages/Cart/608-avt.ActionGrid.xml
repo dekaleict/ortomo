@@ -117,7 +117,7 @@
       &lt;RefName&gt;TopPositie&lt;/RefName&gt;
       &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
       &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
-      &lt;IsSortable&gt;true&lt;/IsSortable&gt;
+      &lt;IsSortable&gt;false&lt;/IsSortable&gt;
       &lt;CanBeSortable&gt;true&lt;/CanBeSortable&gt;
       &lt;IsSearchable&gt;true&lt;/IsSearchable&gt;
       &lt;AllowHtml&gt;false&lt;/AllowHtml&gt;
