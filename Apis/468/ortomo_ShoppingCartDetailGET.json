@@ -53,16 +53,8 @@
             "value": "[RecordId]"
           },
           {
-            "name": "InnameOchtend",
-            "value": "[Record:InnameOchtend]"
-          },
-          {
-            "name": "InnameAvond",
-            "value": "[Record:InnameAvond]"
-          },
-          {
-            "name": "SplitPackGewenst",
-            "value": "[Record:SplitPackGewenst]"
+            "name": "Packnaam",
+            "value": "[Record:Packnaam]"
           },
           {
             "name": "ShoppingCart",
@@ -95,6 +87,18 @@
           {
             "name": "MaxAantalVanPreparaat",
             "value": "[Record:MaxAantalVanPreparaat]"
+          },
+          {
+            "name": "InnameOchtend",
+            "value": "[Record:InnameOchtend]"
+          },
+          {
+            "name": "InnameAvond",
+            "value": "[Record:InnameAvond]"
+          },
+          {
+            "name": "SplitPackGewenst",
+            "value": "[Record:SplitPackGewenst]"
           }
         ],
         "Headers": []
