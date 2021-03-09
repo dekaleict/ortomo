@@ -32,7 +32,7 @@
           {
             "Id": 874,
             "Name": "SqlQuery",
-            "Value": "/****** Als resultaat TRUE is , dan moet de cart bijgewerkt worden  ******/\nSELECT CASE WHEN Count(q1.Product) > 2 then 'true' else 'false' end as Resultaat FROM\n(\nSELECT DISTINCT app.ortomo_ShoppingCartDetail.Product\nFROM            app.ortomo_ShoppingCartDetail \nWHERE app.ortomo_ShoppingCartDetail.Product IN (4, 3, 38)\n  AND app.ortomo_ShoppingCartDetail.ShoppingCart = 59\n) Q1",
+            "Value": "/****** Als resultaat TRUE is , dan moet de cart bijgewerkt worden  ******/\nSELECT CASE WHEN Count(q1.Product) > 2 then 'true' else 'false' end as Resultaat FROM\n(\nSELECT DISTINCT app.ortomo_ShoppingCartDetail.Product\nFROM            app.ortomo_ShoppingCartDetail \nWHERE app.ortomo_ShoppingCartDetail.Product IN (4, 3, 38)\n  AND app.ortomo_ShoppingCartDetail.ShoppingCart = @ShoppingCart\n) Q1",
             "IsExpression": false,
             "ActionId": 127,
             "OrderIndex": 0,
@@ -191,7 +191,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-09T21:21:25.9785255+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T21:43:20.9130525+01:00",
+  "LastModifiedOn": "2021-03-09T21:43:58.0417436+01:00",
   "InputFields": [
     {
       "Id": 83,
