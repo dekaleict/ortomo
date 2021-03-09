@@ -191,7 +191,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-09T21:21:25.9785255+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T21:37:58.7861356+01:00",
+  "LastModifiedOn": "2021-03-09T21:38:50.4679207+01:00",
   "InputFields": [
     {
       "Id": 83,
@@ -210,33 +210,9 @@
   ],
   "OutputFields": [
     {
-      "Value": "[Leeftijd]",
-      "Id": 85,
-      "Name": "Leeftijd",
-      "InputType": "Text",
-      "WorkflowId": 15,
-      "IsDeleted": false
-    },
-    {
-      "Value": "[GeboorteDatum]",
-      "Id": 86,
-      "Name": "GeboorteDatum",
-      "InputType": "Text",
-      "WorkflowId": 15,
-      "IsDeleted": false
-    },
-    {
       "Value": "[Check1]",
       "Id": 87,
       "Name": "Check1",
-      "InputType": "Text",
-      "WorkflowId": 15,
-      "IsDeleted": false
-    },
-    {
-      "Value": "[Check2]",
-      "Id": 88,
-      "Name": "Check2",
       "InputType": "Text",
       "WorkflowId": 15,
       "IsDeleted": false
