@@ -63,7 +63,7 @@
     &lt;EnableStickyHead&gt;False&lt;/EnableStickyHead&gt;
     &lt;ItemButtonPosition&gt;Right&lt;/ItemButtonPosition&gt;
     &lt;ItemButtonPositionInColumn&gt;Right&lt;/ItemButtonPositionInColumn&gt;
-    &lt;ItemButtonGroupingOptions&gt;HorizontalAlign&lt;/ItemButtonGroupingOptions&gt;
+    &lt;ItemButtonGroupingOptions&gt;VerticalAlign&lt;/ItemButtonGroupingOptions&gt;
     &lt;FiltersEnabled&gt;False&lt;/FiltersEnabled&gt;
     &lt;ShowFilters&gt;False&lt;/ShowFilters&gt;
     &lt;SyncUrl&gt;True&lt;/SyncUrl&gt;
