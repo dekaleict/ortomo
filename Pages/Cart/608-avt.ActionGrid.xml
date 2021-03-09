@@ -224,7 +224,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;FieldCondition /&gt;
-      &lt;CellCondition&gt;[Packnaam]!=&#39;niet gesplitst&#39;&lt;/CellCondition&gt;
+      &lt;CellCondition&gt;[Quantity]&amp;gt;0&lt;/CellCondition&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
       &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
       &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
