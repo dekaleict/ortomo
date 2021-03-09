@@ -112,7 +112,7 @@
             "Name": "BindTokens",
             "Value": [
               {
-                "value": "MijnTest",
+                "value": "[MijnTest]",
                 "$$hashKey": "object:64",
                 "name": "MijnTest"
               }
@@ -208,6 +208,13 @@
           {
             "Id": 760,
             "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[MijnTest]",
+                "$$hashKey": "object:57",
+                "name": "MijnTest"
+              }
+            ],
             "IsExpression": false,
             "ActionId": 113,
             "OrderIndex": 0,
@@ -265,7 +272,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T20:56:33.9490835+01:00",
+  "LastModifiedOn": "2021-03-09T20:58:08.2642149+01:00",
   "InputFields": [
     {
       "Id": 77,
@@ -282,5 +289,30 @@
       "IsDeleted": false
     }
   ],
-  "OutputFields": []
+  "OutputFields": [
+    {
+      "Value": "[Leeftijd]",
+      "Id": 79,
+      "Name": "Leeftijd",
+      "InputType": "Text",
+      "WorkflowId": 14,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[GeboorteDatum]",
+      "Id": 80,
+      "Name": "GeboorteDatum",
+      "InputType": "Text",
+      "WorkflowId": 14,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[Check1]",
+      "Id": 81,
+      "Name": "Check1",
+      "InputType": "Text",
+      "WorkflowId": 14,
+      "IsDeleted": false
+    }
+  ]
 }
