@@ -81,7 +81,7 @@
     &lt;EnableGridSelect&gt;True&lt;/EnableGridSelect&gt;
     &lt;DataSourceAutoRefreshInterval&gt;1&lt;/DataSourceAutoRefreshInterval&gt;
     &lt;DataSourceRefreshType&gt;manual&lt;/DataSourceRefreshType&gt;
-    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn608&lt;/BaseId&gt;
     &lt;ItemButtonGroups&gt;[]&lt;/ItemButtonGroups&gt;
     &lt;GridButtonGroups&gt;[]&lt;/GridButtonGroups&gt;
@@ -138,7 +138,7 @@
               &lt;TypeStr&gt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/TypeStr&gt;
               &lt;Name&gt;TrueText&lt;/Name&gt;
               &lt;IsExpression&gt;false&lt;/IsExpression&gt;
-              &lt;Value xsi:type=&quot;xsd:string&quot;&gt;Test&lt;/Value&gt;
+              &lt;Value xsi:type=&quot;xsd:string&quot;&gt;Ja&lt;/Value&gt;
             &lt;/FormatterParameterInfo&gt;
           &lt;/value&gt;
         &lt;/item&gt;
@@ -153,7 +153,7 @@
               &lt;TypeStr&gt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/TypeStr&gt;
               &lt;Name&gt;FalseText&lt;/Name&gt;
               &lt;IsExpression&gt;false&lt;/IsExpression&gt;
-              &lt;Value xsi:type=&quot;xsd:string&quot;&gt;Zelf&lt;/Value&gt;
+              &lt;Value xsi:type=&quot;xsd:string&quot;&gt;Nee&lt;/Value&gt;
             &lt;/FormatterParameterInfo&gt;
           &lt;/value&gt;
         &lt;/item&gt;
