@@ -268,10 +268,103 @@
         "DiagramUID": "Activity_0mgb550"
       },
       {
+        "Id": 116,
+        "Description": "ALS leeftijd >50 EN ALS antwoordID 337 = ja, DAN calcium + vitamine D plus 2000 punten",
+        "ActionType": "RunSql",
+        "OrderIndex": 3,
+        "ActionParameters": [
+          {
+            "Id": 781,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 116,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 782,
+            "Name": "QueryTimeout",
+            "IsExpression": false,
+            "ActionId": 116,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 783,
+            "Name": "SqlQuery",
+            "Value": "SELECT COUNT(*) As Resultaat\n\nFROM (\nSELECT        app.ortomo_MijnTest.ShoppingCart, app.ortomo_MijnAntwoord.MijnTest, app.ortomo_MijnAntwoord.Vragenlijst, app.ortomo_MijnAntwoord.Vraag, app.ortomo_MijnAntwoord.VraagTekst, \n                         app.ortomo_MijnAntwoord.GekozenAntwoordTekst, app.ortomo_MijnAntwoord.GekozenAntwoordId\nFROM            app.ortomo_MijnTest INNER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnTest.Id = app.ortomo_MijnAntwoord.MijnTest\nWHERE        app.ortomo_MijnTest.Id = @MijnTest AND GekozenAntwoordId = 337 and Vraag = 2 )Q1",
+            "IsExpression": false,
+            "ActionId": 116,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 784,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[MijnTest]",
+                "$$hashKey": "object:57",
+                "name": "MijnTest"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 116,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 785,
+            "Name": "OutputTokenName",
+            "IsExpression": false,
+            "ActionId": 116,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 786,
+            "Name": "ExtractColumns",
+            "Value": [
+              {
+                "value": "Check1",
+                "$$hashKey": "object:52",
+                "name": "Resultaat"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 116,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 787,
+            "Name": "OnError",
+            "Value": {
+              "Id": 68,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 116,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 788,
+            "Name": "ShowErrors",
+            "IsExpression": false,
+            "ActionId": 116,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_10d1jnb"
+      },
+      {
         "Id": 114,
         "Condition": "[Leeftijd]>50",
         "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnAntwoordScore",
-        "OrderIndex": 3,
+        "OrderIndex": 4,
         "ActionParameters": [
           {
             "Id": 765,
@@ -349,7 +442,7 @@
       {
         "Id": 115,
         "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnAntwoordScore",
-        "OrderIndex": 4,
+        "OrderIndex": 5,
         "ActionParameters": [
           {
             "Id": 773,
@@ -423,13 +516,91 @@
           }
         ],
         "DiagramUID": "Activity_0uxmc3o"
+      },
+      {
+        "Id": 117,
+        "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnAntwoordScore",
+        "OrderIndex": 6,
+        "ActionParameters": [
+          {
+            "Id": 789,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 117,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 790,
+            "Name": "MijnTest",
+            "Value": "[MijnTest]",
+            "IsExpression": false,
+            "ActionId": 117,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 791,
+            "Name": "Vragenlijst",
+            "Value": "0",
+            "IsExpression": false,
+            "ActionId": 117,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 792,
+            "Name": "Vraag",
+            "Value": "0",
+            "IsExpression": false,
+            "ActionId": 117,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 793,
+            "Name": "Antwoord",
+            "Value": "0",
+            "IsExpression": false,
+            "ActionId": 117,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 794,
+            "Name": "Preparaat",
+            "Value": "38",
+            "IsExpression": false,
+            "ActionId": 117,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 795,
+            "Name": "Score",
+            "Value": "2000",
+            "IsExpression": false,
+            "ActionId": 117,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 796,
+            "Name": "OutputToken",
+            "IsExpression": false,
+            "ActionId": 117,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_06mqg7k"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T21:09:44.831704+01:00",
+  "LastModifiedOn": "2021-03-09T21:14:16.9447837+01:00",
   "InputFields": [
     {
       "Id": 77,
