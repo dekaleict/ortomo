@@ -8,678 +8,104 @@
     "EventName": "Event",
     "Actions": [
       {
-        "Id": 119,
-        "ActionType": "LoadEntitiesFromSql",
+        "Id": 127,
+        "Description": "ALS top10 heeft Vegan Vitamine D en Vitamine D en Calcium + Vitamine D DAN SELECT Vegan Vitamine D en DESELECT Vitamine D en Calcium + Vitamine D",
+        "ActionType": "RunSql",
         "OrderIndex": 0,
         "ActionParameters": [
           {
-            "Id": 810,
+            "Id": 872,
             "Name": "ConnectionString",
             "IsExpression": false,
-            "ActionId": 119,
+            "ActionId": 127,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 811,
-            "Name": "SqlQuery",
-            "Value": "SELECT * FROM app.ortomo_ShoppingCartDetail\nWHERE Shoppingcart=@ShoppingCart\nORDER BY Toppositie asc",
+            "Id": 873,
+            "Name": "QueryTimeout",
             "IsExpression": false,
-            "ActionId": 119,
+            "ActionId": 127,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 812,
+            "Id": 874,
+            "Name": "SqlQuery",
+            "Value": "SELECT CASE WHEN Count(q1.id) > 3 then 'true' else 'false' end as Resultaat FROM\n(\nSELECT DISTINCT app.ortomo_Preparaat.Id\nFROM            app.ortomo_ShoppingCartDetail INNER JOIN\n                         app.ortomo_Preparaat ON app.ortomo_ShoppingCartDetail.Id = app.ortomo_Preparaat.Id\nWHERE app.ortomo_Preparaat.Id IN (4, 3, 38)\n  AND app.ortomo_ShoppingCartDetail.ShoppingCart = @ShoppingCart\n) Q1",
+            "IsExpression": false,
+            "ActionId": 127,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 875,
             "Name": "BindTokens",
             "Value": [
               {
                 "value": "[ShoppingCart]",
-                "$$hashKey": "object:43",
+                "$$hashKey": "object:52",
                 "name": "ShoppingCart"
               }
             ],
             "IsExpression": false,
-            "ActionId": 119,
+            "ActionId": 127,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 813,
-            "Name": "EntityName",
-            "Value": "ShoppingcartDetails",
-            "IsExpression": false,
-            "ActionId": 119,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 814,
-            "Name": "EntityProps",
-            "IsExpression": false,
-            "ActionId": 119,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 815,
-            "Name": "OnError",
-            "Value": {
-              "Id": 70,
-              "EventName": "OnError",
-              "Actions": []
-            },
-            "IsExpression": false,
-            "ActionId": 119,
-            "OrderIndex": 0,
-            "SubParameters": []
-          }
-        ],
-        "DiagramUID": "Activity_0eze88s"
-      },
-      {
-        "Id": 120,
-        "ActionType": "RunSql",
-        "OrderIndex": 1,
-        "ActionParameters": [
-          {
-            "Id": 816,
-            "Name": "ConnectionString",
-            "IsExpression": false,
-            "ActionId": 120,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 817,
-            "Name": "QueryTimeout",
-            "IsExpression": false,
-            "ActionId": 120,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 818,
-            "Name": "SqlQuery",
-            "Value": "SELECT CAST(Q1.GekozenAntwoordTekst as date) as Geboortedatum,\nCONVERT(int,ROUND(DATEDIFF(hour,CAST(Q1.GekozenAntwoordTekst as date),GETDATE())/8766.0,0)) AS Leeftijd\nFROM (\nSELECT        app.ortomo_MijnTest.ShoppingCart, app.ortomo_MijnAntwoord.MijnTest, app.ortomo_MijnAntwoord.Vragenlijst, app.ortomo_MijnAntwoord.Vraag, app.ortomo_MijnAntwoord.VraagTekst, \n                         app.ortomo_MijnAntwoord.GekozenAntwoordTekst, app.ortomo_MijnAntwoord.GekozenAntwoordId\nFROM            app.ortomo_MijnTest INNER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnTest.Id = app.ortomo_MijnAntwoord.MijnTest\nWHERE        app.ortomo_MijnTest.Id = @MijnTest and Vraag = 1)Q1",
-            "IsExpression": false,
-            "ActionId": 120,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 819,
-            "Name": "BindTokens",
-            "Value": [
-              {
-                "value": "[MijnTest]",
-                "$$hashKey": "object:64",
-                "name": "MijnTest"
-              }
-            ],
-            "IsExpression": false,
-            "ActionId": 120,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 820,
+            "Id": 876,
             "Name": "OutputTokenName",
             "IsExpression": false,
-            "ActionId": 120,
+            "ActionId": 127,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 821,
+            "Id": 877,
             "Name": "ExtractColumns",
             "Value": [
               {
-                "value": "Leeftijd",
-                "$$hashKey": "object:52",
-                "name": "Leeftijd"
-              },
-              {
-                "value": "Geboortedatum",
+                "value": "[Resultaat]",
                 "$$hashKey": "object:58",
-                "name": "Geboortedatum"
-              }
-            ],
-            "IsExpression": false,
-            "ActionId": 120,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 822,
-            "Name": "OnError",
-            "Value": {
-              "Id": 71,
-              "EventName": "OnError",
-              "Actions": []
-            },
-            "IsExpression": false,
-            "ActionId": 120,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 823,
-            "Name": "ShowErrors",
-            "IsExpression": false,
-            "ActionId": 120,
-            "OrderIndex": 0,
-            "SubParameters": []
-          }
-        ],
-        "DiagramUID": "Activity_0fngjkl"
-      },
-      {
-        "Id": 121,
-        "Description": "ALS leeftijd is > 50 en alcoholconsumptie (vraagID 47) heeft antwoordID 126 DAN adviseer geen Vitamine B6 5000 score erbij",
-        "ActionType": "RunSql",
-        "OrderIndex": 2,
-        "ActionParameters": [
-          {
-            "Id": 824,
-            "Name": "ConnectionString",
-            "IsExpression": false,
-            "ActionId": 121,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 825,
-            "Name": "QueryTimeout",
-            "IsExpression": false,
-            "ActionId": 121,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 826,
-            "Name": "SqlQuery",
-            "Value": "SELECT COUNT(*) As Resultaat\n\nFROM (\nSELECT        app.ortomo_MijnTest.ShoppingCart, app.ortomo_MijnAntwoord.MijnTest, app.ortomo_MijnAntwoord.Vragenlijst, app.ortomo_MijnAntwoord.Vraag, app.ortomo_MijnAntwoord.VraagTekst, \n                         app.ortomo_MijnAntwoord.GekozenAntwoordTekst, app.ortomo_MijnAntwoord.GekozenAntwoordId\nFROM            app.ortomo_MijnTest INNER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnTest.Id = app.ortomo_MijnAntwoord.MijnTest\nWHERE        app.ortomo_MijnTest.Id = @MijnTest AND GekozenAntwoordId = 126 and Vraag = 47)Q1",
-            "IsExpression": false,
-            "ActionId": 121,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 827,
-            "Name": "BindTokens",
-            "Value": [
-              {
-                "value": "[MijnTest]",
-                "$$hashKey": "object:57",
-                "name": "MijnTest"
-              }
-            ],
-            "IsExpression": false,
-            "ActionId": 121,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 828,
-            "Name": "OutputTokenName",
-            "IsExpression": false,
-            "ActionId": 121,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 829,
-            "Name": "ExtractColumns",
-            "Value": [
-              {
-                "value": "Check1",
-                "$$hashKey": "object:52",
                 "name": "Resultaat"
               }
             ],
             "IsExpression": false,
-            "ActionId": 121,
+            "ActionId": 127,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 830,
+            "Id": 878,
             "Name": "OnError",
             "Value": {
-              "Id": 72,
+              "Id": 74,
               "EventName": "OnError",
               "Actions": []
             },
             "IsExpression": false,
-            "ActionId": 121,
+            "ActionId": 127,
             "OrderIndex": 0,
             "SubParameters": []
           },
           {
-            "Id": 831,
+            "Id": 879,
             "Name": "ShowErrors",
             "IsExpression": false,
-            "ActionId": 121,
+            "ActionId": 127,
             "OrderIndex": 0,
             "SubParameters": []
           }
         ],
-        "DiagramUID": "Activity_0mgb550"
-      },
-      {
-        "Id": 122,
-        "Description": "ALS leeftijd >50 EN ALS antwoordID 337 = ja, DAN calcium + vitamine D plus 2000 punten",
-        "ActionType": "RunSql",
-        "OrderIndex": 3,
-        "ActionParameters": [
-          {
-            "Id": 832,
-            "Name": "ConnectionString",
-            "IsExpression": false,
-            "ActionId": 122,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 833,
-            "Name": "QueryTimeout",
-            "IsExpression": false,
-            "ActionId": 122,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 834,
-            "Name": "SqlQuery",
-            "Value": "SELECT COUNT(*) As Resultaat\n\nFROM (\nSELECT        app.ortomo_MijnTest.ShoppingCart, app.ortomo_MijnAntwoord.MijnTest, app.ortomo_MijnAntwoord.Vragenlijst, app.ortomo_MijnAntwoord.Vraag, app.ortomo_MijnAntwoord.VraagTekst, \n                         app.ortomo_MijnAntwoord.GekozenAntwoordTekst, app.ortomo_MijnAntwoord.GekozenAntwoordId\nFROM            app.ortomo_MijnTest INNER JOIN\n                         app.ortomo_MijnAntwoord ON app.ortomo_MijnTest.Id = app.ortomo_MijnAntwoord.MijnTest\nWHERE        app.ortomo_MijnTest.Id = @MijnTest AND GekozenAntwoordId = 337 and Vraag = 2 )Q1",
-            "IsExpression": false,
-            "ActionId": 122,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 835,
-            "Name": "BindTokens",
-            "Value": [
-              {
-                "value": "[MijnTest]",
-                "$$hashKey": "object:57",
-                "name": "MijnTest"
-              }
-            ],
-            "IsExpression": false,
-            "ActionId": 122,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 836,
-            "Name": "OutputTokenName",
-            "IsExpression": false,
-            "ActionId": 122,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 837,
-            "Name": "ExtractColumns",
-            "Value": [
-              {
-                "value": "Check2",
-                "$$hashKey": "object:52",
-                "name": "Resultaat"
-              }
-            ],
-            "IsExpression": false,
-            "ActionId": 122,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 838,
-            "Name": "OnError",
-            "Value": {
-              "Id": 73,
-              "EventName": "OnError",
-              "Actions": []
-            },
-            "IsExpression": false,
-            "ActionId": 122,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 839,
-            "Name": "ShowErrors",
-            "IsExpression": false,
-            "ActionId": 122,
-            "OrderIndex": 0,
-            "SubParameters": []
-          }
-        ],
-        "DiagramUID": "Activity_10d1jnb"
-      },
-      {
-        "Id": 123,
-        "Condition": "[Leeftijd]>50",
-        "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnAntwoordScore",
-        "OrderIndex": 4,
-        "ActionParameters": [
-          {
-            "Id": 840,
-            "Name": "ConnectionString",
-            "IsExpression": false,
-            "ActionId": 123,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 841,
-            "Name": "MijnTest",
-            "Value": "[MijnTest]",
-            "IsExpression": false,
-            "ActionId": 123,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 842,
-            "Name": "Vragenlijst",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 123,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 843,
-            "Name": "Vraag",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 123,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 844,
-            "Name": "Antwoord",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 123,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 845,
-            "Name": "Preparaat",
-            "Value": "2",
-            "IsExpression": false,
-            "ActionId": 123,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 846,
-            "Name": "Score",
-            "Value": "2000",
-            "IsExpression": false,
-            "ActionId": 123,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 847,
-            "Name": "OutputToken",
-            "IsExpression": false,
-            "ActionId": 123,
-            "OrderIndex": 0,
-            "SubParameters": []
-          }
-        ],
-        "DiagramUID": "Activity_1d7kcvn"
-      },
-      {
-        "Id": 124,
-        "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnAntwoordScore",
-        "OrderIndex": 5,
-        "ActionParameters": [
-          {
-            "Id": 848,
-            "Name": "ConnectionString",
-            "IsExpression": false,
-            "ActionId": 124,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 849,
-            "Name": "MijnTest",
-            "Value": "[MijnTest]",
-            "IsExpression": false,
-            "ActionId": 124,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 850,
-            "Name": "Vragenlijst",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 124,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 851,
-            "Name": "Vraag",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 124,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 852,
-            "Name": "Antwoord",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 124,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 853,
-            "Name": "Preparaat",
-            "Value": "5",
-            "IsExpression": false,
-            "ActionId": 124,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 854,
-            "Name": "Score",
-            "Value": "2000",
-            "IsExpression": false,
-            "ActionId": 124,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 855,
-            "Name": "OutputToken",
-            "IsExpression": false,
-            "ActionId": 124,
-            "OrderIndex": 0,
-            "SubParameters": []
-          }
-        ],
-        "DiagramUID": "Activity_0uxmc3o"
-      },
-      {
-        "Id": 125,
-        "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnAntwoordScore",
-        "OrderIndex": 6,
-        "ActionParameters": [
-          {
-            "Id": 856,
-            "Name": "ConnectionString",
-            "IsExpression": false,
-            "ActionId": 125,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 857,
-            "Name": "MijnTest",
-            "Value": "[MijnTest]",
-            "IsExpression": false,
-            "ActionId": 125,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 858,
-            "Name": "Vragenlijst",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 125,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 859,
-            "Name": "Vraag",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 125,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 860,
-            "Name": "Antwoord",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 125,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 861,
-            "Name": "Preparaat",
-            "Value": "38",
-            "IsExpression": false,
-            "ActionId": 125,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 862,
-            "Name": "Score",
-            "Value": "2000",
-            "IsExpression": false,
-            "ActionId": 125,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 863,
-            "Name": "OutputToken",
-            "IsExpression": false,
-            "ActionId": 125,
-            "OrderIndex": 0,
-            "SubParameters": []
-          }
-        ],
-        "DiagramUID": "Activity_06mqg7k"
-      },
-      {
-        "Id": 126,
-        "Condition": "[Check1]>0&&[Leeftijd]>50",
-        "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnAntwoordScore",
-        "OrderIndex": 7,
-        "ActionParameters": [
-          {
-            "Id": 864,
-            "Name": "ConnectionString",
-            "IsExpression": false,
-            "ActionId": 126,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 865,
-            "Name": "MijnTest",
-            "Value": "[MijnTest]",
-            "IsExpression": false,
-            "ActionId": 126,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 866,
-            "Name": "Vragenlijst",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 126,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 867,
-            "Name": "Vraag",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 126,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 868,
-            "Name": "Antwoord",
-            "Value": "0",
-            "IsExpression": false,
-            "ActionId": 126,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 869,
-            "Name": "Preparaat",
-            "Value": "21",
-            "IsExpression": false,
-            "ActionId": 126,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 870,
-            "Name": "Score",
-            "Value": "-5000",
-            "IsExpression": false,
-            "ActionId": 126,
-            "OrderIndex": 0,
-            "SubParameters": []
-          },
-          {
-            "Id": 871,
-            "Name": "OutputToken",
-            "IsExpression": false,
-            "ActionId": 126,
-            "OrderIndex": 0,
-            "SubParameters": []
-          }
-        ],
-        "DiagramUID": "Activity_15vjvne"
+        "DiagramUID": "Activity_0kvkgsh"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-09T21:21:25.9785255+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T21:21:45.5685534+01:00",
+  "LastModifiedOn": "2021-03-09T21:35:00.9324885+01:00",
   "InputFields": [
     {
       "Id": 83,
