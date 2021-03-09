@@ -135,6 +135,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Packnaam",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 12,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -153,7 +162,8 @@
         "MaxAantalVanPreparaat": "[MaxAantalVanPreparaat]",
         "InnameOchtend": "[InnameOchtend]",
         "InnameAvond": "[InnameAvond]",
-        "SplitPackGewenst": "[SplitPackGewenst]"
+        "SplitPackGewenst": "[SplitPackGewenst]",
+        "Packnaam": "[Packnaam]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
