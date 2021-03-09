@@ -81,7 +81,7 @@
     &lt;EnableGridSelect&gt;True&lt;/EnableGridSelect&gt;
     &lt;DataSourceAutoRefreshInterval&gt;1&lt;/DataSourceAutoRefreshInterval&gt;
     &lt;DataSourceRefreshType&gt;manual&lt;/DataSourceRefreshType&gt;
-    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn608&lt;/BaseId&gt;
     &lt;ItemButtonGroups&gt;[]&lt;/ItemButtonGroups&gt;
     &lt;GridButtonGroups&gt;[]&lt;/GridButtonGroups&gt;
@@ -392,9 +392,9 @@ maximaal &amp;lt;b&amp;gt;[MaxAantalVanPreparaat] &amp;lt;/b&amp;gt;in winkelwag
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
       &lt;ColumnTextAlignment&gt;left&lt;/ColumnTextAlignment&gt;
       &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
-      &lt;ShowInFooter&gt;no&lt;/ShowInFooter&gt;
+      &lt;ShowInFooter&gt;sum&lt;/ShowInFooter&gt;
       &lt;ShowInFooterSumDecimals&gt;0&lt;/ShowInFooterSumDecimals&gt;
-      &lt;ShowInFooterTextBeforeSum&gt;Totaal&lt;/ShowInFooterTextBeforeSum&gt;
+      &lt;ShowInFooterTextBeforeSum /&gt;
       &lt;ShowInFooterTextAfterSum /&gt;
       &lt;Format&gt;Number&lt;/Format&gt;
       &lt;EditFieldType&gt;auto&lt;/EditFieldType&gt;
