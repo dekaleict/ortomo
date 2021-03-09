@@ -514,7 +514,7 @@ maximaal &amp;lt;b&amp;gt;[MaxAantalVanPreparaat] &amp;lt;/b&amp;gt;in winkelwag
           &lt;value&gt;
             &lt;FormatterParameterInfo xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
               &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-              &lt;DefinitionId&gt;Number&lt;/DefinitionId&gt;
+              &lt;DefinitionId&gt;Money&lt;/DefinitionId&gt;
               &lt;TypeStr&gt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/TypeStr&gt;
               &lt;Name&gt;DecimalPlaces&lt;/Name&gt;
               &lt;IsExpression&gt;false&lt;/IsExpression&gt;
@@ -534,7 +534,7 @@ maximaal &amp;lt;b&amp;gt;[MaxAantalVanPreparaat] &amp;lt;/b&amp;gt;in winkelwag
       &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
       &lt;ShowInFooter&gt;sum&lt;/ShowInFooter&gt;
       &lt;ShowInFooterSumDecimals&gt;0&lt;/ShowInFooterSumDecimals&gt;
-      &lt;Format&gt;Number&lt;/Format&gt;
+      &lt;Format&gt;Money&lt;/Format&gt;
       &lt;EditFieldType&gt;auto&lt;/EditFieldType&gt;
       &lt;EditFieldTypeParameters /&gt;
       &lt;Validation /&gt;
