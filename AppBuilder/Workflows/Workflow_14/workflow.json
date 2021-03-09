@@ -266,13 +266,170 @@
           }
         ],
         "DiagramUID": "Activity_0mgb550"
+      },
+      {
+        "Id": 114,
+        "Condition": "[Leeftijd]>50",
+        "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnAntwoordScore",
+        "OrderIndex": 3,
+        "ActionParameters": [
+          {
+            "Id": 765,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 114,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 766,
+            "Name": "MijnTest",
+            "Value": "[MijnTest]",
+            "IsExpression": false,
+            "ActionId": 114,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 767,
+            "Name": "Vragenlijst",
+            "Value": "0",
+            "IsExpression": false,
+            "ActionId": 114,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 768,
+            "Name": "Vraag",
+            "Value": "0",
+            "IsExpression": false,
+            "ActionId": 114,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 769,
+            "Name": "Antwoord",
+            "Value": "0",
+            "IsExpression": false,
+            "ActionId": 114,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 770,
+            "Name": "Preparaat",
+            "Value": "2",
+            "IsExpression": false,
+            "ActionId": 114,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 771,
+            "Name": "Score",
+            "Value": "2000",
+            "IsExpression": false,
+            "ActionId": 114,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 772,
+            "Name": "OutputToken",
+            "IsExpression": false,
+            "ActionId": 114,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_1d7kcvn"
+      },
+      {
+        "Id": 115,
+        "ActionType": "PlantAnApp.CreateEntity.0.ortomo_MijnAntwoordScore",
+        "OrderIndex": 4,
+        "ActionParameters": [
+          {
+            "Id": 773,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 115,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 774,
+            "Name": "MijnTest",
+            "Value": "[MijnTest]",
+            "IsExpression": false,
+            "ActionId": 115,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 775,
+            "Name": "Vragenlijst",
+            "Value": "0",
+            "IsExpression": false,
+            "ActionId": 115,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 776,
+            "Name": "Vraag",
+            "Value": "0",
+            "IsExpression": false,
+            "ActionId": 115,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 777,
+            "Name": "Antwoord",
+            "Value": "0",
+            "IsExpression": false,
+            "ActionId": 115,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 778,
+            "Name": "Preparaat",
+            "Value": "5",
+            "IsExpression": false,
+            "ActionId": 115,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 779,
+            "Name": "Score",
+            "Value": "2000",
+            "IsExpression": false,
+            "ActionId": 115,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 780,
+            "Name": "OutputToken",
+            "IsExpression": false,
+            "ActionId": 115,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0uxmc3o"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T20:58:08.2642149+01:00",
+  "LastModifiedOn": "2021-03-09T21:09:44.831704+01:00",
   "InputFields": [
     {
       "Id": 77,
