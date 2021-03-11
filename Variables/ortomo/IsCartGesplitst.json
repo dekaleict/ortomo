@@ -1,0 +1,20 @@
+{
+  "id": 36,
+  "namespace": {
+    "id": 11,
+    "name": "ortomo"
+  },
+  "name": "IsCartGesplitst",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT * FROM \napp.ortomo_shoppingcart\nWHERE Id = '[Testen:MijnTest.Shoppingcart]'",
+    "defaultColumn": "",
+    "columns": "PackSplitsen",
+    "connectionString": "",
+    "type": "db"
+  }
+}
