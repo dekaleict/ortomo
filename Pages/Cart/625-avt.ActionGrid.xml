@@ -4,10 +4,10 @@
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
+    <containersrc>[G]Containers/minis/H3-Container.ascx</containersrc>
     <displayprint>false</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -30,6 +30,7 @@
     <uniqueId>524bb688-5014-4792-a5d3-8a72068dd07e</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
