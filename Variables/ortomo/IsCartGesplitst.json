@@ -13,7 +13,7 @@
   "src": {
     "sql": "SELECT * FROM \napp.ortomo_shoppingcart\nWHERE Id = '[Testen:MijnTest.Shoppingcart]'",
     "defaultColumn": "",
-    "columns": "PackSplitsen",
+    "columns": "Id\nPackSplitsen",
     "connectionString": "",
     "type": "db"
   }
