@@ -7,7 +7,7 @@
     <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
-    <containersrc>[G]Containers/minis/H3-Container.ascx</containersrc>
+    <containersrc>[G]Containers/minis/H5-Container.ascx</containersrc>
     <displayprint>false</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
