@@ -4,10 +4,10 @@
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
+    <containersrc>[G]Containers/minis/H5-Container.ascx</containersrc>
     <displayprint>false</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -30,6 +30,7 @@
     <uniqueId>2de718e7-e127-4132-8727-cc04a277f9d2</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
@@ -81,7 +82,7 @@
     &lt;EnableGridSelect&gt;True&lt;/EnableGridSelect&gt;
     &lt;DataSourceAutoRefreshInterval&gt;1&lt;/DataSourceAutoRefreshInterval&gt;
     &lt;DataSourceRefreshType&gt;manual&lt;/DataSourceRefreshType&gt;
-    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn624&lt;/BaseId&gt;
     &lt;ItemButtonGroups&gt;[]&lt;/ItemButtonGroups&gt;
     &lt;GridButtonGroups&gt;[]&lt;/GridButtonGroups&gt;
