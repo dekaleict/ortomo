@@ -46,7 +46,7 @@
     &lt;NoDataMessage&gt;Geen producten aanwezig&lt;/NoDataMessage&gt;
     &lt;AditionalHtmlHeader /&gt;
     &lt;OnInitJs /&gt;
-    &lt;OnRefreshJs&gt;dnnsf.api.actionForm.initForm(625)&lt;/OnRefreshJs&gt;
+    &lt;OnRefreshJs&gt;dnnsf.api.actionForm.initForm(630)&lt;/OnRefreshJs&gt;
     &lt;EnableEmbed&gt;False&lt;/EnableEmbed&gt;
     &lt;ShowCondition&gt;[ortomo:IsCartGesplitst.PackSplitsen]!=&#39;True&#39;&lt;/ShowCondition&gt;
     &lt;SearchPlaceholder&gt;Search&lt;/SearchPlaceholder&gt;
