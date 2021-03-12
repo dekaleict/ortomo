@@ -243,7 +243,7 @@
 &amp;lt;div style=&amp;quot;width: 40%; float: left; margin: 0px 20px 0px 0px;&amp;quot;&amp;gt;[Fields:NewField]&amp;lt;/div&amp;gt;
 &amp;lt;div style=&amp;quot;clear: both;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;]]&gt;&lt;/LayoutHtml&gt;
     &lt;CurrentContext&gt;ExportImport&lt;/CurrentContext&gt;
-    &lt;LabelAlign&gt;top&lt;/LabelAlign&gt;
+    &lt;LabelAlign&gt;inside&lt;/LabelAlign&gt;
     &lt;LabelWidth&gt;3&lt;/LabelWidth&gt;
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
