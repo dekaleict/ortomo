@@ -41,7 +41,7 @@
   &lt;TabsLayout&gt;HorizontalTop&lt;/TabsLayout&gt;
   &lt;TabsFullWidth&gt;True&lt;/TabsFullWidth&gt;
   &lt;IsCollapsible&gt;False&lt;/IsCollapsible&gt;
-  &lt;AutoScroll&gt;False&lt;/AutoScroll&gt;
+  &lt;AutoScroll&gt;True&lt;/AutoScroll&gt;
   &lt;IsCollapsedInitially&gt;False&lt;/IsCollapsedInitially&gt;
   &lt;TabWidth&gt;200&lt;/TabWidth&gt;
   &lt;PanelHeight&gt;-1&lt;/PanelHeight&gt;
@@ -94,7 +94,7 @@
         &lt;Module&gt;
           &lt;ModuleId&gt;634&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;Cart&lt;/ModuleTitle&gt;
-          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;ModuleOrder&gt;2&lt;/ModuleOrder&gt;
           &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
         &lt;/Module&gt;
       &lt;/Modules&gt;
@@ -121,7 +121,7 @@
         &lt;Module&gt;
           &lt;ModuleId&gt;633&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;FormVerzendadres&lt;/ModuleTitle&gt;
-          &lt;ModuleOrder&gt;2&lt;/ModuleOrder&gt;
+          &lt;ModuleOrder&gt;3&lt;/ModuleOrder&gt;
           &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
         &lt;/Module&gt;
       &lt;/Modules&gt;
