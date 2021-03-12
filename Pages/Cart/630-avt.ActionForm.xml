@@ -56,7 +56,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;static-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003ctable style=\&quot;border-collapse: collapse; width: 100%;\&quot; border=\&quot;0\&quot;\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd style=\&quot;width: 75%;\&quot;\u003eJe pack:\u003c/td\u003e\n\u003ctd style=\&quot;width: 25%;\&quot;\u003e[ortomo:GetCart.TotalAmountOpgemaakt]\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003ch3\u003eJouw bestelling\u003c/h3\u003e\n\u003chr\u003e\n\u003ctable style=\&quot;border-collapse: collapse; width: 100%;\&quot; border=\&quot;0\&quot;\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd style=\&quot;width: 75%;\&quot;\u003eJe pack:\u003c/td\u003e\n\u003ctd style=\&quot;width: 25%;\&quot;\u003e[ortomo:GetCart.TotalAmountOpgemaakt]\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
       &lt;Align&gt;
         &lt;Expression /&gt;
         &lt;Value&gt;left&lt;/Value&gt;
@@ -64,7 +64,9 @@
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/Align&gt;
       &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
-      &lt;Value&gt;&lt;![CDATA[&lt;table style=&quot;border-collapse: collapse; width: 100%;&quot; border=&quot;0&quot;&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;h3&gt;Jouw bestelling&lt;/h3&gt;
+&lt;hr&gt;
+&lt;table style=&quot;border-collapse: collapse; width: 100%;&quot; border=&quot;0&quot;&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&quot;width: 75%;&quot;&gt;Je pack:&lt;/td&gt;
