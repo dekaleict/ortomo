@@ -214,7 +214,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-12T15:22:29.6446623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-12T15:25:51.9220773+01:00",
+  "LastModifiedOn": "2021-03-12T15:26:16.1564451+01:00",
   "InputFields": [
     {
       "Id": 89,
@@ -233,7 +233,7 @@
   ],
   "OutputFields": [
     {
-      "Value": "[BRPostcodeAPI]",
+      "Value": "[PostcodeAPI]",
       "Id": 91,
       "Name": "BRPostcodeAPI",
       "InputType": "Text",
