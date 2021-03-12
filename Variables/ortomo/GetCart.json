@@ -11,7 +11,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT *,\n\t  ,CONCAT ('€ ', REPLACE(CAST(TotalAmount as money),'.',',')) As TotalAmountOpgemaakt\nFROM app.ortomo_ShoppingCart\nWHERE Id = '[Testen:MijnTest.Shoppingcart]'",
+    "sql": "SELECT *\n,CONCAT ('€ ', REPLACE(CAST(TotalAmount as money),'.',',')) As TotalAmountOpgemaakt\nFROM app.ortomo_ShoppingCart\nWHERE Id = '[Testen:MijnTest.Shoppingcart]'",
     "defaultColumn": "",
     "columns": "TotalAmount\nTotalAmountOpgemaakt\nOrderId\nQuantity\nMijnTest\nPackSplitsen",
     "connectionString": "",
