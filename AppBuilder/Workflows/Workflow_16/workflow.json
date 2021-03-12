@@ -1,0 +1,218 @@
+{
+  "Id": 16,
+  "Name": "PostcodeAPI",
+  "Description": "ophalen van adres via postcodeapi.nu",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 80,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 133,
+        "ActionType": "PostData",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 920,
+            "Name": "InputParameters",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 921,
+            "Name": "URL",
+            "Value": "https://api.postcodeapi.nu/v2/addresses/?postcode=[postcode]&number=[huisnummer]",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 922,
+            "Name": "UrlTokenContext",
+            "Value": "Url",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 923,
+            "Name": "UseSSL",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 924,
+            "Name": "Timeout",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 925,
+            "Name": "HttpMethod",
+            "Value": "GET",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 926,
+            "Name": "Data",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 927,
+            "Name": "DoNotEscapeTokens",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 928,
+            "Name": "DisableReferer",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 929,
+            "Name": "Headers",
+            "Value": [
+              {
+                "value": "bc3jNJUQEH6qaPRmV01il1xzle2XBGCq4wNLze0I",
+                "$$hashKey": "object:114",
+                "name": "X-Api-key"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 930,
+            "Name": "UseDNNProxySettings",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 931,
+            "Name": "AddCurrentCookies",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 932,
+            "Name": "OutputParameters",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 933,
+            "Name": "CookieContainerToken",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 934,
+            "Name": "OutputTokenName",
+            "Value": "BRPostcodeAPI",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 935,
+            "Name": "OutputHeaders",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 936,
+            "Name": "IgnoreErrors",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 937,
+            "Name": "Events",
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 938,
+            "Name": "OnError",
+            "Value": {
+              "Id": 81,
+              "EventName": "error",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 133,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0bsekoh"
+      }
+    ]
+  },
+  "CreatedBy": "Hans Lenting",
+  "CreatedOn": "2021-03-12T15:22:29.6446623+01:00",
+  "LastModifiedBy": "Hans Lenting",
+  "LastModifiedOn": "2021-03-12T15:22:29.6446623+01:00",
+  "InputFields": [
+    {
+      "Id": 89,
+      "Name": "Postcode",
+      "InputType": "Text",
+      "WorkflowId": 16,
+      "IsDeleted": false
+    },
+    {
+      "Id": 90,
+      "Name": "Huisnummer",
+      "InputType": "Text",
+      "WorkflowId": 16,
+      "IsDeleted": false
+    }
+  ],
+  "OutputFields": [
+    {
+      "Value": "[BRPostcodeAPI]",
+      "Id": 91,
+      "Name": "BRPostcodeAPI",
+      "InputType": "Text",
+      "WorkflowId": 16,
+      "IsDeleted": false
+    }
+  ]
+}
