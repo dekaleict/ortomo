@@ -57,7 +57,7 @@
     &lt;DefaultPageSize&gt;12&lt;/DefaultPageSize&gt;
     &lt;IsDebug&gt;False&lt;/IsDebug&gt;
     &lt;SearchEnabled&gt;False&lt;/SearchEnabled&gt;
-    &lt;HideEmptyGrid&gt;True&lt;/HideEmptyGrid&gt;
+    &lt;HideEmptyGrid&gt;False&lt;/HideEmptyGrid&gt;
     &lt;LoadOnSearch&gt;False&lt;/LoadOnSearch&gt;
     &lt;HideTableHead&gt;False&lt;/HideTableHead&gt;
     &lt;EnableStickyHead&gt;False&lt;/EnableStickyHead&gt;
