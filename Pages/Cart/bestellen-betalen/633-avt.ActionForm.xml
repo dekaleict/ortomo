@@ -4,7 +4,7 @@
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
     <containersrc />
@@ -25,11 +25,12 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>avt.Action Form</title>
+    <title>FormVerzendadres</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>8aae9070-279a-461a-9906-63d6ef6ea3b4</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
@@ -330,8 +331,8 @@
     &lt;/Field&gt;
   &lt;/Fields&gt;
   &lt;Settings&gt;
-    &lt;Title&gt;avt.Action Form&lt;/Title&gt;
-    &lt;CssName&gt;avt-action-form&lt;/CssName&gt;
+    &lt;Title&gt;FormVerzendadres&lt;/Title&gt;
+    &lt;CssName&gt;formverzendadres&lt;/CssName&gt;
     &lt;Version&gt;5.11.0&lt;/Version&gt;
     &lt;Build&gt;5.11.7&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
