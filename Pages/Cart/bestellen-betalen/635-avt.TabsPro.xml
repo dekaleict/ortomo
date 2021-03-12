@@ -95,7 +95,7 @@
           &lt;ModuleId&gt;634&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;Cart&lt;/ModuleTitle&gt;
           &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
-          &lt;DisplayTitle&gt;True&lt;/DisplayTitle&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
         &lt;/Module&gt;
       &lt;/Modules&gt;
     &lt;/Tab&gt;
