@@ -1,4 +1,5 @@
 <module type="avtTabsPro" version="05.11.00.00">
+    <contentKey />
     <moduleID>628</moduleID>
     <alignment />
     <alltabs>false</alltabs>
@@ -26,10 +27,9 @@
     </modulepermissions>
     <title>avt.TabsPro</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>5885c44b-4bbf-4458-b82a-c48fe4e66cfb</uniqueId>
+    <uniqueId>a1d1f7c1-da14-4a33-8a7b-ccaeeaa2c262</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
-    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
@@ -39,7 +39,7 @@
     <content type="avtTabsPro" version="05.11.00.00"><![CDATA[&lt;TabsPro&gt;
   &lt;Theme&gt;ui-lightness&lt;/Theme&gt;
   &lt;TabsLayout&gt;HorizontalTop&lt;/TabsLayout&gt;
-  &lt;TabsFullWidth&gt;False&lt;/TabsFullWidth&gt;
+  &lt;TabsFullWidth&gt;True&lt;/TabsFullWidth&gt;
   &lt;IsCollapsible&gt;False&lt;/IsCollapsible&gt;
   &lt;AutoScroll&gt;False&lt;/AutoScroll&gt;
   &lt;IsCollapsedInitially&gt;False&lt;/IsCollapsedInitially&gt;
@@ -68,9 +68,95 @@
   &lt;Modal_DisplayPlaceholder /&gt;
   &lt;Modal_DisplayTitle /&gt;
   &lt;Modal_DisplayWidth&gt;80%&lt;/Modal_DisplayWidth&gt;
-  &lt;ShowLoading&gt;False&lt;/ShowLoading&gt;
+  &lt;ShowLoading&gt;True&lt;/ShowLoading&gt;
   &lt;WidgetProvider&gt;{&quot;name&quot;:&quot;WidgetProvider&quot;,&quot;value&quot;:&quot;Bootstrap&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/WidgetProvider&gt;
   &lt;OpenAction&gt;{&quot;name&quot;:&quot;OpenAction&quot;,&quot;value&quot;:&quot;Click&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/OpenAction&gt;
-  &lt;Tabs /&gt;
+  &lt;Tabs&gt;
+    &lt;Tab&gt;
+      &lt;Title&gt;Producten&lt;/Title&gt;
+      &lt;RefName /&gt;
+      &lt;CssClass /&gt;
+      &lt;EnableCondition /&gt;
+      &lt;ShowCondition /&gt;
+      &lt;IconUrl /&gt;
+      &lt;IconClass /&gt;
+      &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
+      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;TabUrl /&gt;
+      &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
+      &lt;DefaultTab&gt;True&lt;/DefaultTab&gt;
+      &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
+      &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
+      &lt;Localization&gt;
+        &lt;nl-NL&gt;Producten&lt;/nl-NL&gt;
+      &lt;/Localization&gt;
+      &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;608&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Shopping Cart (niet gesplitst)&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;True&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;624&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Ochtendpack&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;2&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;True&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;625&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Avondpack&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;3&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;True&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;627&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Extra te bestellen&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;4&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;True&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+      &lt;/Modules&gt;
+    &lt;/Tab&gt;
+    &lt;Tab&gt;
+      &lt;Title&gt;Verzending&lt;/Title&gt;
+      &lt;RefName /&gt;
+      &lt;CssClass /&gt;
+      &lt;EnableCondition /&gt;
+      &lt;ShowCondition /&gt;
+      &lt;IconUrl /&gt;
+      &lt;IconClass /&gt;
+      &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
+      &lt;ViewOrder&gt;1&lt;/ViewOrder&gt;
+      &lt;TabUrl /&gt;
+      &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
+      &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
+      &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
+      &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
+      &lt;Localization&gt;
+        &lt;nl-NL&gt;Verzending&lt;/nl-NL&gt;
+      &lt;/Localization&gt;
+      &lt;Modules /&gt;
+    &lt;/Tab&gt;
+    &lt;Tab&gt;
+      &lt;Title&gt;Betaling&lt;/Title&gt;
+      &lt;RefName /&gt;
+      &lt;CssClass /&gt;
+      &lt;EnableCondition /&gt;
+      &lt;ShowCondition /&gt;
+      &lt;IconUrl /&gt;
+      &lt;IconClass /&gt;
+      &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
+      &lt;ViewOrder&gt;2&lt;/ViewOrder&gt;
+      &lt;TabUrl /&gt;
+      &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
+      &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
+      &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
+      &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
+      &lt;Localization&gt;
+        &lt;nl-NL&gt;Betaling&lt;/nl-NL&gt;
+      &lt;/Localization&gt;
+      &lt;Modules /&gt;
+    &lt;/Tab&gt;
+  &lt;/Tabs&gt;
 &lt;/TabsPro&gt;]]></content>
 </module>
