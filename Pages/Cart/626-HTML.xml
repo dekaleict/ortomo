@@ -1,9 +1,10 @@
 <module type="DNNHTML" version="09.06.00.00">
+    <contentKey />
     <moduleID>626</moduleID>
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>1200</cachetime>
     <color />
     <containersrc />
@@ -26,7 +27,7 @@
     </modulepermissions>
     <title>Text/HTML</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>562fb778-f6c0-4ce5-9e37-4d201920cc34</uniqueId>
+    <uniqueId>14405c98-e309-429b-ac24-0cc12692906f</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
     <webslicetitle />
@@ -36,4 +37,6 @@
     <tabmodulesettings />
     <definition>DNN_HTML</definition>
     <moduledefinition>Text/HTML</moduledefinition>
+    <content type="DNNHTML" version="09.06.00.00"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;h3 style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;Beste [User:Firstname]&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Onderstaande hebben we samengesteld op basis van jouw antwoorden.&amp;lt;/p&amp;gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
 </module>
