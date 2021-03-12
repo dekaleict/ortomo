@@ -105,7 +105,7 @@
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
       &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;1&lt;/RowIndex&gt;
+      &lt;RowIndex&gt;0&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -172,10 +172,10 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;2&lt;/RowIndex&gt;
-      &lt;ColSpan&gt;9&lt;/ColSpan&gt;
-      &lt;ColOffset&gt;3&lt;/ColOffset&gt;
+      &lt;ViewOrder&gt;12&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;1&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
   &lt;/Fields&gt;
   &lt;Settings&gt;
