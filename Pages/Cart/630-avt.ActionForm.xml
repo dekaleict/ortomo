@@ -56,7 +56,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;static-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003ch3\u003eJouw bestelling\u003c/h3\u003e\n\u003chr\u003e\n\u003ctable style=\&quot;border-collapse: collapse; width: 100%;\&quot; border=\&quot;0\&quot;\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd style=\&quot;width: 75%;\&quot;\u003eJe pack:\u003c/td\u003e\n\u003ctd style=\&quot;width: 25%;\&quot;\u003e[ortomo:GetCart.TotalAmountOpgemaakt]\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd style=\&quot;width: 75%;\&quot;\u003eVerzendkosten:\u003c/td\u003e\n\u003ctd style=\&quot;width: 25%;\&quot;\u003e[ortomo:GetCart.TotalAmountOpgemaakt]\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd style=\&quot;width: 75%;\&quot;\u003eAdministratiekosten:\u003c/td\u003e\n\u003ctd style=\&quot;width: 25%;\&quot;\u003e[ortomo:GetCart.TotalAmountOpgemaakt]\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003ch3\u003eJouw bestelling\u003c/h3\u003e\n\u003chr\u003e\n\u003ctable style=\&quot;border-collapse: collapse; width: 100%;\&quot; border=\&quot;0\&quot;\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd style=\&quot;width: 75%;\&quot;\u003eJe pack:\u003c/td\u003e\n\u003ctd style=\&quot;width: 25%;\&quot;\u003e[ortomo:GetCart.TotalAmountOpgemaakt]\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd style=\&quot;width: 75%;\&quot;\u003eVerzendkosten:\u003c/td\u003e\n\u003ctd style=\&quot;width: 25%;\&quot;\u003e[ortomo:GetCart.TotalAmountOpgemaakt]\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd style=\&quot;width: 75%;\&quot;\u003eAdministratiekosten:\u003c/td\u003e\n\u003ctd style=\&quot;width: 25%;\&quot;\u003e[ortomo:GetCart.TotalAmountOpgemaakt]\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n  \u003ctd style=\&quot;width: 75%;\&quot;\u003eTotaal bedrag:\u003cbr\u003e\u003ci\u003epack per 28 dagen\u003c/i\u003e\u003c/td\u003e\n\u003ctd style=\&quot;width: 25%;\&quot;\u003e[ortomo:GetCart.TotalAmountOpgemaakt]\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
       &lt;Align&gt;
         &lt;Expression /&gt;
         &lt;Value&gt;left&lt;/Value&gt;
@@ -78,6 +78,10 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&quot;width: 75%;&quot;&gt;Administratiekosten:&lt;/td&gt;
+&lt;td style=&quot;width: 25%;&quot;&gt;[ortomo:GetCart.TotalAmountOpgemaakt]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td style=&quot;width: 75%;&quot;&gt;Totaal bedrag:&lt;br&gt;&lt;i&gt;pack per 28 dagen&lt;/i&gt;&lt;/td&gt;
 &lt;td style=&quot;width: 25%;&quot;&gt;[ortomo:GetCart.TotalAmountOpgemaakt]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
