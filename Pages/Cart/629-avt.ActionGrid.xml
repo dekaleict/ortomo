@@ -120,7 +120,7 @@
       &lt;IsSortable&gt;false&lt;/IsSortable&gt;
       &lt;CanBeSortable&gt;false&lt;/CanBeSortable&gt;
       &lt;IsSearchable&gt;false&lt;/IsSearchable&gt;
-      &lt;AllowHtml&gt;false&lt;/AllowHtml&gt;
+      &lt;AllowHtml&gt;true&lt;/AllowHtml&gt;
       &lt;CanBeSearchable&gt;false&lt;/CanBeSearchable&gt;
       &lt;IsFilterable&gt;false&lt;/IsFilterable&gt;
       &lt;CanBeFilterable&gt;false&lt;/CanBeFilterable&gt;
@@ -140,6 +140,7 @@ Verzendkosten: € 123,45&lt;/Template&gt;
       &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
       &lt;ShowInFooter&gt;no&lt;/ShowInFooter&gt;
       &lt;ShowInFooterSumDecimals&gt;2&lt;/ShowInFooterSumDecimals&gt;
+      &lt;Format&gt;Money&lt;/Format&gt;
       &lt;EditFieldType&gt;auto&lt;/EditFieldType&gt;
       &lt;EditFieldTypeParameters /&gt;
       &lt;Validation /&gt;
