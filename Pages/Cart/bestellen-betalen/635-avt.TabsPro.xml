@@ -1,4 +1,5 @@
 <module type="avtTabsPro" version="05.11.00.00">
+    <contentKey />
     <moduleID>635</moduleID>
     <alignment />
     <alltabs>false</alltabs>
@@ -26,10 +27,9 @@
     </modulepermissions>
     <title>avt.TabsPro</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>1423bf96-fe93-45c8-8ad2-1a846e42d127</uniqueId>
+    <uniqueId>8e21da8d-7b21-4282-aaef-68b07d4c41c3</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
-    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
@@ -39,7 +39,7 @@
     <content type="avtTabsPro" version="05.11.00.00"><![CDATA[&lt;TabsPro&gt;
   &lt;Theme&gt;ui-lightness&lt;/Theme&gt;
   &lt;TabsLayout&gt;HorizontalTop&lt;/TabsLayout&gt;
-  &lt;TabsFullWidth&gt;False&lt;/TabsFullWidth&gt;
+  &lt;TabsFullWidth&gt;True&lt;/TabsFullWidth&gt;
   &lt;IsCollapsible&gt;False&lt;/IsCollapsible&gt;
   &lt;AutoScroll&gt;False&lt;/AutoScroll&gt;
   &lt;IsCollapsedInitially&gt;False&lt;/IsCollapsedInitially&gt;
@@ -47,7 +47,7 @@
   &lt;PanelHeight&gt;-1&lt;/PanelHeight&gt;
   &lt;TabsProRootClass /&gt;
   &lt;LoadProgressively&gt;False&lt;/LoadProgressively&gt;
-  &lt;Effect&gt;none&lt;/Effect&gt;
+  &lt;Effect&gt;fade&lt;/Effect&gt;
   &lt;PersistOnPostback&gt;True&lt;/PersistOnPostback&gt;
   &lt;PersistInUrl&gt;True&lt;/PersistInUrl&gt;
   &lt;PersistInCookies&gt;False&lt;/PersistInCookies&gt;
@@ -61,7 +61,7 @@
   &lt;Delay&gt;1&lt;/Delay&gt;
   &lt;AppendIds&gt;True&lt;/AppendIds&gt;
   &lt;AccordionOnMobile&gt;True&lt;/AccordionOnMobile&gt;
-  &lt;ShowEmptyTabs&gt;False&lt;/ShowEmptyTabs&gt;
+  &lt;ShowEmptyTabs&gt;True&lt;/ShowEmptyTabs&gt;
   &lt;Modal_Display&gt;False&lt;/Modal_Display&gt;
   &lt;Modal_DisplayHeight&gt;auto&lt;/Modal_DisplayHeight&gt;
   &lt;Modal_DisplayMinHeight /&gt;
@@ -71,6 +71,67 @@
   &lt;ShowLoading&gt;False&lt;/ShowLoading&gt;
   &lt;WidgetProvider&gt;{&quot;name&quot;:&quot;WidgetProvider&quot;,&quot;value&quot;:&quot;Bootstrap&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/WidgetProvider&gt;
   &lt;OpenAction&gt;{&quot;name&quot;:&quot;OpenAction&quot;,&quot;value&quot;:&quot;Click&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/OpenAction&gt;
-  &lt;Tabs /&gt;
+  &lt;Tabs&gt;
+    &lt;Tab&gt;
+      &lt;Title&gt;Verzendadres&lt;/Title&gt;
+      &lt;RefName&gt;Verzendadres&lt;/RefName&gt;
+      &lt;CssClass /&gt;
+      &lt;EnableCondition /&gt;
+      &lt;ShowCondition /&gt;
+      &lt;IconUrl /&gt;
+      &lt;IconClass&gt;fas fa-box&lt;/IconClass&gt;
+      &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
+      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;TabUrl /&gt;
+      &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
+      &lt;DefaultTab&gt;True&lt;/DefaultTab&gt;
+      &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
+      &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
+      &lt;Localization&gt;
+        &lt;nl-NL&gt;Verzendadres&lt;/nl-NL&gt;
+      &lt;/Localization&gt;
+      &lt;Modules /&gt;
+    &lt;/Tab&gt;
+    &lt;Tab&gt;
+      &lt;Title&gt;Bevestigen&lt;/Title&gt;
+      &lt;RefName /&gt;
+      &lt;CssClass /&gt;
+      &lt;EnableCondition /&gt;
+      &lt;ShowCondition /&gt;
+      &lt;IconUrl /&gt;
+      &lt;IconClass&gt;fas fa-check-square&lt;/IconClass&gt;
+      &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
+      &lt;ViewOrder&gt;1&lt;/ViewOrder&gt;
+      &lt;TabUrl /&gt;
+      &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
+      &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
+      &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
+      &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
+      &lt;Localization&gt;
+        &lt;nl-NL&gt;Bevestigen&lt;/nl-NL&gt;
+      &lt;/Localization&gt;
+      &lt;Modules /&gt;
+    &lt;/Tab&gt;
+    &lt;Tab&gt;
+      &lt;Title&gt;Betalen&lt;/Title&gt;
+      &lt;RefName /&gt;
+      &lt;CssClass /&gt;
+      &lt;EnableCondition /&gt;
+      &lt;ShowCondition /&gt;
+      &lt;IconUrl /&gt;
+      &lt;IconClass&gt;fas fa-euro-sign&lt;/IconClass&gt;
+      &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
+      &lt;ViewOrder&gt;2&lt;/ViewOrder&gt;
+      &lt;TabUrl /&gt;
+      &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
+      &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
+      &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
+      &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
+      &lt;Localization&gt;
+        &lt;nl-NL&gt;Betalen&lt;/nl-NL&gt;
+      &lt;/Localization&gt;
+      &lt;Modules /&gt;
+    &lt;/Tab&gt;
+  &lt;/Tabs&gt;
 &lt;/TabsPro&gt;]]></content>
 </module>
