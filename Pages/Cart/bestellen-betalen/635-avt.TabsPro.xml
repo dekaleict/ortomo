@@ -90,7 +90,14 @@
       &lt;Localization&gt;
         &lt;nl-NL&gt;Verzendadres&lt;/nl-NL&gt;
       &lt;/Localization&gt;
-      &lt;Modules /&gt;
+      &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;633&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;FormVerzendadres&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;2&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+      &lt;/Modules&gt;
     &lt;/Tab&gt;
     &lt;Tab&gt;
       &lt;Title&gt;Bevestigen&lt;/Title&gt;
