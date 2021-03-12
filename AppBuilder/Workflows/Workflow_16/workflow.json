@@ -182,13 +182,39 @@
           }
         ],
         "DiagramUID": "Activity_0bsekoh"
+      },
+      {
+        "Id": 134,
+        "ActionType": "ParseJsonIntoTokens",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 939,
+            "Name": "JsonString",
+            "Value": "[BRPostcodeAPI]",
+            "IsExpression": false,
+            "ActionId": 134,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 940,
+            "Name": "BaseTokenName",
+            "Value": "Adres",
+            "IsExpression": false,
+            "ActionId": 134,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0zgzcoa"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-12T15:22:29.6446623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-12T15:22:29.6446623+01:00",
+  "LastModifiedOn": "2021-03-12T15:24:03.9303842+01:00",
   "InputFields": [
     {
       "Id": 89,
@@ -210,6 +236,14 @@
       "Value": "[BRPostcodeAPI]",
       "Id": 91,
       "Name": "BRPostcodeAPI",
+      "InputType": "Text",
+      "WorkflowId": 16,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[Adres:street]",
+      "Id": 92,
+      "Name": "Straat",
       "InputType": "Text",
       "WorkflowId": 16,
       "IsDeleted": false
