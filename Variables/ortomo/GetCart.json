@@ -1,0 +1,20 @@
+{
+  "id": 37,
+  "namespace": {
+    "id": 11,
+    "name": "ortomo"
+  },
+  "name": "GetCart",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT *,\n\t  ,CONCAT ('€ ', REPLACE(CAST(TotalAmount as money),'.',',')) As TotalAmountOpgemaakt\nFROM app.ortomo_ShoppingCart\nWHERE Id = '[Testen:MijnTest.Shoppingcart]'",
+    "defaultColumn": "",
+    "columns": "TotalAmount\nTotalAmountOpgemaakt\nOrderId\nQuantity\nMijnTest\nPackSplitsen",
+    "connectionString": "",
+    "type": "db"
+  }
+}
