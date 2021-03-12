@@ -13,7 +13,7 @@
     <displaytitle>true</displaytitle>
     <enddate>0001-01-01T00:00:00</enddate>
     <footer>&lt;/div&gt;</footer>
-    <header>&lt;div style = "background-color: red"&gt;</header>
+    <header>&lt;div style = "background-color: #00AC80"&gt;</header>
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
     <iswebslice>false</iswebslice>
