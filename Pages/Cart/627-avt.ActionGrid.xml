@@ -1,12 +1,13 @@
 <module type="ActionGrid" version="05.11.15.00">
+    <contentKey />
     <moduleID>627</moduleID>
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
+    <containersrc>[G]Containers/minis/H5-Container.ascx</containersrc>
     <displayprint>false</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -24,12 +25,11 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>avt.ActionGrid</title>
+    <title>Avondpack</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>f753134e-8424-431c-98e0-a2c39157717f</uniqueId>
+    <uniqueId>2175fda1-ab80-46e3-a5ef-9cc845f59120</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
-    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
