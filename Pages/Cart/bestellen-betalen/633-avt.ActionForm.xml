@@ -180,7 +180,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;open-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[Profile:City]&quot;,&quot;AutocompleteUrl&quot;:&quot;&quot;,&quot;AutofillName&quot;:{&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;AutofillAttribute&quot;:{&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;Mask&quot;:&quot;9999aa&quot;,&quot;MaskOptions&quot;:&quot;&quot;,&quot;MaxLength&quot;:&quot;&quot;,&quot;DeferRequestBy&quot;:&quot;300&quot;,&quot;ConfirmationOfTextBox&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false},&quot;Readonly&quot;:false,&quot;SaveToReport&quot;:false,&quot;AllowTokens&quot;:&quot;&quot;,&quot;SecureInput&quot;:true}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[Profile:City]&quot;,&quot;AutocompleteUrl&quot;:&quot;&quot;,&quot;AutofillName&quot;:{&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;AutofillAttribute&quot;:{&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;Mask&quot;:&quot;&quot;,&quot;MaskOptions&quot;:&quot;&quot;,&quot;MaxLength&quot;:&quot;150&quot;,&quot;DeferRequestBy&quot;:&quot;300&quot;,&quot;ConfirmationOfTextBox&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false},&quot;Readonly&quot;:false,&quot;SaveToReport&quot;:false,&quot;AllowTokens&quot;:&quot;&quot;,&quot;SecureInput&quot;:true}&lt;/InputData&gt;
       &lt;AutocompleteUrl /&gt;
       &lt;AutofillName&gt;
         &lt;Value /&gt;
@@ -192,9 +192,9 @@
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/AutofillAttribute&gt;
-      &lt;Mask&gt;9999aa&lt;/Mask&gt;
+      &lt;Mask /&gt;
       &lt;MaskOptions /&gt;
-      &lt;MaxLength /&gt;
+      &lt;MaxLength&gt;150&lt;/MaxLength&gt;
       &lt;DeferRequestBy&gt;300&lt;/DeferRequestBy&gt;
       &lt;ConfirmationOfTextBox&gt;
         &lt;Expression /&gt;
