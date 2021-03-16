@@ -1,0 +1,90 @@
+{
+  "ApiId": "934a44af7033b2d07da7e8",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Mollie - Aanmaken Recurring Subscription",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "Daily",
+      "Parameters": {
+        "Time": "06:00:00 AM",
+        "DaysOfWeek": {
+          "MON": true,
+          "TUE": true,
+          "WED": true,
+          "THU": true,
+          "FRI": true
+        },
+        "OnMissfire": {
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "SkipIfRunning": true
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "LoadEntitiesFromSql",
+      "Description": "Ophalen recurrent payments",
+      "ExecutionType": "OnExecute",
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {
+        "ConnectionString": "",
+        "SqlQuery": "SELECT * FROM app.MollieSubscription\nWHERE EndDate is null and NextRecurringDate < GetDate()",
+        "BindTokens": "",
+        "EntityName": "Subscriptions",
+        "EntityProps": "",
+        "OnError": []
+      }
+    },
+    {
+      "ActionType": "ExecuteActionsOnEntityList",
+      "ExecutionType": "OnExecute",
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {
+        "EntityName": "Subscriptions",
+        "Filters": "",
+        "ContextBehavior": {
+          "Expression": "",
+          "Value": "",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "ActionList": [
+          {
+            "Id": -1,
+            "EventName": "click",
+            "Parameters": {
+              "InputHelpText": "",
+              "MollieCustomerId": "[Subscriptions:MollieCustomerId]",
+              "Currency": "EUR",
+              "Amount": "[Subscriptions:Amount]",
+              "Description": "je vitamine pack van ortomo.nl",
+              "RedirectURL": "",
+              "UserId": "[Subscriptions:UserId]",
+              "OutputHelpText": "",
+              "Debug": "",
+              "CheckOutURL": ""
+            },
+            "ActionType": "PlantAnApp.ExecuteWorkflow.5",
+            "Definition": {
+              "IsClientAction": false,
+              "Settings": {
+                "Group": "PlantAnApp Workflows",
+                "WorkflowId": "5"
+              }
+            }
+          }
+        ],
+        "ContinueOnError": "",
+        "OnError": []
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
