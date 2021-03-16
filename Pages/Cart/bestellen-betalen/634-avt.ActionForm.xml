@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.11.07.00">
+<module type="ActionForm" version="05.12.11.00">
     <contentKey />
     <moduleID>634</moduleID>
     <alignment />
@@ -29,7 +29,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.11.07.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.12.11.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[401]]&gt;&lt;/Id&gt;
@@ -172,8 +172,8 @@
   &lt;Settings&gt;
     &lt;Title&gt;Cart&lt;/Title&gt;
     &lt;CssName&gt;cart&lt;/CssName&gt;
-    &lt;Version&gt;5.11.0&lt;/Version&gt;
-    &lt;Build&gt;5.11.7&lt;/Build&gt;
+    &lt;Version&gt;5.12.0&lt;/Version&gt;
+    &lt;Build&gt;5.12.11&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate&gt;&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;&amp;lt;a href=&quot;[FormUrl]&quot;&amp;gt;Click here to change.&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/FrontEndTemplate&gt;
@@ -192,7 +192,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;634&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.11.7&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.12.11&lt;/ModuleVersion&gt;
     &lt;TabId&gt;120&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -235,9 +235,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;TabsProChangeTabAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-03-12T16:23:27.767&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-03-16T10:49:45.96&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;TabsProModuleID&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:635,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;TabId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:30,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;Refresh&quot;:&quot;&quot;,&quot;Params&quot;:&quot;&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;TabsProModuleID&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:635,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;TabId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:30,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;Refresh&quot;:true,&quot;Params&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;634&lt;/ModuleId&gt;
       &lt;FieldName&gt;Naarverzenden&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
