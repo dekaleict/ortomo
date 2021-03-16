@@ -4,7 +4,7 @@
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
     <containersrc />
@@ -25,11 +25,12 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>avt.TabsPro</title>
+    <title>bestellenverzendingbevestigingbetalen</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>8e21da8d-7b21-4282-aaef-68b07d4c41c3</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
