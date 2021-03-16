@@ -30,7 +30,6 @@
     <uniqueId>8e21da8d-7b21-4282-aaef-68b07d4c41c3</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
-    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
@@ -86,7 +85,7 @@
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;True&lt;/DefaultTab&gt;
-      &lt;Reevaluate&gt;True&lt;/Reevaluate&gt;
+      &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
       &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
       &lt;Localization&gt;
         &lt;nl-NL&gt;Je bestelling&lt;/nl-NL&gt;
@@ -113,7 +112,7 @@
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
-      &lt;Reevaluate&gt;True&lt;/Reevaluate&gt;
+      &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
       &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
       &lt;Localization&gt;
         &lt;nl-NL&gt;Verzending&lt;/nl-NL&gt;
@@ -140,7 +139,7 @@
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
-      &lt;Reevaluate&gt;True&lt;/Reevaluate&gt;
+      &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
       &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
       &lt;Localization&gt;
         &lt;nl-NL&gt;Bevestiging&lt;/nl-NL&gt;
@@ -167,7 +166,7 @@
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
-      &lt;Reevaluate&gt;True&lt;/Reevaluate&gt;
+      &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
       &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
       &lt;Localization&gt;
         &lt;nl-NL&gt;Betaling&lt;/nl-NL&gt;
