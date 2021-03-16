@@ -19,10 +19,20 @@
     <iswebslice>false</iswebslice>
     <modulepermissions>
         <permission>
+            <allowaccess>true</allowaccess>
+            <rolename>ContentManager</rolename>
+        </permission>
+        <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>ContentManager</rolename>
         </permission>
     </modulepermissions>
     <title>TopText Cart</title>
