@@ -119,7 +119,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;12&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;1&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -165,7 +165,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;24&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;2&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -204,7 +204,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;36&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;3&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -272,10 +272,10 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;48&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;4&lt;/RowIndex&gt;
-      &lt;ColSpan&gt;9&lt;/ColSpan&gt;
-      &lt;ColOffset&gt;3&lt;/ColOffset&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
   &lt;/Fields&gt;
   &lt;Settings&gt;
@@ -344,7 +344,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;TabsProChangeTabAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-03-16T10:41:49.353&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-03-16T10:43:26.91&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;TabsProModuleID&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:635,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;TabId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:32,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;Refresh&quot;:&quot;&quot;,&quot;Params&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;640&lt;/ModuleId&gt;
