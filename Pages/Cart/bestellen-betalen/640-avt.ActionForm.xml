@@ -171,9 +171,9 @@
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;TabsProChangeTabAndContinue&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-03-16T11:33:15&lt;/LastModified&gt;
+      &lt;ActionType&gt;TabsProChangeTab&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;LastModified&gt;2021-03-16T11:38:10.043&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;TabsProModuleID&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:635,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;TabId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:32,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;Refresh&quot;:&quot;&quot;,&quot;Params&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;640&lt;/ModuleId&gt;
