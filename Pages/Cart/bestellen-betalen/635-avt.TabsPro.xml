@@ -1,4 +1,4 @@
-<module type="avtTabsPro" version="05.11.00.00">
+<module type="avtTabsPro" version="05.12.04.00">
     <contentKey />
     <moduleID>635</moduleID>
     <alignment />
@@ -36,7 +36,7 @@
     <tabmodulesettings />
     <definition>avt.TabsPro</definition>
     <moduledefinition>avt.TabsPro</moduledefinition>
-    <content type="avtTabsPro" version="05.11.00.00"><![CDATA[&lt;TabsPro&gt;
+    <content type="avtTabsPro" version="05.12.04.00"><![CDATA[&lt;TabsPro&gt;
   &lt;Theme&gt;ui-lightness&lt;/Theme&gt;
   &lt;TabsLayout&gt;HorizontalTop&lt;/TabsLayout&gt;
   &lt;TabsFullWidth&gt;True&lt;/TabsFullWidth&gt;
@@ -94,7 +94,7 @@
         &lt;Module&gt;
           &lt;ModuleId&gt;634&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;Cart&lt;/ModuleTitle&gt;
-          &lt;ModuleOrder&gt;2&lt;/ModuleOrder&gt;
+          &lt;ModuleOrder&gt;3&lt;/ModuleOrder&gt;
           &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
         &lt;/Module&gt;
       &lt;/Modules&gt;
@@ -121,7 +121,7 @@
         &lt;Module&gt;
           &lt;ModuleId&gt;633&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;FormVerzendadres&lt;/ModuleTitle&gt;
-          &lt;ModuleOrder&gt;3&lt;/ModuleOrder&gt;
+          &lt;ModuleOrder&gt;4&lt;/ModuleOrder&gt;
           &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
         &lt;/Module&gt;
       &lt;/Modules&gt;
@@ -144,7 +144,14 @@
       &lt;Localization&gt;
         &lt;nl-NL&gt;Bevestiging&lt;/nl-NL&gt;
       &lt;/Localization&gt;
-      &lt;Modules /&gt;
+      &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;640&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;bevestiging bestelling&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;2&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+      &lt;/Modules&gt;
     &lt;/Tab&gt;
     &lt;Tab&gt;
       &lt;Title&gt;Betaling&lt;/Title&gt;
