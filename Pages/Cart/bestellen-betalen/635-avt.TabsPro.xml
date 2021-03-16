@@ -41,12 +41,12 @@
   &lt;TabsLayout&gt;Accordion&lt;/TabsLayout&gt;
   &lt;TabsFullWidth&gt;True&lt;/TabsFullWidth&gt;
   &lt;IsCollapsible&gt;False&lt;/IsCollapsible&gt;
-  &lt;AutoScroll&gt;False&lt;/AutoScroll&gt;
+  &lt;AutoScroll&gt;True&lt;/AutoScroll&gt;
   &lt;IsCollapsedInitially&gt;False&lt;/IsCollapsedInitially&gt;
   &lt;TabWidth&gt;200&lt;/TabWidth&gt;
   &lt;PanelHeight&gt;-1&lt;/PanelHeight&gt;
   &lt;TabsProRootClass /&gt;
-  &lt;LoadProgressively&gt;False&lt;/LoadProgressively&gt;
+  &lt;LoadProgressively&gt;True&lt;/LoadProgressively&gt;
   &lt;Effect&gt;fade&lt;/Effect&gt;
   &lt;PersistOnPostback&gt;True&lt;/PersistOnPostback&gt;
   &lt;PersistInUrl&gt;True&lt;/PersistInUrl&gt;
