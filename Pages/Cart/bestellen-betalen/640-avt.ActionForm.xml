@@ -40,7 +40,7 @@
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[422]]&gt;&lt;/Id&gt;
-      &lt;Title&gt;&lt;![CDATA[Ik ga akkoord met de voorwaarden die bij deze bestelling horen]]&gt;&lt;/Title&gt;
+      &lt;Title&gt;&lt;![CDATA[Voorwaarden:]]&gt;&lt;/Title&gt;
       &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
       &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
       &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
