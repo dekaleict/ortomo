@@ -38,7 +38,7 @@
     <moduledefinition>avt.TabsPro</moduledefinition>
     <content type="avtTabsPro" version="05.12.04.00"><![CDATA[&lt;TabsPro&gt;
   &lt;Theme&gt;ui-lightness&lt;/Theme&gt;
-  &lt;TabsLayout&gt;HorizontalTop&lt;/TabsLayout&gt;
+  &lt;TabsLayout&gt;Accordion&lt;/TabsLayout&gt;
   &lt;TabsFullWidth&gt;True&lt;/TabsFullWidth&gt;
   &lt;IsCollapsible&gt;False&lt;/IsCollapsible&gt;
   &lt;AutoScroll&gt;False&lt;/AutoScroll&gt;
