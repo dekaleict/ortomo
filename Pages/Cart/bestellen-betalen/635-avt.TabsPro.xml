@@ -84,7 +84,7 @@
       &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
-      &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
+      &lt;DefaultTab&gt;True&lt;/DefaultTab&gt;
       &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
       &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
       &lt;Localization&gt;
@@ -111,7 +111,7 @@
       &lt;ViewOrder&gt;1&lt;/ViewOrder&gt;
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
-      &lt;DefaultTab&gt;True&lt;/DefaultTab&gt;
+      &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
       &lt;Reevaluate&gt;False&lt;/Reevaluate&gt;
       &lt;UseModuleTitles&gt;False&lt;/UseModuleTitles&gt;
       &lt;Localization&gt;
