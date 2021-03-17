@@ -53,8 +53,8 @@
             "value": "[RecordId]"
           },
           {
-            "name": "PackSplitsen",
-            "value": "[Record:PackSplitsen]"
+            "name": "CartStatus",
+            "value": "[Record:CartStatus]"
           },
           {
             "name": "User",
@@ -75,6 +75,10 @@
           {
             "name": "MijnTest",
             "value": "[Record:MijnTest]"
+          },
+          {
+            "name": "PackSplitsen",
+            "value": "[Record:PackSplitsen]"
           }
         ],
         "Headers": []
