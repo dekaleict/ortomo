@@ -68,7 +68,7 @@
           {
             "Id": 968,
             "Name": "Amount",
-            "Value": "[ortomo:GetCart.TotalAmountMollie]",
+            "Value": "[ortomo:GetCart.TotalAmount]",
             "IsExpression": false,
             "ActionId": 141,
             "OrderIndex": 0
@@ -284,7 +284,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-17T20:11:59.0293936+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-17T20:11:59.0293936+01:00",
+  "LastModifiedOn": "2021-03-17T20:12:29.1313266+01:00",
   "InputFields": [
     {
       "Required": false,
