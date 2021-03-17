@@ -1,0 +1,316 @@
+{
+  "Id": 17,
+  "Name": "ortomo _ Shoppingcart Ga Naar Betalen",
+  "Description": "Wanneer de shoppingcart getoond wordt, en bezoeker klik op verzending-tab op 'ga naar betalen' dan wordt deze stroom afgehandeld",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 83,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 140,
+        "ActionType": "PlantAnApp.ExecuteWorkflow.3",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 962,
+            "Name": "InputHelpText",
+            "IsExpression": false,
+            "ActionId": 140,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 963,
+            "Name": "UserId",
+            "Value": "[Userid]",
+            "IsExpression": false,
+            "ActionId": 140,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 964,
+            "Name": "OutputHelpText",
+            "IsExpression": false,
+            "ActionId": 140,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 965,
+            "Name": "CustomerId",
+            "Value": "ReturnCustomerId",
+            "IsExpression": false,
+            "ActionId": 140,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0jaip18"
+      },
+      {
+        "Id": 141,
+        "ActionType": "PlantAnApp.ExecuteWorkflow.6",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 966,
+            "Name": "InputHelpText",
+            "IsExpression": false,
+            "ActionId": 141,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 967,
+            "Name": "UserId",
+            "Value": "[Userid]",
+            "IsExpression": false,
+            "ActionId": 141,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 968,
+            "Name": "Amount",
+            "Value": "[ortomo:GetCart.TotalAmountMollie]",
+            "IsExpression": false,
+            "ActionId": 141,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 969,
+            "Name": "StartDate",
+            "Value": "[PAST:DateTimeNowO]",
+            "IsExpression": false,
+            "ActionId": 141,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 970,
+            "Name": "MollieCustomerId",
+            "Value": "[ReturnCustomerId]",
+            "IsExpression": false,
+            "ActionId": 141,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 971,
+            "Name": "OutputHelpText",
+            "IsExpression": false,
+            "ActionId": 141,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 972,
+            "Name": "debug",
+            "IsExpression": false,
+            "ActionId": 141,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0ztztli"
+      },
+      {
+        "Id": 142,
+        "ActionType": "RunSql",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 973,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 142,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 974,
+            "Name": "QueryTimeout",
+            "IsExpression": false,
+            "ActionId": 142,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 975,
+            "Name": "SqlQuery",
+            "Value": "SELECT        COUNT(TransactionId) AS AantalGevondenTransactionIDs, MAX(TransactionId) AS TransactionId\nFROM            app.MollieTransaction\nWHERE [User] = @User and Status = 'paid' and SequenceType = 'first'",
+            "IsExpression": false,
+            "ActionId": 142,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 976,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[Userid]",
+                "name": "User"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 142,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 977,
+            "Name": "OutputTokenName",
+            "IsExpression": false,
+            "ActionId": 142,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 978,
+            "Name": "ExtractColumns",
+            "Value": [
+              {
+                "value": "AantalGevondenTransactionIDs",
+                "name": "AantalGevondenTransactionIDs"
+              },
+              {
+                "value": "TransactionId",
+                "name": "TransactionId"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 142,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 979,
+            "Name": "OnError",
+            "Value": {
+              "Id": 84,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 142,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 980,
+            "Name": "ShowErrors",
+            "IsExpression": false,
+            "ActionId": 142,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_143py3d"
+      },
+      {
+        "Id": 143,
+        "Condition": "[AantalGevondenTransactionIDs]=='0'",
+        "ActionType": "PlantAnApp.ExecuteWorkflow.4",
+        "OrderIndex": 3,
+        "ActionParameters": [
+          {
+            "Id": 981,
+            "Name": "InputHelpText",
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 982,
+            "Name": "Currency",
+            "Value": "EUR",
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 983,
+            "Name": "Amount",
+            "Value": "[ortomo:GetCart.TotalAmountMollie]",
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 984,
+            "Name": "Description",
+            "Value": "abonnement vitaminepack ortomo.nl",
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 985,
+            "Name": "RedirectURL",
+            "Value": "[Mollie:RedirectURL]",
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 986,
+            "Name": "UserId",
+            "Value": "[Userid]",
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 987,
+            "Name": "OutputHelpText",
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 988,
+            "Name": "CheckoutURL",
+            "Value": "CheckoutURL",
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 989,
+            "Name": "o_RedirectURL",
+            "Value": "ReturnRedirectURL",
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 990,
+            "Name": "BSMollieredirectUrl",
+            "Value": "BSMollieredirectUrl",
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_188an0g"
+      }
+    ]
+  },
+  "CreatedBy": "Hans Lenting",
+  "CreatedOn": "2021-03-17T20:11:59.0293936+01:00",
+  "LastModifiedBy": "Hans Lenting",
+  "LastModifiedOn": "2021-03-17T20:11:59.0293936+01:00",
+  "InputFields": [
+    {
+      "Required": false,
+      "Id": 98,
+      "Name": "Userid",
+      "InputType": "Integer",
+      "WorkflowId": 17,
+      "IsDeleted": false
+    }
+  ],
+  "OutputFields": [
+    {
+      "Value": "[CheckoutURL]",
+      "Id": 99,
+      "Name": "CheckoutURL",
+      "InputType": "Text",
+      "WorkflowId": 17,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[AantalGevondenTransactionIDs]",
+      "Id": 100,
+      "Name": "AantalGevondenTransactionIDs",
+      "InputType": "Text",
+      "WorkflowId": 17,
+      "IsDeleted": false
+    }
+  ]
+}
