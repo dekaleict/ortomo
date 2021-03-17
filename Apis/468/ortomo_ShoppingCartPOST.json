@@ -70,6 +70,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "CartStatus",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -83,7 +92,8 @@
         "Quantity": "[Quantity]",
         "TotalAmount": "[TotalAmount]",
         "MijnTest": "[MijnTest]",
-        "PackSplitsen": "[PackSplitsen]"
+        "PackSplitsen": "[PackSplitsen]",
+        "CartStatus": "[CartStatus]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -117,8 +127,8 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "PackSplitsen",
-            "value": "[CreatedRecord:PackSplitsen]"
+            "name": "CartStatus",
+            "value": "[CreatedRecord:CartStatus]"
           },
           {
             "name": "User",
@@ -139,6 +149,10 @@
           {
             "name": "MijnTest",
             "value": "[CreatedRecord:MijnTest]"
+          },
+          {
+            "name": "PackSplitsen",
+            "value": "[CreatedRecord:PackSplitsen]"
           }
         ],
         "Headers": [
