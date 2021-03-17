@@ -25,7 +25,7 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>avt.Action Form</title>
+    <title>Betalen</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>abbc1224-864a-4463-b108-29bbcf3a8d30</uniqueId>
     <visibility>Maximized</visibility>
@@ -39,8 +39,8 @@
     <content type="ActionForm" version="05.12.11.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields /&gt;
   &lt;Settings&gt;
-    &lt;Title&gt;avt.Action Form&lt;/Title&gt;
-    &lt;CssName&gt;avt-action-form&lt;/CssName&gt;
+    &lt;Title&gt;Betalen&lt;/Title&gt;
+    &lt;CssName&gt;betalen&lt;/CssName&gt;
     &lt;Version&gt;5.12.0&lt;/Version&gt;
     &lt;Build&gt;5.12.11&lt;/Build&gt;
     &lt;CultureCode&gt;nl&lt;/CultureCode&gt;
