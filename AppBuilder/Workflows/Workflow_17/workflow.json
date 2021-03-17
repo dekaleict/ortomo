@@ -68,7 +68,7 @@
           {
             "Id": 968,
             "Name": "Amount",
-            "Value": "[ortomo:GetCart.TotalAmount]",
+            "Value": "[ortomo:GetCart.Amount]",
             "IsExpression": false,
             "ActionId": 141,
             "OrderIndex": 0
@@ -216,7 +216,7 @@
           {
             "Id": 983,
             "Name": "Amount",
-            "Value": "[ortomo:GetCart.TotalAmount]",
+            "Value": "[ortomo:GetCart.Amount]",
             "IsExpression": false,
             "ActionId": 143,
             "OrderIndex": 0
@@ -284,7 +284,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-17T20:11:59.0293936+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-17T20:13:01.8534042+01:00",
+  "LastModifiedOn": "2021-03-17T20:14:12.3256106+01:00",
   "InputFields": [
     {
       "Required": false,
