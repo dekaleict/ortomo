@@ -230,7 +230,7 @@
     &lt;CssName&gt;betalen&lt;/CssName&gt;
     &lt;Version&gt;5.12.0&lt;/Version&gt;
     &lt;Build&gt;5.12.11&lt;/Build&gt;
-    &lt;CultureCode&gt;nl&lt;/CultureCode&gt;
+    &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate&gt;&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;&amp;lt;a href=&quot;[FormUrl]&quot;&amp;gt;Click here to change.&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/FrontEndTemplate&gt;
     &lt;HasCustomLayout&gt;False&lt;/HasCustomLayout&gt;
@@ -277,13 +277,13 @@
     &lt;Background /&gt;
     &lt;TextColor /&gt;
     &lt;Padding&gt;0&lt;/Padding&gt;
-    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn641&lt;/BaseId&gt;
     &lt;PopupName /&gt;
     &lt;LeftSidebarHtml /&gt;
     &lt;RightSidebarHtml /&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=nl-NL&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
+    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
@@ -292,7 +292,7 @@
       &lt;Description&gt;Aanmaken of Ophalen CustomerId&lt;/Description&gt;
       &lt;ActionType&gt;PlantAnApp.ExecuteWorkflow.3&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-03-17T16:15:39.683&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-03-17T16:18:54.957&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;InputHelpText&quot;:&quot;&quot;,&quot;UserId&quot;:&quot;[User:Userid]&quot;,&quot;OutputHelpText&quot;:&quot;&quot;,&quot;CustomerId&quot;:&quot;ReturnCustomerId&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;641&lt;/ModuleId&gt;
@@ -305,7 +305,7 @@
       &lt;Description&gt;Aanmaken nieuwe subscription&lt;/Description&gt;
       &lt;ActionType&gt;PlantAnApp.ExecuteWorkflow.6&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-03-17T16:15:39.683&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-03-17T16:18:54.957&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;InputHelpText&quot;:&quot;&quot;,&quot;UserId&quot;:&quot;[User:Userid]&quot;,&quot;Amount&quot;:&quot;[ortomo:GetCart.TotalAmountMollie]&quot;,&quot;StartDate&quot;:&quot;[PAST:DateTimeNowO]&quot;,&quot;MollieCustomerId&quot;:&quot;[ReturnCustomerId]&quot;,&quot;OutputHelpText&quot;:&quot;&quot;,&quot;debug&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;641&lt;/ModuleId&gt;
@@ -318,9 +318,9 @@
       &lt;Description&gt;Kijken of er al een first recurring payment aanwezig is&lt;/Description&gt;
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-03-17T16:15:39.683&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-03-17T16:18:54.957&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;SELECT TransactionId\nFROM app.MollieTransaction\nWHERE [User] = @User and Status = &#39;paid&#39; and SequenceType = &#39;first&#39;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[User:Userid]&quot;,&quot;name&quot;:&quot;User&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:[{&quot;value&quot;:&quot;TransactionId&quot;,&quot;name&quot;:&quot;TransactionId&quot;}],&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;SELECT COUNT(TransactionId) AS AantalGevondenTransactionIDs\nFROM app.MollieTransaction\nWHERE [User] = @User and Status = &#39;paid&#39; and SequenceType = &#39;first&#39;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[User:Userid]&quot;,&quot;name&quot;:&quot;User&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:[{&quot;value&quot;:&quot;TransactionId&quot;,&quot;name&quot;:&quot;AantalGevondenTransactionIDs&quot;}],&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
       &lt;ModuleId&gt;641&lt;/ModuleId&gt;
       &lt;EventName&gt;init&lt;/EventName&gt;
       &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
@@ -331,8 +331,8 @@
       &lt;Description&gt;Aanmaken first recurring payment&lt;/Description&gt;
       &lt;ActionType&gt;PlantAnApp.ExecuteWorkflow.4&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[TransactionId]==&#39;&#39;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-03-17T16:15:39.683&lt;/LastModified&gt;
+      &lt;Condition&gt;[TransactionId]==&#39;0&#39;&lt;/Condition&gt;
+      &lt;LastModified&gt;2021-03-17T16:18:54.957&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;InputHelpText&quot;:&quot;&quot;,&quot;Currency&quot;:&quot;EUR&quot;,&quot;Amount&quot;:&quot;[ortomo:GetCart.TotalAmountMollie]&quot;,&quot;Description&quot;:&quot;abonnement vitaminepack ortomo.nl&quot;,&quot;RedirectURL&quot;:&quot;http://kict015.dnncserver.nl&quot;,&quot;UserId&quot;:&quot;[User:Userid]&quot;,&quot;OutputHelpText&quot;:&quot;&quot;,&quot;CheckoutURL&quot;:&quot;[ReturnOutputURL]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;641&lt;/ModuleId&gt;
@@ -344,7 +344,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-03-17T16:15:39.683&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-03-17T16:18:54.957&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;value&quot;:&quot;[TransactionId]&quot;,&quot;name&quot;:&quot;TextBox1&quot;},{&quot;value&quot;:&quot;[ReturnCustomerId]&quot;,&quot;name&quot;:&quot;TextBox2&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;641&lt;/ModuleId&gt;
