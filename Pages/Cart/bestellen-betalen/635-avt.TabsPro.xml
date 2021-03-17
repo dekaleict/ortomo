@@ -150,7 +150,7 @@
       &lt;Title&gt;Betaling&lt;/Title&gt;
       &lt;RefName&gt;betaling&lt;/RefName&gt;
       &lt;CssClass /&gt;
-      &lt;EnableCondition&gt;[querystring:akkoord]==&#39;ja&#39;&lt;/EnableCondition&gt;
+      &lt;EnableCondition /&gt;
       &lt;ShowCondition /&gt;
       &lt;IconUrl /&gt;
       &lt;IconClass&gt;fas fa-euro-sign&lt;/IconClass&gt;
