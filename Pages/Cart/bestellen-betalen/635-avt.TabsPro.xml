@@ -144,14 +144,7 @@
       &lt;Localization&gt;
         &lt;nl-NL&gt;Bevestiging&lt;/nl-NL&gt;
       &lt;/Localization&gt;
-      &lt;Modules&gt;
-        &lt;Module&gt;
-          &lt;ModuleId&gt;640&lt;/ModuleId&gt;
-          &lt;ModuleTitle&gt;bevestiging bestelling&lt;/ModuleTitle&gt;
-          &lt;ModuleOrder&gt;2&lt;/ModuleOrder&gt;
-          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
-        &lt;/Module&gt;
-      &lt;/Modules&gt;
+      &lt;Modules /&gt;
     &lt;/Tab&gt;
     &lt;Tab&gt;
       &lt;Title&gt;Betaling&lt;/Title&gt;
@@ -171,7 +164,14 @@
       &lt;Localization&gt;
         &lt;nl-NL&gt;Betaling&lt;/nl-NL&gt;
       &lt;/Localization&gt;
-      &lt;Modules /&gt;
+      &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;641&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Betalen&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;2&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+      &lt;/Modules&gt;
     &lt;/Tab&gt;
   &lt;/Tabs&gt;
 &lt;/TabsPro&gt;]]></content>
