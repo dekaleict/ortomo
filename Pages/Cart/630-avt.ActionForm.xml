@@ -4,7 +4,7 @@
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
     <containersrc />
@@ -25,11 +25,12 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>Cart</title>
+    <title>MiniCart</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>32832023-8763-4bb0-a2b4-c62580181986</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings />
@@ -179,8 +180,8 @@
     &lt;/Field&gt;
   &lt;/Fields&gt;
   &lt;Settings&gt;
-    &lt;Title&gt;Cart&lt;/Title&gt;
-    &lt;CssName&gt;cart&lt;/CssName&gt;
+    &lt;Title&gt;MiniCart&lt;/Title&gt;
+    &lt;CssName&gt;minicart&lt;/CssName&gt;
     &lt;Version&gt;5.12.0&lt;/Version&gt;
     &lt;Build&gt;5.12.11&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
