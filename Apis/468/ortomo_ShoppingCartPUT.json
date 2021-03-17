@@ -90,6 +90,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "CartStatus",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -103,7 +112,8 @@
         "Quantity": "[Quantity]",
         "TotalAmount": "[TotalAmount]",
         "MijnTest": "[MijnTest]",
-        "PackSplitsen": "[PackSplitsen]"
+        "PackSplitsen": "[PackSplitsen]",
+        "CartStatus": "[CartStatus]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
