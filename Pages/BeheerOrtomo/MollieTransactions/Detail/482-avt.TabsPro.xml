@@ -1,4 +1,4 @@
-<module type="avtTabsPro" version="05.10.02.00">
+<module type="avtTabsPro" version="05.12.04.00">
     <contentKey />
     <moduleID>482</moduleID>
     <alignment />
@@ -7,7 +7,6 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -29,7 +28,7 @@
     <tabmodulesettings />
     <definition>avt.TabsPro</definition>
     <moduledefinition>avt.TabsPro</moduledefinition>
-    <content type="avtTabsPro" version="05.10.02.00"><![CDATA[&lt;TabsPro&gt;
+    <content type="avtTabsPro" version="05.12.04.00"><![CDATA[&lt;TabsPro&gt;
   &lt;Theme&gt;ui-lightness&lt;/Theme&gt;
   &lt;TabsLayout&gt;HorizontalTop&lt;/TabsLayout&gt;
   &lt;TabsFullWidth&gt;False&lt;/TabsFullWidth&gt;
@@ -84,6 +83,12 @@
         &lt;nl-NL&gt;Details&lt;/nl-NL&gt;
       &lt;/Localization&gt;
       &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;481&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;View Form&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
         &lt;Module&gt;
           &lt;ModuleId&gt;481&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;View Form&lt;/ModuleTitle&gt;
