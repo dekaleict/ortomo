@@ -13,7 +13,7 @@
   "src": {
     "sql": "SELECT *\n,CONCAT ('€ ', REPLACE(CAST(TotalAmount as money),'.',',')) As TotalAmountOpgemaakt\n,REPLACE(CAST(TotalAmount as money), ',', '.')As TotalAmountMollie\nFROM app.ortomo_ShoppingCart\nWHERE Id = '[Testen:MijnTest.Shoppingcart]'",
     "defaultColumn": "",
-    "columns": "TotalAmount\nTotalAmountOpgemaakt\nTotalAmountMollie\nOrderId\nQuantity\nMijnTest\nPackSplitsen\nCartStatus",
+    "columns": "TotalAmount\nTotalAmountOpgemaakt\nTotalAmountMollie\nOrderId\nQuantity\nMijnTest\nPackSplitsen\nCartStatus\nId",
     "connectionString": "",
     "type": "db"
   }
