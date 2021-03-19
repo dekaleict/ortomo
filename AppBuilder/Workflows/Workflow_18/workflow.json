@@ -6,12 +6,346 @@
   "ActionList": {
     "Id": 87,
     "EventName": "Event",
-    "Actions": []
+    "Actions": [
+      {
+        "Id": 147,
+        "ActionType": "GeneratePDF",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 1023,
+            "Name": "HtmlInputType",
+            "Value": "richtext",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1024,
+            "Name": "HTMLCode",
+            "Value": "<p>Dit is de orderfile</p>",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1025,
+            "Name": "PDFName",
+            "Value": "ORDER-CorrespondingShoppingCart",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1026,
+            "Name": "PathDestination",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1027,
+            "Name": "OrientationLandscape",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1028,
+            "Name": "PaperSize",
+            "Value": "A4",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1029,
+            "Name": "Grayscale",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1030,
+            "Name": "OtherOptions",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1031,
+            "Name": "StoreFileId",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1032,
+            "Name": "StoreAbsoluteURL",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1033,
+            "Name": "StoreRelativeURL",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1034,
+            "Name": "StorePhysicalPath",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1035,
+            "Name": "StoreLinkClick",
+            "Value": "OrderFileURL",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1036,
+            "Name": "ForceDownload",
+            "IsExpression": false,
+            "ActionId": 147,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0rnnptl"
+      },
+      {
+        "Id": 148,
+        "ActionType": "GeneratePDF",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 1037,
+            "Name": "HtmlInputType",
+            "Value": "richtext",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1038,
+            "Name": "HTMLCode",
+            "Value": "<p>Dit is de verzendfile</p>",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1039,
+            "Name": "PDFName",
+            "Value": "VERZEND-CorrespondingShoppingCart",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1040,
+            "Name": "PathDestination",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1041,
+            "Name": "OrientationLandscape",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1042,
+            "Name": "PaperSize",
+            "Value": "A4",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1043,
+            "Name": "Grayscale",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1044,
+            "Name": "OtherOptions",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1045,
+            "Name": "StoreFileId",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1046,
+            "Name": "StoreAbsoluteURL",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1047,
+            "Name": "StoreRelativeURL",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1048,
+            "Name": "StorePhysicalPath",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1049,
+            "Name": "StoreLinkClick",
+            "Value": "VerzendFileURL",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1050,
+            "Name": "ForceDownload",
+            "IsExpression": false,
+            "ActionId": 148,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_14bkmaf"
+      },
+      {
+        "Id": 149,
+        "ActionType": "GeneratePDF",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 1051,
+            "Name": "HtmlInputType",
+            "Value": "richtext",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1052,
+            "Name": "HTMLCode",
+            "Value": "<p>Dit is de labelfile</p>",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1053,
+            "Name": "PDFName",
+            "Value": "LABEL-CorrespondingShoppingCart",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1054,
+            "Name": "PathDestination",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1055,
+            "Name": "OrientationLandscape",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1056,
+            "Name": "PaperSize",
+            "Value": "A4",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1057,
+            "Name": "Grayscale",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1058,
+            "Name": "OtherOptions",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1059,
+            "Name": "StoreFileId",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1060,
+            "Name": "StoreAbsoluteURL",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1061,
+            "Name": "StoreRelativeURL",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1062,
+            "Name": "StorePhysicalPath",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1063,
+            "Name": "StoreLinkClick",
+            "Value": "LabelFileURL",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1064,
+            "Name": "ForceDownload",
+            "IsExpression": false,
+            "ActionId": 149,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1mx05as"
+      }
+    ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-19T14:49:26.1434345+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-19T14:51:31.6754557+01:00",
+  "LastModifiedOn": "2021-03-19T15:00:59.4489654+01:00",
   "InputFields": [
     {
       "Required": false,
@@ -54,5 +388,30 @@
       "IsDeleted": false
     }
   ],
-  "OutputFields": []
+  "OutputFields": [
+    {
+      "Value": "[OrderFileURL]",
+      "Id": 110,
+      "Name": "OrderFileURL",
+      "InputType": "Text",
+      "WorkflowId": 18,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[VerzendFileURL]",
+      "Id": 111,
+      "Name": "VerzendFileURL",
+      "InputType": "Text",
+      "WorkflowId": 18,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[LabelFileURL]",
+      "Id": 112,
+      "Name": "LabelFileURL",
+      "InputType": "Text",
+      "WorkflowId": 18,
+      "IsDeleted": false
+    }
+  ]
 }
