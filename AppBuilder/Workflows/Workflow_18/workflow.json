@@ -339,13 +339,117 @@
           }
         ],
         "DiagramUID": "Activity_1mx05as"
+      },
+      {
+        "Id": 150,
+        "ActionType": "SendMail",
+        "OrderIndex": 3,
+        "ActionParameters": [
+          {
+            "Id": 1065,
+            "Name": "From",
+            "Value": "hallo@ortomo.nl",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1066,
+            "Name": "To",
+            "Value": "hallo@ortomo.nl; info@dekaleict.nl",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1067,
+            "Name": "DetermineEmail",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1068,
+            "Name": "ToAllUsers",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1069,
+            "Name": "ReplyTo",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1070,
+            "Name": "Cc",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1071,
+            "Name": "Bcc",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1072,
+            "Name": "Subject",
+            "Value": "Order [CorrespondingShoppingCart]",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1073,
+            "Name": "Format",
+            "Value": "Html",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1074,
+            "Name": "Body",
+            "Value": "<p>OrderFileURL : [OrderFileURL]&nbsp;</p><p>VerzendFileURL: [VerzendFileURL]&nbsp;</p><p>LabelFileURL: [LabelFileURL]\n</p>",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1075,
+            "Name": "Headers",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1076,
+            "Name": "PortalFiles",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1077,
+            "Name": "FileToken1",
+            "IsExpression": false,
+            "ActionId": 150,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0fxzlsf"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-19T14:49:26.1434345+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-19T15:00:59.4489654+01:00",
+  "LastModifiedOn": "2021-03-19T15:03:50.5982227+01:00",
   "InputFields": [
     {
       "Required": false,
