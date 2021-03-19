@@ -8,9 +8,72 @@
     "EventName": "Event",
     "Actions": [
       {
+        "Id": 153,
+        "ActionType": "LoadEntitiesFromSql",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 1091,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 153,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1092,
+            "Name": "SqlQuery",
+            "Value": "SELECT        app.MollieTransaction.Id, app.MollieTransaction.CorrespondingCart, app.MollieTransaction.TransactionId, app.ortomo_ShoppingCartDetail.Product, app.ortomo_ShoppingCartDetail.Quantity, \n                         app.ortomo_ShoppingCartDetail.Packnaam, app.ortomo_ShoppingCart.CartStatus, app.ortomo_ShoppingCart.Quantity AS TotaalQuantityInOrder, app.ortomo_Preparaat.Preparaat,app.ortomo_Preparaat.ExternArtikelnummer,\n                         CONCAT (app.ortomo_ShoppingCartDetail.Packnaam, ';', app.ortomo_Preparaat.ExternArtikelnummer, ';', app.ortomo_ShoppingCartDetail.Quantity  ) as OrderRegel\nFROM            app.ortomo_ShoppingCart INNER JOIN\n                         app.ortomo_ShoppingCartDetail ON app.ortomo_ShoppingCart.Id = app.ortomo_ShoppingCartDetail.ShoppingCart INNER JOIN\n                         app.MollieTransaction ON app.ortomo_ShoppingCart.Id = app.MollieTransaction.CorrespondingCart INNER JOIN\n                         app.ortomo_Preparaat ON app.ortomo_ShoppingCartDetail.Product = app.ortomo_Preparaat.Id\nWHERE app.MollieTransaction.CorrespondingCart=@ShoppingCart\nORDER BY app.ortomo_ShoppingCartDetail.Packnaam\n",
+            "IsExpression": false,
+            "ActionId": 153,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1093,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[CorrespondingShoppingCart]",
+                "name": "ShoppingCart"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 153,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1094,
+            "Name": "EntityName",
+            "Value": "ShoppingCartDetails",
+            "IsExpression": false,
+            "ActionId": 153,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1095,
+            "Name": "EntityProps",
+            "IsExpression": false,
+            "ActionId": 153,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1096,
+            "Name": "OnError",
+            "Value": {
+              "Id": 89,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 153,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0mxu2zu"
+      },
+      {
         "Id": 147,
         "ActionType": "GeneratePDF",
-        "OrderIndex": 0,
+        "OrderIndex": 1,
         "ActionParameters": [
           {
             "Id": 1023,
@@ -121,7 +184,7 @@
       {
         "Id": 148,
         "ActionType": "GeneratePDF",
-        "OrderIndex": 1,
+        "OrderIndex": 2,
         "ActionParameters": [
           {
             "Id": 1037,
@@ -232,7 +295,7 @@
       {
         "Id": 149,
         "ActionType": "GeneratePDF",
-        "OrderIndex": 2,
+        "OrderIndex": 3,
         "ActionParameters": [
           {
             "Id": 1051,
@@ -343,7 +406,7 @@
       {
         "Id": 150,
         "ActionType": "SendMail",
-        "OrderIndex": 3,
+        "OrderIndex": 4,
         "ActionParameters": [
           {
             "Id": 1065,
@@ -447,7 +510,7 @@
       {
         "Id": 152,
         "ActionType": "RunSql",
-        "OrderIndex": 4,
+        "OrderIndex": 5,
         "ActionParameters": [
           {
             "Id": 1083,
@@ -537,7 +600,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-19T14:49:26.1434345+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-19T18:59:48.8300272+01:00",
+  "LastModifiedOn": "2021-03-19T19:13:20.5890302+01:00",
   "InputFields": [
     {
       "Required": false,
