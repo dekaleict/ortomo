@@ -126,6 +126,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "OrderAfgehandeld",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -143,7 +152,8 @@
         "RedirectURL": "[RedirectURL]",
         "ExpiresAt": "[ExpiresAt]",
         "SequenceType": "[SequenceType]",
-        "CorrespondingCart": "[CorrespondingCart]"
+        "CorrespondingCart": "[CorrespondingCart]",
+        "OrderAfgehandeld": "[OrderAfgehandeld]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
