@@ -11,7 +11,48 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-19T14:49:26.1434345+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-19T14:49:26.1434345+01:00",
-  "InputFields": [],
+  "LastModifiedOn": "2021-03-19T14:51:31.6754557+01:00",
+  "InputFields": [
+    {
+      "Required": false,
+      "Id": 105,
+      "Name": "Userid",
+      "InputType": "Integer",
+      "WorkflowId": 18,
+      "IsDeleted": false
+    },
+    {
+      "Required": false,
+      "Id": 106,
+      "Name": "Status",
+      "InputType": "Text",
+      "WorkflowId": 18,
+      "IsDeleted": false
+    },
+    {
+      "Required": false,
+      "Id": 107,
+      "Name": "TransactionId",
+      "InputType": "Text",
+      "WorkflowId": 18,
+      "IsDeleted": false
+    },
+    {
+      "Required": false,
+      "Id": 108,
+      "Name": "CustomerId",
+      "InputType": "Text",
+      "WorkflowId": 18,
+      "IsDeleted": false
+    },
+    {
+      "Required": false,
+      "Id": 109,
+      "Name": "CorrespondingShoppingCart",
+      "InputType": "Text",
+      "WorkflowId": 18,
+      "IsDeleted": false
+    }
+  ],
   "OutputFields": []
 }
