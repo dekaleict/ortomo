@@ -443,13 +443,53 @@
           }
         ],
         "DiagramUID": "Activity_0fxzlsf"
+      },
+      {
+        "Id": 151,
+        "ActionType": "PlantAnApp.PartialUpdateEntity.0.MollieTransaction",
+        "OrderIndex": 4,
+        "ActionParameters": [
+          {
+            "Id": 1078,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 151,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1079,
+            "Name": "RecordId",
+            "Value": "[TransactionId]",
+            "IsExpression": false,
+            "ActionId": 151,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1080,
+            "Name": "UpdatedProperties",
+            "Value": [
+              {
+                "PropertyName": "OrderAfgehandeld",
+                "PropertyValue": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "1"
+                }
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 151,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0qhgdho"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-19T14:49:26.1434345+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-19T15:03:50.5982227+01:00",
+  "LastModifiedOn": "2021-03-19T17:12:56.1889407+01:00",
   "InputFields": [
     {
       "Required": false,
