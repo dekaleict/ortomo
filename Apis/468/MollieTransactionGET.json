@@ -53,8 +53,16 @@
             "value": "[RecordId]"
           },
           {
-            "name": "OrderAfgehandeld",
-            "value": "[Record:OrderAfgehandeld]"
+            "name": "PDF_Order",
+            "value": "[Record:PDF_Order]"
+          },
+          {
+            "name": "PDF_Verzend",
+            "value": "[Record:PDF_Verzend]"
+          },
+          {
+            "name": "PDF_Label",
+            "value": "[Record:PDF_Label]"
           },
           {
             "name": "TransactionId",
@@ -95,6 +103,10 @@
           {
             "name": "CorrespondingCart",
             "value": "[Record:CorrespondingCart]"
+          },
+          {
+            "name": "OrderAfgehandeld",
+            "value": "[Record:OrderAfgehandeld]"
           }
         ],
         "Headers": []
