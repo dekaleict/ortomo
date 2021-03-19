@@ -135,6 +135,33 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "PDF_Order",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 12,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PDF_Verzend",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PDF_Label",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -153,7 +180,10 @@
         "ExpiresAt": "[ExpiresAt]",
         "SequenceType": "[SequenceType]",
         "CorrespondingCart": "[CorrespondingCart]",
-        "OrderAfgehandeld": "[OrderAfgehandeld]"
+        "OrderAfgehandeld": "[OrderAfgehandeld]",
+        "PDF_Order": "[PDF_Order]",
+        "PDF_Verzend": "[PDF_Verzend]",
+        "PDF_Label": "[PDF_Label]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
