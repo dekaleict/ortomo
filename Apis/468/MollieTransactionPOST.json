@@ -115,6 +115,33 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "PDF_Order",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PDF_Verzend",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 12,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PDF_Label",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -133,7 +160,10 @@
         "ExpiresAt": "[ExpiresAt]",
         "SequenceType": "[SequenceType]",
         "CorrespondingCart": "[CorrespondingCart]",
-        "OrderAfgehandeld": "[OrderAfgehandeld]"
+        "OrderAfgehandeld": "[OrderAfgehandeld]",
+        "PDF_Order": "[PDF_Order]",
+        "PDF_Verzend": "[PDF_Verzend]",
+        "PDF_Label": "[PDF_Label]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -167,8 +197,16 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "OrderAfgehandeld",
-            "value": "[CreatedRecord:OrderAfgehandeld]"
+            "name": "PDF_Order",
+            "value": "[CreatedRecord:PDF_Order]"
+          },
+          {
+            "name": "PDF_Verzend",
+            "value": "[CreatedRecord:PDF_Verzend]"
+          },
+          {
+            "name": "PDF_Label",
+            "value": "[CreatedRecord:PDF_Label]"
           },
           {
             "name": "TransactionId",
@@ -209,6 +247,10 @@
           {
             "name": "CorrespondingCart",
             "value": "[CreatedRecord:CorrespondingCart]"
+          },
+          {
+            "name": "OrderAfgehandeld",
+            "value": "[CreatedRecord:OrderAfgehandeld]"
           }
         ],
         "Headers": [
