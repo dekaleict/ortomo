@@ -53,8 +53,8 @@
             "value": "[RecordId]"
           },
           {
-            "name": "CorrespondingCart",
-            "value": "[Record:CorrespondingCart]"
+            "name": "OrderAfgehandeld",
+            "value": "[Record:OrderAfgehandeld]"
           },
           {
             "name": "TransactionId",
@@ -91,6 +91,10 @@
           {
             "name": "SequenceType",
             "value": "[Record:SequenceType]"
+          },
+          {
+            "name": "CorrespondingCart",
+            "value": "[Record:CorrespondingCart]"
           }
         ],
         "Headers": []
