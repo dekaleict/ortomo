@@ -106,6 +106,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "OrderAfgehandeld",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -123,7 +132,8 @@
         "RedirectURL": "[RedirectURL]",
         "ExpiresAt": "[ExpiresAt]",
         "SequenceType": "[SequenceType]",
-        "CorrespondingCart": "[CorrespondingCart]"
+        "CorrespondingCart": "[CorrespondingCart]",
+        "OrderAfgehandeld": "[OrderAfgehandeld]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -157,8 +167,8 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "CorrespondingCart",
-            "value": "[CreatedRecord:CorrespondingCart]"
+            "name": "OrderAfgehandeld",
+            "value": "[CreatedRecord:OrderAfgehandeld]"
           },
           {
             "name": "TransactionId",
@@ -195,6 +205,10 @@
           {
             "name": "SequenceType",
             "value": "[CreatedRecord:SequenceType]"
+          },
+          {
+            "name": "CorrespondingCart",
+            "value": "[CreatedRecord:CorrespondingCart]"
           }
         ],
         "Headers": [
