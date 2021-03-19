@@ -1,0 +1,17 @@
+{
+  "Id": 18,
+  "Name": "Mollie - start verwerking na ontvangst betaling",
+  "Description": "Nadat Mollie een betaling heeft verwerkt en via de workflow Mollie- Handle Response heeft verwerkt zal deze workflow de verdere afhandeling verzorgen",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 87,
+    "EventName": "Event",
+    "Actions": []
+  },
+  "CreatedBy": "Hans Lenting",
+  "CreatedOn": "2021-03-19T14:49:26.1434345+01:00",
+  "LastModifiedBy": "Hans Lenting",
+  "LastModifiedOn": "2021-03-19T14:49:26.1434345+01:00",
+  "InputFields": [],
+  "OutputFields": []
+}
