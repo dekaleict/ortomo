@@ -466,7 +466,7 @@
           {
             "Id": 1085,
             "Name": "SqlQuery",
-            "Value": "UPDATE app.MollieTransaction\nSET OrderAfgehandeld=1\nWHERE TransactionId = @TransactionId",
+            "Value": "UPDATE app.MollieTransaction\nSET OrderAfgehandeld=1,\nPDF_Label=@Label,\nPDF_Order=@Order,\nPDF_Verzend=@Verzend\nWHERE TransactionId = @TransactionId",
             "IsExpression": false,
             "ActionId": 152,
             "OrderIndex": 0
@@ -478,6 +478,18 @@
               {
                 "value": "[TransactionId]",
                 "name": "TransactionId"
+              },
+              {
+                "value": "[LabelFileURL]",
+                "name": "Label"
+              },
+              {
+                "value": "[OrderFileURL]",
+                "name": "Order"
+              },
+              {
+                "value": "[VerzendFileURL]",
+                "name": "Verzend"
               }
             ],
             "IsExpression": false,
@@ -525,7 +537,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-19T14:49:26.1434345+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-19T17:14:40.7058858+01:00",
+  "LastModifiedOn": "2021-03-19T17:18:46.7745605+01:00",
   "InputFields": [
     {
       "Required": false,
