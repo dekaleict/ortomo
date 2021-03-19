@@ -79,6 +79,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "CorrespondingCart",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -93,7 +102,8 @@
         "Amount": "[Amount]",
         "RecurringDays": "[RecurringDays]",
         "MollieCustomerId": "[MollieCustomerId]",
-        "NextRecurringDate": "[NextRecurringDate]"
+        "NextRecurringDate": "[NextRecurringDate]",
+        "CorrespondingCart": "[CorrespondingCart]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -125,6 +135,10 @@
           {
             "name": "Id",
             "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "CorrespondingCart",
+            "value": "[CreatedRecord:CorrespondingCart]"
           },
           {
             "name": "UserId",
