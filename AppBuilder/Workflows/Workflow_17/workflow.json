@@ -46,70 +46,9 @@
         "DiagramUID": "Activity_0jaip18"
       },
       {
-        "Id": 141,
-        "ActionType": "PlantAnApp.ExecuteWorkflow.6",
-        "OrderIndex": 1,
-        "ActionParameters": [
-          {
-            "Id": 966,
-            "Name": "InputHelpText",
-            "IsExpression": false,
-            "ActionId": 141,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 967,
-            "Name": "UserId",
-            "Value": "[Userid]",
-            "IsExpression": false,
-            "ActionId": 141,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 968,
-            "Name": "Amount",
-            "Value": "[ortomo:GetCart.Amount]",
-            "IsExpression": false,
-            "ActionId": 141,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 969,
-            "Name": "StartDate",
-            "Value": "[PAST:DateTimeNowO]",
-            "IsExpression": false,
-            "ActionId": 141,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 970,
-            "Name": "MollieCustomerId",
-            "Value": "[ReturnCustomerId]",
-            "IsExpression": false,
-            "ActionId": 141,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 971,
-            "Name": "OutputHelpText",
-            "IsExpression": false,
-            "ActionId": 141,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 972,
-            "Name": "debug",
-            "IsExpression": false,
-            "ActionId": 141,
-            "OrderIndex": 0
-          }
-        ],
-        "DiagramUID": "Activity_0ztztli"
-      },
-      {
         "Id": 142,
         "ActionType": "RunSql",
-        "OrderIndex": 2,
+        "OrderIndex": 1,
         "ActionParameters": [
           {
             "Id": 973,
@@ -196,7 +135,7 @@
         "Id": 143,
         "Condition": "[AantalGevondenTransactionIDs]=='0'",
         "ActionType": "PlantAnApp.ExecuteWorkflow.4",
-        "OrderIndex": 3,
+        "OrderIndex": 2,
         "ActionParameters": [
           {
             "Id": 981,
@@ -284,7 +223,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-17T20:11:59.0293936+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-17T20:14:12.3256106+01:00",
+  "LastModifiedOn": "2021-03-19T09:20:27.6802139+01:00",
   "InputFields": [
     {
       "Required": false,
