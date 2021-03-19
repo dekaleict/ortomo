@@ -65,7 +65,7 @@
               "Currency": "EUR",
               "Amount": "[Subscriptions:Amount]",
               "Description": "je vitamine pack van ortomo.nl",
-              "RedirectURL": "",
+              "RedirectURL": "[Mollie:RedirectURL]",
               "UserId": "[Subscriptions:UserId]",
               "OutputHelpText": "",
               "Debug": "",
