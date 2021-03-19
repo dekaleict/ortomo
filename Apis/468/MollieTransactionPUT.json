@@ -117,6 +117,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "CorrespondingCart",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -133,7 +142,8 @@
         "Description": "[Description]",
         "RedirectURL": "[RedirectURL]",
         "ExpiresAt": "[ExpiresAt]",
-        "SequenceType": "[SequenceType]"
+        "SequenceType": "[SequenceType]",
+        "CorrespondingCart": "[CorrespondingCart]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
