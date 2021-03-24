@@ -234,7 +234,7 @@
       },
       {
         "Id": 113,
-        "Description": "ALS leeftijd is > 50 en alcoholconsumptie (vraagID 47) heeft antwoordID 126 DAN adviseer geen Vitamine B6 5000 score erbij",
+        "Description": "ALS leeftijd is > 50 en alcoholconsumptie (vraagID 47) heeft antwoordID 126 DAN adviseer Vitamine B6 5000 score erbij",
         "ActionType": "RunSql",
         "OrderIndex": 3,
         "ActionParameters": [
@@ -687,7 +687,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-24T13:58:29.0425305+01:00",
+  "LastModifiedOn": "2021-03-24T14:05:41.6529698+01:00",
   "InputFields": [
     {
       "Required": false,
