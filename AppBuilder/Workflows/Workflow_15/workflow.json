@@ -18,16 +18,14 @@
             "Name": "ConnectionString",
             "IsExpression": false,
             "ActionId": 127,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 873,
             "Name": "QueryTimeout",
             "IsExpression": false,
             "ActionId": 127,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 874,
@@ -35,8 +33,7 @@
             "Value": "/****** Als resultaat TRUE is , dan moet de cart bijgewerkt worden  ******/\nSELECT CASE WHEN Count(q1.Product) > 2 then 'true' else 'false' end as Resultaat FROM\n(\nSELECT DISTINCT app.ortomo_ShoppingCartDetail.Product\nFROM            app.ortomo_ShoppingCartDetail \nWHERE app.ortomo_ShoppingCartDetail.Product IN (4, 3, 38)\n  AND app.ortomo_ShoppingCartDetail.ShoppingCart = @ShoppingCart\n) Q1",
             "IsExpression": false,
             "ActionId": 127,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 875,
@@ -44,22 +41,19 @@
             "Value": [
               {
                 "value": "[ShoppingCart]",
-                "$$hashKey": "object:52",
                 "name": "ShoppingCart"
               }
             ],
             "IsExpression": false,
             "ActionId": 127,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 876,
             "Name": "OutputTokenName",
             "IsExpression": false,
             "ActionId": 127,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 877,
@@ -67,14 +61,12 @@
             "Value": [
               {
                 "value": "[Check1]",
-                "$$hashKey": "object:58",
                 "name": "Resultaat"
               }
             ],
             "IsExpression": false,
             "ActionId": 127,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 878,
@@ -86,16 +78,14 @@
             },
             "IsExpression": false,
             "ActionId": 127,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 879,
             "Name": "ShowErrors",
             "IsExpression": false,
             "ActionId": 127,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           }
         ],
         "DiagramUID": "Activity_0kvkgsh"
@@ -111,16 +101,14 @@
             "Name": "ConnectionString",
             "IsExpression": false,
             "ActionId": 128,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 881,
             "Name": "QueryTimeout",
             "IsExpression": false,
             "ActionId": 128,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 882,
@@ -128,8 +116,7 @@
             "Value": "UPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 0\nWHERE ShoppingCart=@ShoppingCart and (Product = '3' or Product = '38')",
             "IsExpression": false,
             "ActionId": 128,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 883,
@@ -137,30 +124,26 @@
             "Value": [
               {
                 "value": "[ShoppingCart]",
-                "$$hashKey": "object:52",
                 "name": "ShoppingCart"
               }
             ],
             "IsExpression": false,
             "ActionId": 128,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 884,
             "Name": "OutputTokenName",
             "IsExpression": false,
             "ActionId": 128,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 885,
             "Name": "ExtractColumns",
             "IsExpression": false,
             "ActionId": 128,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 886,
@@ -172,23 +155,21 @@
             },
             "IsExpression": false,
             "ActionId": 128,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 887,
             "Name": "ShowErrors",
             "IsExpression": false,
             "ActionId": 128,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           }
         ],
         "DiagramUID": "Activity_1qc8rp8"
       },
       {
         "Id": 129,
-        "Description": "ALS top10 heeft IJZER en CURCUMA, dan DESELECT CURCUMA",
+        "Description": "ALS top10 heeft IJZER en CURCUMA, dan DESELECT IJZER",
         "ActionType": "RunSql",
         "OrderIndex": 2,
         "ActionParameters": [
@@ -197,16 +178,14 @@
             "Name": "ConnectionString",
             "IsExpression": false,
             "ActionId": 129,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 889,
             "Name": "QueryTimeout",
             "IsExpression": false,
             "ActionId": 129,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 890,
@@ -214,8 +193,7 @@
             "Value": "/****** Als resultaat TRUE is , dan moet de cart bijgewerkt worden  ******/\nSELECT CASE WHEN Count(q1.Product) > 1 then 'true' else 'false' end as Resultaat FROM\n(\nSELECT DISTINCT app.ortomo_ShoppingCartDetail.Product\nFROM            app.ortomo_ShoppingCartDetail \nWHERE app.ortomo_ShoppingCartDetail.Product IN (15, 11)\n  AND app.ortomo_ShoppingCartDetail.ShoppingCart = @ShoppingCart\n) Q1",
             "IsExpression": false,
             "ActionId": 129,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 891,
@@ -223,22 +201,19 @@
             "Value": [
               {
                 "value": "[ShoppingCart]",
-                "$$hashKey": "object:52",
                 "name": "ShoppingCart"
               }
             ],
             "IsExpression": false,
             "ActionId": 129,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 892,
             "Name": "OutputTokenName",
             "IsExpression": false,
             "ActionId": 129,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 893,
@@ -246,14 +221,12 @@
             "Value": [
               {
                 "value": "[Check2]",
-                "$$hashKey": "object:58",
                 "name": "Resultaat"
               }
             ],
             "IsExpression": false,
             "ActionId": 129,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 894,
@@ -265,16 +238,14 @@
             },
             "IsExpression": false,
             "ActionId": 129,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 895,
             "Name": "ShowErrors",
             "IsExpression": false,
             "ActionId": 129,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           }
         ],
         "DiagramUID": "Activity_00nxb82"
@@ -290,25 +261,22 @@
             "Name": "ConnectionString",
             "IsExpression": false,
             "ActionId": 130,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 897,
             "Name": "QueryTimeout",
             "IsExpression": false,
             "ActionId": 130,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 898,
             "Name": "SqlQuery",
-            "Value": "UPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 0\nWHERE ShoppingCart=@ShoppingCart and (Product = '11')",
+            "Value": "UPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 0\nWHERE ShoppingCart=@ShoppingCart and (Product = '15')",
             "IsExpression": false,
             "ActionId": 130,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 899,
@@ -316,30 +284,26 @@
             "Value": [
               {
                 "value": "[ShoppingCart]",
-                "$$hashKey": "object:52",
                 "name": "ShoppingCart"
               }
             ],
             "IsExpression": false,
             "ActionId": 130,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 900,
             "Name": "OutputTokenName",
             "IsExpression": false,
             "ActionId": 130,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 901,
             "Name": "ExtractColumns",
             "IsExpression": false,
             "ActionId": 130,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 902,
@@ -351,16 +315,14 @@
             },
             "IsExpression": false,
             "ActionId": 130,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 903,
             "Name": "ShowErrors",
             "IsExpression": false,
             "ActionId": 130,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           }
         ],
         "DiagramUID": "Activity_0mc82zw"
@@ -376,16 +338,14 @@
             "Name": "ConnectionString",
             "IsExpression": false,
             "ActionId": 131,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 905,
             "Name": "QueryTimeout",
             "IsExpression": false,
             "ActionId": 131,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 906,
@@ -393,8 +353,7 @@
             "Value": "/****** Als resultaat TRUE is , dan moet de cart bijgewerkt worden  ******/\nSELECT CASE WHEN Count(q1.Product) > 1 then 'true' else 'false' end as Resultaat FROM\n(\nSELECT DISTINCT app.ortomo_ShoppingCartDetail.Product\nFROM            app.ortomo_ShoppingCartDetail \nWHERE app.ortomo_ShoppingCartDetail.Product IN (2, 36)\n  AND app.ortomo_ShoppingCartDetail.ShoppingCart = @ShoppingCart\n) Q1",
             "IsExpression": false,
             "ActionId": 131,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 907,
@@ -402,22 +361,19 @@
             "Value": [
               {
                 "value": "[ShoppingCart]",
-                "$$hashKey": "object:52",
                 "name": "ShoppingCart"
               }
             ],
             "IsExpression": false,
             "ActionId": 131,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 908,
             "Name": "OutputTokenName",
             "IsExpression": false,
             "ActionId": 131,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 909,
@@ -425,14 +381,12 @@
             "Value": [
               {
                 "value": "[Check3]",
-                "$$hashKey": "object:58",
                 "name": "Resultaat"
               }
             ],
             "IsExpression": false,
             "ActionId": 131,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 910,
@@ -444,16 +398,14 @@
             },
             "IsExpression": false,
             "ActionId": 131,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 911,
             "Name": "ShowErrors",
             "IsExpression": false,
             "ActionId": 131,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           }
         ],
         "DiagramUID": "Activity_1acoplh"
@@ -469,16 +421,14 @@
             "Name": "ConnectionString",
             "IsExpression": false,
             "ActionId": 132,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 913,
             "Name": "QueryTimeout",
             "IsExpression": false,
             "ActionId": 132,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 914,
@@ -486,8 +436,7 @@
             "Value": "UPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 0\nWHERE ShoppingCart=@ShoppingCart and (Product = '36')",
             "IsExpression": false,
             "ActionId": 132,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 915,
@@ -495,30 +444,26 @@
             "Value": [
               {
                 "value": "[ShoppingCart]",
-                "$$hashKey": "object:52",
                 "name": "ShoppingCart"
               }
             ],
             "IsExpression": false,
             "ActionId": 132,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 916,
             "Name": "OutputTokenName",
             "IsExpression": false,
             "ActionId": 132,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 917,
             "Name": "ExtractColumns",
             "IsExpression": false,
             "ActionId": 132,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 918,
@@ -530,16 +475,14 @@
             },
             "IsExpression": false,
             "ActionId": 132,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           },
           {
             "Id": 919,
             "Name": "ShowErrors",
             "IsExpression": false,
             "ActionId": 132,
-            "OrderIndex": 0,
-            "SubParameters": []
+            "OrderIndex": 0
           }
         ],
         "DiagramUID": "Activity_14qtnk4"
@@ -549,9 +492,10 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-09T21:21:25.9785255+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-09T21:50:51.413239+01:00",
+  "LastModifiedOn": "2021-03-24T14:02:58.2618149+01:00",
   "InputFields": [
     {
+      "Required": false,
       "Id": 83,
       "Name": "ShoppingCart",
       "InputType": "Integer",
@@ -559,6 +503,7 @@
       "IsDeleted": false
     },
     {
+      "Required": false,
       "Id": 84,
       "Name": "MijnTest",
       "InputType": "Integer",
