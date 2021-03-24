@@ -113,7 +113,7 @@
           {
             "Id": 882,
             "Name": "SqlQuery",
-            "Value": "UPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 0\nWHERE ShoppingCart=@ShoppingCart and (Product = '3' or Product = '38');\n\nUPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 1\nWHERE ShoppingCart=@ShoppingCart and (Product = '4')",
+            "Value": "DELETE FROM app.ortomo_ShoppingCartDetail\nWHERE ShoppingCart=@ShoppingCart and (Product = '3' or Product = '38');\n\nUPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 1\nWHERE ShoppingCart=@ShoppingCart and (Product = '4')",
             "IsExpression": false,
             "ActionId": 128,
             "OrderIndex": 0
@@ -273,7 +273,7 @@
           {
             "Id": 898,
             "Name": "SqlQuery",
-            "Value": "UPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 0\nWHERE ShoppingCart=@ShoppingCart and (Product = '15')",
+            "Value": "DELETE FROM app.ortomo_ShoppingCartDetail\nWHERE ShoppingCart=@ShoppingCart and (Product = '15')",
             "IsExpression": false,
             "ActionId": 130,
             "OrderIndex": 0
@@ -433,7 +433,7 @@
           {
             "Id": 914,
             "Name": "SqlQuery",
-            "Value": "UPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 0\nWHERE ShoppingCart=@ShoppingCart and (Product = '36')",
+            "Value": "DELETE FROM app.ortomo_ShoppingCartDetail\nWHERE ShoppingCart=@ShoppingCart and (Product = '36')",
             "IsExpression": false,
             "ActionId": 132,
             "OrderIndex": 0
@@ -492,7 +492,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-09T21:21:25.9785255+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-24T14:13:07.3301096+01:00",
+  "LastModifiedOn": "2021-03-24T14:19:21.8831136+01:00",
   "InputFields": [
     {
       "Required": false,
