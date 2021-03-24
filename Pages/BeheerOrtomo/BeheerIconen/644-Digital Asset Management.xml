@@ -33,7 +33,28 @@
     <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
-    <modulesettings />
+    <modulesettings>
+        <modulesetting>
+            <settingname>FilterCondition</settingname>
+            <settingvalue>FilterByFolder</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>DefaultFolderTypeId</settingname>
+            <settingvalue>8</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Mode</settingname>
+            <settingvalue>Normal</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>RootFolderId</settingname>
+            <settingvalue>63</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>SubfolderFilter</settingname>
+            <settingvalue>IncludeSubfoldersFolderStructure</settingvalue>
+        </modulesetting>
+    </modulesettings>
     <tabmodulesettings />
     <definition>DotNetNuke.Modules.DigitalAssets</definition>
     <moduledefinition>Digital Asset Management</moduledefinition>
