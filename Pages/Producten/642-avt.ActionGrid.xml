@@ -25,7 +25,7 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>avt.ActionGrid</title>
+    <title>Overzicht preparaten</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>762d138e-391f-4a52-bf90-0ef624923808</uniqueId>
     <visibility>Maximized</visibility>
