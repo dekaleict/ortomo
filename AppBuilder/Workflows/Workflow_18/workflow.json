@@ -71,120 +71,9 @@
         "DiagramUID": "Activity_0mxu2zu"
       },
       {
-        "Id": 147,
-        "ActionType": "GeneratePDF",
-        "OrderIndex": 1,
-        "ActionParameters": [
-          {
-            "Id": 1023,
-            "Name": "HtmlInputType",
-            "Value": "richtext",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1024,
-            "Name": "HTMLCode",
-            "Value": "<p>Dit is de orderfile</p>",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1025,
-            "Name": "PDFName",
-            "Value": "ORDER-CorrespondingShoppingCart",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1026,
-            "Name": "PathDestination",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1027,
-            "Name": "OrientationLandscape",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1028,
-            "Name": "PaperSize",
-            "Value": "A4",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1029,
-            "Name": "Grayscale",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1030,
-            "Name": "OtherOptions",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1031,
-            "Name": "StoreFileId",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1032,
-            "Name": "StoreAbsoluteURL",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1033,
-            "Name": "StoreRelativeURL",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1034,
-            "Name": "StorePhysicalPath",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1035,
-            "Name": "StoreLinkClick",
-            "Value": "OrderFileURL",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1036,
-            "Name": "ForceDownload",
-            "IsExpression": false,
-            "ActionId": 147,
-            "OrderIndex": 0
-          }
-        ],
-        "DiagramUID": "Activity_0rnnptl"
-      },
-      {
         "Id": 148,
         "ActionType": "GeneratePDF",
-        "OrderIndex": 2,
+        "OrderIndex": 1,
         "ActionParameters": [
           {
             "Id": 1037,
@@ -295,7 +184,7 @@
       {
         "Id": 149,
         "ActionType": "GeneratePDF",
-        "OrderIndex": 3,
+        "OrderIndex": 2,
         "ActionParameters": [
           {
             "Id": 1051,
@@ -406,7 +295,7 @@
       {
         "Id": 150,
         "ActionType": "SendMail",
-        "OrderIndex": 4,
+        "OrderIndex": 3,
         "ActionParameters": [
           {
             "Id": 1065,
@@ -510,7 +399,7 @@
       {
         "Id": 152,
         "ActionType": "RunSql",
-        "OrderIndex": 5,
+        "OrderIndex": 4,
         "ActionParameters": [
           {
             "Id": 1083,
@@ -600,7 +489,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-19T14:49:26.1434345+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-19T19:13:20.5890302+01:00",
+  "LastModifiedOn": "2021-03-24T13:14:16.4557238+01:00",
   "InputFields": [
     {
       "Required": false,
