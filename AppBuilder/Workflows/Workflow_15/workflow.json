@@ -486,13 +486,89 @@
           }
         ],
         "DiagramUID": "Activity_14qtnk4"
+      },
+      {
+        "Id": 155,
+        "ActionType": "RunSql",
+        "OrderIndex": 6,
+        "ActionParameters": [
+          {
+            "Id": 1111,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 155,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1112,
+            "Name": "QueryTimeout",
+            "IsExpression": false,
+            "ActionId": 155,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1113,
+            "Name": "SqlQuery",
+            "Value": "UPDATE app.ortomo_ShoppingCartDetail\nSET Quantity = 0\nWHERE TopPositie > 5 and ShoppingCart=@ShoppingCart",
+            "IsExpression": false,
+            "ActionId": 155,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1114,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[ShoppingCart]",
+                "name": "ShoppingCart"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 155,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1115,
+            "Name": "OutputTokenName",
+            "IsExpression": false,
+            "ActionId": 155,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1116,
+            "Name": "ExtractColumns",
+            "IsExpression": false,
+            "ActionId": 155,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1117,
+            "Name": "OnError",
+            "Value": {
+              "Id": 91,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 155,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1118,
+            "Name": "ShowErrors",
+            "IsExpression": false,
+            "ActionId": 155,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_12hgqrr"
       }
     ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-09T21:21:25.9785255+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-24T14:29:15.0591569+01:00",
+  "LastModifiedOn": "2021-03-24T14:32:45.6283127+01:00",
   "InputFields": [
     {
       "Required": false,
