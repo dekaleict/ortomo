@@ -6,17 +6,129 @@
   "ActionList": {
     "Id": 90,
     "EventName": "Event",
-    "Actions": []
+    "Actions": [
+      {
+        "Id": 154,
+        "ActionType": "GeneratePDF",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 1097,
+            "Name": "HtmlInputType",
+            "Value": "richtext",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1098,
+            "Name": "HTMLCode",
+            "Value": "<p>Dit is de orderfile</p>",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1099,
+            "Name": "PDFName",
+            "Value": "ORDER-CorrespondingShoppingCart",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1100,
+            "Name": "PathDestination",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1101,
+            "Name": "OrientationLandscape",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1102,
+            "Name": "PaperSize",
+            "Value": "A4",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1103,
+            "Name": "Grayscale",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1104,
+            "Name": "OtherOptions",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1105,
+            "Name": "StoreFileId",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1106,
+            "Name": "StoreAbsoluteURL",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1107,
+            "Name": "StoreRelativeURL",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1108,
+            "Name": "StorePhysicalPath",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1109,
+            "Name": "StoreLinkClick",
+            "Value": "OrderFileURL",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1110,
+            "Name": "ForceDownload",
+            "IsExpression": false,
+            "ActionId": 154,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_13vnzk3"
+      }
+    ]
   },
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-24T13:13:52.4310684+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-24T13:13:52.4310684+01:00",
+  "LastModifiedOn": "2021-03-24T13:14:52.4202494+01:00",
   "InputFields": [
     {
       "Required": false,
       "Id": 113,
-      "Name": "ShoppingCart",
+      "Name": "CorrespondingShoppingCart",
       "InputType": "Integer",
       "WorkflowId": 19,
       "IsDeleted": false
