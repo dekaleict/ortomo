@@ -1,0 +1,26 @@
+{
+  "Id": 19,
+  "Name": "ortomo - Orderfile maken",
+  "Description": "",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 90,
+    "EventName": "Event",
+    "Actions": []
+  },
+  "CreatedBy": "Hans Lenting",
+  "CreatedOn": "2021-03-24T13:13:52.4310684+01:00",
+  "LastModifiedBy": "Hans Lenting",
+  "LastModifiedOn": "2021-03-24T13:13:52.4310684+01:00",
+  "InputFields": [
+    {
+      "Required": false,
+      "Id": 113,
+      "Name": "ShoppingCart",
+      "InputType": "Integer",
+      "WorkflowId": 19,
+      "IsDeleted": false
+    }
+  ],
+  "OutputFields": []
+}
