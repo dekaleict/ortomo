@@ -1,9 +1,10 @@
 <module type="DotNetNukeModulesDigitalAssets" version="09.06.00.00">
+    <contentKey />
     <moduleID>644</moduleID>
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
     <containersrc />
@@ -26,7 +27,7 @@
     </modulepermissions>
     <title>Digital Asset Management</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>fd0bac91-6765-4101-b463-6a6517b2feee</uniqueId>
+    <uniqueId>bfc8b11a-a053-46bb-83b3-5bda9f112152</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
     <webslicetitle />
