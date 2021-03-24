@@ -667,7 +667,7 @@
           {
             "Id": 803,
             "Name": "Score",
-            "Value": "-5000",
+            "Value": "5000",
             "IsExpression": false,
             "ActionId": 118,
             "OrderIndex": 0
@@ -687,7 +687,7 @@
   "CreatedBy": "Hans Lenting",
   "CreatedOn": "2021-03-03T19:59:07.0940623+01:00",
   "LastModifiedBy": "Hans Lenting",
-  "LastModifiedOn": "2021-03-24T12:59:50.1775827+01:00",
+  "LastModifiedOn": "2021-03-24T13:58:29.0425305+01:00",
   "InputFields": [
     {
       "Required": false,
