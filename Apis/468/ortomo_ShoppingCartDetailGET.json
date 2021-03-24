@@ -53,10 +53,6 @@
             "value": "[RecordId]"
           },
           {
-            "name": "Packnaam",
-            "value": "[Record:Packnaam]"
-          },
-          {
             "name": "ShoppingCart",
             "value": "[Record:ShoppingCart]"
           },
@@ -99,6 +95,10 @@
           {
             "name": "SplitPackGewenst",
             "value": "[Record:SplitPackGewenst]"
+          },
+          {
+            "name": "Packnaam",
+            "value": "[Record:Packnaam]"
           }
         ],
         "Headers": []
