@@ -129,8 +129,8 @@
       &lt;Template&gt;&amp;lt;h4&amp;gt;[Preparaat]&amp;lt;/h4&amp;gt;
 &amp;lt;hr&amp;gt;&amp;lt;small&amp;gt;[Beschrijving]&amp;lt;/small&amp;gt;
 [CategorieSupplement]&amp;lt;hr&amp;gt;
-&amp;lt;img src=&quot;[ortomo:GetPreparaatIconen.IconVegan(preparaatid=&quot;[Id]&quot;)]&quot; width=&quot;50&quot; height=&quot;50&quot;&amp;gt;
-&amp;lt;img src=&quot;[ortomo:GetPreparaatIconen.IconHalal(preparaatid=&quot;[Id]&quot;)]&quot; width=&quot;50&quot; height=&quot;50&quot;&amp;gt;&lt;/Template&gt;
+&amp;lt;img src=&quot;[ortomo:GetPreparaatIconen.IconVegan(preparaatid=&quot;[Id]&quot;)]&quot; alt=&quot;Vegan&quot; width=&quot;50px&quot; height=&quot;50px&quot;&amp;gt;
+&amp;lt;img src=&quot;[ortomo:GetPreparaatIconen.IconHalal(preparaatid=&quot;[Id]&quot;)]&quot; alt=&quot;Halal&quot; width=&quot;50px&quot; height=&quot;50px&quot;&amp;gt;&lt;/Template&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
       &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
