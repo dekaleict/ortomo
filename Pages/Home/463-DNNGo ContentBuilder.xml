@@ -19,10 +19,20 @@
     <iswebslice>false</iswebslice>
     <modulepermissions>
         <permission>
+            <allowaccess>true</allowaccess>
+            <rolename>ContentManager</rolename>
+        </permission>
+        <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>ContentManager</rolename>
         </permission>
     </modulepermissions>
     <title>DNNGo.ContentBuilder</title>
@@ -30,6 +40,7 @@
     <uniqueId>c3ce821e-53d2-4b6f-b779-29fe8adc1a09</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings>
@@ -46,7 +57,8 @@
                 &lt;div class="row"&gt;
                     &lt;div class="col-md-12"&gt;
                         &lt;h5 style="color: rgb(209, 209, 209);"&gt;Contact&lt;/h5&gt;
-                        &lt;br&gt;@ortomo
+                        &lt;br&gt;@ortomonl
+                      	&lt;br&gt;@ortomonutrition
                         &lt;br&gt;hallo@ortomo.nl &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
@@ -58,7 +70,7 @@
         </modulesetting>
         <modulesetting>
             <settingname>Hash</settingname>
-            <settingvalue>A3169CDF96519B408A377B917C8B6CB1</settingvalue>
+            <settingvalue>13864D96A818CB722B5F6C44214DEA8A</settingvalue>
         </modulesetting>
     </modulesettings>
     <tabmodulesettings />
