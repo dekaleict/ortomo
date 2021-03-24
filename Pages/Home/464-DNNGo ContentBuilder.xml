@@ -19,10 +19,20 @@
     <iswebslice>false</iswebslice>
     <modulepermissions>
         <permission>
+            <allowaccess>true</allowaccess>
+            <rolename>ContentManager</rolename>
+        </permission>
+        <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>ContentManager</rolename>
         </permission>
     </modulepermissions>
     <title>DNNGo.ContentBuilder</title>
@@ -30,6 +40,7 @@
     <uniqueId>d6d1e2fe-357c-481c-b3bf-b86f160113b2</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings>
