@@ -19,10 +19,20 @@
     <iswebslice>false</iswebslice>
     <modulepermissions>
         <permission>
+            <allowaccess>true</allowaccess>
+            <rolename>ContentManager</rolename>
+        </permission>
+        <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>ContentManager</rolename>
         </permission>
     </modulepermissions>
     <title>DNNGo.ContentBuilder</title>
@@ -30,6 +40,7 @@
     <uniqueId>7574d722-3989-4fbc-bcea-5e2402b6c3f5</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicetitle />
     <webslicettl>0</webslicettl>
     <cultureCode />
     <modulesettings>
@@ -48,18 +59,18 @@
                         &lt;h5 style="color: rgb(209, 209, 209);"&gt;Ons aanbod &lt;/h5&gt;
                         &lt;br&gt; &amp;gt; Doe de test 
                         &lt;br&gt; &amp;gt; Ons assortiment 
-                        &lt;br&gt; &amp;gt; Wie we zijn&lt;/div&gt;
-                &lt;/div&gt;
+                        &lt;br&gt; &amp;gt; Over ons 
+                        &lt;br&gt; &amp;gt; Duurzaamheid&lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
 
 </settingvalue>
         </modulesetting>
         <modulesetting>
             <settingname>Hash</settingname>
-            <settingvalue>8FE383996D0092A614479C3773D6CB42</settingvalue>
+            <settingvalue>63C08D2BFBB4ECDACC5866D85CB51592</settingvalue>
         </modulesetting>
     </modulesettings>
     <tabmodulesettings />
