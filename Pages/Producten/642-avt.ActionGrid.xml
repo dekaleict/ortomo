@@ -81,7 +81,7 @@
     &lt;EnableGridSelect&gt;True&lt;/EnableGridSelect&gt;
     &lt;DataSourceAutoRefreshInterval&gt;1&lt;/DataSourceAutoRefreshInterval&gt;
     &lt;DataSourceRefreshType&gt;manual&lt;/DataSourceRefreshType&gt;
-    &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn642&lt;/BaseId&gt;
     &lt;ItemButtonGroups&gt;[]&lt;/ItemButtonGroups&gt;
     &lt;GridButtonGroups&gt;[]&lt;/GridButtonGroups&gt;
@@ -128,7 +128,9 @@
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Template&gt;&amp;lt;h4&amp;gt;[Preparaat]&amp;lt;/h4&amp;gt;
 &amp;lt;hr&amp;gt;&amp;lt;small&amp;gt;[Beschrijving]&amp;lt;/small&amp;gt;
-[CategorieSupplement]&lt;/Template&gt;
+[CategorieSupplement]&amp;lt;hr&amp;gt;
+&amp;lt;img src=&quot;[ortomo:GetPreparaatIconen.IconAllergeenEi(preparaatid=&quot;[Id]&quot;)]&quot; width=&quot;50&quot; height=&quot;50&quot;&amp;gt;
+&amp;lt;img src=&quot;[ortomo:GetPreparaatIconen.IconAllergeenGluten(preparaatid=&quot;[Id]&quot;)]&quot; width=&quot;50&quot; height=&quot;50&quot;&amp;gt;&lt;/Template&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
       &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
