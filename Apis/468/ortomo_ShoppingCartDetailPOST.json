@@ -177,10 +177,6 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "Packnaam",
-            "value": "[CreatedRecord:Packnaam]"
-          },
-          {
             "name": "ShoppingCart",
             "value": "[CreatedRecord:ShoppingCart]"
           },
@@ -223,6 +219,10 @@
           {
             "name": "SplitPackGewenst",
             "value": "[CreatedRecord:SplitPackGewenst]"
+          },
+          {
+            "name": "Packnaam",
+            "value": "[CreatedRecord:Packnaam]"
           }
         ],
         "Headers": [
