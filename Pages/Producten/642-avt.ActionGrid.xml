@@ -79,7 +79,7 @@
     &lt;ShowLoading&gt;True&lt;/ShowLoading&gt;
     &lt;TabsProLoading&gt;False&lt;/TabsProLoading&gt;
     &lt;EnableGridSelect&gt;True&lt;/EnableGridSelect&gt;
-    &lt;DataSourceAutoRefreshInterval /&gt;
+    &lt;DataSourceAutoRefreshInterval&gt;1&lt;/DataSourceAutoRefreshInterval&gt;
     &lt;DataSourceRefreshType&gt;manual&lt;/DataSourceRefreshType&gt;
     &lt;DateFormat&gt;d-m-yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn642&lt;/BaseId&gt;
@@ -89,7 +89,7 @@
     &lt;GridButtons&gt;[]&lt;/GridButtons&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;TooltipContent /&gt;
-    &lt;TooltipDataTrigger /&gt;
+    &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
     &lt;TooltipIcon&gt;glyphicon-info-sign&lt;/TooltipIcon&gt;
     &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
     &lt;TooltipInEdit&gt;right&lt;/TooltipInEdit&gt;
